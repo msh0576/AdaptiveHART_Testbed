@@ -1,0 +1,24 @@
+<area shape="rect" id="node2" href="../chtml/tos.chips.msp430.usart.Msp430UartP.html" title="Msp430UartP\n(UartP)" alt="" coords="517,116,627,164">
+<area shape="poly" id="edge1" href="../ihtml/tos.interfaces.ResourceConfigure.html" title="ResourceConfigure[uint8_t]" alt="" coords="327,53,332,73,343,90,369,104,409,115,503,130,502,135,408,120,367,109,339,94,327,75,321,54">
+<area shape="rect" id="edge1-label" href="../ihtml/tos.interfaces.ResourceConfigure.html" title="ResourceConfigure[uint8_t]" alt="" coords="341,77,495,92">
+<area shape="poly" id="edge5" href="../ihtml/tos.chips.msp430.usart.Msp430UartConfigure.html" title="Msp430UartConfigure[uint8_t]" alt="" coords="517,145,427,148,321,155,223,169,184,178,156,190,140,204,127,221,122,218,136,200,153,186,182,173,222,163,321,150,426,142,516,139">
+<area shape="rect" id="edge5-label" href="../ihtml/tos.chips.msp430.usart.Msp430UartConfigure.html" title="Msp430UartConfigure[uint8_t]" alt="" coords="155,188,328,203">
+<area shape="poly" id="edge6" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="517,150,420,166,377,177,348,190,335,204,324,221,320,218,330,201,345,186,375,172,419,161,516,145">
+<area shape="rect" id="edge6-label" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="347,188,445,203">
+<area shape="poly" id="edge7" href="../ihtml/tos.chips.msp430.usart.HplMsp430UsartInterrupts.html" title="HplMsp430UsartInterrupts[uint8_t]" alt="" coords="517,152,483,166,469,176,457,189,453,204,456,219,451,220,447,203,452,187,465,172,481,161,515,147">
+<area shape="rect" id="edge7-label" href="../ihtml/tos.chips.msp430.usart.HplMsp430UsartInterrupts.html" title="HplMsp430UsartInterrupts[uint8_t]" alt="" coords="455,188,651,203">
+<area shape="rect" id="node9" href="../chtml/tos.chips.msp430.usart.HplMsp430Usart1C.html" title="HplMsp430Usart1C" alt="" coords="586,227,747,285">
+<area shape="poly" id="edge8" href="../ihtml/tos.chips.msp430.usart.HplMsp430Usart.html" title="HplMsp430Usart" alt="" coords="629,161,645,172,658,187,668,212,663,214,654,189,641,176,626,165">
+<area shape="rect" id="edge8-label" href="../ihtml/tos.chips.msp430.usart.HplMsp430Usart.html" title="HplMsp430Usart" alt="" coords="664,188,760,203">
+<area shape="rect" id="node10" href="../chtml/tos.chips.msp430.timer.Counter32khz16C.html" title="Counter32khz16C" alt="" coords="772,227,921,285">
+<area shape="poly" id="edge9" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;T32khz, uint16_t&gt;" alt="" coords="628,145,696,160,732,171,767,186,810,215,807,220,764,190,730,176,694,165,627,151">
+<area shape="rect" id="edge9-label" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;T32khz, uint16_t&gt;" alt="" coords="788,188,944,203">
+<area shape="rect" id="node11" href="../chtml/tos.system.LedsC.html" title="LedsC" alt="" coords="960,227,1043,285">
+<area shape="poly" id="edge10" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="628,140,803,153,890,166,925,175,951,186,967,198,981,214,977,217,964,202,948,190,923,180,889,171,802,158,627,146">
+<area shape="rect" id="edge10-label" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="968,188,995,203">
+<area shape="poly" id="edge2" href="../ihtml/tos.interfaces.UartByte.html" title="UartByte[uint8_t]" alt="" coords="502,54,501,73,506,91,517,105,513,109,502,93,496,73,497,53">
+<area shape="rect" id="edge2-label" href="../ihtml/tos.interfaces.UartByte.html" title="UartByte[uint8_t]" alt="" coords="504,77,603,92">
+<area shape="poly" id="edge3" href="../ihtml/tos.interfaces.UartStream.html" title="UartStream[uint8_t]" alt="" coords="630,55,610,93,602,106,597,103,606,91,625,52">
+<area shape="rect" id="edge3-label" href="../ihtml/tos.interfaces.UartStream.html" title="UartStream[uint8_t]" alt="" coords="617,77,727,92">
+<area shape="poly" id="edge4" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="768,54,753,75,733,94,689,117,642,131,640,126,687,112,730,90,749,72,764,51">
+<area shape="rect" id="edge4-label" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="748,77,847,92">

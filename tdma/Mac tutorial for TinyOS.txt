@@ -1,0 +1,149 @@
+//**************************************************************************
+// * file:        TinyOS MAC tutorial file
+// *
+// * author:      A. Ajith Kumar S.
+// * copyright:   (c) A. Ajith Kumar S. 
+// * homepage:    www.hib.no/ansatte/aaks
+// * email:       aji3003 @ gmail.com
+// **************************************************************************
+// * part of:     TinyOS MAC tutorial.
+// * Refined on:  26-June-2015
+// **************************************************************************
+// *This file is part of TinyOS MAC tutorial.
+// *
+// *TinyOS MAC tutorial is free software: you can redistribute it and/or modify
+// *it under the terms of the GNU General Public License as published by
+// *the Free Software Foundation, either version 3 of the License, or
+// *(at your option) any later version.
+// *
+// *TinyOS MAC tutorial is distributed in the hope that it will be useful,
+// *but WITHOUT ANY WARRANTY; without even the implied warranty of
+// *MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// *GNU General Public License for more details.
+// *
+// *You should have received a copy of the GNU General Public License
+// *along with TinyOS MAC tutorial.  If not, see <http://www.gnu.org/licenses/>./
+// **************************************************************************
+Hardware used 	: Zolertia Z1 platform
+Operating system: TinyOS
+===============Sources==================
+Follwing sources have been studied and used to build up the simple MAC.
+1. PureTDMASchedulerC, Config and module file from Mac Layer Architecture Implemenatation
+2. GenericSlotter modules
+3. TestAcks app from CC2420 app section
+4. TimerSync app from the general test apps
+Also studied:
+zolertia z1 examples since zolertia is the hardware platform used
+
+==============TimeSync==================
+Ftsp library for TimeSynchronization
+TimeSyncC component used for background synchronization 
+Check also makefile in application and
+makefile.include in MAC library for inclusions
+and usage of time synchronization options like 
+packet rate for synchronization messages to be sent.
+========================================
+Used in combination with GenericSlotter from Wustl (MAC Layer Architecture) contribution 
+to obtain TDMA implementation.
+The slot synchronization happens at slot 1.
+Issue with starting at 0. (jumps to 55)
+
+========Important interfaces============
+###CC2420 Specific
+CC2420ActiveMessageC	-> Radio/Phy interface
+PacketAcknowledgements	-> For implementing Acknowledgements
+CC2420Packet   			-> To obtain RSSI and TX_Power information
+QueueC					-> To queue packets received to be forwarded
+SlotterControl			-> Provided by the GenericSlotter allows to implement
+							slot scheduling for TDMA.
+
+----Unused part----
+CC2420Power    		-> Powering down radio components one by one 
+CC2420Register 		-> Write to the register to change Power Level 
+(Can be done only in the beginning)
+	
+======Interfaces Provided for apps =====
+Init 				-> First initialization.
+PowerControl 		-> Start/stop control of MAC.
+Send 				-> For sending packets via the MAC.
+Receive 			-> For receiving packets via the MAC.
+FrameConfiguration 	-> Setup of slot length and frame length for every round.
+
+===============Major Steps==============
+1.	Create Configuration and module files for the MAC
+2.	Directories created (TdmaMac)
+	/opt/tinyos-2.1.2/tos/lib/mac/			-> The MAC source location
+	/opt/tinyos-2.1.2/tos/platforms/z1/mac/	-> makefile for z1 platform dependencies
+3.	Needs two Makefile.include files to describe dependencies
+	a./opt/tinyos-2.1.2/tos/lib/mac/ 			- General
+	b./opt/tinyos-2.1.2/tos/platforms/z1/mac/ 	- z1 dependencies 
+4.	Add in the used and providing interfaces
+5.	Extra interfaces being used should be added to the folder:
+		/opt/tinyos-2.1.2/tos/interfaces/
+6. 	Further check each source file for detailed comments
+7. 	Lock between send<---->sendDone to prevent double sending to radio (Important)
+
+========== Application	=================
+An example application is bundled with the MAC tutorial.
+It basically sends an application packet every 30 second.
+Also initiates the time synchronization protocol FTSP in the background.
+Can be placed in /opt/tinyos-2.1.2/apps/
+
+The MAC on the other hand.
+Has statically defined topology: and application packets are not really used currently in MAC.
+Using them should not be a difficult switch.
+level 0 Sink. TOS_NODE_ID 0. (node 0)
+level 1 node 1 and node 2
+level 2 node 3 (Connects to 1)
+Therefore: The schedule is slot 1 is notification slot from sink (node 0) to all nodes
+			Slot 5 	= Sinks transmission slot (to all nodes)
+			Slot 15 = Node 3 -> Node 1
+			Slot 20 = Node 3 -> Node 1
+			Slot 35 = Node 1 -> Sink 
+			Slot 40 = Node 1 -> Sink (Forwarding for node 3)
+			Slot 45 = Node 1 -> Sink (Forwarding for node 3) Is for checking packet buffer working.
+			slot 50 = Node 2 -> Sink
+Superframe = 100 slots.
+At slot 60 we print all time synchronization information to verify.
+At slot 61 all nodes goto sleep and wake up at slot 99.(Radio only)	
+
+Two separate active message ids are used for handling of notification and data differently.
+AM_DMAMAC_NOTIFICATION 	= 10
+AM_DMAMAC_DATA 			= 11
+Defined in the header file
+Also data and notification packet structures.
+notification_t
+dmamac_data_t
+
+================ Commands ===============
+#Make commands (zolertia z1 is the platform used)
+#Used in the application directory
+#With 0 as ID here
+make z1 install,0 bsl,/dev/ttyUSB0
+
+# To make with displaying possible errors
+make -d z1
+
+# To check paths traversed by make
+make <platform> verbose
+E.g. make z1 verbose
+
+#For debugging issues with make
+make -d z1
+
+#For creating component graphs
+make z1 docs
+
+#Note that printfz1 is used to print to console.
+#To read the printf's use (not necessarily in any particular directory)
+picocom -b 115200 /dev/ttyUSB0 
+#To write into log files
+picocom -b 115200 /dev/ttyUSB0 >> Log.txt
+
+=================Using YETI==============
+1.	YETI is the most recommended Eclipse IDE plugin for development.
+	But since it is old, it has issues.
+2.	Download from : http://tos-ide.ethz.ch/update/site.xml
+3.	Has issues but helps with showing dependencies, events and
+	commands to be implemented while using interfaces.
+4.	Update project dependencies to receive proper help

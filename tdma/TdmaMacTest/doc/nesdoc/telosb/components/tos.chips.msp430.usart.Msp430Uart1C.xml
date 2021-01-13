@@ -1,0 +1,374 @@
+<?xml version="1.0" ?><component abstract="" loc="42:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1C.nc" nicename="tos.chips.msp430.usart.Msp430Uart1C" qname="Msp430Uart1C">
+      <documentation loc="31:/opt/tinyos-2.1.2/tos/chips/msp430/usart/msp430usart.h">
+        <short>
+ </short>
+        <long>
+ @author Vlado Handziski &lt;handzisk@tkn.tu-berlin.de&gt;
+ @author Philipp Huppertz &lt;huppertz@tkn.tu-berlin.de&gt;
+</long>
+      </documentation>
+      <parameters>
+      </parameters>
+      <configuration/>
+      <wiring>
+        <wire loc="65:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1C.nc">
+          <from><interface-ref name="ResourceRequested" ref="0x7f2d65a40170" scoped=""/></from>
+          <to><interface-ref name="ResourceRequested" ref="0x7f2d658e1e20" scoped=""/></to>
+        </wire>
+        <wire loc="61:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1C.nc">
+          <from><interface-ref name="UartByte" ref="0x7f2d65a3f920" scoped=""/></from>
+          <to><interface-ref name="UartByte" ref="0x7f2d65a35498" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="60:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1C.nc">
+          <from><interface-ref name="UartStream" ref="0x7f2d65a40938" scoped=""/></from>
+          <to><interface-ref name="UartStream" ref="0x7f2d65a36020" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="59:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1C.nc">
+          <from><interface-ref name="Resource" ref="0x7f2d65a43478" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x7f2d65a39020" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="62:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1C.nc">
+          <from><interface-ref name="Msp430UartConfigure" ref="0x7f2d65a33498" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </from>
+          <to><interface-ref name="Msp430UartConfigure" ref="0x7f2d65a3d020" scoped=""/></to>
+        </wire>
+        <wire loc="66:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1C.nc">
+          <from><interface-ref name="ResourceConfigure" ref="0x7f2d658dbb90" scoped=""/></from>
+          <to><interface-ref name="ResourceConfigure" ref="0x7f2d65a38208" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="67:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1C.nc">
+          <from><interface-ref name="UsartResource" ref="0x7f2d65a34270" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </from>
+          <to><interface-ref name="Resource" ref="0x7f2d658e1228" scoped=""/></to>
+        </wire>
+        <wire loc="68:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1C.nc">
+          <from><interface-ref name="UsartInterrupts" ref="0x7f2d65a311c8" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </from>
+          <to><interface-ref name="HplMsp430UsartInterrupts" ref="0x7f2d658db430" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="45:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1C.nc" name="ResourceRequested" provided="1" ref="0x7f2d65a40170">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Uart1C" qname="Msp430Uart1C"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ResourceRequested" ref="0x7f2d65a40170" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.ResourceRequested" qname="ResourceRequested"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requested" ref="0x7f2d65a404c0" scoped=""/>
+        <function-ref name="immediateRequested" ref="0x7f2d65a40648" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1C.nc" name="UartByte" provided="1" ref="0x7f2d65a3f920">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Uart1C" qname="Msp430Uart1C"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartByte" ref="0x7f2d65a3f920" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.UartByte" qname="UartByte"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f2d65a3fc70" scoped=""/>
+        <function-ref name="receive" ref="0x7f2d65a3fdf8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1C.nc" name="Msp430UartConfigure" provided="0" ref="0x7f2d65a3d020">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Uart1C" qname="Msp430Uart1C"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430UartConfigure" ref="0x7f2d65a3d020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.usart.Msp430UartConfigure" qname="Msp430UartConfigure"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getConfig" ref="0x7f2d65a3d370" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1C.nc" name="UartStream" provided="1" ref="0x7f2d65a40938">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Uart1C" qname="Msp430Uart1C"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartStream" ref="0x7f2d65a40938" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.UartStream" qname="UartStream"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f2d65a40c88" scoped=""/>
+        <function-ref name="receivedByte" ref="0x7f2d65a40e10" scoped=""/>
+        <function-ref name="receive" ref="0x7f2d65a3f020" scoped=""/>
+        <function-ref name="enableReceiveInterrupt" ref="0x7f2d65a3f1a8" scoped=""/>
+        <function-ref name="receiveDone" ref="0x7f2d65a3f330" scoped=""/>
+        <function-ref name="disableReceiveInterrupt" ref="0x7f2d65a3f4b8" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f2d65a3f640" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1C.nc" name="Resource" provided="1" ref="0x7f2d65a43478">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Uart1C" qname="Msp430Uart1C"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x7f2d65a43478" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="release" ref="0x7f2d65a437c8" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x7f2d65a43950" scoped=""/>
+        <function-ref name="request" ref="0x7f2d65a43ad8" scoped=""/>
+        <function-ref name="granted" ref="0x7f2d65a43c60" scoped=""/>
+        <function-ref name="isOwner" ref="0x7f2d65a43de8" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="48:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc" name="UsartInterrupts" provided="0" ref="0x7f2d65a311c8">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Uart1P" qname="Msp430Uart1P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UsartInterrupts" ref="0x7f2d65a311c8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.usart.HplMsp430UsartInterrupts" qname="HplMsp430UsartInterrupts"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x7f2d67df1790"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="rxDone" ref="0x7f2d65a31518" scoped=""/>
+        <function-ref name="txDone" ref="0x7f2d65a316a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc" name="Msp430UartConfigure" provided="0" ref="0x7f2d65a33498">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Uart1P" qname="Msp430Uart1P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430UartConfigure" ref="0x7f2d65a33498" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.usart.Msp430UartConfigure" qname="Msp430UartConfigure"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x7f2d67df1790"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getConfig" ref="0x7f2d65a337e8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Usart1C.nc" name="HplMsp430UsartInterrupts" provided="1" ref="0x7f2d658db430">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Usart1C" qname="Msp430Uart1C.UsartC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="HplMsp430UsartInterrupts" ref="0x7f2d658db430" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.usart.HplMsp430UsartInterrupts" qname="HplMsp430UsartInterrupts"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rxDone" ref="0x7f2d658db780" scoped=""/>
+        <function-ref name="txDone" ref="0x7f2d658db908" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Usart1C.nc" name="Resource" provided="1" ref="0x7f2d658e1228">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Usart1C" qname="Msp430Uart1C.UsartC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x7f2d658e1228" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="release" ref="0x7f2d658e1578" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x7f2d658e1700" scoped=""/>
+        <function-ref name="request" ref="0x7f2d658e1888" scoped=""/>
+        <function-ref name="granted" ref="0x7f2d658e1a10" scoped=""/>
+        <function-ref name="isOwner" ref="0x7f2d658e1b98" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Usart1C.nc" name="ResourceConfigure" provided="0" ref="0x7f2d658dbb90">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Usart1C" qname="Msp430Uart1C.UsartC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ResourceConfigure" ref="0x7f2d658dbb90" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.ResourceConfigure" qname="ResourceConfigure"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="unconfigure" ref="0x7f2d658d9020" scoped=""/>
+        <function-ref name="configure" ref="0x7f2d658d91a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc" name="UartStream" provided="1" ref="0x7f2d65a36020">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Uart1P" qname="Msp430Uart1P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartStream" ref="0x7f2d65a36020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.UartStream" qname="UartStream"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x7f2d67df1790"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f2d65a36370" scoped=""/>
+        <function-ref name="receivedByte" ref="0x7f2d65a364f8" scoped=""/>
+        <function-ref name="receive" ref="0x7f2d65a36680" scoped=""/>
+        <function-ref name="enableReceiveInterrupt" ref="0x7f2d65a36808" scoped=""/>
+        <function-ref name="receiveDone" ref="0x7f2d65a36990" scoped=""/>
+        <function-ref name="disableReceiveInterrupt" ref="0x7f2d65a36b18" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f2d65a36ca0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc" name="Resource" provided="1" ref="0x7f2d65a39020">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Uart1P" qname="Msp430Uart1P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x7f2d65a39020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x7f2d67df1790"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="release" ref="0x7f2d65a39370" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x7f2d65a394f8" scoped=""/>
+        <function-ref name="request" ref="0x7f2d65a39680" scoped=""/>
+        <function-ref name="granted" ref="0x7f2d65a39808" scoped=""/>
+        <function-ref name="isOwner" ref="0x7f2d65a39990" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc" name="UartByte" provided="1" ref="0x7f2d65a35498">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Uart1P" qname="Msp430Uart1P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartByte" ref="0x7f2d65a35498" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.UartByte" qname="UartByte"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x7f2d67df1790"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f2d65a357e8" scoped=""/>
+        <function-ref name="receive" ref="0x7f2d65a35970" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc" name="ResourceConfigure" provided="1" ref="0x7f2d65a38208">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Uart1P" qname="Msp430Uart1P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ResourceConfigure" ref="0x7f2d65a38208" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.ResourceConfigure" qname="ResourceConfigure"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x7f2d67df1790"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="unconfigure" ref="0x7f2d65a38558" scoped=""/>
+        <function-ref name="configure" ref="0x7f2d65a386e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc" name="UsartResource" provided="0" ref="0x7f2d65a34270">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Uart1P" qname="Msp430Uart1P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UsartResource" ref="0x7f2d65a34270" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x7f2d67df1790"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="release" ref="0x7f2d65a345c0" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x7f2d65a34748" scoped=""/>
+        <function-ref name="request" ref="0x7f2d65a348d0" scoped=""/>
+        <function-ref name="granted" ref="0x7f2d65a34a58" scoped=""/>
+        <function-ref name="isOwner" ref="0x7f2d65a34be0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Usart1C.nc" name="ResourceRequested" provided="1" ref="0x7f2d658e1e20">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Usart1C" qname="Msp430Uart1C.UsartC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ResourceRequested" ref="0x7f2d658e1e20" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.ResourceRequested" qname="ResourceRequested"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requested" ref="0x7f2d658e01a8" scoped=""/>
+        <function-ref name="immediateRequested" ref="0x7f2d658e0330" scoped=""/>
+      </interface-functions>
+    </interface><component abstract="" loc="40(Msp430Uart1C.UsartC):/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Usart1C.nc" nicename="tos.chips.msp430.usart.Msp430Usart1C" qname="Msp430Uart1C.UsartC">
+      <documentation loc="32:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Usart1C.nc">
+        <short>
+ Provides an interface for USART1 on the MSP430.</short>
+        <long>
+ Provides an interface for USART1 on the MSP430.
+
+ @author Vlado Handziski &lt;handisk@tkn.tu-berlin.de&gt;
+ @author Jonathan Hui &lt;jhui@archedrock.com&gt;
+ @version $Revision: 1.5 $ $Date: 2008-05-21 22:11:57 $
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.chips.msp430.usart.Msp430Usart1C" qname="Msp430Usart1C"/>
+      </instance>
+      <configuration/>
+    </component><component loc="39:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc" nicename="tos.chips.msp430.usart.Msp430Uart1P" qname="Msp430Uart1P">
+      <documentation loc="32:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc">
+        <short>
+ </short>
+        <long>
+ @author Jonathan Hui &lt;jhui@archedrock.com&gt;
+ @author Vlado Handziski &lt;handzisk@tkn.tu-berlin.de&gt;
+ @author Eric B. Decker &lt;cire831@gmail.com&gt;
+ @version $Revision: 1.5 $ $Date: 2008-05-21 22:11:57 $
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="56:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc">
+          <from><interface-ref name="ResourceConfigure" ref="0x7f2d65a38208" scoped=""/></from>
+          <to><interface-ref name="ResourceConfigure" ref="0x7f2d659d0e00" scoped=""/></to>
+        </wire>
+        <wire loc="59:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc">
+          <from><interface-ref name="UartByte" ref="0x7f2d65a35498" scoped=""/></from>
+          <to><interface-ref name="UartByte" ref="0x7f2d659cd860" scoped=""/></to>
+        </wire>
+        <wire loc="58:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc">
+          <from><interface-ref name="UartStream" ref="0x7f2d65a36020" scoped=""/></from>
+          <to><interface-ref name="UartStream" ref="0x7f2d659ce6d8" scoped=""/></to>
+        </wire>
+        <wire loc="55:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc">
+          <from><interface-ref name="Resource" ref="0x7f2d65a39020" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x7f2d659d00c8" scoped=""/></to>
+        </wire>
+        <wire loc="57:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc">
+          <from><interface-ref name="Msp430UartConfigure" ref="0x7f2d659cb020" scoped=""/></from>
+          <to><interface-ref name="Msp430UartConfigure" ref="0x7f2d65a33498" scoped=""/></to>
+        </wire>
+        <wire loc="60:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc">
+          <from><interface-ref name="UsartResource" ref="0x7f2d659cc180" scoped=""/></from>
+          <to><interface-ref name="UsartResource" ref="0x7f2d65a34270" scoped=""/></to>
+        </wire>
+        <wire loc="61:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc">
+          <from><interface-ref name="UsartInterrupts" ref="0x7f2d659c6020" scoped=""/></from>
+          <to><interface-ref name="UsartInterrupts" ref="0x7f2d65a311c8" scoped=""/></to>
+        </wire>
+        <wire loc="64:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc">
+          <from><interface-ref name="Usart" ref="0x7f2d659cb658" scoped=""/></from>
+          <to><interface-ref name="HplMsp430Usart" ref="0x7f2d659ba4c0" scoped=""/></to>
+        </wire>
+        <wire loc="67:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc">
+          <from><interface-ref name="Counter" ref="0x7f2d659c69b0" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x7f2d6592b020" scoped=""/></to>
+        </wire>
+        <wire loc="70:/opt/tinyos-2.1.2/tos/chips/msp430/usart/Msp430Uart1P.nc">
+          <from><interface-ref name="Leds" ref="0x7f2d659c4928" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x7f2d66d92020" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

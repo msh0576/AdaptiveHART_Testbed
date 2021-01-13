@@ -1,0 +1,379 @@
+<?xml version="1.0" ?><component loc="30:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc" nicename="tos.system.GenericSlotterC" qname="GenericSlotterC">
+      <documentation loc="23:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+        <short>
+
+ </short>
+        <long>
+
+ @author Octav Chipara
+ @version $Revision$
+ @date $Date$
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="46:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="Slotter" ref="0x7f2d66a57388" scoped=""/></from>
+          <to><interface-ref name="Slotter" ref="0x7f2d66a4e8c0" scoped=""/></to>
+        </wire>
+        <wire loc="48:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="AsyncStdControl" ref="0x7f2d66a53610" scoped=""/></from>
+          <to><interface-ref name="AsyncStdControl" ref="0x7f2d66a4e158" scoped=""/></to>
+        </wire>
+        <wire loc="47:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="FrameConfiguration" ref="0x7f2d66a54ac8" scoped=""/></from>
+          <to><interface-ref name="FrameConfiguration" ref="0x7f2d66a4c020" scoped=""/></to>
+        </wire>
+        <wire loc="54:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="SlotterControl" ref="0x7f2d66a579b0" scoped=""/></from>
+          <to><interface-ref name="SlotterControl" ref="0x7f2d66a4d020" scoped=""/></to>
+        </wire>
+        <wire loc="45:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="Boot" ref="0x7f2d66a405c8" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x7f2d66fb2c40" scoped=""/></to>
+        </wire>
+        <wire loc="50:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x7f2d66fb00e0" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f2d66a52af0" scoped=""/></to>
+        </wire>
+        <wire loc="51:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="Alarm" ref="0x7f2d66a44e08" scoped=""/></from>
+          <to><interface-ref name="Alarm" ref="0x7f2d6693f2d0" scoped=""/></to>
+        </wire>
+        <wire loc="55:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="Leds" ref="0x7f2d66a41020" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x7f2d66d92020" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="33:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc" name="Slotter" provided="1" ref="0x7f2d66a57388">
+      <component-ref nicename="tos.system.GenericSlotterC" qname="GenericSlotterC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Slotter" ref="0x7f2d66a57388" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Slotter" qname="Slotter"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="slot" ref="0x7f2d66a576d8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="36:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc" name="AsyncStdControl" provided="1" ref="0x7f2d66a53610">
+      <component-ref nicename="tos.system.GenericSlotterC" qname="GenericSlotterC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AsyncStdControl" ref="0x7f2d66a53610" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AsyncStdControl" qname="AsyncStdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x7f2d66a53960" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d66a53ae8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="35:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc" name="FrameConfiguration" provided="1" ref="0x7f2d66a54ac8">
+      <component-ref nicename="tos.system.GenericSlotterC" qname="GenericSlotterC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FrameConfiguration" ref="0x7f2d66a54ac8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.FrameConfiguration" qname="FrameConfiguration"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setFrameLength" ref="0x7f2d66a54e18" scoped=""/>
+        <function-ref name="setSlotLength" ref="0x7f2d66a53020" scoped=""/>
+        <function-ref name="getSlotLength" ref="0x7f2d66a531a8" scoped=""/>
+        <function-ref name="getFrameLength" ref="0x7f2d66a53330" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="34:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc" name="SlotterControl" provided="1" ref="0x7f2d66a579b0">
+      <component-ref nicename="tos.system.GenericSlotterC" qname="GenericSlotterC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SlotterControl" ref="0x7f2d66a579b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SlotterControl" qname="SlotterControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f2d66a547c8" scoped=""/>
+        <function-ref name="getSlot" ref="0x7f2d66a54020" scoped=""/>
+        <function-ref name="synchronize" ref="0x7f2d66a541a8" scoped=""/>
+        <function-ref name="isSynchornized" ref="0x7f2d66a54330" scoped=""/>
+        <function-ref name="getAlarm" ref="0x7f2d66a544b8" scoped=""/>
+        <function-ref name="getRemaining" ref="0x7f2d66a54640" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d66a57d00" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="42:/opt/tinyos-2.1.2/tos/system/GenericSlotterP.nc" name="Boot" provided="0" ref="0x7f2d66a405c8">
+      <component-ref nicename="tos.system.GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x7f2d66a405c8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x7f2d66a40918" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="57:/opt/tinyos-2.1.2/tos/system/MainC.nc" name="Boot" provided="1" ref="0x7f2d66fb2c40">
+      <component-ref nicename="tos.system.MainC" qname="MainC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x7f2d66fb2c40" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x7f2d66fb1020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="36:/opt/tinyos-2.1.2/tos/system/GenericSlotterP.nc" name="FrameConfiguration" provided="1" ref="0x7f2d66a4c020">
+      <component-ref nicename="tos.system.GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FrameConfiguration" ref="0x7f2d66a4c020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.FrameConfiguration" qname="FrameConfiguration"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setFrameLength" ref="0x7f2d66a4c370" scoped=""/>
+        <function-ref name="setSlotLength" ref="0x7f2d66a4c4f8" scoped=""/>
+        <function-ref name="getSlotLength" ref="0x7f2d66a4c680" scoped=""/>
+        <function-ref name="getFrameLength" ref="0x7f2d66a4c808" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="32:/opt/tinyos-2.1.2/tos/system/GenericSlotterP.nc" name="Init" provided="1" ref="0x7f2d66a52af0">
+      <component-ref nicename="tos.system.GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x7f2d66a52af0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f2d66a52e40" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="34:/opt/tinyos-2.1.2/tos/system/GenericSlotterP.nc" name="Slotter" provided="1" ref="0x7f2d66a4e8c0">
+      <component-ref nicename="tos.system.GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Slotter" ref="0x7f2d66a4e8c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Slotter" qname="Slotter"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="slot" ref="0x7f2d66a4ec10" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/opt/tinyos-2.1.2/tos/chips/msp430/timer/Alarm32khz32C.nc" name="Alarm" provided="1" ref="0x7f2d6693f2d0">
+      <component-ref nicename="tos.chips.msp430.timer.Alarm32khz32C" qname="GenericSlotterC.Alarm32khz32C"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Alarm" ref="0x7f2d6693f2d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Alarm" qname="Alarm"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f2d66db9608"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f2d66db9960"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f2d67df0020"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f2d6693d928" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d6693e9e8" scoped=""/>
+        <function-ref name="startAt" ref="0x7f2d6693d320" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f2d6693ee70" scoped=""/>
+        <function-ref name="getAlarm" ref="0x7f2d6693ddb0" scoped=""/>
+        <function-ref name="start" ref="0x7f2d6693e088" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d6693e560" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="40:/opt/tinyos-2.1.2/tos/system/GenericSlotterP.nc" name="Leds" provided="0" ref="0x7f2d66a41020">
+      <component-ref nicename="tos.system.GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x7f2d66a41020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x7f2d66a41370" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x7f2d66a414f8" scoped=""/>
+        <function-ref name="led1On" ref="0x7f2d66a41680" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x7f2d66a41808" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x7f2d66a41990" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66a41b18" scoped=""/>
+        <function-ref name="led1Off" ref="0x7f2d66a41ca0" scoped=""/>
+        <function-ref name="led2Off" ref="0x7f2d66a40330" scoped=""/>
+        <function-ref name="set" ref="0x7f2d66a41e28" scoped=""/>
+        <function-ref name="led0On" ref="0x7f2d66a40020" scoped=""/>
+        <function-ref name="led2On" ref="0x7f2d66a401a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="39:/opt/tinyos-2.1.2/tos/system/GenericSlotterP.nc" name="Alarm" provided="0" ref="0x7f2d66a44e08">
+      <component-ref nicename="tos.system.GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Alarm" ref="0x7f2d66a44e08" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Alarm" qname="Alarm"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f2d66db9608"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f2d66db9960"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f2d67df0020"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f2d66a42628" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66a4a580" scoped=""/>
+        <function-ref name="startAt" ref="0x7f2d66a42020" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f2d66a4aa08" scoped=""/>
+        <function-ref name="getAlarm" ref="0x7f2d66a42ab0" scoped=""/>
+        <function-ref name="start" ref="0x7f2d66a4bbe8" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d66a4a0f8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="33:/opt/tinyos-2.1.2/tos/system/GenericSlotterP.nc" name="AsyncStdControl" provided="1" ref="0x7f2d66a4e158">
+      <component-ref nicename="tos.system.GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AsyncStdControl" ref="0x7f2d66a4e158" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AsyncStdControl" qname="AsyncStdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x7f2d66a4e4a8" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d66a4e630" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/opt/tinyos-2.1.2/tos/system/LedsC.nc" name="Leds" provided="1" ref="0x7f2d66d92020">
+      <component-ref nicename="tos.system.LedsC" qname="LedsC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x7f2d66d92020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x7f2d66d92370" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x7f2d66d924f8" scoped=""/>
+        <function-ref name="led1On" ref="0x7f2d66d92680" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x7f2d66d92808" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x7f2d66d92990" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66d92b18" scoped=""/>
+        <function-ref name="led1Off" ref="0x7f2d66d92ca0" scoped=""/>
+        <function-ref name="led2Off" ref="0x7f2d66d91330" scoped=""/>
+        <function-ref name="set" ref="0x7f2d66d92e28" scoped=""/>
+        <function-ref name="led0On" ref="0x7f2d66d91020" scoped=""/>
+        <function-ref name="led2On" ref="0x7f2d66d911a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="58:/opt/tinyos-2.1.2/tos/system/MainC.nc" name="SoftwareInit" provided="0" ref="0x7f2d66fb00e0">
+      <component-ref nicename="tos.system.MainC" qname="MainC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SoftwareInit" ref="0x7f2d66fb00e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f2d66fb0430" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="35:/opt/tinyos-2.1.2/tos/system/GenericSlotterP.nc" name="SlotterControl" provided="1" ref="0x7f2d66a4d020">
+      <component-ref nicename="tos.system.GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SlotterControl" ref="0x7f2d66a4d020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SlotterControl" qname="SlotterControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f2d66a4dca0" scoped=""/>
+        <function-ref name="getSlot" ref="0x7f2d66a4d4f8" scoped=""/>
+        <function-ref name="synchronize" ref="0x7f2d66a4d680" scoped=""/>
+        <function-ref name="isSynchornized" ref="0x7f2d66a4d808" scoped=""/>
+        <function-ref name="getAlarm" ref="0x7f2d66a4d990" scoped=""/>
+        <function-ref name="getRemaining" ref="0x7f2d66a4db18" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d66a4d370" scoped=""/>
+      </interface-functions>
+    </interface><component loc="30:/opt/tinyos-2.1.2/tos/system/GenericSlotterP.nc" nicename="tos.system.GenericSlotterP" qname="GenericSlotterP">
+      <documentation loc="23:/opt/tinyos-2.1.2/tos/system/GenericSlotterP.nc">
+        <short>
+
+ </short>
+        <long>
+
+ @author Octav Chipara
+ @version $Revision$
+ @date $Date$
+</long>
+      </documentation>
+      <module/>
+    </component><component loc="45:/opt/tinyos-2.1.2/tos/system/LedsC.nc" nicename="tos.system.LedsC" qname="LedsC">
+      <documentation loc="34:/opt/tinyos-2.1.2/tos/system/LedsC.nc">
+        <short>
+
+ The basic TinyOS LEDs abstraction.</short>
+        <long>
+
+ The basic TinyOS LEDs abstraction.
+
+ @author Phil Buonadonna
+ @author David Gay
+ @author Philip Levis
+ @author Joe Polastre
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="51:/opt/tinyos-2.1.2/tos/system/LedsC.nc">
+          <from><interface-ref name="Leds" ref="0x7f2d66d92020" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x7f2d66d8e7e0" scoped=""/></to>
+        </wire>
+        <wire loc="53:/opt/tinyos-2.1.2/tos/system/LedsC.nc">
+          <from><interface-ref name="Init" ref="0x7f2d66d668f8" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f2d66d8e218" scoped=""/></to>
+        </wire>
+        <wire loc="54:/opt/tinyos-2.1.2/tos/system/LedsC.nc">
+          <from><interface-ref name="Led0" ref="0x7f2d66d86a20" scoped=""/></from>
+          <to><interface-ref name="Led0" ref="0x7f2d66d8f450" scoped=""/></to>
+        </wire>
+        <wire loc="55:/opt/tinyos-2.1.2/tos/system/LedsC.nc">
+          <from><interface-ref name="Led1" ref="0x7f2d66d8ac68" scoped=""/></from>
+          <to><interface-ref name="Led1" ref="0x7f2d66d68688" scoped=""/></to>
+        </wire>
+        <wire loc="56:/opt/tinyos-2.1.2/tos/system/LedsC.nc">
+          <from><interface-ref name="Led2" ref="0x7f2d66d89df0" scoped=""/></from>
+          <to><interface-ref name="Led2" ref="0x7f2d66d67810" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="41(GenericSlotterC.Alarm32khz32C):/opt/tinyos-2.1.2/tos/chips/msp430/timer/Alarm32khz32C.nc" nicename="tos.chips.msp430.timer.Alarm32khz32C" qname="GenericSlotterC.Alarm32khz32C">
+      <documentation loc="33:/opt/tinyos-2.1.2/tos/chips/msp430/timer/Alarm32khz32C.nc">
+        <short>
+ Alarm32khzC is the alarm for async 32khz alarms
+
+ </short>
+        <long>
+ Alarm32khzC is the alarm for async 32khz alarms
+
+ @author Cory Sharp &lt;cssharp@eecs.berkeley.edu&gt;
+ @see  Please refer to TEP 102 for more information about this component and its
+          intended use.
+</long>
+      </documentation>
+      <instance number="0">
+        <component-ref nicename="tos.chips.msp430.timer.Alarm32khz32C" qname="Alarm32khz32C"/>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="53:/opt/tinyos-2.1.2/tos/chips/msp430/timer/Alarm32khz32C.nc">
+          <from><interface-ref name="Alarm" ref="0x7f2d6693f2d0" scoped=""/></from>
+          <to><interface-ref name="Alarm" ref="0x7f2d65189830" scoped=""/></to>
+        </wire>
+        <wire loc="52:/opt/tinyos-2.1.2/tos/chips/msp430/timer/Alarm32khz32C.nc">
+          <from><interface-ref name="Init" ref="0x7f2d66a1fa80" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f2d6518e1a8" scoped=""/></to>
+        </wire>
+        <wire loc="55:/opt/tinyos-2.1.2/tos/chips/msp430/timer/Alarm32khz32C.nc">
+          <from><interface-ref name="AlarmFrom" ref="0x7f2d65183ce8" scoped=""/></from>
+          <to><interface-ref name="Alarm" ref="0x7f2d6518e990" scoped=""/></to>
+        </wire>
+        <wire loc="56:/opt/tinyos-2.1.2/tos/chips/msp430/timer/Alarm32khz32C.nc">
+          <from><interface-ref name="Counter" ref="0x7f2d65185ad0" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x7f2d669b3630" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="56:/opt/tinyos-2.1.2/tos/system/MainC.nc" nicename="tos.system.MainC" qname="MainC">
+      <documentation loc="45:/opt/tinyos-2.1.2/tos/system/MainC.nc">
+        <short>
+ MainC is the system interface the TinyOS boot sequence.</short>
+        <long>
+ MainC is the system interface the TinyOS boot sequence. It wires the
+ boot sequence implementation to the scheduler and hardware resources.
+
+ @author Philip Levis
+ @date   August 6 2005
+ @see    TEP 107: Boot Sequence
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="72:/opt/tinyos-2.1.2/tos/system/MainC.nc">
+          <from><interface-ref name="Boot" ref="0x7f2d66fb2c40" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x7f2d66e02680" scoped=""/></to>
+        </wire>
+        <wire loc="67:/opt/tinyos-2.1.2/tos/system/MainC.nc">
+          <from><interface-ref name="Scheduler" ref="0x7f2d66e02cb8" scoped=""/></from>
+          <to><interface-ref name="Scheduler" ref="0x7f2d67484be8" scoped=""/></to>
+        </wire>
+        <wire loc="68:/opt/tinyos-2.1.2/tos/system/MainC.nc">
+          <from><interface-ref name="PlatformInit" ref="0x7f2d66df6728" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f2d66fac020" scoped=""/></to>
+        </wire>
+        <wire loc="71:/opt/tinyos-2.1.2/tos/system/MainC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x7f2d66df6df0" scoped=""/></from>
+          <to><interface-ref name="SoftwareInit" ref="0x7f2d66fb00e0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

@@ -1,0 +1,103 @@
+<?xml version="1.0" ?><interfacedef loc="30:/opt/tinyos-2.1.2/tos/interfaces/SlotterControl.nc" nicename="tos.interfaces.SlotterControl" qname="SlotterControl">
+      <documentation loc="23:/opt/tinyos-2.1.2/tos/interfaces/SlotterControl.nc">
+        <short>
+
+ </short>
+        <long>
+
+ @author Octav Chipara
+ @version $Revision$
+ @date $Date$
+</long>
+      </documentation>
+      <function command="" loc="37:/opt/tinyos-2.1.2/tos/interfaces/SlotterControl.nc" name="stop" provided="0" ref="0x7f2d66b0b7f8">
+        <interfacedef-ref nicename="tos.interfaces.SlotterControl" qname="SlotterControl"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="38:/opt/tinyos-2.1.2/tos/interfaces/SlotterControl.nc" name="getSlot" provided="0" ref="0x7f2d66b09020">
+        <interfacedef-ref nicename="tos.interfaces.SlotterControl" qname="SlotterControl"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x7f2d67df1790"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="31:/opt/tinyos-2.1.2/tos/interfaces/SlotterControl.nc" name="synchronize" provided="0" ref="0x7f2d66b0d4b8">
+        <interfacedef-ref nicename="tos.interfaces.SlotterControl" qname="SlotterControl"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="error_t" ref="0x7f2d6747b1a8"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x7f2d67df1790"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="31:/opt/tinyos-2.1.2/tos/interfaces/SlotterControl.nc" name="toSlot" ref="0x7f2d66b0d248">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x7f2d67df1790"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="32:/opt/tinyos-2.1.2/tos/interfaces/SlotterControl.nc" name="isSynchornized" provided="0" ref="0x7f2d66b0dbc8">
+        <interfacedef-ref nicename="tos.interfaces.SlotterControl" qname="SlotterControl"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x7f2d67488c10"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="34:/opt/tinyos-2.1.2/tos/interfaces/SlotterControl.nc" name="getAlarm" provided="0" ref="0x7f2d66b0c328">
+        <interfacedef-ref nicename="tos.interfaces.SlotterControl" qname="SlotterControl"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f2d67df0020"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="36:/opt/tinyos-2.1.2/tos/interfaces/SlotterControl.nc" name="getRemaining" provided="0" ref="0x7f2d66b0b178">
+        <interfacedef-ref nicename="tos.interfaces.SlotterControl" qname="SlotterControl"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f2d67df0020"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="35:/opt/tinyos-2.1.2/tos/interfaces/SlotterControl.nc" name="getNow" provided="0" ref="0x7f2d66b0ca10">
+        <interfacedef-ref nicename="tos.interfaces.SlotterControl" qname="SlotterControl"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f2d67df0020"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+    </interfacedef>

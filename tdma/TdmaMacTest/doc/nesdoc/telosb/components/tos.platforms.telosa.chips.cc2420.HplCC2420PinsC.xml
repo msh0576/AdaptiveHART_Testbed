@@ -1,0 +1,1058 @@
+<?xml version="1.0" ?><component loc="40:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc" nicename="tos.platforms.telosa.chips.cc2420.HplCC2420PinsC" qname="HplCC2420PinsC">
+      <documentation loc="32:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc">
+        <short>
+ HPL implementation of general-purpose I/O for the ChipCon CC2420
+ radio connected to a TI MSP430 processor.</short>
+        <long>
+ HPL implementation of general-purpose I/O for the ChipCon CC2420
+ radio connected to a TI MSP430 processor.
+
+ @author Jonathan Hui &lt;jhui@archrock.com&gt;
+ @version $Revision: 1.4 $ $Date: 2006-12-12 18:23:44 $
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="73:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc">
+          <from><interface-ref name="FIFO" ref="0x7f2d667a6378" scoped=""/></from>
+          <to><interface-ref name="GeneralIO" ref="0x7f2d66796b18" scoped=""/></to>
+        </wire>
+        <wire loc="74:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc">
+          <from><interface-ref name="FIFOP" ref="0x7f2d667a5508" scoped=""/></from>
+          <to><interface-ref name="GeneralIO" ref="0x7f2d66791280" scoped=""/></to>
+        </wire>
+        <wire loc="75:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc">
+          <from><interface-ref name="RSTN" ref="0x7f2d667a4698" scoped=""/></from>
+          <to><interface-ref name="GeneralIO" ref="0x7f2d6678db18" scoped=""/></to>
+        </wire>
+        <wire loc="72:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc">
+          <from><interface-ref name="CSN" ref="0x7f2d667a71a0" scoped=""/></from>
+          <to><interface-ref name="GeneralIO" ref="0x7f2d6679a280" scoped=""/></to>
+        </wire>
+        <wire loc="77:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc">
+          <from><interface-ref name="VREN" ref="0x7f2d667a2998" scoped=""/></from>
+          <to><interface-ref name="GeneralIO" ref="0x7f2d66783b18" scoped=""/></to>
+        </wire>
+        <wire loc="71:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc">
+          <from><interface-ref name="CCA" ref="0x7f2d667a8020" scoped=""/></from>
+          <to><interface-ref name="GeneralIO" ref="0x7f2d667a0ad0" scoped=""/></to>
+        </wire>
+        <wire loc="76:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc">
+          <from><interface-ref name="SFD" ref="0x7f2d667a3810" scoped=""/></from>
+          <to><interface-ref name="GeneralIO" ref="0x7f2d66787280" scoped=""/></to>
+        </wire>
+        <wire loc="63:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc">
+          <from><interface-ref name="HplGeneralIO" ref="0x7f2d6679ec18" scoped=""/></from>
+          <to><interface-ref name="Port14" ref="0x7f2d66d51c88" scoped=""/></to>
+        </wire>
+        <wire loc="64:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc">
+          <from><interface-ref name="HplGeneralIO" ref="0x7f2d66799470" scoped=""/></from>
+          <to><interface-ref name="Port42" ref="0x7f2d66d24568" scoped=""/></to>
+        </wire>
+        <wire loc="65:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc">
+          <from><interface-ref name="HplGeneralIO" ref="0x7f2d66795c18" scoped=""/></from>
+          <to><interface-ref name="Port13" ref="0x7f2d66d53e10" scoped=""/></to>
+        </wire>
+        <wire loc="66:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc">
+          <from><interface-ref name="HplGeneralIO" ref="0x7f2d66790470" scoped=""/></from>
+          <to><interface-ref name="Port10" ref="0x7f2d66d57238" scoped=""/></to>
+        </wire>
+        <wire loc="67:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc">
+          <from><interface-ref name="HplGeneralIO" ref="0x7f2d6678cc18" scoped=""/></from>
+          <to><interface-ref name="Port46" ref="0x7f2d66d1c568" scoped=""/></to>
+        </wire>
+        <wire loc="68:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc">
+          <from><interface-ref name="HplGeneralIO" ref="0x7f2d66786470" scoped=""/></from>
+          <to><interface-ref name="Port41" ref="0x7f2d66d27668" scoped=""/></to>
+        </wire>
+        <wire loc="69:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc">
+          <from><interface-ref name="HplGeneralIO" ref="0x7f2d66782c18" scoped=""/></from>
+          <to><interface-ref name="Port45" ref="0x7f2d66d1e568" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="44:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc" name="FIFO" provided="1" ref="0x7f2d667a6378">
+      <component-ref nicename="tos.platforms.telosa.chips.cc2420.HplCC2420PinsC" qname="HplCC2420PinsC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FIFO" ref="0x7f2d667a6378" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d667a66c8" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d667a6850" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d667a69d8" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d667a6b60" scoped=""/>
+        <function-ref name="get" ref="0x7f2d667a6ce8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d667a6e70" scoped=""/>
+        <function-ref name="set" ref="0x7f2d667a5020" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d667a51a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc" name="FIFOP" provided="1" ref="0x7f2d667a5508">
+      <component-ref nicename="tos.platforms.telosa.chips.cc2420.HplCC2420PinsC" qname="HplCC2420PinsC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FIFOP" ref="0x7f2d667a5508" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d667a5858" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d667a59e0" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d667a5b68" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d667a5cf0" scoped=""/>
+        <function-ref name="get" ref="0x7f2d667a5e78" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d667a4030" scoped=""/>
+        <function-ref name="set" ref="0x7f2d667a41b8" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d667a4340" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc" name="RSTN" provided="1" ref="0x7f2d667a4698">
+      <component-ref nicename="tos.platforms.telosa.chips.cc2420.HplCC2420PinsC" qname="HplCC2420PinsC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RSTN" ref="0x7f2d667a4698" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d667a49e8" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d667a4b70" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d667a4cf8" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d667a4e80" scoped=""/>
+        <function-ref name="get" ref="0x7f2d667a3030" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d667a31b8" scoped=""/>
+        <function-ref name="set" ref="0x7f2d667a3340" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d667a34c8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc" name="CSN" provided="1" ref="0x7f2d667a71a0">
+      <component-ref nicename="tos.platforms.telosa.chips.cc2420.HplCC2420PinsC" qname="HplCC2420PinsC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CSN" ref="0x7f2d667a71a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d667a74f0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d667a7678" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d667a7800" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d667a7988" scoped=""/>
+        <function-ref name="get" ref="0x7f2d667a7b10" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d667a7c98" scoped=""/>
+        <function-ref name="set" ref="0x7f2d667a7e20" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d667a6020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc" name="VREN" provided="1" ref="0x7f2d667a2998">
+      <component-ref nicename="tos.platforms.telosa.chips.cc2420.HplCC2420PinsC" qname="HplCC2420PinsC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="VREN" ref="0x7f2d667a2998" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d667a2ce8" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d667a2e70" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d667a1020" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d667a11a8" scoped=""/>
+        <function-ref name="get" ref="0x7f2d667a1330" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d667a14b8" scoped=""/>
+        <function-ref name="set" ref="0x7f2d667a1640" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d667a17c8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc" name="CCA" provided="1" ref="0x7f2d667a8020">
+      <component-ref nicename="tos.platforms.telosa.chips.cc2420.HplCC2420PinsC" qname="HplCC2420PinsC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CCA" ref="0x7f2d667a8020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d667a8370" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d667a84f8" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d667a8680" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d667a8808" scoped=""/>
+        <function-ref name="get" ref="0x7f2d667a8990" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d667a8b18" scoped=""/>
+        <function-ref name="set" ref="0x7f2d667a8ca0" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d667a8e28" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/opt/tinyos-2.1.2/tos/platforms/telosa/chips/cc2420/HplCC2420PinsC.nc" name="SFD" provided="1" ref="0x7f2d667a3810">
+      <component-ref nicename="tos.platforms.telosa.chips.cc2420.HplCC2420PinsC" qname="HplCC2420PinsC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SFD" ref="0x7f2d667a3810" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d667a3b60" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d667a3ce8" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d667a3e70" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d667a2020" scoped=""/>
+        <function-ref name="get" ref="0x7f2d667a21a8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d667a2330" scoped=""/>
+        <function-ref name="set" ref="0x7f2d667a24b8" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d667a2640" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="44:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" name="HplGeneralIO" provided="0" ref="0x7f2d66795c18">
+      <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.FIFOM"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="HplGeneralIO" ref="0x7f2d66795c18" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d66794020" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d667941a8" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f2d66794330" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d667944b8" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66794640" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f2d667947c8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d66794950" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66794ad8" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f2d66794c60" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f2d66794de8" scoped=""/>
+        <function-ref name="set" ref="0x7f2d66793020" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f2d667931a8" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f2d66793330" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f2d667935b8" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d66793740" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" name="HplGeneralIO" provided="0" ref="0x7f2d66786470">
+      <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.SFDM"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="HplGeneralIO" ref="0x7f2d66786470" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d667867c0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d66786948" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f2d66786ad0" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d66786c58" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66786de0" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f2d66785020" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d667851a8" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66785330" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f2d667854b8" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f2d66785640" scoped=""/>
+        <function-ref name="set" ref="0x7f2d667857c8" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f2d66785950" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f2d66785ad8" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f2d66785d60" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d66784020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" name="GeneralIO" provided="1" ref="0x7f2d66791280">
+      <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.FIFOPM"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="GeneralIO" ref="0x7f2d66791280" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d667915d0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d66791758" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d667918e0" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66791a68" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66791bf0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d66791d78" scoped=""/>
+        <function-ref name="set" ref="0x7f2d66790020" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d667901a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" name="GeneralIO" provided="1" ref="0x7f2d66796b18">
+      <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.FIFOM"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="GeneralIO" ref="0x7f2d66796b18" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d66796e68" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d66795020" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d667951a8" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66795330" scoped=""/>
+        <function-ref name="get" ref="0x7f2d667954b8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d66795640" scoped=""/>
+        <function-ref name="set" ref="0x7f2d667957c8" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d66795950" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="84:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc" name="Port42" provided="1" ref="0x7f2d66d24568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIOC" qname="HplMsp430GeneralIOC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port42" ref="0x7f2d66d24568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d66d248b8" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d66d24a40" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f2d66d24bc8" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d66d24d50" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66d23020" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f2d66d231a8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d66d23330" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66d234b8" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f2d66d23640" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f2d66d237c8" scoped=""/>
+        <function-ref name="set" ref="0x7f2d66d23950" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f2d66d23ad8" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f2d66d23c60" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f2d66d22020" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d66d221a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" name="GeneralIO" provided="1" ref="0x7f2d6678db18">
+      <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.RSTNM"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="GeneralIO" ref="0x7f2d6678db18" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d6678de68" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d6678c020" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d6678c1a8" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d6678c330" scoped=""/>
+        <function-ref name="get" ref="0x7f2d6678c4b8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d6678c640" scoped=""/>
+        <function-ref name="set" ref="0x7f2d6678c7c8" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d6678c950" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" name="GeneralIO" provided="1" ref="0x7f2d66787280">
+      <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.SFDM"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="GeneralIO" ref="0x7f2d66787280" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d667875d0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d66787758" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d667878e0" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66787a68" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66787bf0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d66787d78" scoped=""/>
+        <function-ref name="set" ref="0x7f2d66786020" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d667861a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" name="GeneralIO" provided="1" ref="0x7f2d667a0ad0">
+      <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.CCAM"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="GeneralIO" ref="0x7f2d667a0ad0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d667a0e20" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d6679e020" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d6679e1a8" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d6679e330" scoped=""/>
+        <function-ref name="get" ref="0x7f2d6679e4b8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d6679e640" scoped=""/>
+        <function-ref name="set" ref="0x7f2d6679e7c8" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d6679e950" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" name="HplGeneralIO" provided="0" ref="0x7f2d66790470">
+      <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.FIFOPM"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="HplGeneralIO" ref="0x7f2d66790470" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d667907c0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d66790948" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f2d66790ad0" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d66790c58" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66790de0" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f2d6678f020" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d6678f1a8" scoped=""/>
+        <function-ref name="get" ref="0x7f2d6678f330" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f2d6678f4b8" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f2d6678f640" scoped=""/>
+        <function-ref name="set" ref="0x7f2d6678f7c8" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f2d6678f950" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f2d6678fad8" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f2d6678fd60" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d6678e020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="83:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc" name="Port41" provided="1" ref="0x7f2d66d27668">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIOC" qname="HplMsp430GeneralIOC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port41" ref="0x7f2d66d27668" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d66d279b8" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d66d27b40" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f2d66d27cc8" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d66d27e50" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66d25020" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f2d66d251a8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d66d25330" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66d254b8" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f2d66d25640" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f2d66d257c8" scoped=""/>
+        <function-ref name="set" ref="0x7f2d66d25950" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f2d66d25ad8" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f2d66d25c60" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f2d66d24020" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d66d241a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" name="HplGeneralIO" provided="0" ref="0x7f2d6679ec18">
+      <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.CCAM"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="HplGeneralIO" ref="0x7f2d6679ec18" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d6679d020" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d6679d1a8" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f2d6679d330" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d6679d4b8" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d6679d640" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f2d6679d7c8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d6679d950" scoped=""/>
+        <function-ref name="get" ref="0x7f2d6679dad8" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f2d6679dc60" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f2d6679dde8" scoped=""/>
+        <function-ref name="set" ref="0x7f2d6679c020" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f2d6679c1a8" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f2d6679c330" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f2d6679c5b8" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d6679c740" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="87:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc" name="Port45" provided="1" ref="0x7f2d66d1e568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIOC" qname="HplMsp430GeneralIOC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port45" ref="0x7f2d66d1e568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d66d1e8b8" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d66d1ea40" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f2d66d1ebc8" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d66d1ed50" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66d1d020" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f2d66d1d1a8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d66d1d330" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66d1d4b8" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f2d66d1d640" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f2d66d1d7c8" scoped=""/>
+        <function-ref name="set" ref="0x7f2d66d1d950" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f2d66d1dad8" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f2d66d1dc60" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f2d66d1c020" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d66d1c1a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" name="GeneralIO" provided="1" ref="0x7f2d6679a280">
+      <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.CSNM"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="GeneralIO" ref="0x7f2d6679a280" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d6679a5d0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d6679a758" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d6679a8e0" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d6679aa68" scoped=""/>
+        <function-ref name="get" ref="0x7f2d6679abf0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d6679ad78" scoped=""/>
+        <function-ref name="set" ref="0x7f2d66799020" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d667991a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" name="HplGeneralIO" provided="0" ref="0x7f2d66799470">
+      <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.CSNM"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="HplGeneralIO" ref="0x7f2d66799470" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d667997c0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d66799948" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f2d66799ad0" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d66799c58" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66799de0" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f2d66798020" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d667981a8" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66798330" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f2d667984b8" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f2d66798640" scoped=""/>
+        <function-ref name="set" ref="0x7f2d667987c8" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f2d66798950" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f2d66798ad8" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f2d66798d60" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d66797020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" name="GeneralIO" provided="1" ref="0x7f2d66783b18">
+      <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.VRENM"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="GeneralIO" ref="0x7f2d66783b18" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d66783e68" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d66782020" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d667821a8" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66782330" scoped=""/>
+        <function-ref name="get" ref="0x7f2d667824b8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d66782640" scoped=""/>
+        <function-ref name="set" ref="0x7f2d667827c8" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d66782950" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc" name="Port10" provided="1" ref="0x7f2d66d57238">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIOC" qname="HplMsp430GeneralIOC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port10" ref="0x7f2d66d57238" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d66d57588" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d66d57710" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f2d66d57898" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d66d57a20" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66d57ba8" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f2d66d57d30" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d66d62020" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66d621a8" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f2d66d62330" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f2d66d624b8" scoped=""/>
+        <function-ref name="set" ref="0x7f2d66d62640" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f2d66d627c8" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f2d66d62950" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f2d66d62bd8" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d66d62d60" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="53:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc" name="Port14" provided="1" ref="0x7f2d66d51c88">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIOC" qname="HplMsp430GeneralIOC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port14" ref="0x7f2d66d51c88" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d66d50020" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d66d501a8" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f2d66d50330" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d66d504b8" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66d50640" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f2d66d507c8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d66d50950" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66d50ad8" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f2d66d50c60" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f2d66d50de8" scoped=""/>
+        <function-ref name="set" ref="0x7f2d66d4f020" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f2d66d4f1a8" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f2d66d4f330" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f2d66d4f5b8" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d66d4f740" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" name="HplGeneralIO" provided="0" ref="0x7f2d6678cc18">
+      <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.RSTNM"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="HplGeneralIO" ref="0x7f2d6678cc18" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d6678b020" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d6678b1a8" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f2d6678b330" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d6678b4b8" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d6678b640" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f2d6678b7c8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d6678b950" scoped=""/>
+        <function-ref name="get" ref="0x7f2d6678bad8" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f2d6678bc60" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f2d6678bde8" scoped=""/>
+        <function-ref name="set" ref="0x7f2d6678a020" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f2d6678a1a8" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f2d6678a330" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f2d6678a5b8" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d6678a740" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" name="HplGeneralIO" provided="0" ref="0x7f2d66782c18">
+      <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.VRENM"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="HplGeneralIO" ref="0x7f2d66782c18" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d66781020" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d667811a8" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f2d66781330" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d667814b8" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66781640" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f2d667817c8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d66781950" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66781ad8" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f2d66781c60" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f2d66781de8" scoped=""/>
+        <function-ref name="set" ref="0x7f2d66780020" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f2d667801a8" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f2d66780330" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f2d667805b8" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d66780740" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="88:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc" name="Port46" provided="1" ref="0x7f2d66d1c568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIOC" qname="HplMsp430GeneralIOC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port46" ref="0x7f2d66d1c568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d66d1c8b8" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d66d1ca40" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f2d66d1cbc8" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d66d1cd50" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66d1b020" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f2d66d1b1a8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d66d1b330" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66d1b4b8" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f2d66d1b640" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f2d66d1b7c8" scoped=""/>
+        <function-ref name="set" ref="0x7f2d66d1b950" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f2d66d1bad8" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f2d66d1bc60" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f2d66d1a020" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d66d1a1a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="52:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc" name="Port13" provided="1" ref="0x7f2d66d53e10">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIOC" qname="HplMsp430GeneralIOC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port13" ref="0x7f2d66d53e10" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f2d66d521a8" scoped=""/>
+        <function-ref name="isInput" ref="0x7f2d66d52330" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f2d66d524b8" scoped=""/>
+        <function-ref name="toggle" ref="0x7f2d66d52640" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f2d66d527c8" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f2d66d52950" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f2d66d52ad8" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66d52c60" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f2d66d52de8" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f2d66d51020" scoped=""/>
+        <function-ref name="set" ref="0x7f2d66d511a8" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f2d66d51330" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f2d66d514b8" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f2d66d51740" scoped=""/>
+        <function-ref name="clr" ref="0x7f2d66d518c8" scoped=""/>
+      </interface-functions>
+    </interface><component loc="42(HplCC2420PinsC.VRENM):/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.VRENM">
+      <documentation loc="33:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc">
+        <short>
+ Implementation of the general-purpose I/O abstraction
+ for the TI MSP430 microcontroller.</short>
+        <long>
+ Implementation of the general-purpose I/O abstraction
+ for the TI MSP430 microcontroller.
+
+ @author Joe Polastre
+ @see  Please refer to TEP 117 for more information about this component and its
+          intended use.
+</long>
+      </documentation>
+      <instance number="9">
+        <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="Msp430GpioC"/>
+      </instance>
+      <module/>
+    </component><component loc="42(HplCC2420PinsC.CSNM):/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.CSNM">
+      <documentation loc="33:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc">
+        <short>
+ Implementation of the general-purpose I/O abstraction
+ for the TI MSP430 microcontroller.</short>
+        <long>
+ Implementation of the general-purpose I/O abstraction
+ for the TI MSP430 microcontroller.
+
+ @author Joe Polastre
+ @see  Please refer to TEP 117 for more information about this component and its
+          intended use.
+</long>
+      </documentation>
+      <instance number="4">
+        <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="Msp430GpioC"/>
+      </instance>
+      <module/>
+    </component><component loc="42(HplCC2420PinsC.FIFOPM):/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.FIFOPM">
+      <documentation loc="33:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc">
+        <short>
+ Implementation of the general-purpose I/O abstraction
+ for the TI MSP430 microcontroller.</short>
+        <long>
+ Implementation of the general-purpose I/O abstraction
+ for the TI MSP430 microcontroller.
+
+ @author Joe Polastre
+ @see  Please refer to TEP 117 for more information about this component and its
+          intended use.
+</long>
+      </documentation>
+      <instance number="6">
+        <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="Msp430GpioC"/>
+      </instance>
+      <module/>
+    </component><component loc="42(HplCC2420PinsC.CCAM):/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.CCAM">
+      <documentation loc="33:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc">
+        <short>
+ Implementation of the general-purpose I/O abstraction
+ for the TI MSP430 microcontroller.</short>
+        <long>
+ Implementation of the general-purpose I/O abstraction
+ for the TI MSP430 microcontroller.
+
+ @author Joe Polastre
+ @see  Please refer to TEP 117 for more information about this component and its
+          intended use.
+</long>
+      </documentation>
+      <instance number="3">
+        <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="Msp430GpioC"/>
+      </instance>
+      <module/>
+    </component><component loc="42(HplCC2420PinsC.FIFOM):/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.FIFOM">
+      <documentation loc="33:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc">
+        <short>
+ Implementation of the general-purpose I/O abstraction
+ for the TI MSP430 microcontroller.</short>
+        <long>
+ Implementation of the general-purpose I/O abstraction
+ for the TI MSP430 microcontroller.
+
+ @author Joe Polastre
+ @see  Please refer to TEP 117 for more information about this component and its
+          intended use.
+</long>
+      </documentation>
+      <instance number="5">
+        <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="Msp430GpioC"/>
+      </instance>
+      <module/>
+    </component><component loc="42(HplCC2420PinsC.SFDM):/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.SFDM">
+      <documentation loc="33:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc">
+        <short>
+ Implementation of the general-purpose I/O abstraction
+ for the TI MSP430 microcontroller.</short>
+        <long>
+ Implementation of the general-purpose I/O abstraction
+ for the TI MSP430 microcontroller.
+
+ @author Joe Polastre
+ @see  Please refer to TEP 117 for more information about this component and its
+          intended use.
+</long>
+      </documentation>
+      <instance number="8">
+        <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="Msp430GpioC"/>
+      </instance>
+      <module/>
+    </component><component loc="45:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc" nicename="tos.chips.msp430.pins.HplMsp430GeneralIOC" qname="HplMsp430GeneralIOC">
+      <documentation loc="35:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+        <short>
+ HPL for the TI MSP430 family of microprocessors.</short>
+        <long>
+ HPL for the TI MSP430 family of microprocessors. This provides an
+ abstraction for general-purpose I/O.
+
+ @author Joe Polastre
+ @author Xavier Orduna &lt;xorduna@dexmatech.com&gt;
+ @author Peter A. Bigot &lt;pab@peoplepowerco.com&gt;
+ @author Eric B. Decker &lt;cire831@gmail.com&gt;
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="442:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port14" ref="0x7f2d66d51c88" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c89ca0" scoped=""/></to>
+        </wire>
+        <wire loc="455:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port26" ref="0x7f2d66d3d568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c5aca0" scoped=""/></to>
+        </wire>
+        <wire loc="531:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SDA" ref="0x7f2d66cf37d0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c4c3d8" scoped=""/></to>
+        </wire>
+        <wire loc="551:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC6" ref="0x7f2d66ccf558" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bc6ca0" scoped=""/></to>
+        </wire>
+        <wire loc="532:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SOMI0" ref="0x7f2d66cf1660" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c48ca0" scoped=""/></to>
+        </wire>
+        <wire loc="460:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port30" ref="0x7f2d66d39568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c51ca0" scoped=""/></to>
+        </wire>
+        <wire loc="473:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port42" ref="0x7f2d66d24568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c23ca0" scoped=""/></to>
+        </wire>
+        <wire loc="486:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port54" ref="0x7f2d66d10568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bf5ca0" scoped=""/></to>
+        </wire>
+        <wire loc="497:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port64" ref="0x7f2d66d00568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bd0ca0" scoped=""/></to>
+        </wire>
+        <wire loc="535:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="UTXD0" ref="0x7f2d66ceb560" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c3fca0" scoped=""/></to>
+        </wire>
+        <wire loc="545:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC0" ref="0x7f2d66cdb558" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66be2ca0" scoped=""/></to>
+        </wire>
+        <wire loc="557:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SVSIN" ref="0x7f2d66cc6560" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bc13d8" scoped=""/></to>
+        </wire>
+        <wire loc="445:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port17" ref="0x7f2d66d4b7f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c7a3d8" scoped=""/></to>
+        </wire>
+        <wire loc="536:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="URXD0" ref="0x7f2d66ce9560" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c3a3d8" scoped=""/></to>
+        </wire>
+        <wire loc="450:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port21" ref="0x7f2d66d47568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c713d8" scoped=""/></to>
+        </wire>
+        <wire loc="463:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port33" ref="0x7f2d66d33568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c433d8" scoped=""/></to>
+        </wire>
+        <wire loc="476:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port45" ref="0x7f2d66d1e568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c143d8" scoped=""/></to>
+        </wire>
+        <wire loc="489:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port57" ref="0x7f2d66d0a568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66be63d8" scoped=""/></to>
+        </wire>
+        <wire loc="500:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port67" ref="0x7f2d66cfa568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bc13d8" scoped=""/></to>
+        </wire>
+        <wire loc="440:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port12" ref="0x7f2d66d54020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c92ca0" scoped=""/></to>
+        </wire>
+        <wire loc="453:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port24" ref="0x7f2d66d41568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c64d08" scoped=""/></to>
+        </wire>
+        <wire loc="466:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port36" ref="0x7f2d66d2d568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c35ca0" scoped=""/></to>
+        </wire>
+        <wire loc="530:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SIMO0" ref="0x7f2d66cf5970" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c4c3d8" scoped=""/></to>
+        </wire>
+        <wire loc="548:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC3" ref="0x7f2d66cd5558" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bd43d8" scoped=""/></to>
+        </wire>
+        <wire loc="555:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="DAC1" ref="0x7f2d66cc9558" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bc13d8" scoped=""/></to>
+        </wire>
+        <wire loc="541:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="UCLK1" ref="0x7f2d66ce1560" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bf93d8" scoped=""/></to>
+        </wire>
+        <wire loc="471:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port40" ref="0x7f2d66d29568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c2cdd8" scoped=""/></to>
+        </wire>
+        <wire loc="484:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port52" ref="0x7f2d66d14568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bfeca0" scoped=""/></to>
+        </wire>
+        <wire loc="495:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port62" ref="0x7f2d66d04568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bd9ca0" scoped=""/></to>
+        </wire>
+        <wire loc="549:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC4" ref="0x7f2d66cd3558" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bd0ca0" scoped=""/></to>
+        </wire>
+        <wire loc="538:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="STE1" ref="0x7f2d66ce7558" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c07ca0" scoped=""/></to>
+        </wire>
+        <wire loc="443:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port15" ref="0x7f2d66d4fb00" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c843d8" scoped=""/></to>
+        </wire>
+        <wire loc="456:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port27" ref="0x7f2d66d3b568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c553d8" scoped=""/></to>
+        </wire>
+        <wire loc="493:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port60" ref="0x7f2d66d08568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66be2ca0" scoped=""/></to>
+        </wire>
+        <wire loc="461:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port31" ref="0x7f2d66d37568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c4c3d8" scoped=""/></to>
+        </wire>
+        <wire loc="474:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port43" ref="0x7f2d66d22568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c1e3d8" scoped=""/></to>
+        </wire>
+        <wire loc="487:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port55" ref="0x7f2d66d0e568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bef3d8" scoped=""/></to>
+        </wire>
+        <wire loc="498:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port65" ref="0x7f2d66cfe568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bca3d8" scoped=""/></to>
+        </wire>
+        <wire loc="540:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SOMI1" ref="0x7f2d66ce3560" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bfeca0" scoped=""/></to>
+        </wire>
+        <wire loc="438:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port10" ref="0x7f2d66d57238" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66cc0e18" scoped=""/></to>
+        </wire>
+        <wire loc="451:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port22" ref="0x7f2d66d45568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c6dca0" scoped=""/></to>
+        </wire>
+        <wire loc="464:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port34" ref="0x7f2d66d31568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c3fca0" scoped=""/></to>
+        </wire>
+        <wire loc="477:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port46" ref="0x7f2d66d1c568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c10ca0" scoped=""/></to>
+        </wire>
+        <wire loc="542:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="UTXD1" ref="0x7f2d66cdf560" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c35ca0" scoped=""/></to>
+        </wire>
+        <wire loc="546:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC1" ref="0x7f2d66cd9558" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bdd3d8" scoped=""/></to>
+        </wire>
+        <wire loc="552:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC7" ref="0x7f2d66ccd558" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bc13d8" scoped=""/></to>
+        </wire>
+        <wire loc="482:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port50" ref="0x7f2d66d18568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c07ca0" scoped=""/></to>
+        </wire>
+        <wire loc="543:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="URXD1" ref="0x7f2d66cdd560" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c303d8" scoped=""/></to>
+        </wire>
+        <wire loc="441:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port13" ref="0x7f2d66d53e10" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c8d3d8" scoped=""/></to>
+        </wire>
+        <wire loc="454:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port25" ref="0x7f2d66d3f568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c5f3d8" scoped=""/></to>
+        </wire>
+        <wire loc="467:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port37" ref="0x7f2d66d2b568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c303d8" scoped=""/></to>
+        </wire>
+        <wire loc="539:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SIMO1" ref="0x7f2d66ce5560" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c023d8" scoped=""/></to>
+        </wire>
+        <wire loc="550:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC5" ref="0x7f2d66cd1558" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bca3d8" scoped=""/></to>
+        </wire>
+        <wire loc="472:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port41" ref="0x7f2d66d27668" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c27478" scoped=""/></to>
+        </wire>
+        <wire loc="485:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port53" ref="0x7f2d66d12568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bf93d8" scoped=""/></to>
+        </wire>
+        <wire loc="496:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port63" ref="0x7f2d66d02568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bd43d8" scoped=""/></to>
+        </wire>
+        <wire loc="444:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port16" ref="0x7f2d66d4d978" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c7fca0" scoped=""/></to>
+        </wire>
+        <wire loc="494:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port61" ref="0x7f2d66d06568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bdd3d8" scoped=""/></to>
+        </wire>
+        <wire loc="449:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port20" ref="0x7f2d66d49668" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c76ca0" scoped=""/></to>
+        </wire>
+        <wire loc="462:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port32" ref="0x7f2d66d35568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c48ca0" scoped=""/></to>
+        </wire>
+        <wire loc="475:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port44" ref="0x7f2d66d20568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c1aca0" scoped=""/></to>
+        </wire>
+        <wire loc="488:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port56" ref="0x7f2d66d0c568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bebca0" scoped=""/></to>
+        </wire>
+        <wire loc="499:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port66" ref="0x7f2d66cfc568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bc6ca0" scoped=""/></to>
+        </wire>
+        <wire loc="439:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port11" ref="0x7f2d66d61140" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c96478" scoped=""/></to>
+        </wire>
+        <wire loc="452:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port23" ref="0x7f2d66d43568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c683d8" scoped=""/></to>
+        </wire>
+        <wire loc="465:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port35" ref="0x7f2d66d2f568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c3a3d8" scoped=""/></to>
+        </wire>
+        <wire loc="478:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port47" ref="0x7f2d66d1a568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c0b3d8" scoped=""/></to>
+        </wire>
+        <wire loc="534:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SCL" ref="0x7f2d66ced548" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c433d8" scoped=""/></to>
+        </wire>
+        <wire loc="547:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC2" ref="0x7f2d66cd7558" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bd9ca0" scoped=""/></to>
+        </wire>
+        <wire loc="533:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="UCLK0" ref="0x7f2d66cef560" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c433d8" scoped=""/></to>
+        </wire>
+        <wire loc="483:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port51" ref="0x7f2d66d16568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c023d8" scoped=""/></to>
+        </wire>
+        <wire loc="554:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="DAC0" ref="0x7f2d66ccb558" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66bc6ca0" scoped=""/></to>
+        </wire>
+        <wire loc="558:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SVSOUT" ref="0x7f2d66cc4568" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66be63d8" scoped=""/></to>
+        </wire>
+        <wire loc="529:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="STE0" ref="0x7f2d66cf85b8" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f2d66c51ca0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="42(HplCC2420PinsC.RSTNM):/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc" nicename="tos.chips.msp430.pins.Msp430GpioC" qname="HplCC2420PinsC.RSTNM">
+      <documentation loc="33:/opt/tinyos-2.1.2/tos/chips/msp430/pins/Msp430GpioC.nc">
+        <short>
+ Implementation of the general-purpose I/O abstraction
+ for the TI MSP430 microcontroller.</short>
+        <long>
+ Implementation of the general-purpose I/O abstraction
+ for the TI MSP430 microcontroller.
+
+ @author Joe Polastre
+ @see  Please refer to TEP 117 for more information about this component and its
+          intended use.
+</long>
+      </documentation>
+      <instance number="7">
+        <component-ref nicename="tos.chips.msp430.pins.Msp430GpioC" qname="Msp430GpioC"/>
+      </instance>
+      <module/>
+    </component></referenced></component>

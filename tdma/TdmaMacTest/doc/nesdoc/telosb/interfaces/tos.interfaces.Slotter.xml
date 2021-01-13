@@ -1,0 +1,31 @@
+<?xml version="1.0" ?><interfacedef loc="30:/opt/tinyos-2.1.2/tos/interfaces/Slotter.nc" nicename="tos.interfaces.Slotter" qname="Slotter">
+      <documentation loc="23:/opt/tinyos-2.1.2/tos/interfaces/Slotter.nc">
+        <short>
+
+ </short>
+        <long>
+
+ @author Octav Chipara
+ @version $Revision$
+ @date $Date$
+</long>
+      </documentation>
+      <function event="" loc="31:/opt/tinyos-2.1.2/tos/interfaces/Slotter.nc" name="slot" provided="0" ref="0x7f2d66b0e020">
+        <interfacedef-ref nicename="tos.interfaces.Slotter" qname="Slotter"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x7f2d67df1790"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="31:/opt/tinyos-2.1.2/tos/interfaces/Slotter.nc" name="num" ref="0x7f2d66b19d60">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x7f2d67df1790"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+    </interfacedef>

@@ -1,0 +1,38 @@
+#**************************************************************************
+# * file:        TdmaMac Makefile for platform(/opt/tinyos2.1.2/tos/platforms/z1/mac/) 
+# *
+# * author:      A. Ajith Kumar S.
+# * copyright:   (c) A. Ajith Kumar S. 
+# * homepage:    www.hib.no/ansatte/aaks
+# * email:       aji3003 @ gmail.com
+# **************************************************************************
+# * part of:     TinyOS MAC tutorial.
+# * Refined on:  26-June-2015
+# **************************************************************************
+# *This file is part of TinyOS MAC tutorial.
+# *
+# *TinyOS MAC tutorial is free software: you can redistribute it and/or modify
+# *it under the terms of the GNU General Public License as published by
+# *the Free Software Foundation, either version 3 of the License, or
+# *(at your option) any later version.
+# *
+# *TinyOS MAC tutorial is distributed in the hope that it will be useful,
+# *but WITHOUT ANY WARRANTY; without even the implied warranty of
+# *MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# *GNU General Public License for more details.
+# *
+# *You should have received a copy of the GNU General Public License
+# *along with TinyOS MAC tutorial.  If not, see <http://www.gnu.org/licenses/>./
+# **************************************************************************
+# Sources from TKN154 partly sourced from Upma apps
+# Make sure that TinyOS Makerules has been included *before* including
+# this Makefile, because it expands the PLATFORM variable, which we need
+# Last update @aaks-25-June-2015
+# **************************************************************************
+# Copy-paste glue code to use same interfaces @aaks
+# We include several platform-glue components from telosb, because they are
+# identical on the z1 platform (e.g. Ieee802154BeaconEnabledC.nc,
+
+TOSMAKE_FIRST_FLAGS += -I$(TOSDIR)/platforms/z1/mac/tdmaMac \
+		-I$(TOSDIR)/chips/cc2420_tkn154
+	

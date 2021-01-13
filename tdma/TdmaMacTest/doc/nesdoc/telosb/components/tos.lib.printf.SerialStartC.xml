@@ -1,0 +1,183 @@
+<?xml version="1.0" ?><component loc="40:/opt/tinyos-2.1.2/tos/lib/printf/SerialStartC.nc" nicename="tos.lib.printf.SerialStartC" qname="SerialStartC">
+      <documentation loc="33:/opt/tinyos-2.1.2/tos/lib/printf/SerialStartC.nc">
+        <short>
+ Including this configuration will start the Serial port at boot time.</short>
+        <long>
+ Including this configuration will start the Serial port at boot time. This
+ is very useful if you use the serial port for debug only.
+
+ @author Thomas Schmid
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="44:/opt/tinyos-2.1.2/tos/lib/printf/SerialStartC.nc">
+          <from><interface-ref name="Boot" ref="0x7f2d6586ac08" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x7f2d66fb2c40" scoped=""/></to>
+        </wire>
+        <wire loc="47:/opt/tinyos-2.1.2/tos/lib/printf/SerialStartC.nc">
+          <from><interface-ref name="SerialControl" ref="0x7f2d658673b0" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x7f2d65c11aa0" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification/><referenced><interface loc="46:/opt/tinyos-2.1.2/tos/lib/serial/SerialActiveMessageC.nc" name="SplitControl" provided="1" ref="0x7f2d65c11aa0">
+      <component-ref nicename="tos.lib.serial.SerialActiveMessageC" qname="SerialActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SplitControl" ref="0x7f2d65c11aa0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f2d65c11df0" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f2d65c0e020" scoped=""/>
+        <function-ref name="start" ref="0x7f2d65c0e1a8" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d65c0e330" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="57:/opt/tinyos-2.1.2/tos/system/MainC.nc" name="Boot" provided="1" ref="0x7f2d66fb2c40">
+      <component-ref nicename="tos.system.MainC" qname="MainC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x7f2d66fb2c40" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x7f2d66fb1020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="40:/opt/tinyos-2.1.2/tos/lib/printf/SerialStartP.nc" name="SerialControl" provided="0" ref="0x7f2d658673b0">
+      <component-ref nicename="tos.lib.printf.SerialStartP" qname="SerialStartP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SerialControl" ref="0x7f2d658673b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f2d65867700" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f2d65867888" scoped=""/>
+        <function-ref name="start" ref="0x7f2d65867a10" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d65867b98" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="39:/opt/tinyos-2.1.2/tos/lib/printf/SerialStartP.nc" name="Boot" provided="0" ref="0x7f2d6586ac08">
+      <component-ref nicename="tos.lib.printf.SerialStartP" qname="SerialStartP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x7f2d6586ac08" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x7f2d65867020" scoped=""/>
+      </interface-functions>
+    </interface><component loc="44:/opt/tinyos-2.1.2/tos/lib/serial/SerialActiveMessageC.nc" nicename="tos.lib.serial.SerialActiveMessageC" qname="SerialActiveMessageC">
+      <documentation loc="71:/opt/tinyos-2.1.2/tos/lib/serial/Serial.h">
+        <short>
+ </short>
+        <long>
+ @author Phil Buonadonna
+ @author Lewis Girod
+ @author Ben Greenstein
+ @author Philip Levis
+ @date   August 7 2005
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="61:/opt/tinyos-2.1.2/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="SplitControl" ref="0x7f2d65c11aa0" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x7f2d65baa728" scoped=""/></to>
+        </wire>
+        <wire loc="63:/opt/tinyos-2.1.2/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="AMSend" ref="0x7f2d65c0eaa8" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x7f2d65c04460" scoped=""/></to>
+        </wire>
+        <wire loc="65:/opt/tinyos-2.1.2/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="Packet" ref="0x7f2d65c0b2a8" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x7f2d65bb1d20" scoped=""/></to>
+        </wire>
+        <wire loc="64:/opt/tinyos-2.1.2/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="Receive" ref="0x7f2d65c0dc38" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f2d65bb2180" scoped=""/></to>
+        </wire>
+        <wire loc="67:/opt/tinyos-2.1.2/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="PacketAcknowledgements" ref="0x7f2d65c09658" scoped=""/></from>
+          <to><interface-ref name="PacketAcknowledgements" ref="0x7f2d65bb0908" scoped=""/></to>
+        </wire>
+        <wire loc="66:/opt/tinyos-2.1.2/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="AMPacket" ref="0x7f2d65c0a020" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x7f2d65bb2738" scoped=""/></to>
+        </wire>
+        <wire loc="59:/opt/tinyos-2.1.2/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x7f2d66fb00e0" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f2d65baa110" scoped=""/></to>
+        </wire>
+        <wire loc="60:/opt/tinyos-2.1.2/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="Leds" ref="0x7f2d65ba58f8" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x7f2d65c08020" scoped=""/></to>
+        </wire>
+        <wire loc="69:/opt/tinyos-2.1.2/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="SubSend" ref="0x7f2d65baf308" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x7f2d65ba7208" scoped=""/>
+          <arguments>
+            <value cst="I:0">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="70:/opt/tinyos-2.1.2/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="SubReceive" ref="0x7f2d65bae020" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f2d65ba9760" scoped=""/>
+          <arguments>
+            <value cst="I:0">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="72:/opt/tinyos-2.1.2/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="SerialPacketInfo" ref="0x7f2d65ba5020" scoped=""/>
+          <arguments>
+            <value cst="I:0">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </from>
+          <to><interface-ref name="Info" ref="0x7f2d658b8020" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="56:/opt/tinyos-2.1.2/tos/system/MainC.nc" nicename="tos.system.MainC" qname="MainC">
+      <documentation loc="45:/opt/tinyos-2.1.2/tos/system/MainC.nc">
+        <short>
+ MainC is the system interface the TinyOS boot sequence.</short>
+        <long>
+ MainC is the system interface the TinyOS boot sequence. It wires the
+ boot sequence implementation to the scheduler and hardware resources.
+
+ @author Philip Levis
+ @date   August 6 2005
+ @see    TEP 107: Boot Sequence
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="72:/opt/tinyos-2.1.2/tos/system/MainC.nc">
+          <from><interface-ref name="Boot" ref="0x7f2d66fb2c40" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x7f2d66e02680" scoped=""/></to>
+        </wire>
+        <wire loc="67:/opt/tinyos-2.1.2/tos/system/MainC.nc">
+          <from><interface-ref name="Scheduler" ref="0x7f2d66e02cb8" scoped=""/></from>
+          <to><interface-ref name="Scheduler" ref="0x7f2d67484be8" scoped=""/></to>
+        </wire>
+        <wire loc="68:/opt/tinyos-2.1.2/tos/system/MainC.nc">
+          <from><interface-ref name="PlatformInit" ref="0x7f2d66df6728" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f2d66fac020" scoped=""/></to>
+        </wire>
+        <wire loc="71:/opt/tinyos-2.1.2/tos/system/MainC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x7f2d66df6df0" scoped=""/></from>
+          <to><interface-ref name="SoftwareInit" ref="0x7f2d66fb00e0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="37:/opt/tinyos-2.1.2/tos/lib/printf/SerialStartP.nc" nicename="tos.lib.printf.SerialStartP" qname="SerialStartP">
+      <documentation loc="33:/opt/tinyos-2.1.2/tos/lib/printf/SerialStartP.nc">
+        <short>
+ </short>
+        <long>
+ @author Thomas Schmid
+</long>
+      </documentation>
+      <module/>
+    </component></referenced></component>

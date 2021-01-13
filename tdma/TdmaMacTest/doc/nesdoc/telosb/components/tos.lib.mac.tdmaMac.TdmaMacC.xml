@@ -1,0 +1,897 @@
+<?xml version="1.0" ?><component loc="30:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc" nicename="tos.lib.mac.tdmaMac.TdmaMacC" qname="TdmaMacC">
+      <configuration/>
+      <wiring>
+        <wire loc="62:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="MacReceive" ref="0x7f2d66b36668" scoped=""/></from>
+          <to><interface-ref name="MacReceive" ref="0x7f2d66b2fd50" scoped=""/></to>
+        </wire>
+        <wire loc="57:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="MacPowerControl" ref="0x7f2d66b36d58" scoped=""/></from>
+          <to><interface-ref name="MacPowerControl" ref="0x7f2d66b2e478" scoped=""/></to>
+        </wire>
+        <wire loc="54:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="Init" ref="0x7f2d66b38730" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f2d66b34dd8" scoped=""/></to>
+        </wire>
+        <wire loc="61:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="MacSend" ref="0x7f2d66b37988" scoped=""/></from>
+          <to><interface-ref name="MacSend" ref="0x7f2d66b2f0a8" scoped=""/></to>
+        </wire>
+        <wire loc="58:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="FrameConfiguration" ref="0x7f2d66b38d80" scoped=""/></from>
+          <to><interface-ref name="Frame" ref="0x7f2d66b314e8" scoped=""/></to>
+        </wire>
+        <wire loc="65:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="GenericSlotterPowerControl" ref="0x7f2d66b11dc8" scoped=""/></from>
+          <to><interface-ref name="AsyncStdControl" ref="0x7f2d66a53610" scoped=""/></to>
+        </wire>
+        <wire loc="66:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="Slotter" ref="0x7f2d66b0e2b8" scoped=""/></from>
+          <to><interface-ref name="Slotter" ref="0x7f2d66a57388" scoped=""/></to>
+        </wire>
+        <wire loc="67:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="SlotterControl" ref="0x7f2d66b092b8" scoped=""/></from>
+          <to><interface-ref name="SlotterControl" ref="0x7f2d66a579b0" scoped=""/></to>
+        </wire>
+        <wire loc="68:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="FrameConfiguration" ref="0x7f2d66b12320" scoped=""/></from>
+          <to><interface-ref name="FrameConfiguration" ref="0x7f2d66a54ac8" scoped=""/></to>
+        </wire>
+        <wire loc="71:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="RadioPowerControl" ref="0x7f2d66afe458" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x7f2d6692b310" scoped=""/></to>
+        </wire>
+        <wire loc="72:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="AMPacket" ref="0x7f2d66b1c0f0" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x7f2d66928610" scoped=""/></to>
+        </wire>
+        <wire loc="73:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="linkIndicator" ref="0x7f2d66b13620" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x7f2d66926908" scoped=""/></to>
+        </wire>
+        <wire loc="74:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="Packet" ref="0x7f2d66b2c740" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x7f2d66927bd8" scoped=""/></to>
+        </wire>
+        <wire loc="75:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="ACK" ref="0x7f2d66aff978" scoped=""/></from>
+          <to><interface-ref name="PacketAcknowledgements" ref="0x7f2d669257e0" scoped=""/></to>
+        </wire>
+        <wire loc="76:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="phyDataSend" ref="0x7f2d66afba58" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x7f2d6692a2b0" scoped=""/>
+          <arguments>
+            <value cst="I:11">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="77:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="phyDataReceive" ref="0x7f2d66afa818" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f2d669293c8" scoped=""/>
+          <arguments>
+            <value cst="I:11">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="79:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="phyNotificationSend" ref="0x7f2d66af25e0" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x7f2d6692a2b0" scoped=""/>
+          <arguments>
+            <value cst="I:10">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="80:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="phyNotificationReceive" ref="0x7f2d66afb3d0" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f2d669293c8" scoped=""/>
+          <arguments>
+            <value cst="I:10">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="82:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="forwardQueue" ref="0x7f2d66b005b8" scoped=""/></from>
+          <to><interface-ref name="Queue" ref="0x7f2d65ca26e0" scoped=""/></to>
+        </wire>
+        <wire loc="87:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="GlobalTime" ref="0x7f2d66aeb670" scoped=""/></from>
+          <to><interface-ref name="GlobalTime" ref="0x7f2d65858458" scoped=""/></to>
+        </wire>
+        <wire loc="88:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc">
+          <from><interface-ref name="TimeSyncInfo" ref="0x7f2d66ae4318" scoped=""/></from>
+          <to><interface-ref name="TimeSyncInfo" ref="0x7f2d65856560" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="39:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc" name="MacReceive" provided="1" ref="0x7f2d66b36668">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacC" qname="TdmaMacC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MacReceive" ref="0x7f2d66b36668" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f2d66b369b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="40:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc" name="MacPowerControl" provided="1" ref="0x7f2d66b36d58">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacC" qname="TdmaMacC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MacPowerControl" ref="0x7f2d66b36d58" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f2d66b350d8" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f2d66b35260" scoped=""/>
+        <function-ref name="start" ref="0x7f2d66b353e8" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d66b35570" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="33:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc" name="Init" provided="1" ref="0x7f2d66b38730">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacC" qname="TdmaMacC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x7f2d66b38730" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f2d66b38a80" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="38:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc" name="MacSend" provided="1" ref="0x7f2d66b37988">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacC" qname="TdmaMacC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MacSend" ref="0x7f2d66b37988" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f2d66b37cd8" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f2d66b37e60" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f2d66b36020" scoped=""/>
+        <function-ref name="cancel" ref="0x7f2d66b361a8" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f2d66b36330" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="34:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacC.nc" name="FrameConfiguration" provided="1" ref="0x7f2d66b38d80">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacC" qname="TdmaMacC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FrameConfiguration" ref="0x7f2d66b38d80" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.FrameConfiguration" qname="FrameConfiguration"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setFrameLength" ref="0x7f2d66b37170" scoped=""/>
+        <function-ref name="setSlotLength" ref="0x7f2d66b372f8" scoped=""/>
+        <function-ref name="getSlotLength" ref="0x7f2d66b37480" scoped=""/>
+        <function-ref name="getFrameLength" ref="0x7f2d66b37608" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="36:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc" name="AsyncStdControl" provided="1" ref="0x7f2d66a53610">
+      <component-ref nicename="tos.system.GenericSlotterC" qname="GenericSlotterC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AsyncStdControl" ref="0x7f2d66a53610" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AsyncStdControl" qname="AsyncStdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x7f2d66a53960" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d66a53ae8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="36:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="Init" provided="1" ref="0x7f2d66b34dd8">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x7f2d66b34dd8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f2d66b31170" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="62:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="PacketAcknowledgements" provided="1" ref="0x7f2d669257e0">
+      <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketAcknowledgements" ref="0x7f2d669257e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requestAck" ref="0x7f2d66925b30" scoped=""/>
+        <function-ref name="noAck" ref="0x7f2d66925cb8" scoped=""/>
+        <function-ref name="wasAcked" ref="0x7f2d66925e40" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="34:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc" name="SlotterControl" provided="1" ref="0x7f2d66a579b0">
+      <component-ref nicename="tos.system.GenericSlotterC" qname="GenericSlotterC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SlotterControl" ref="0x7f2d66a579b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SlotterControl" qname="SlotterControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f2d66a547c8" scoped=""/>
+        <function-ref name="getSlot" ref="0x7f2d66a54020" scoped=""/>
+        <function-ref name="synchronize" ref="0x7f2d66a541a8" scoped=""/>
+        <function-ref name="isSynchornized" ref="0x7f2d66a54330" scoped=""/>
+        <function-ref name="getAlarm" ref="0x7f2d66a544b8" scoped=""/>
+        <function-ref name="getRemaining" ref="0x7f2d66a54640" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d66a57d00" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="64:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="phyNotificationSend" provided="0" ref="0x7f2d66af25e0">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="phyNotificationSend" ref="0x7f2d66af25e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f2d66af2930" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f2d66af2ab8" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f2d66af2c40" scoped=""/>
+        <function-ref name="cancel" ref="0x7f2d66af2dc8" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f2d66afb020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="56:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="AMSend" provided="1" ref="0x7f2d6692a2b0">
+      <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x7f2d6692a2b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f2d66fc7a08"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f2d6692a600" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f2d6692a788" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f2d6692a910" scoped=""/>
+        <function-ref name="cancel" ref="0x7f2d6692aa98" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f2d6692ac20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="56:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="SlotterControl" provided="0" ref="0x7f2d66b092b8">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SlotterControl" ref="0x7f2d66b092b8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SlotterControl" qname="SlotterControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f2d66b12020" scoped=""/>
+        <function-ref name="getSlot" ref="0x7f2d66b09790" scoped=""/>
+        <function-ref name="synchronize" ref="0x7f2d66b09918" scoped=""/>
+        <function-ref name="isSynchornized" ref="0x7f2d66b09aa0" scoped=""/>
+        <function-ref name="getAlarm" ref="0x7f2d66b09c28" scoped=""/>
+        <function-ref name="getRemaining" ref="0x7f2d66b09db0" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d66b09608" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="52:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="Packet" provided="0" ref="0x7f2d66b2c740">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x7f2d66b2c740" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d66b2ca90" scoped=""/>
+        <function-ref name="payloadLength" ref="0x7f2d66b2cc18" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f2d66b2cda0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f2d66b2b020" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x7f2d66b2b1a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="55:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="Slotter" provided="0" ref="0x7f2d66b0e2b8">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Slotter" ref="0x7f2d66b0e2b8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Slotter" qname="Slotter"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="slot" ref="0x7f2d66b0e608" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="65:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="phyNotificationReceive" provided="0" ref="0x7f2d66afb3d0">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="phyNotificationReceive" ref="0x7f2d66afb3d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f2d66afb720" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="37:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="Frame" provided="1" ref="0x7f2d66b314e8">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Frame" ref="0x7f2d66b314e8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.FrameConfiguration" qname="FrameConfiguration"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setFrameLength" ref="0x7f2d66b31838" scoped=""/>
+        <function-ref name="setSlotLength" ref="0x7f2d66b319c0" scoped=""/>
+        <function-ref name="getSlotLength" ref="0x7f2d66b31b48" scoped=""/>
+        <function-ref name="getFrameLength" ref="0x7f2d66b31cd0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="54:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="GenericSlotterPowerControl" provided="0" ref="0x7f2d66b11dc8">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="GenericSlotterPowerControl" ref="0x7f2d66b11dc8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AsyncStdControl" qname="AsyncStdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x7f2d66b19170" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d66b192f8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="60:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="Packet" provided="1" ref="0x7f2d66927bd8">
+      <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x7f2d66927bd8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d66926020" scoped=""/>
+        <function-ref name="payloadLength" ref="0x7f2d669261a8" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f2d66926330" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f2d669264b8" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x7f2d66926640" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="71:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="GlobalTime" provided="0" ref="0x7f2d66aeb670">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="GlobalTime" ref="0x7f2d66aeb670" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.ftsp.GlobalTime" qname="GlobalTime"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f2d66dbfe08"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f2d66db91f8"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getLocalTime" ref="0x7f2d66af0220" scoped=""/>
+        <function-ref name="global2Local" ref="0x7f2d66aef0f8" scoped=""/>
+        <function-ref name="getGlobalTime" ref="0x7f2d66af06a8" scoped=""/>
+        <function-ref name="local2Global" ref="0x7f2d66af0bb8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="MacSend" provided="1" ref="0x7f2d66b2f0a8">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MacSend" ref="0x7f2d66b2f0a8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f2d66b2f3f8" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f2d66b2f580" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f2d66b2f708" scoped=""/>
+        <function-ref name="cancel" ref="0x7f2d66b2f890" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f2d66b2fa18" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="MacPowerControl" provided="1" ref="0x7f2d66b2e478">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MacPowerControl" ref="0x7f2d66b2e478" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f2d66b2e7c8" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f2d66b2e950" scoped=""/>
+        <function-ref name="start" ref="0x7f2d66b2ead8" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d66b2ec60" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/system/QueueC.nc" name="Queue" provided="1" ref="0x7f2d65ca26e0">
+      <component-ref nicename="tos.system.QueueC" qname="TdmaMacC.QueueC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Queue" ref="0x7f2d65ca26e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Queue" qname="Queue"/>
+        <arguments>
+          <type-pointer alignment="I:2" size="I:2">
+            <type-tag alignment="I:1" size="I:5"><nx_struct-ref name="dmamacData" ref="0x7f2d66b3ae10"/>
+              <typename><typedef-ref name="dmamac_data_t" ref="0x7f2d66b39980"/></typename>
+            </type-tag>
+          </type-pointer>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="head" ref="0x7f2d65c87088" scoped=""/>
+        <function-ref name="enqueue" ref="0x7f2d65c87d48" scoped=""/>
+        <function-ref name="element" ref="0x7f2d65c863a8" scoped=""/>
+        <function-ref name="maxSize" ref="0x7f2d65c89c10" scoped=""/>
+        <function-ref name="dequeue" ref="0x7f2d65c876e8" scoped=""/>
+        <function-ref name="empty" ref="0x7f2d65c89370" scoped=""/>
+        <function-ref name="size" ref="0x7f2d65c897c0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="61:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="CC2420Packet" provided="1" ref="0x7f2d66926908">
+      <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Packet" ref="0x7f2d66926908" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setPower" ref="0x7f2d66926c58" scoped=""/>
+        <function-ref name="setNetwork" ref="0x7f2d66926de0" scoped=""/>
+        <function-ref name="getRssi" ref="0x7f2d66925020" scoped=""/>
+        <function-ref name="getNetwork" ref="0x7f2d669251a8" scoped=""/>
+        <function-ref name="getPower" ref="0x7f2d66925330" scoped=""/>
+        <function-ref name="getLqi" ref="0x7f2d669254b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="59:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="ACK" provided="0" ref="0x7f2d66aff978">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ACK" ref="0x7f2d66aff978" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requestAck" ref="0x7f2d66affcc8" scoped=""/>
+        <function-ref name="noAck" ref="0x7f2d66affe50" scoped=""/>
+        <function-ref name="wasAcked" ref="0x7f2d66afe020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="33:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc" name="Slotter" provided="1" ref="0x7f2d66a57388">
+      <component-ref nicename="tos.system.GenericSlotterC" qname="GenericSlotterC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Slotter" ref="0x7f2d66a57388" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Slotter" qname="Slotter"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="slot" ref="0x7f2d66a576d8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc" name="GlobalTime" provided="1" ref="0x7f2d65858458">
+      <component-ref nicename="tos.lib.ftsp.TimeSyncC" qname="TimeSyncC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="GlobalTime" ref="0x7f2d65858458" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.ftsp.GlobalTime" qname="GlobalTime"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f2d66dbfe08"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f2d66db91f8"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getLocalTime" ref="0x7f2d65857020" scoped=""/>
+        <function-ref name="global2Local" ref="0x7f2d65856020" scoped=""/>
+        <function-ref name="getGlobalTime" ref="0x7f2d658574a8" scoped=""/>
+        <function-ref name="local2Global" ref="0x7f2d658579b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="57:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="FrameConfiguration" provided="0" ref="0x7f2d66b12320">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FrameConfiguration" ref="0x7f2d66b12320" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.FrameConfiguration" qname="FrameConfiguration"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setFrameLength" ref="0x7f2d66b12770" scoped=""/>
+        <function-ref name="setSlotLength" ref="0x7f2d66b128f8" scoped=""/>
+        <function-ref name="getSlotLength" ref="0x7f2d66b12a80" scoped=""/>
+        <function-ref name="getFrameLength" ref="0x7f2d66b12c08" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="35:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc" name="FrameConfiguration" provided="1" ref="0x7f2d66a54ac8">
+      <component-ref nicename="tos.system.GenericSlotterC" qname="GenericSlotterC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FrameConfiguration" ref="0x7f2d66a54ac8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.FrameConfiguration" qname="FrameConfiguration"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setFrameLength" ref="0x7f2d66a54e18" scoped=""/>
+        <function-ref name="setSlotLength" ref="0x7f2d66a53020" scoped=""/>
+        <function-ref name="getSlotLength" ref="0x7f2d66a531a8" scoped=""/>
+        <function-ref name="getFrameLength" ref="0x7f2d66a53330" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="58:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="forwardQueue" provided="0" ref="0x7f2d66b005b8">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="forwardQueue" ref="0x7f2d66b005b8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Queue" qname="Queue"/>
+        <arguments>
+          <type-pointer alignment="I:2" size="I:2">
+            <type-tag alignment="I:1" size="I:5"><nx_struct-ref name="dmamacData" ref="0x7f2d66b3ae10"/>
+              <typename><typedef-ref name="dmamac_data_t" ref="0x7f2d66b39980"/></typename>
+            </type-tag>
+          </type-pointer>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="head" ref="0x7f2d66b08e48" scoped=""/>
+        <function-ref name="enqueue" ref="0x7f2d66b03b48" scoped=""/>
+        <function-ref name="element" ref="0x7f2d66aff200" scoped=""/>
+        <function-ref name="maxSize" ref="0x7f2d66b089f8" scoped=""/>
+        <function-ref name="dequeue" ref="0x7f2d66b034e8" scoped=""/>
+        <function-ref name="empty" ref="0x7f2d66b08158" scoped=""/>
+        <function-ref name="size" ref="0x7f2d66b085a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="63:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="RadioPowerControl" provided="0" ref="0x7f2d66afe458">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioPowerControl" ref="0x7f2d66afe458" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f2d66afe7a8" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f2d66afe930" scoped=""/>
+        <function-ref name="start" ref="0x7f2d66afeab8" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d66afec40" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="57:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="Receive" provided="1" ref="0x7f2d669293c8">
+      <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Receive" ref="0x7f2d669293c8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f2d66fc7a08"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f2d66929718" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="67:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="phyDataReceive" provided="0" ref="0x7f2d66afa818">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="phyDataReceive" ref="0x7f2d66afa818" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f2d66afab68" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="59:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="AMPacket" provided="1" ref="0x7f2d66928610">
+      <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x7f2d66928610" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="group" ref="0x7f2d66928960" scoped=""/>
+        <function-ref name="source" ref="0x7f2d66928ae8" scoped=""/>
+        <function-ref name="address" ref="0x7f2d66928c70" scoped=""/>
+        <function-ref name="destination" ref="0x7f2d66928df8" scoped=""/>
+        <function-ref name="setSource" ref="0x7f2d66927020" scoped=""/>
+        <function-ref name="setDestination" ref="0x7f2d669271a8" scoped=""/>
+        <function-ref name="type" ref="0x7f2d66927330" scoped=""/>
+        <function-ref name="setType" ref="0x7f2d669274b8" scoped=""/>
+        <function-ref name="isForMe" ref="0x7f2d66927640" scoped=""/>
+        <function-ref name="setGroup" ref="0x7f2d669277c8" scoped=""/>
+        <function-ref name="localGroup" ref="0x7f2d66927950" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="66:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="phyDataSend" provided="0" ref="0x7f2d66afba58">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="phyDataSend" ref="0x7f2d66afba58" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f2d66afbda8" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f2d66afa020" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f2d66afa1a8" scoped=""/>
+        <function-ref name="cancel" ref="0x7f2d66afa330" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f2d66afa4b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="MacReceive" provided="1" ref="0x7f2d66b2fd50">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MacReceive" ref="0x7f2d66b2fd50" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f2d66b2e0d8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="72:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="TimeSyncInfo" provided="0" ref="0x7f2d66ae4318">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="TimeSyncInfo" ref="0x7f2d66ae4318" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.ftsp.TimeSyncInfo" qname="TimeSyncInfo"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getSyncPoint" ref="0x7f2d66ae4668" scoped=""/>
+        <function-ref name="getRootID" ref="0x7f2d66ae47f0" scoped=""/>
+        <function-ref name="getSeqNum" ref="0x7f2d66ae4978" scoped=""/>
+        <function-ref name="getOffset" ref="0x7f2d66ae4b00" scoped=""/>
+        <function-ref name="getNumEntries" ref="0x7f2d66ae4c88" scoped=""/>
+        <function-ref name="getHeartBeats" ref="0x7f2d66ae4e10" scoped=""/>
+        <function-ref name="getSkew" ref="0x7f2d66aea020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc" name="TimeSyncInfo" provided="1" ref="0x7f2d65856560">
+      <component-ref nicename="tos.lib.ftsp.TimeSyncC" qname="TimeSyncC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="TimeSyncInfo" ref="0x7f2d65856560" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.ftsp.TimeSyncInfo" qname="TimeSyncInfo"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getSyncPoint" ref="0x7f2d658568b0" scoped=""/>
+        <function-ref name="getRootID" ref="0x7f2d65856a38" scoped=""/>
+        <function-ref name="getSeqNum" ref="0x7f2d65856bc0" scoped=""/>
+        <function-ref name="getOffset" ref="0x7f2d65856d48" scoped=""/>
+        <function-ref name="getNumEntries" ref="0x7f2d65854020" scoped=""/>
+        <function-ref name="getHeartBeats" ref="0x7f2d658541a8" scoped=""/>
+        <function-ref name="getSkew" ref="0x7f2d65854330" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="AMPacket" provided="0" ref="0x7f2d66b1c0f0">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x7f2d66b1c0f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="group" ref="0x7f2d66b1c440" scoped=""/>
+        <function-ref name="source" ref="0x7f2d66b1c5c8" scoped=""/>
+        <function-ref name="address" ref="0x7f2d66b1c750" scoped=""/>
+        <function-ref name="destination" ref="0x7f2d66b1c8d8" scoped=""/>
+        <function-ref name="setSource" ref="0x7f2d66b1ca60" scoped=""/>
+        <function-ref name="setDestination" ref="0x7f2d66b1cbe8" scoped=""/>
+        <function-ref name="type" ref="0x7f2d66b1cd70" scoped=""/>
+        <function-ref name="setType" ref="0x7f2d66b2c020" scoped=""/>
+        <function-ref name="isForMe" ref="0x7f2d66b2c1a8" scoped=""/>
+        <function-ref name="setGroup" ref="0x7f2d66b2c330" scoped=""/>
+        <function-ref name="localGroup" ref="0x7f2d66b2c4b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="55:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc" name="SplitControl" provided="1" ref="0x7f2d6692b310">
+      <component-ref nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SplitControl" ref="0x7f2d6692b310" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f2d6692b660" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f2d6692b7e8" scoped=""/>
+        <function-ref name="start" ref="0x7f2d6692b970" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d6692baf8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="53:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" name="linkIndicator" provided="0" ref="0x7f2d66b13620">
+      <component-ref nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="linkIndicator" ref="0x7f2d66b13620" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setPower" ref="0x7f2d66b13970" scoped=""/>
+        <function-ref name="setNetwork" ref="0x7f2d66b13af8" scoped=""/>
+        <function-ref name="getRssi" ref="0x7f2d66b13c80" scoped=""/>
+        <function-ref name="getNetwork" ref="0x7f2d66b13e08" scoped=""/>
+        <function-ref name="getPower" ref="0x7f2d66b1a020" scoped=""/>
+        <function-ref name="getLqi" ref="0x7f2d66b1a1a8" scoped=""/>
+      </interface-functions>
+    </interface><component loc="30:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc" nicename="tos.system.GenericSlotterC" qname="GenericSlotterC">
+      <documentation loc="23:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+        <short>
+
+ </short>
+        <long>
+
+ @author Octav Chipara
+ @version $Revision$
+ @date $Date$
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="46:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="Slotter" ref="0x7f2d66a57388" scoped=""/></from>
+          <to><interface-ref name="Slotter" ref="0x7f2d66a4e8c0" scoped=""/></to>
+        </wire>
+        <wire loc="48:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="AsyncStdControl" ref="0x7f2d66a53610" scoped=""/></from>
+          <to><interface-ref name="AsyncStdControl" ref="0x7f2d66a4e158" scoped=""/></to>
+        </wire>
+        <wire loc="47:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="FrameConfiguration" ref="0x7f2d66a54ac8" scoped=""/></from>
+          <to><interface-ref name="FrameConfiguration" ref="0x7f2d66a4c020" scoped=""/></to>
+        </wire>
+        <wire loc="54:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="SlotterControl" ref="0x7f2d66a579b0" scoped=""/></from>
+          <to><interface-ref name="SlotterControl" ref="0x7f2d66a4d020" scoped=""/></to>
+        </wire>
+        <wire loc="45:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="Boot" ref="0x7f2d66a405c8" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x7f2d66fb2c40" scoped=""/></to>
+        </wire>
+        <wire loc="50:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x7f2d66fb00e0" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f2d66a52af0" scoped=""/></to>
+        </wire>
+        <wire loc="51:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="Alarm" ref="0x7f2d66a44e08" scoped=""/></from>
+          <to><interface-ref name="Alarm" ref="0x7f2d6693f2d0" scoped=""/></to>
+        </wire>
+        <wire loc="55:/opt/tinyos-2.1.2/tos/system/GenericSlotterC.nc">
+          <from><interface-ref name="Leds" ref="0x7f2d66a41020" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x7f2d66d92020" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="39:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc" nicename="tos.lib.ftsp.TimeSyncC" qname="TimeSyncC">
+      <configuration/>
+      <wiring>
+        <wire loc="56:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc">
+          <from><interface-ref name="GlobalTime" ref="0x7f2d65858458" scoped=""/></from>
+          <to><interface-ref name="GlobalTime" ref="0x7f2d657a1848" scoped=""/></to>
+        </wire>
+        <wire loc="60:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc">
+          <from><interface-ref name="TimeSyncInfo" ref="0x7f2d65856560" scoped=""/></from>
+          <to><interface-ref name="TimeSyncInfo" ref="0x7f2d6579e748" scoped=""/></to>
+        </wire>
+        <wire loc="58:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc">
+          <from><interface-ref name="Init" ref="0x7f2d65859428" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f2d657a2910" scoped=""/></to>
+        </wire>
+        <wire loc="61:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc">
+          <from><interface-ref name="TimeSyncMode" ref="0x7f2d65850510" scoped=""/></from>
+          <to><interface-ref name="TimeSyncMode" ref="0x7f2d6579d700" scoped=""/></to>
+        </wire>
+        <wire loc="62:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc">
+          <from><interface-ref name="TimeSyncNotify" ref="0x7f2d6584e310" scoped=""/></from>
+          <to><interface-ref name="TimeSyncNotify" ref="0x7f2d6579c020" scoped=""/></to>
+        </wire>
+        <wire loc="57:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc">
+          <from><interface-ref name="StdControl" ref="0x7f2d65859a68" scoped=""/></from>
+          <to><interface-ref name="StdControl" ref="0x7f2d657a1020" scoped=""/></to>
+        </wire>
+        <wire loc="59:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc">
+          <from><interface-ref name="Boot" ref="0x7f2d6579c7a0" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x7f2d6585add8" scoped=""/></to>
+        </wire>
+        <wire loc="65:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc">
+          <from><interface-ref name="RadioControl" ref="0x7f2d6579cd78" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x7f2d657866f0" scoped=""/></to>
+        </wire>
+        <wire loc="66:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc">
+          <from><interface-ref name="Send" ref="0x7f2d6579aa20" scoped=""/></from>
+          <to><interface-ref name="TimeSyncAMSendMilli" ref="0x7f2d6576e7d0" scoped=""/>
+          <arguments>
+            <value cst="I:62">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="67:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc">
+          <from><interface-ref name="Receive" ref="0x7f2d657975e8" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f2d657837a0" scoped=""/>
+          <arguments>
+            <value cst="I:62">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="68:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc">
+          <from><interface-ref name="TimeSyncPacket" ref="0x7f2d6578fda8" scoped=""/></from>
+          <to><interface-ref name="TimeSyncPacketMilli" ref="0x7f2d6576a750" scoped=""/></to>
+        </wire>
+        <wire loc="71:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc">
+          <from><interface-ref name="LocalTime" ref="0x7f2d6578d5c8" scoped=""/></from>
+          <to><interface-ref name="LocalTime" ref="0x7f2d65677020" scoped=""/></to>
+        </wire>
+        <wire loc="74:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc">
+          <from><interface-ref name="Timer" ref="0x7f2d65797c88" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x7f2d65660a60" scoped=""/></to>
+        </wire>
+        <wire loc="77:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc">
+          <from><interface-ref name="Random" ref="0x7f2d65792d00" scoped=""/></from>
+          <to><interface-ref name="Random" ref="0x7f2d65e39b98" scoped=""/></to>
+        </wire>
+        <wire loc="84:/opt/tinyos-2.1.2/tos/lib/ftsp/TimeSyncC.nc">
+          <from><interface-ref name="Leds" ref="0x7f2d65790470" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x7f2d656599a8" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="53:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc" nicename="tos.chips.cc2420.CC2420ActiveMessageC" qname="CC2420ActiveMessageC">
+      <configuration/>
+      <wiring>
+        <wire loc="82:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="SplitControl" ref="0x7f2d6692b310" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x7f2d66914910" scoped=""/></to>
+        </wire>
+        <wire loc="83:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="RadioBackoff" ref="0x7f2d66919700" scoped=""/></from>
+          <to><interface-ref name="RadioBackoff" ref="0x7f2d65d30020" scoped=""/></to>
+        </wire>
+        <wire loc="86:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="SendNotifier" ref="0x7f2d66908c58" scoped=""/></from>
+          <to><interface-ref name="SendNotifier" ref="0x7f2d65d31400" scoped=""/></to>
+        </wire>
+        <wire loc="84:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="Packet" ref="0x7f2d66927bd8" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x7f2d65d322a8" scoped=""/></to>
+        </wire>
+        <wire loc="85:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="AMSend" ref="0x7f2d6692a2b0" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x7f2d65d37980" scoped=""/></to>
+        </wire>
+        <wire loc="88:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="Snoop" ref="0x7f2d66928020" scoped=""/></from>
+          <to><interface-ref name="Snoop" ref="0x7f2d65d34628" scoped=""/></to>
+        </wire>
+        <wire loc="92:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="CC2420Packet" ref="0x7f2d66926908" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x7f2d668fce28" scoped=""/></to>
+        </wire>
+        <wire loc="91:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="LowPowerListening" ref="0x7f2d66911338" scoped=""/></from>
+          <to><interface-ref name="LowPowerListening" ref="0x7f2d668f9c78" scoped=""/></to>
+        </wire>
+        <wire loc="87:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="Receive" ref="0x7f2d669293c8" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f2d65d36ab0" scoped=""/></to>
+        </wire>
+        <wire loc="93:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="PacketAcknowledgements" ref="0x7f2d669257e0" scoped=""/></from>
+          <to><interface-ref name="PacketAcknowledgements" ref="0x7f2d668fac78" scoped=""/></to>
+        </wire>
+        <wire loc="90:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="PacketLink" ref="0x7f2d6690d130" scoped=""/></from>
+          <to><interface-ref name="PacketLink" ref="0x7f2d668f8768" scoped=""/></to>
+        </wire>
+        <wire loc="89:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="AMPacket" ref="0x7f2d66928610" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x7f2d65d34c18" scoped=""/></to>
+        </wire>
+        <wire loc="94:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="LinkPacketMetadata" ref="0x7f2d669207b0" scoped=""/></from>
+          <to><interface-ref name="LinkPacketMetadata" ref="0x7f2d668f9630" scoped=""/></to>
+        </wire>
+        <wire loc="97:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="RadioResource" ref="0x7f2d65d29698" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x7f2d668feb38" scoped=""/>
+          <arguments>
+            <value cst="I:0">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="98:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="SubSend" ref="0x7f2d65d2f020" scoped=""/></from>
+          <to><interface-ref name="ActiveSend" ref="0x7f2d668fd9e0" scoped=""/></to>
+        </wire>
+        <wire loc="99:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="SubReceive" ref="0x7f2d65d2fcc8" scoped=""/></from>
+          <to><interface-ref name="ActiveReceive" ref="0x7f2d668fc810" scoped=""/></to>
+        </wire>
+        <wire loc="101:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="ActiveMessageAddress" ref="0x7f2d65d2b8d0" scoped=""/></from>
+          <to><interface-ref name="ActiveMessageAddress" ref="0x7f2d661d12b8" scoped=""/></to>
+        </wire>
+        <wire loc="102:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="CC2420Packet" ref="0x7f2d65d2e368" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x7f2d65fce4a8" scoped=""/></to>
+        </wire>
+        <wire loc="103:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="CC2420PacketBody" ref="0x7f2d65d2d188" scoped=""/></from>
+          <to><interface-ref name="CC2420PacketBody" ref="0x7f2d65fcbd08" scoped=""/></to>
+        </wire>
+        <wire loc="104:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="CC2420Config" ref="0x7f2d65d2dab0" scoped=""/></from>
+          <to><interface-ref name="CC2420Config" ref="0x7f2d66872af8" scoped=""/></to>
+        </wire>
+        <wire loc="106:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="SubBackoff" ref="0x7f2d65d2a6a0" scoped=""/></from>
+          <to><interface-ref name="RadioBackoff" ref="0x7f2d668f3c58" scoped=""/></to>
+        </wire>
+        <wire loc="109:/opt/tinyos-2.1.2/tos/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="Leds" ref="0x7f2d65d272a8" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x7f2d66d92020" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="33:/opt/tinyos-2.1.2/tos/lib/mac/tdmaMac/TdmaMacP.nc" nicename="tos.lib.mac.tdmaMac.TdmaMacP" qname="TdmaMacP">
+      <documentation loc="33:/opt/tinyos-2.1.2/tos/lib/printf/printf.h">
+        <short>
+
+ </short>
+        <long>
+
+ @author Kevin Klues (klueska@cs.wustl.edu)
+ @version $Revision: 1.17 $
+ @date $Date: 2010-06-29 22:07:50 $
+</long>
+      </documentation>
+      <module/>
+    </component><component loc="42(TdmaMacC.QueueC):/opt/tinyos-2.1.2/tos/system/QueueC.nc" nicename="tos.system.QueueC" qname="TdmaMacC.QueueC">
+      <documentation loc="33:/opt/tinyos-2.1.2/tos/system/QueueC.nc">
+        <short>
+  A general FIFO queue component, whose queue has a bounded size.</short>
+        <long>
+  A general FIFO queue component, whose queue has a bounded size.
+
+  @author Philip Levis
+  @author Geoffrey Mainland
+  @date   $Date: 2009-06-25 18:37:24 $
+</long>
+      </documentation>
+      <instance number="0">
+        <component-ref nicename="tos.system.QueueC" qname="QueueC"/>
+        <arguments>
+          <type-pointer alignment="I:2" size="I:2">
+            <type-tag alignment="I:1" size="I:5"><nx_struct-ref name="dmamacData" ref="0x7f2d66b3ae10"/>
+              <typename><typedef-ref name="dmamac_data_t" ref="0x7f2d66b39980"/></typename>
+            </type-tag>
+          </type-pointer>
+          <value cst="I:2">
+            <type-int alignment="I:2" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component></referenced></component>

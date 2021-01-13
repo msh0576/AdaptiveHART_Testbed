@@ -1,0 +1,20 @@
+<area shape="rect" id="node2" href="../chtml/tos.chips.cc2420.CC2420ActiveMessageC.html" title="CC2420ActiveMessageC" alt="" coords="363,116,558,175">
+<area shape="poly" id="edge1" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="88,50,113,72,143,90,194,108,247,122,350,137,349,143,246,127,192,114,141,94,110,76,85,54">
+<area shape="rect" id="edge1-label" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="142,77,211,92">
+<area shape="poly" id="edge2" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="207,53,216,73,231,90,257,108,287,121,351,137,349,142,286,126,255,112,227,94,212,76,203,55">
+<area shape="rect" id="edge2-label" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="229,77,331,92">
+<area shape="poly" id="edge3" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="334,53,337,73,346,90,361,106,358,110,341,94,332,74,329,54">
+<area shape="rect" id="edge3-label" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="343,77,441,92">
+<area shape="poly" id="edge4" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="442,53,454,102,448,103,437,54">
+<area shape="rect" id="edge4-label" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="449,77,486,92">
+<area shape="rect" id="node7" href="../chtml/tos.chips.cc2420.packet.CC2420PacketC.html" title="CC2420PacketC" alt="" coords="1164,116,1304,175">
+<area shape="poly" id="edge5" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;T32khz, uint32_t&gt;" alt="" coords="1112,53,1111,73,1118,91,1133,107,1153,120,1150,125,1130,112,1113,93,1106,74,1106,53">
+<area shape="rect" id="edge5-label" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;T32khz, uint32_t&gt;" alt="" coords="1115,77,1325,92">
+<area shape="poly" id="edge6" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="529,54,491,106,487,103,525,50">
+<area shape="rect" id="edge6-label" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="507,77,605,92">
+<area shape="poly" id="edge7" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="692,55,611,94,562,114,560,109,609,90,689,50">
+<area shape="rect" id="edge7-label" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="641,77,786,92">
+<area shape="poly" id="edge8" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="894,51,847,74,792,95,680,121,572,137,571,132,679,116,791,89,844,69,892,47">
+<area shape="rect" id="edge8-label" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="830,77,889,92">
+<area shape="poly" id="edge9" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TMilli, uint32_t&gt;" alt="" coords="1349,55,1340,75,1327,94,1308,110,1305,106,1323,90,1336,72,1344,53">
+<area shape="rect" id="edge9-label" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TMilli, uint32_t&gt;" alt="" coords="1335,77,1539,92">

@@ -1,0 +1,536 @@
+<?xml version="1.0" ?><component loc="39:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC">
+      <documentation loc="33:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+        <short>
+ HPL for the TI MSP430 family of microprocessors.</short>
+        <long>
+ HPL for the TI MSP430 family of microprocessors. This provides an
+ abstraction for GPIO interrupts.
+
+ @author Joe Polastre
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="70:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port14" ref="0x7f2d66744878" scoped=""/></from>
+          <to><interface-ref name="Port14" ref="0x7f2d66730568" scoped=""/></to>
+        </wire>
+        <wire loc="82:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port26" ref="0x7f2d66739878" scoped=""/></from>
+          <to><interface-ref name="Port26" ref="0x7f2d66725568" scoped=""/></to>
+        </wire>
+        <wire loc="73:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port17" ref="0x7f2d66741878" scoped=""/></from>
+          <to><interface-ref name="Port17" ref="0x7f2d6672d568" scoped=""/></to>
+        </wire>
+        <wire loc="77:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port21" ref="0x7f2d6673e878" scoped=""/></from>
+          <to><interface-ref name="Port21" ref="0x7f2d6672b568" scoped=""/></to>
+        </wire>
+        <wire loc="68:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port12" ref="0x7f2d6674a878" scoped=""/></from>
+          <to><interface-ref name="Port12" ref="0x7f2d66732568" scoped=""/></to>
+        </wire>
+        <wire loc="80:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port24" ref="0x7f2d6673b878" scoped=""/></from>
+          <to><interface-ref name="Port24" ref="0x7f2d66728568" scoped=""/></to>
+        </wire>
+        <wire loc="71:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port15" ref="0x7f2d66743878" scoped=""/></from>
+          <to><interface-ref name="Port15" ref="0x7f2d6672f568" scoped=""/></to>
+        </wire>
+        <wire loc="83:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port27" ref="0x7f2d66738878" scoped=""/></from>
+          <to><interface-ref name="Port27" ref="0x7f2d66724568" scoped=""/></to>
+        </wire>
+        <wire loc="66:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port10" ref="0x7f2d667468e0" scoped=""/></from>
+          <to><interface-ref name="Port10" ref="0x7f2d667345c8" scoped=""/></to>
+        </wire>
+        <wire loc="78:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port22" ref="0x7f2d6673d878" scoped=""/></from>
+          <to><interface-ref name="Port22" ref="0x7f2d6672a568" scoped=""/></to>
+        </wire>
+        <wire loc="69:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port13" ref="0x7f2d66745878" scoped=""/></from>
+          <to><interface-ref name="Port13" ref="0x7f2d66731568" scoped=""/></to>
+        </wire>
+        <wire loc="81:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port25" ref="0x7f2d6673a878" scoped=""/></from>
+          <to><interface-ref name="Port25" ref="0x7f2d66727568" scoped=""/></to>
+        </wire>
+        <wire loc="72:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port16" ref="0x7f2d66742878" scoped=""/></from>
+          <to><interface-ref name="Port16" ref="0x7f2d6672e568" scoped=""/></to>
+        </wire>
+        <wire loc="76:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port20" ref="0x7f2d6673f878" scoped=""/></from>
+          <to><interface-ref name="Port20" ref="0x7f2d6672c568" scoped=""/></to>
+        </wire>
+        <wire loc="67:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port11" ref="0x7f2d6674b878" scoped=""/></from>
+          <to><interface-ref name="Port11" ref="0x7f2d66733568" scoped=""/></to>
+        </wire>
+        <wire loc="79:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc">
+          <from><interface-ref name="Port23" ref="0x7f2d6673c878" scoped=""/></from>
+          <to><interface-ref name="Port23" ref="0x7f2d66729568" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="46:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port14" provided="1" ref="0x7f2d66744878">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port14" ref="0x7f2d66744878" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d66744bc8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66744d50" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66743020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d667431a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66743330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667434b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="58:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port26" provided="1" ref="0x7f2d66739878">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port26" ref="0x7f2d66739878" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d66739bc8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66739d50" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66738020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d667381a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66738330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667384b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port17" provided="1" ref="0x7f2d66741878">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port17" ref="0x7f2d66741878" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d66741bc8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66741d50" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d6673f020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d6673f1a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d6673f330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d6673f4b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="53:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port21" provided="1" ref="0x7f2d6673e878">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port21" ref="0x7f2d6673e878" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d6673ebc8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d6673ed50" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d6673d020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d6673d1a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d6673d330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d6673d4b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port12" provided="1" ref="0x7f2d6674a878">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port12" ref="0x7f2d6674a878" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d6674abc8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d6674ad50" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66745020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d667451a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66745330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667454b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="56:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port24" provided="1" ref="0x7f2d6673b878">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port24" ref="0x7f2d6673b878" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d6673bcc8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d6673be50" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d6673a020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d6673a1a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d6673a330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d6673a4b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port15" provided="1" ref="0x7f2d66743878">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port15" ref="0x7f2d66743878" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d66743bc8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66743d50" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66742020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d667421a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66742330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667424b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="59:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port27" provided="1" ref="0x7f2d66738878">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port27" ref="0x7f2d66738878" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d66738bc8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66738d50" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66737020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d667371a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66737330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667374b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port10" provided="1" ref="0x7f2d667468e0">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port10" ref="0x7f2d667468e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d66746c30" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66746db8" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d6674b020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d6674b1a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d6674b330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d6674b4b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="54:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port22" provided="1" ref="0x7f2d6673d878">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port22" ref="0x7f2d6673d878" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d6673dbc8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d6673dd50" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d6673c020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d6673c1a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d6673c330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d6673c4b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port13" provided="1" ref="0x7f2d66745878">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port13" ref="0x7f2d66745878" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d66745bc8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66745d50" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66744020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d667441a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66744330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667444b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="57:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port25" provided="1" ref="0x7f2d6673a878">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port25" ref="0x7f2d6673a878" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d6673abc8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d6673ad50" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66739020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d667391a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66739330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667394b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port16" provided="1" ref="0x7f2d66742878">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port16" ref="0x7f2d66742878" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d66742bc8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66742d50" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66741020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d667411a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66741330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667414b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="52:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port20" provided="1" ref="0x7f2d6673f878">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port20" ref="0x7f2d6673f878" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d6673fbc8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d6673fd50" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d6673e020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d6673e1a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d6673e330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d6673e4b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port11" provided="1" ref="0x7f2d6674b878">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port11" ref="0x7f2d6674b878" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d6674bbc8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d6674bd50" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d6674a020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d6674a1a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d6674a330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d6674a4b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="55:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptC.nc" name="Port23" provided="1" ref="0x7f2d6673c878">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptC" qname="HplMsp430InterruptC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port23" ref="0x7f2d6673c878" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d6673cbc8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d6673cd50" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d6673b020" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d6673b1a8" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d6673b330" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d6673b4b8" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="41:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port12" provided="1" ref="0x7f2d66732568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port12" ref="0x7f2d66732568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d667328b8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66732a40" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66732bc8" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d66732d50" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66731020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667311a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="39:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port10" provided="1" ref="0x7f2d667345c8">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port10" ref="0x7f2d667345c8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d66734918" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66734aa0" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66734c28" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d66734db0" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66733020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667331a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="54:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port25" provided="1" ref="0x7f2d66727568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port25" ref="0x7f2d66727568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d667278b8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66727a40" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66727bc8" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d66727d50" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66725020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667251a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port17" provided="1" ref="0x7f2d6672d568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port17" ref="0x7f2d6672d568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d6672d8b8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d6672da40" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d6672dbc8" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d6672dd50" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d6672c020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d6672c1a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port20" provided="1" ref="0x7f2d6672c568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port20" ref="0x7f2d6672c568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d6672c8b8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d6672ca40" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d6672cbc8" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d6672cd50" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d6672b020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d6672b1a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="55:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port26" provided="1" ref="0x7f2d66725568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port26" ref="0x7f2d66725568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d667258b8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66725a40" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66725bc8" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d66725d50" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66724020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667241a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port21" provided="1" ref="0x7f2d6672b568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port21" ref="0x7f2d6672b568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d6672b8b8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d6672ba40" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d6672bbc8" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d6672bd50" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d6672a020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d6672a1a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="40:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port11" provided="1" ref="0x7f2d66733568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port11" ref="0x7f2d66733568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d667338b8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66733a40" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66733bc8" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d66733d50" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66732020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667321a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="56:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port27" provided="1" ref="0x7f2d66724568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port27" ref="0x7f2d66724568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d667248b8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66724a40" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66724bc8" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d66724d50" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66723020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667231a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="52:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port23" provided="1" ref="0x7f2d66729568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port23" ref="0x7f2d66729568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d667298b8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66729a40" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66729bc8" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d66729d50" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66728020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667281a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port15" provided="1" ref="0x7f2d6672f568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port15" ref="0x7f2d6672f568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d6672f8b8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d6672fa40" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d6672fbc8" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d6672fd50" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d6672e020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d6672e1a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port16" provided="1" ref="0x7f2d6672e568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port16" ref="0x7f2d6672e568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d6672e8b8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d6672ea40" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d6672ebc8" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d6672ed50" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d6672d020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d6672d1a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port14" provided="1" ref="0x7f2d66730568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port14" ref="0x7f2d66730568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d667308b8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66730a40" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66730bc8" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d66730d50" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d6672f020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d6672f1a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port22" provided="1" ref="0x7f2d6672a568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port22" ref="0x7f2d6672a568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d6672a8b8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d6672aa40" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d6672abc8" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d6672ad50" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66729020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667291a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port13" provided="1" ref="0x7f2d66731568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port13" ref="0x7f2d66731568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d667318b8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66731a40" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66731bc8" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d66731d50" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66730020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667301a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="53:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" name="Port24" provided="1" ref="0x7f2d66728568">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port24" ref="0x7f2d66728568" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430Interrupt" qname="HplMsp430Interrupt"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d667289b8" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66728b40" scoped=""/>
+        <function-ref name="disable" ref="0x7f2d66728cc8" scoped=""/>
+        <function-ref name="edge" ref="0x7f2d66728e50" scoped=""/>
+        <function-ref name="enable" ref="0x7f2d66727020" scoped=""/>
+        <function-ref name="getValue" ref="0x7f2d667271a8" scoped=""/>
+      </interface-functions>
+    </interface><component loc="36:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc" nicename="tos.chips.msp430.pins.HplMsp430InterruptP" qname="HplMsp430InterruptP" safe="">
+      <documentation loc="33:/opt/tinyos-2.1.2/tos/chips/msp430/pins/HplMsp430InterruptP.nc">
+        <short>
+ </short>
+        <long>
+ @author Joe Polastre
+</long>
+      </documentation>
+      <module/>
+    </component></referenced></component>

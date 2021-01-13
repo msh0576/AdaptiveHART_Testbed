@@ -1,0 +1,26 @@
+digraph "tos.system.GenericSlotterC" {
+  n0x7f2d66a57388 [shape=ellipse, style=filled, label="Slotter", fontsize=12];
+  "GenericSlotterP" [fontsize=12, shape=box, URL="../chtml/tos.system.GenericSlotterP.html"];
+  n0x7f2d66a53610 [shape=ellipse, style=filled, label="AsyncStdControl", fontsize=12];
+  "GenericSlotterP" [fontsize=12, shape=box, URL="../chtml/tos.system.GenericSlotterP.html"];
+  n0x7f2d66a54ac8 [shape=ellipse, style=filled, label="FrameConfiguration", fontsize=12];
+  "GenericSlotterP" [fontsize=12, shape=box, URL="../chtml/tos.system.GenericSlotterP.html"];
+  n0x7f2d66a579b0 [shape=ellipse, style=filled, label="SlotterControl", fontsize=12];
+  "GenericSlotterP" [fontsize=12, shape=box, URL="../chtml/tos.system.GenericSlotterP.html"];
+  "GenericSlotterP" [fontsize=12, shape=box, URL="../chtml/tos.system.GenericSlotterP.html"];
+  "MainC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.system.MainC.html"];
+  "MainC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.system.MainC.html"];
+  "GenericSlotterP" [fontsize=12, shape=box, URL="../chtml/tos.system.GenericSlotterP.html"];
+  "GenericSlotterP" [fontsize=12, shape=box, URL="../chtml/tos.system.GenericSlotterP.html"];
+  "GenericSlotterC.Alarm32khz32C" [fontsize=12, shape=box,peripheries=2, style=dashed, label="Alarm32khz32C", URL="../chtml/tos.chips.msp430.timer.Alarm32khz32C.html"];
+  "GenericSlotterP" [fontsize=12, shape=box, URL="../chtml/tos.system.GenericSlotterP.html"];
+  "LedsC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.system.LedsC.html"];
+  "n0x7f2d66a57388" -> "GenericSlotterP" [label="Slotter", URL="../ihtml/tos.interfaces.Slotter.html", fontsize=10];
+  "n0x7f2d66a53610" -> "GenericSlotterP" [label="AsyncStdControl", URL="../ihtml/tos.interfaces.AsyncStdControl.html", fontsize=10];
+  "n0x7f2d66a54ac8" -> "GenericSlotterP" [label="FrameConfiguration", URL="../ihtml/tos.interfaces.FrameConfiguration.html", fontsize=10];
+  "n0x7f2d66a579b0" -> "GenericSlotterP" [label="SlotterControl", URL="../ihtml/tos.interfaces.SlotterControl.html", fontsize=10];
+  "GenericSlotterP" -> "MainC" [label="Boot", URL="../ihtml/tos.interfaces.Boot.html", fontsize=10];
+  "MainC" -> "GenericSlotterP" [label="Init", URL="../ihtml/tos.interfaces.Init.html", fontsize=10];
+  "GenericSlotterP" -> "GenericSlotterC.Alarm32khz32C" [label="Alarm<T32khz, uint32_t>", URL="../ihtml/tos.lib.timer.Alarm.html", fontsize=10];
+  "GenericSlotterP" -> "LedsC" [label="Leds", URL="../ihtml/tos.interfaces.Leds.html", fontsize=10];
+}

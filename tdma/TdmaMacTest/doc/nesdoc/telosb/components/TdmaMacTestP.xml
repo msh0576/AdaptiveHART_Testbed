@@ -1,0 +1,146 @@
+<?xml version="1.0" ?><component loc="30:TdmaMacTestP.nc" nicename="TdmaMacTestP" qname="TdmaMacTestP">
+      <documentation loc="33:/opt/tinyos-2.1.2/tos/lib/printf/printf.h">
+        <short>
+
+ </short>
+        <long>
+
+ @author Kevin Klues (klueska@cs.wustl.edu)
+ @version $Revision: 1.17 $
+ @date $Date: 2010-06-29 22:07:50 $
+</long>
+      </documentation>
+      <module/>
+    <specification><interface loc="42:TdmaMacTestP.nc" name="MacReceive" provided="0" ref="0x7f2d66dbea10">
+      <component-ref nicename="TdmaMacTestP" qname="TdmaMacTestP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MacReceive" ref="0x7f2d66dbea10" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f2d66dbed60" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="66:TdmaMacTestP.nc" name="send" provided="0" ref="0x7f2d66da96f0">
+      <component-ref nicename="TdmaMacTestP" qname="TdmaMacTestP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="send" ref="0x7f2d66da96f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.TaskBasic" qname="TaskBasic"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="postTask" ref="0x7f2d66da9a40" scoped=""/>
+        <function-ref name="runTask" ref="0x7f2d66da9bc8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="33:TdmaMacTestP.nc" name="Boot" provided="0" ref="0x7f2d66deb268">
+      <component-ref nicename="TdmaMacTestP" qname="TdmaMacTestP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x7f2d66deb268" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x7f2d66deb5b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="35:TdmaMacTestP.nc" name="Packet" provided="0" ref="0x7f2d66dd5488">
+      <component-ref nicename="TdmaMacTestP" qname="TdmaMacTestP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x7f2d66dd5488" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f2d66dd57d8" scoped=""/>
+        <function-ref name="payloadLength" ref="0x7f2d66dd5960" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f2d66dd5ae8" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f2d66dd5c70" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x7f2d66dd5df8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:TdmaMacTestP.nc" name="PacketTimer" provided="0" ref="0x7f2d66dae5a8">
+      <component-ref nicename="TdmaMacTestP" qname="TdmaMacTestP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimer" ref="0x7f2d66dae5a8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f2d66dbfe08"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f2d66db91f8"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f2d66dad8f0" scoped=""/>
+        <function-ref name="fired" ref="0x7f2d66dba020" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x7f2d66dbad10" scoped=""/>
+        <function-ref name="isOneShot" ref="0x7f2d66dba8c0" scoped=""/>
+        <function-ref name="getdt" ref="0x7f2d66dab1c0" scoped=""/>
+        <function-ref name="gett0" ref="0x7f2d66dadd40" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f2d66dba470" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x7f2d66dbd118" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x7f2d66dad320" scoped=""/>
+        <function-ref name="startOneShot" ref="0x7f2d66dbd5b8" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d66dbda58" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="36:TdmaMacTestP.nc" name="MacControl" provided="0" ref="0x7f2d66dd12a8">
+      <component-ref nicename="TdmaMacTestP" qname="TdmaMacTestP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MacControl" ref="0x7f2d66dd12a8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f2d66dd15f8" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f2d66dd1780" scoped=""/>
+        <function-ref name="start" ref="0x7f2d66dd1908" scoped=""/>
+        <function-ref name="stop" ref="0x7f2d66dd1a90" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:TdmaMacTestP.nc" name="MacSend" provided="0" ref="0x7f2d66dc2398">
+      <component-ref nicename="TdmaMacTestP" qname="TdmaMacTestP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MacSend" ref="0x7f2d66dc2398" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f2d66dc26e8" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f2d66dc2870" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f2d66dc29f8" scoped=""/>
+        <function-ref name="cancel" ref="0x7f2d66dc2b80" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f2d66dc2d08" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="34:TdmaMacTestP.nc" name="Leds" provided="0" ref="0x7f2d66dea020">
+      <component-ref nicename="TdmaMacTestP" qname="TdmaMacTestP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x7f2d66dea020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x7f2d66dea370" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x7f2d66dea4f8" scoped=""/>
+        <function-ref name="led1On" ref="0x7f2d66dea680" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x7f2d66dea808" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x7f2d66dea990" scoped=""/>
+        <function-ref name="get" ref="0x7f2d66deab18" scoped=""/>
+        <function-ref name="led1Off" ref="0x7f2d66deaca0" scoped=""/>
+        <function-ref name="led2Off" ref="0x7f2d66de9330" scoped=""/>
+        <function-ref name="set" ref="0x7f2d66deae28" scoped=""/>
+        <function-ref name="led0On" ref="0x7f2d66de9020" scoped=""/>
+        <function-ref name="led2On" ref="0x7f2d66de91a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="37:TdmaMacTestP.nc" name="PacketAcknowledgements" provided="0" ref="0x7f2d66dcf7c8">
+      <component-ref nicename="TdmaMacTestP" qname="TdmaMacTestP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketAcknowledgements" ref="0x7f2d66dcf7c8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requestAck" ref="0x7f2d66dcfb18" scoped=""/>
+        <function-ref name="noAck" ref="0x7f2d66dcfca0" scoped=""/>
+        <function-ref name="wasAcked" ref="0x7f2d66dcfe28" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:TdmaMacTestP.nc" name="FrameConfiguration" provided="0" ref="0x7f2d66dbb678">
+      <component-ref nicename="TdmaMacTestP" qname="TdmaMacTestP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FrameConfiguration" ref="0x7f2d66dbb678" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.FrameConfiguration" qname="FrameConfiguration"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setFrameLength" ref="0x7f2d66dbb9c8" scoped=""/>
+        <function-ref name="setSlotLength" ref="0x7f2d66dbbb50" scoped=""/>
+        <function-ref name="getSlotLength" ref="0x7f2d66dbbcd8" scoped=""/>
+        <function-ref name="getFrameLength" ref="0x7f2d66dbbe60" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>
