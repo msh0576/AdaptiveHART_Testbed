@@ -1,0 +1,5 @@
+
+CFLAGS += -I$(UPMA_DIR)/lib/macs/pure-tdma \
+		-I$(TOSDIR)/lib/ftsp
+
+PFLAGS += -I$(TOSDIR)/lib/ftsp

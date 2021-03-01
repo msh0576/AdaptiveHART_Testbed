@@ -1,0 +1,56 @@
+<?xml version="1.0" ?><interfacedef loc="2:/home/csilab/upma/interfaces/Routing.nc" nicename="Routing" qname="Routing">
+      <function command="" loc="7:/home/csilab/upma/interfaces/Routing.nc" name="NeighborTable" provided="0" ref="0x7f478700c610">
+        <interfacedef-ref nicename="Routing" qname="Routing"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-pointer alignment="I:2" size="I:2">
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x7f47885e3dc0"/></typename>
+            </type-int>
+          </type-pointer>
+          <function-parameters>
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x7f47885e3dc0"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="7:/home/csilab/upma/interfaces/Routing.nc" name="nodeId" ref="0x7f478700c350">
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x7f47885e3dc0"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="5:/home/csilab/upma/interfaces/Routing.nc" name="MakeParent" provided="0" ref="0x7f478700db80">
+        <interfacedef-ref nicename="Routing" qname="Routing"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="am_addr_t" ref="0x7f47885e3dc0"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x7f47885e3dc0"/></typename>
+            </type-int>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+                <typename><typedef-ref name="am_addr_t" ref="0x7f47885e3dc0"/></typename>
+              </type-int>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="5:/home/csilab/upma/interfaces/Routing.nc" name="nodeId" ref="0x7f478700d530">
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x7f47885e3dc0"/></typename>
+            </type-int>
+          </variable>
+          <variable loc="5:/home/csilab/upma/interfaces/Routing.nc" name="Neighbor" ref="0x7f478700d8f0">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+                <typename><typedef-ref name="am_addr_t" ref="0x7f47885e3dc0"/></typename>
+              </type-int>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+    </interfacedef>

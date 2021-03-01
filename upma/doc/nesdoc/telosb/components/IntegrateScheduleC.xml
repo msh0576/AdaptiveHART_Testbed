@@ -1,0 +1,101 @@
+<?xml version="1.0" ?><component loc="1:/home/csilab/upma/lib/macs/pure-tdma/IntegrateScheduleC.nc" nicename="IntegrateScheduleC" qname="IntegrateScheduleC">
+      <configuration/>
+      <wiring>
+        <wire loc="13:/home/csilab/upma/lib/macs/pure-tdma/IntegrateScheduleC.nc">
+          <from><interface-ref name="IntegrateSchedule" ref="0x7f4786d43020" scoped=""/></from>
+          <to><interface-ref name="IntegrateSchedule" ref="0x7f4786d01020" scoped=""/></to>
+        </wire>
+        <wire loc="14:/home/csilab/upma/lib/macs/pure-tdma/IntegrateScheduleC.nc">
+          <from><interface-ref name="Useful" ref="0x7f4786d016b0" scoped=""/></from>
+          <to><interface-ref name="Useful" ref="0x7f4786d90790" scoped=""/></to>
+        </wire>
+        <wire loc="15:/home/csilab/upma/lib/macs/pure-tdma/IntegrateScheduleC.nc">
+          <from><interface-ref name="DynamicSchedule" ref="0x7f4786d00310" scoped=""/></from>
+          <to><interface-ref name="DynamicSchedule" ref="0x7f4786d91180" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="3:/home/csilab/upma/lib/macs/pure-tdma/IntegrateScheduleC.nc" name="IntegrateSchedule" provided="1" ref="0x7f4786d43020">
+      <component-ref nicename="IntegrateScheduleC" qname="IntegrateScheduleC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="IntegrateSchedule" ref="0x7f4786d43020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="IntegrateSchedule" qname="IntegrateSchedule"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="SetSchedule" ref="0x7f4786d433a0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="8:/home/csilab/upma/lib/macs/pure-tdma/IntegrateScheduleP.nc" name="DynamicSchedule" provided="0" ref="0x7f4786d00310">
+      <component-ref nicename="IntegrateScheduleP" qname="IntegrateScheduleP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="DynamicSchedule" ref="0x7f4786d00310" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="DynamicSchedule" qname="DynamicSchedule"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="Initial" ref="0x7f4786d00690" scoped=""/>
+        <function-ref name="Scheduler" ref="0x7f4786d00820" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="3:/home/csilab/upma/lib/macs/pure-tdma/IntegrateScheduleP.nc" name="IntegrateSchedule" provided="1" ref="0x7f4786d01020">
+      <component-ref nicename="IntegrateScheduleP" qname="IntegrateScheduleP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="IntegrateSchedule" ref="0x7f4786d01020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="IntegrateSchedule" qname="IntegrateSchedule"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="SetSchedule" ref="0x7f4786d013a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="3:/home/csilab/upma/lib/macs/pure-tdma/UsefulC.nc" name="Useful" provided="1" ref="0x7f4786d90790">
+      <component-ref nicename="UsefulC" qname="UsefulC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Useful" ref="0x7f4786d90790" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Useful" qname="Useful"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="DeadlineList" ref="0x7f4786d90b10" scoped=""/>
+        <function-ref name="SetSR" ref="0x7f4786d90ca0" scoped=""/>
+        <function-ref name="MakeRoute" ref="0x7f4786d90e30" scoped=""/>
+        <function-ref name="TaskSenderReceiver" ref="0x7f4786d45020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="3:/home/csilab/upma/lib/macs/pure-tdma/SchedulerC.nc" name="DynamicSchedule" provided="1" ref="0x7f4786d91180">
+      <component-ref nicename="SchedulerC" qname="SchedulerC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="DynamicSchedule" ref="0x7f4786d91180" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="DynamicSchedule" qname="DynamicSchedule"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="Initial" ref="0x7f4786d91500" scoped=""/>
+        <function-ref name="Scheduler" ref="0x7f4786d91690" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="7:/home/csilab/upma/lib/macs/pure-tdma/IntegrateScheduleP.nc" name="Useful" provided="0" ref="0x7f4786d016b0">
+      <component-ref nicename="IntegrateScheduleP" qname="IntegrateScheduleP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Useful" ref="0x7f4786d016b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Useful" qname="Useful"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="DeadlineList" ref="0x7f4786d01a30" scoped=""/>
+        <function-ref name="SetSR" ref="0x7f4786d01bc0" scoped=""/>
+        <function-ref name="MakeRoute" ref="0x7f4786d01d50" scoped=""/>
+        <function-ref name="TaskSenderReceiver" ref="0x7f4786d00020" scoped=""/>
+      </interface-functions>
+    </interface><component loc="1:/home/csilab/upma/lib/macs/pure-tdma/IntegrateScheduleP.nc" nicename="IntegrateScheduleP" qname="IntegrateScheduleP">
+      <module/>
+    </component><component loc="1:/home/csilab/upma/lib/macs/pure-tdma/UsefulC.nc" nicename="UsefulC" qname="UsefulC">
+      <configuration/>
+      <wiring>
+        <wire loc="10:/home/csilab/upma/lib/macs/pure-tdma/UsefulC.nc">
+          <from><interface-ref name="Useful" ref="0x7f4786d90790" scoped=""/></from>
+          <to><interface-ref name="Useful" ref="0x7f4786d45a70" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="1:/home/csilab/upma/lib/macs/pure-tdma/SchedulerC.nc" nicename="SchedulerC" qname="SchedulerC">
+      <configuration/>
+      <wiring>
+        <wire loc="13:/home/csilab/upma/lib/macs/pure-tdma/SchedulerC.nc">
+          <from><interface-ref name="DynamicSchedule" ref="0x7f4786d91180" scoped=""/></from>
+          <to><interface-ref name="DynamicSchedule" ref="0x7f4786d8e1e0" scoped=""/></to>
+        </wire>
+        <wire loc="14:/home/csilab/upma/lib/macs/pure-tdma/SchedulerC.nc">
+          <from><interface-ref name="Useful" ref="0x7f4786d8ea00" scoped=""/></from>
+          <to><interface-ref name="Useful" ref="0x7f4786d90790" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

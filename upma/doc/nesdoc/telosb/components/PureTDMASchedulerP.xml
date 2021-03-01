@@ -1,0 +1,320 @@
+<?xml version="1.0" ?><component loc="33:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP">
+      <documentation loc="33:/usr/src/tinyos/tos/lib/printf/printf.h">
+        <short>
+
+ </short>
+        <long>
+
+ @author Kevin Klues (klueska@cs.wustl.edu)
+ @version $Revision: 1.17 $
+ @date $Date: 2010-06-29 22:07:50 $
+</long>
+      </documentation>
+      <module/>
+    <specification><interface loc="45:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="Slotter" provided="0" ref="0x7f4787020e40">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Slotter" ref="0x7f4787020e40" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Slotter" qname="Slotter"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="slot" ref="0x7f478701f1e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="36:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="SplitControl" provided="1" ref="0x7f4787028e50">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SplitControl" ref="0x7f4787028e50" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f4787025210" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f47870253a0" scoped=""/>
+        <function-ref name="start" ref="0x7f4787025530" scoped=""/>
+        <function-ref name="stop" ref="0x7f47870256c0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="SubSend" provided="0" ref="0x7f478701ecf0">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SubSend" ref="0x7f478701ecf0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AsyncSend" qname="AsyncSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f478701d0a0" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f478701d230" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f478701d3c0" scoped=""/>
+        <function-ref name="cancel" ref="0x7f478701d550" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f478701d6e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="40:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="Frame" provided="1" ref="0x7f4787022060">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Frame" ref="0x7f4787022060" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="FrameConfiguration" qname="FrameConfiguration"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setFrameLength" ref="0x7f47870223e0" scoped=""/>
+        <function-ref name="setSlotLength" ref="0x7f4787022570" scoped=""/>
+        <function-ref name="getSlotLength" ref="0x7f4787022700" scoped=""/>
+        <function-ref name="getFrameLength" ref="0x7f4787022890" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="SubReceive" provided="0" ref="0x7f47870179e0">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SubReceive" ref="0x7f47870179e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AsyncReceive" qname="AsyncReceive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4787017d60" scoped=""/>
+        <function-ref name="updateBuffer" ref="0x7f4787015020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="75:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="Useful" provided="0" ref="0x7f4787001e10">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Useful" ref="0x7f4787001e10" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Useful" qname="Useful"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="DeadlineList" ref="0x7f478700f1c0" scoped=""/>
+        <function-ref name="SetSR" ref="0x7f478700f350" scoped=""/>
+        <function-ref name="MakeRoute" ref="0x7f478700f4e0" scoped=""/>
+        <function-ref name="TaskSenderReceiver" ref="0x7f478700f670" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="64:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="MySlot" provided="0" ref="0x7f478700e5f0">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MySlot" ref="0x7f478700e5f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="MySlot" qname="MySlot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getmyslot" ref="0x7f478700e970" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="58:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="Boot" provided="0" ref="0x7f4787013ac0">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x7f4787013ac0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x7f4787013e40" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="39:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="CcaControl" provided="1" ref="0x7f47870235d0">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CcaControl" ref="0x7f47870235d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="CcaControl" qname="CcaControl"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getCongestionBackoff" ref="0x7f4787023950" scoped=""/>
+        <function-ref name="getInitialBackoff" ref="0x7f4787023ae0" scoped=""/>
+        <function-ref name="getCca" ref="0x7f4787023c70" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="77:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="forwardQueue" provided="0" ref="0x7f478700a8b0">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="forwardQueue" ref="0x7f478700a8b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Queue" qname="Queue"/>
+        <arguments>
+          <type-pointer alignment="I:2" size="I:2">
+            <type-tag alignment="I:1" size="I:25"><nx_struct-ref name="TdmaMsg" ref="0x7f47870393c0"/>
+              <typename><typedef-ref name="TdmaMsg_t" ref="0x7f4787038390"/></typename>
+            </type-tag>
+          </type-pointer>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="head" ref="0x7f4786ffb4a0" scoped=""/>
+        <function-ref name="enqueue" ref="0x7f4786ffa260" scoped=""/>
+        <function-ref name="element" ref="0x7f4786ffa8d0" scoped=""/>
+        <function-ref name="maxSize" ref="0x7f4786ffb020" scoped=""/>
+        <function-ref name="dequeue" ref="0x7f4786ffbb50" scoped=""/>
+        <function-ref name="empty" ref="0x7f47870006d0" scoped=""/>
+        <function-ref name="size" ref="0x7f4787000b50" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="RadioPowerControl" provided="0" ref="0x7f4787021530">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioPowerControl" ref="0x7f4787021530" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="RadioPowerControl" qname="RadioPowerControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f47870218b0" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f4787021a40" scoped=""/>
+        <function-ref name="start" ref="0x7f4787021bd0" scoped=""/>
+        <function-ref name="stop" ref="0x7f4787021d60" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="37:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="Send" provided="1" ref="0x7f47870259e0">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Send" ref="0x7f47870259e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AsyncSend" qname="AsyncSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4787025d60" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4787024020" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f47870241b0" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4787024340" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f47870244d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="GenericSlotter" provided="0" ref="0x7f4787022cd0">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="GenericSlotter" ref="0x7f4787022cd0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AsyncStdControl" qname="AsyncStdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x7f47870210a0" scoped=""/>
+        <function-ref name="stop" ref="0x7f4787021230" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="55:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="Resend" provided="0" ref="0x7f4787014a80">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resend" ref="0x7f4787014a80" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Resend" qname="Resend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="resend" ref="0x7f4787014e00" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="35:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="Init" provided="1" ref="0x7f4787028800">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x7f4787028800" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f4787028b80" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="74:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="DynamicSchedule" provided="0" ref="0x7f47870073a0">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="DynamicSchedule" ref="0x7f47870073a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="DynamicSchedule" qname="DynamicSchedule"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="Initial" ref="0x7f4787007720" scoped=""/>
+        <function-ref name="Scheduler" ref="0x7f47870078b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="BeaconSend" provided="0" ref="0x7f478701da40">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="BeaconSend" ref="0x7f478701da40" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AsyncSend" qname="AsyncSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4787017020" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f47870171b0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4787017340" scoped=""/>
+        <function-ref name="cancel" ref="0x7f47870174d0" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4787017660" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="38:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="Receive" provided="1" ref="0x7f4787024830">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Receive" ref="0x7f4787024830" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AsyncReceive" qname="AsyncReceive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4787024bb0" scoped=""/>
+        <function-ref name="updateBuffer" ref="0x7f4787024d40" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="76:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="IntegrateSchedule" provided="0" ref="0x7f478700a020">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="IntegrateSchedule" ref="0x7f478700a020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="IntegrateSchedule" qname="IntegrateSchedule"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="SetSchedule" ref="0x7f478700a3a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="59:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="Leds" provided="0" ref="0x7f47870120f0">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x7f47870120f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x7f4787012470" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x7f4787012600" scoped=""/>
+        <function-ref name="led1On" ref="0x7f4787012790" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x7f4787012920" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x7f4787012ab0" scoped=""/>
+        <function-ref name="get" ref="0x7f4787012c40" scoped=""/>
+        <function-ref name="led1Off" ref="0x7f4787012dd0" scoped=""/>
+        <function-ref name="led2Off" ref="0x7f47870114d0" scoped=""/>
+        <function-ref name="set" ref="0x7f4787011020" scoped=""/>
+        <function-ref name="led0On" ref="0x7f47870111b0" scoped=""/>
+        <function-ref name="led2On" ref="0x7f4787011340" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="56:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="PacketAcknowledgements" provided="0" ref="0x7f47870131a0">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketAcknowledgements" ref="0x7f47870131a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requestAck" ref="0x7f4787013520" scoped=""/>
+        <function-ref name="noAck" ref="0x7f47870136b0" scoped=""/>
+        <function-ref name="wasAcked" ref="0x7f4787013840" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="FrameConfiguration" provided="0" ref="0x7f478701e180">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FrameConfiguration" ref="0x7f478701e180" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="FrameConfiguration" qname="FrameConfiguration"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setFrameLength" ref="0x7f478701e500" scoped=""/>
+        <function-ref name="setSlotLength" ref="0x7f478701e690" scoped=""/>
+        <function-ref name="getSlotLength" ref="0x7f478701e820" scoped=""/>
+        <function-ref name="getFrameLength" ref="0x7f478701e9b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="54:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="AMPacket" provided="0" ref="0x7f4787015310">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x7f4787015310" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="headerSize" ref="0x7f4787015690" scoped=""/>
+        <function-ref name="group" ref="0x7f4787015820" scoped=""/>
+        <function-ref name="source" ref="0x7f47870159b0" scoped=""/>
+        <function-ref name="address" ref="0x7f4787015b40" scoped=""/>
+        <function-ref name="destination" ref="0x7f4787015cd0" scoped=""/>
+        <function-ref name="setSource" ref="0x7f4787015e60" scoped=""/>
+        <function-ref name="setDestination" ref="0x7f4787014020" scoped=""/>
+        <function-ref name="type" ref="0x7f47870141b0" scoped=""/>
+        <function-ref name="setType" ref="0x7f4787014340" scoped=""/>
+        <function-ref name="isForMe" ref="0x7f47870144d0" scoped=""/>
+        <function-ref name="setGroup" ref="0x7f4787014660" scoped=""/>
+        <function-ref name="localGroup" ref="0x7f47870147f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="SlotterControl" provided="0" ref="0x7f4787018130">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SlotterControl" ref="0x7f4787018130" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="SlotterControl" qname="SlotterControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4787018e10" scoped=""/>
+        <function-ref name="getSlot" ref="0x7f4787018640" scoped=""/>
+        <function-ref name="synchronize" ref="0x7f47870187d0" scoped=""/>
+        <function-ref name="isSynchornized" ref="0x7f4787018960" scoped=""/>
+        <function-ref name="getAlarm" ref="0x7f4787018af0" scoped=""/>
+        <function-ref name="getRemaining" ref="0x7f4787018c80" scoped=""/>
+        <function-ref name="stop" ref="0x7f47870184b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="65:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerP.nc" name="Routing" provided="0" ref="0x7f478700c8b0">
+      <component-ref nicename="PureTDMASchedulerP" qname="PureTDMASchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Routing" ref="0x7f478700c8b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Routing" qname="Routing"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="NeighborTable" ref="0x7f478700cc30" scoped=""/>
+        <function-ref name="MakeParent" ref="0x7f478700cdc0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

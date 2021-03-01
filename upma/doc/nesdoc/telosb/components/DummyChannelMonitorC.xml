@@ -1,0 +1,28 @@
+<?xml version="1.0" ?><component loc="30:/home/csilab/upma/system/DummyChannelMonitorC.nc" nicename="DummyChannelMonitorC" qname="DummyChannelMonitorC">
+      <documentation loc="23:/home/csilab/upma/system/DummyChannelMonitorC.nc">
+        <short>
+
+ </short>
+        <long>
+
+ @author Octav Chipara
+ @version $Revision$
+ @date $Date$
+</long>
+      </documentation>
+      <module/>
+    <specification><interface loc="32:/home/csilab/upma/system/DummyChannelMonitorC.nc" name="ChannelMonitor" provided="0" ref="0x7f4786e4a6e0">
+      <component-ref nicename="DummyChannelMonitorC" qname="DummyChannelMonitorC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ChannelMonitor" ref="0x7f4786e4a6e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="ChannelMonitor" qname="ChannelMonitor"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setCheckLength" ref="0x7f4786e4aa60" scoped=""/>
+        <function-ref name="error" ref="0x7f4786e4abf0" scoped=""/>
+        <function-ref name="check" ref="0x7f4786e4ad80" scoped=""/>
+        <function-ref name="busy" ref="0x7f4786e0b020" scoped=""/>
+        <function-ref name="free" ref="0x7f4786e0b1b0" scoped=""/>
+        <function-ref name="getCheckLength" ref="0x7f4786e0b340" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

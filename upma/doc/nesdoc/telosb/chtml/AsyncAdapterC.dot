@@ -1,0 +1,14 @@
+digraph "AsyncAdapterC" {
+  n0x2b7f5cc75688 [shape=ellipse, style=filled, label="Send", fontsize=12];
+  "AsyncSendAdapterP" [fontsize=12, shape=box, URL="../chtml/AsyncSendAdapterP.html"];
+  n0x2b7f5cc75080 [shape=ellipse, style=filled, label="Receive", fontsize=12];
+  "AsyncReceiveAdapterP" [fontsize=12, shape=box, URL="../chtml/AsyncReceiveAdapterP.html"];
+  "AsyncReceiveAdapterP" [fontsize=12, shape=box, URL="../chtml/AsyncReceiveAdapterP.html"];
+  n0x2b7f5cc74328 [shape=ellipse, style=filled, label="AsyncReceive", fontsize=12];
+  "AsyncSendAdapterP" [fontsize=12, shape=box, URL="../chtml/AsyncSendAdapterP.html"];
+  n0x2b7f5cc74ae8 [shape=ellipse, style=filled, label="AsyncSend", fontsize=12];
+  "n0x2b7f5cc75688" -> "AsyncSendAdapterP" [label="Send", URL="../ihtml/tos.interfaces.Send.html", fontsize=10];
+  "n0x2b7f5cc75080" -> "AsyncReceiveAdapterP" [label="Receive", URL="../ihtml/tos.interfaces.Receive.html", fontsize=10];
+  "AsyncReceiveAdapterP" -> "n0x2b7f5cc74328" [label="AsyncReceive", URL="../ihtml/AsyncReceive.html", fontsize=10];
+  "AsyncSendAdapterP" -> "n0x2b7f5cc74ae8" [label="AsyncSend", URL="../ihtml/AsyncSend.html", fontsize=10];
+}

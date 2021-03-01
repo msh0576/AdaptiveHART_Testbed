@@ -1,0 +1,32 @@
+<?xml version="1.0" ?><component loc="2:/home/csilab/upma/lib/macs/pure-tdma/ScheduleSlotC.nc" nicename="ScheduleSlotC" qname="ScheduleSlotC">
+      <documentation loc="116:/home/csilab/upma/lib/macs/pure-tdma/PureTDMASchedulerC.nc">
+        <short/>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="10:/home/csilab/upma/lib/macs/pure-tdma/ScheduleSlotC.nc">
+          <from><interface-ref name="MySlot" ref="0x7f4786dab310" scoped=""/></from>
+          <to><interface-ref name="MySlot" ref="0x7f4786da6210" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="4:/home/csilab/upma/lib/macs/pure-tdma/ScheduleSlotC.nc" name="MySlot" provided="1" ref="0x7f4786dab310">
+      <component-ref nicename="ScheduleSlotC" qname="ScheduleSlotC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MySlot" ref="0x7f4786dab310" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="MySlot" qname="MySlot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getmyslot" ref="0x7f4786dab690" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="5:/home/csilab/upma/lib/macs/pure-tdma/ScheduleSlotP.nc" name="MySlot" provided="1" ref="0x7f4786da6210">
+      <component-ref nicename="ScheduleSlotP" qname="ScheduleSlotP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MySlot" ref="0x7f4786da6210" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="MySlot" qname="MySlot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getmyslot" ref="0x7f4786da6590" scoped=""/>
+      </interface-functions>
+    </interface><component loc="3:/home/csilab/upma/lib/macs/pure-tdma/ScheduleSlotP.nc" nicename="ScheduleSlotP" qname="ScheduleSlotP">
+      <module/>
+    </component></referenced></component>

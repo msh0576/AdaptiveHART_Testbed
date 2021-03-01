@@ -1,0 +1,204 @@
+<?xml version="1.0" ?><component loc="32:/home/csilab/upma/system/LocalTime32khz16C.nc" nicename="LocalTime32khz16C" qname="LocalTime32khz16C">
+      <documentation loc="23:/home/csilab/upma/types/LocalTimeExtended.h">
+        <short>
+
+ </short>
+        <long>
+
+ @author Kevin Klues (klueska@cs.wustl.edu)
+ @version $Revision$
+ @date $Date$
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="42:/home/csilab/upma/system/LocalTime32khz16C.nc">
+          <from><interface-ref name="LocalTime" ref="0x7f478708ec60" scoped=""/></from>
+          <to><interface-ref name="LocalTime" ref="0x7f4787082870" scoped=""/></to>
+        </wire>
+        <wire loc="44:/home/csilab/upma/system/LocalTime32khz16C.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x7f47887c7db0" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f4787082020" scoped=""/></to>
+        </wire>
+        <wire loc="45:/home/csilab/upma/system/LocalTime32khz16C.nc">
+          <from><interface-ref name="Counter" ref="0x7f478704e6e0" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x7f4787fc39a0" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="34:/home/csilab/upma/system/LocalTime32khz16C.nc" name="LocalTime" provided="1" ref="0x7f478708ec60">
+      <component-ref nicename="LocalTime32khz16C" qname="LocalTime32khz16C"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LocalTime" ref="0x7f478708ec60" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="LocalTimeExtended" qname="LocalTimeExtended"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+          <type-tag alignment="I:1" size="I:6"><nx_struct-ref name="local_time16" ref="0x7f47870d11c0"/>
+            <typename><typedef-ref name="local_time16_t" ref="0x7f47870d1a70"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="lessThan" ref="0x7f47870874d0" scoped=""/>
+        <function-ref name="greaterThan" ref="0x7f4787087ba0" scoped=""/>
+        <function-ref name="equal" ref="0x7f47870852a0" scoped=""/>
+        <function-ref name="add" ref="0x7f4787089020" scoped=""/>
+        <function-ref name="sub" ref="0x7f47870896f0" scoped=""/>
+        <function-ref name="compare" ref="0x7f4787089dc0" scoped=""/>
+        <function-ref name="getNow" ref="0x7f478708aac0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="34:/home/csilab/upma/system/LocalTime16P.nc" name="Init" provided="1" ref="0x7f4787082020">
+      <component-ref nicename="LocalTime32khz16C.LocalTimeP" qname="LocalTime32khz16C.LocalTimeP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x7f4787082020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f47870823a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/usr/src/tinyos/tos/chips/msp430/timer/Counter32khz16C.nc" name="Counter" provided="1" ref="0x7f4787fc39a0">
+      <component-ref nicename="tos.chips.msp430.timer.Counter32khz16C" qname="Counter32khz16C"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Counter" ref="0x7f4787fc39a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x7f4789391520"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x7f4787fc07e0" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x7f4787fbf1b0" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x7f4787fc0ca0" scoped=""/>
+        <function-ref name="overflow" ref="0x7f4787fbf670" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="37:/home/csilab/upma/system/LocalTime16P.nc" name="Counter" provided="0" ref="0x7f478704e6e0">
+      <component-ref nicename="LocalTime32khz16C.LocalTimeP" qname="LocalTime32khz16C.LocalTimeP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Counter" ref="0x7f478704e6e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x7f4789391520"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x7f478704d5b0" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x7f478704b020" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x7f478704da70" scoped=""/>
+        <function-ref name="overflow" ref="0x7f478704b4e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="35:/home/csilab/upma/system/LocalTime16P.nc" name="LocalTime" provided="1" ref="0x7f4787082870">
+      <component-ref nicename="LocalTime32khz16C.LocalTimeP" qname="LocalTime32khz16C.LocalTimeP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LocalTime" ref="0x7f4787082870" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="LocalTimeExtended" qname="LocalTimeExtended"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+          <type-tag alignment="I:1" size="I:6"><nx_struct-ref name="local_time16" ref="0x7f47870d11c0"/>
+            <typename><typedef-ref name="local_time16_t" ref="0x7f47870d1a70"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="lessThan" ref="0x7f4787050090" scoped=""/>
+        <function-ref name="greaterThan" ref="0x7f4787050760" scoped=""/>
+        <function-ref name="equal" ref="0x7f4787050e30" scoped=""/>
+        <function-ref name="add" ref="0x7f4787053b60" scoped=""/>
+        <function-ref name="sub" ref="0x7f47870512a0" scoped=""/>
+        <function-ref name="compare" ref="0x7f4787051970" scoped=""/>
+        <function-ref name="getNow" ref="0x7f47870536a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="58:/usr/src/tinyos/tos/system/MainC.nc" name="SoftwareInit" provided="0" ref="0x7f47887c7db0">
+      <component-ref nicename="tos.system.MainC" qname="MainC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SoftwareInit" ref="0x7f47887c7db0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f47887c6180" scoped=""/>
+      </interface-functions>
+    </interface><component loc="56:/usr/src/tinyos/tos/system/MainC.nc" nicename="tos.system.MainC" qname="MainC">
+      <documentation loc="45:/usr/src/tinyos/tos/system/MainC.nc">
+        <short>
+ MainC is the system interface the TinyOS boot sequence.</short>
+        <long>
+ MainC is the system interface the TinyOS boot sequence. It wires the
+ boot sequence implementation to the scheduler and hardware resources.
+
+ @author Philip Levis
+ @date   August 6 2005
+ @see    TEP 107: Boot Sequence
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="72:/usr/src/tinyos/tos/system/MainC.nc">
+          <from><interface-ref name="Boot" ref="0x7f47887c57f0" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x7f4788607590" scoped=""/></to>
+        </wire>
+        <wire loc="67:/usr/src/tinyos/tos/system/MainC.nc">
+          <from><interface-ref name="Scheduler" ref="0x7f4788607c00" scoped=""/></from>
+          <to><interface-ref name="Scheduler" ref="0x7f4788c643a0" scoped=""/></to>
+        </wire>
+        <wire loc="68:/usr/src/tinyos/tos/system/MainC.nc">
+          <from><interface-ref name="PlatformInit" ref="0x7f47885fa6c0" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f47887c6ca0" scoped=""/></to>
+        </wire>
+        <wire loc="71:/usr/src/tinyos/tos/system/MainC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x7f47885fadc0" scoped=""/></from>
+          <to><interface-ref name="SoftwareInit" ref="0x7f47887c7db0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="32(LocalTime32khz16C.LocalTimeP):/home/csilab/upma/system/LocalTime16P.nc" nicename="LocalTime32khz16C.LocalTimeP" qname="LocalTime32khz16C.LocalTimeP">
+      <documentation loc="23:/home/csilab/upma/types/LocalTimeExtended.h">
+        <short>
+
+ </short>
+        <long>
+
+ @author Kevin Klues (klueska@cs.wustl.edu)
+ @version $Revision$
+ @date $Date$
+</long>
+      </documentation>
+      <instance number="0">
+        <component-ref nicename="LocalTime16P" qname="LocalTime16P"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component loc="41:/usr/src/tinyos/tos/chips/msp430/timer/Counter32khz16C.nc" nicename="tos.chips.msp430.timer.Counter32khz16C" qname="Counter32khz16C">
+      <documentation loc="33:/usr/src/tinyos/tos/chips/msp430/timer/Counter32khz16C.nc">
+        <short>
+ Counter32khz16C provides at 16-bit counter at 32768 ticks per second.</short>
+        <long>
+ Counter32khz16C provides at 16-bit counter at 32768 ticks per second.
+
+ @author Cory Sharp &lt;cssharp@eecs.berkeley.edu&gt;
+ @see  Please refer to TEP 102 for more information about this component and its
+          intended use.
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="49:/usr/src/tinyos/tos/chips/msp430/timer/Counter32khz16C.nc">
+          <from><interface-ref name="Counter" ref="0x7f4787fc39a0" scoped=""/></from>
+          <to><interface-ref name="Msp430Counter32khz" ref="0x7f4787fbe9c0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

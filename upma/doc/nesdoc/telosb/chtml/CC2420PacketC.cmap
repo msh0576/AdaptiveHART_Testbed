@@ -1,0 +1,28 @@
+<area shape="rect" id="node2" href="../chtml/CC2420PacketP.html" title="CC2420PacketP" alt="" coords="879,117,1005,165">
+<area shape="poly" id="edge1" href="../ihtml/tos.interfaces.LinkPacketMetadata.html" title="LinkPacketMetadata" alt="" coords="148,47,217,71,294,91,452,115,610,129,753,136,866,138,866,143,753,141,610,134,451,120,293,96,215,76,147,52">
+<area shape="rect" id="edge1-label" href="../ihtml/tos.interfaces.LinkPacketMetadata.html" title="LinkPacketMetadata" alt="" coords="293,78,407,93">
+<area shape="rect" id="node11" href="../chtml/tos.lib.timer.CounterToLocalTimeC.html" title="CounterToLocalTimeC" alt="" coords="756,235,927,283">
+<area shape="poly" id="edge11" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;T32khz&gt;" alt="" coords="884,167,857,191,849,205,845,222,840,220,844,204,853,188,880,163">
+<area shape="rect" id="edge11-label" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;T32khz&gt;" alt="" coords="855,190,972,205">
+<area shape="rect" id="node13" href="../chtml/tos.chips.msp430.timer.HilTimerMilliC.html" title="HilTimerMilliC" alt="" coords="951,229,1083,288">
+<area shape="poly" id="edge12" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TMilli&gt;" alt="" coords="963,164,980,188,997,216,993,219,975,191,958,167">
+<area shape="rect" id="edge12-label" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TMilli&gt;" alt="" coords="987,190,1099,205">
+<area shape="poly" id="edge2" href="../ihtml/tos.chips.cc2420.interfaces.CC2420Packet.html" title="CC2420Packet" alt="" coords="332,46,395,70,466,91,574,110,682,123,866,136,866,141,682,129,573,116,465,96,393,75,331,51">
+<area shape="rect" id="edge2-label" href="../ihtml/tos.chips.cc2420.interfaces.CC2420Packet.html" title="CC2420Packet" alt="" coords="465,78,548,93">
+<area shape="poly" id="edge3" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;T32khz, uint32_t&gt;" alt="" coords="520,51,549,73,582,91,655,114,731,128,803,135,866,138,866,144,803,141,730,133,654,119,580,96,546,77,517,55">
+<area shape="rect" id="edge3-label" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;T32khz, uint32_t&gt;" alt="" coords="581,78,791,93">
+<area shape="poly" id="edge4" href="../ihtml/tos.chips.cc2420.interfaces.CC2420PacketBody.html" title="CC2420PacketBody" alt="" coords="755,50,825,91,868,110,866,115,823,96,752,54">
+<area shape="rect" id="edge4-label" href="../ihtml/tos.chips.cc2420.interfaces.CC2420PacketBody.html" title="CC2420PacketBody" alt="" coords="824,78,937,93">
+<area shape="poly" id="edge5" href="../ihtml/tos.chips.cc2420.interfaces.PacketTimeSyncOffset.html" title="PacketTimeSyncOffset" alt="" coords="945,54,945,104,940,104,940,54">
+<area shape="rect" id="edge5-label" href="../ihtml/tos.chips.cc2420.interfaces.PacketTimeSyncOffset.html" title="PacketTimeSyncOffset" alt="" coords="943,78,1068,93">
+<area shape="poly" id="edge6" href="../ihtml/PacketQuality.html" title="PacketQuality" alt="" coords="1122,55,1100,76,1075,96,1020,121,1018,116,1072,91,1097,72,1118,51">
+<area shape="rect" id="edge6-label" href="../ihtml/PacketQuality.html" title="PacketQuality" alt="" coords="1093,78,1172,93">
+<area shape="poly" id="edge7" href="../ihtml/PacketPower.html" title="PacketPower" alt="" coords="1266,53,1225,75,1178,96,1097,119,1020,133,1019,128,1096,113,1176,91,1223,71,1263,48">
+<area shape="rect" id="edge7-label" href="../ihtml/PacketPower.html" title="PacketPower" alt="" coords="1215,78,1285,93">
+<area shape="poly" id="edge8" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TMilli, uint32_t&gt;" alt="" coords="1436,53,1368,75,1291,96,1148,121,1020,136,1019,131,1147,116,1290,91,1366,70,1435,48">
+<area shape="rect" id="edge8-label" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TMilli, uint32_t&gt;" alt="" coords="1352,78,1556,93">
+<area shape="poly" id="edge9" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="1663,49,1617,74,1562,96,1455,114,1307,127,1020,141,1020,135,1306,122,1454,109,1561,91,1615,70,1660,45">
+<area shape="rect" id="edge9-label" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="1605,78,1751,93">
+<area shape="rect" id="node12" href="../chtml/tos.chips.msp430.timer.Counter32khz32C.html" title="Counter32khz32C" alt="" coords="767,352,915,411">
+<area shape="poly" id="edge10" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;T32khz, uint32_t&gt;" alt="" coords="844,283,844,338,839,338,839,283">
+<area shape="rect" id="edge10-label" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;T32khz, uint32_t&gt;" alt="" coords="841,313,997,327">

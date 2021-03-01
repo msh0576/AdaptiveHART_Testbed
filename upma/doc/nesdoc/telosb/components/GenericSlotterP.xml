@@ -1,0 +1,120 @@
+<?xml version="1.0" ?><component loc="30:/home/csilab/upma/system/GenericSlotterP.nc" nicename="GenericSlotterP" qname="GenericSlotterP">
+      <documentation loc="23:/home/csilab/upma/system/GenericSlotterP.nc">
+        <short>      
+
+ </short>
+        <long>      
+
+ @author Octav Chipara
+ @version $Revision$
+ @date $Date$
+</long>
+      </documentation>
+      <module/>
+    <specification><interface loc="34:/home/csilab/upma/system/GenericSlotterP.nc" name="Slotter" provided="1" ref="0x7f4786e7ec60">
+      <component-ref nicename="GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Slotter" ref="0x7f4786e7ec60" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Slotter" qname="Slotter"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="slot" ref="0x7f4786e7d020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:/home/csilab/upma/system/GenericSlotterP.nc" name="Boot" provided="0" ref="0x7f4786e76a90">
+      <component-ref nicename="GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x7f4786e76a90" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x7f4786e76e10" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="39:/home/csilab/upma/system/GenericSlotterP.nc" name="Alarm" provided="0" ref="0x7f4786e7b1a0">
+      <component-ref nicename="GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Alarm" ref="0x7f4786e7b1a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Alarm" qname="Alarm"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f4789391920"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4786e78b30" scoped=""/>
+        <function-ref name="fired" ref="0x7f4786e7a9f0" scoped=""/>
+        <function-ref name="startAt" ref="0x7f4786e784e0" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f4786e78020" scoped=""/>
+        <function-ref name="getAlarm" ref="0x7f4786e77020" scoped=""/>
+        <function-ref name="start" ref="0x7f4786e7a020" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786e7a530" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="32:/home/csilab/upma/system/GenericSlotterP.nc" name="Init" provided="1" ref="0x7f4786e81e00">
+      <component-ref nicename="GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x7f4786e81e00" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f4786e7e1c0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="40:/home/csilab/upma/system/GenericSlotterP.nc" name="Leds" provided="0" ref="0x7f4786e77440">
+      <component-ref nicename="GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x7f4786e77440" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x7f4786e777c0" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x7f4786e77950" scoped=""/>
+        <function-ref name="led1On" ref="0x7f4786e77ae0" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x7f4786e77c70" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x7f4786e77e00" scoped=""/>
+        <function-ref name="get" ref="0x7f4786e76020" scoped=""/>
+        <function-ref name="led1Off" ref="0x7f4786e761b0" scoped=""/>
+        <function-ref name="led2Off" ref="0x7f4786e767f0" scoped=""/>
+        <function-ref name="set" ref="0x7f4786e76340" scoped=""/>
+        <function-ref name="led0On" ref="0x7f4786e764d0" scoped=""/>
+        <function-ref name="led2On" ref="0x7f4786e76660" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="33:/home/csilab/upma/system/GenericSlotterP.nc" name="AsyncStdControl" provided="1" ref="0x7f4786e7e4b0">
+      <component-ref nicename="GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AsyncStdControl" ref="0x7f4786e7e4b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AsyncStdControl" qname="AsyncStdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x7f4786e7e830" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786e7e9c0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="36:/home/csilab/upma/system/GenericSlotterP.nc" name="FrameConfiguration" provided="1" ref="0x7f4786e7c330">
+      <component-ref nicename="GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FrameConfiguration" ref="0x7f4786e7c330" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="FrameConfiguration" qname="FrameConfiguration"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setFrameLength" ref="0x7f4786e7c6b0" scoped=""/>
+        <function-ref name="setSlotLength" ref="0x7f4786e7c840" scoped=""/>
+        <function-ref name="getSlotLength" ref="0x7f4786e7c9d0" scoped=""/>
+        <function-ref name="getFrameLength" ref="0x7f4786e7cb60" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="35:/home/csilab/upma/system/GenericSlotterP.nc" name="SlotterControl" provided="1" ref="0x7f4786e7d300">
+      <component-ref nicename="GenericSlotterP" qname="GenericSlotterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SlotterControl" ref="0x7f4786e7d300" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="SlotterControl" qname="SlotterControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4786e7c020" scoped=""/>
+        <function-ref name="getSlot" ref="0x7f4786e7d810" scoped=""/>
+        <function-ref name="synchronize" ref="0x7f4786e7d9a0" scoped=""/>
+        <function-ref name="isSynchornized" ref="0x7f4786e7db30" scoped=""/>
+        <function-ref name="getAlarm" ref="0x7f4786e7dcc0" scoped=""/>
+        <function-ref name="getRemaining" ref="0x7f4786e7de50" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786e7d680" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

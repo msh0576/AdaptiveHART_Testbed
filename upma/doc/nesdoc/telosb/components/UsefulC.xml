@@ -1,0 +1,35 @@
+<?xml version="1.0" ?><component loc="1:/home/csilab/upma/lib/macs/pure-tdma/UsefulC.nc" nicename="UsefulC" qname="UsefulC">
+      <configuration/>
+      <wiring>
+        <wire loc="10:/home/csilab/upma/lib/macs/pure-tdma/UsefulC.nc">
+          <from><interface-ref name="Useful" ref="0x7f4786d90790" scoped=""/></from>
+          <to><interface-ref name="Useful" ref="0x7f4786d45a70" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="3:/home/csilab/upma/lib/macs/pure-tdma/UsefulC.nc" name="Useful" provided="1" ref="0x7f4786d90790">
+      <component-ref nicename="UsefulC" qname="UsefulC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Useful" ref="0x7f4786d90790" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Useful" qname="Useful"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="DeadlineList" ref="0x7f4786d90b10" scoped=""/>
+        <function-ref name="SetSR" ref="0x7f4786d90ca0" scoped=""/>
+        <function-ref name="MakeRoute" ref="0x7f4786d90e30" scoped=""/>
+        <function-ref name="TaskSenderReceiver" ref="0x7f4786d45020" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="3:/home/csilab/upma/lib/macs/pure-tdma/UsefulP.nc" name="Useful" provided="1" ref="0x7f4786d45a70">
+      <component-ref nicename="UsefulP" qname="UsefulP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Useful" ref="0x7f4786d45a70" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Useful" qname="Useful"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="DeadlineList" ref="0x7f4786d45df0" scoped=""/>
+        <function-ref name="SetSR" ref="0x7f4786d42020" scoped=""/>
+        <function-ref name="MakeRoute" ref="0x7f4786d421b0" scoped=""/>
+        <function-ref name="TaskSenderReceiver" ref="0x7f4786d42340" scoped=""/>
+      </interface-functions>
+    </interface><component loc="1:/home/csilab/upma/lib/macs/pure-tdma/UsefulP.nc" nicename="UsefulP" qname="UsefulP">
+      <module/>
+    </component></referenced></component>

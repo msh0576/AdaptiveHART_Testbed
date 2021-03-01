@@ -1,0 +1,31 @@
+<?xml version="1.0" ?><component loc="2:/home/csilab/upma/lib/macs/pure-tdma/RoutingTableC.nc" nicename="RoutingTableC" qname="RoutingTableC">
+      <configuration/>
+      <wiring>
+        <wire loc="11:/home/csilab/upma/lib/macs/pure-tdma/RoutingTableC.nc">
+          <from><interface-ref name="Routing" ref="0x7f4786daa3f0" scoped=""/></from>
+          <to><interface-ref name="Routing" ref="0x7f4786da2430" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="4:/home/csilab/upma/lib/macs/pure-tdma/RoutingTableC.nc" name="Routing" provided="1" ref="0x7f4786daa3f0">
+      <component-ref nicename="RoutingTableC" qname="RoutingTableC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Routing" ref="0x7f4786daa3f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Routing" qname="Routing"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="NeighborTable" ref="0x7f4786daa770" scoped=""/>
+        <function-ref name="MakeParent" ref="0x7f4786daa900" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="5:/home/csilab/upma/lib/macs/pure-tdma/RoutingTableP.nc" name="Routing" provided="1" ref="0x7f4786da2430">
+      <component-ref nicename="RoutingTableP" qname="RoutingTableP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Routing" ref="0x7f4786da2430" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Routing" qname="Routing"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="NeighborTable" ref="0x7f4786da27b0" scoped=""/>
+        <function-ref name="MakeParent" ref="0x7f4786da2940" scoped=""/>
+      </interface-functions>
+    </interface><component loc="2:/home/csilab/upma/lib/macs/pure-tdma/RoutingTableP.nc" nicename="RoutingTableP" qname="RoutingTableP">
+      <module/>
+    </component></referenced></component>

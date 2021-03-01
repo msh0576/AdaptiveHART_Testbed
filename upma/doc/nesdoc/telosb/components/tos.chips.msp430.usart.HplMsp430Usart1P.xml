@@ -1,0 +1,200 @@
+<?xml version="1.0" ?><component loc="73:/usr/src/tinyos/tos/chips/msp430/usart/HplMsp430Usart1P.nc" nicename="tos.chips.msp430.usart.HplMsp430Usart1P" qname="HplMsp430Usart1P">
+      <documentation loc="62:/usr/src/tinyos/tos/chips/msp430/usart/HplMsp430Usart1P.nc">
+        <short>
+ Implementation of USART1 lowlevel functionality - stateless.</short>
+        <long>
+ Implementation of USART1 lowlevel functionality - stateless.
+ Setting a mode will by default disable USART-Interrupts.
+
+ @author: Jan Hauer &lt;hauer@tkn.tu-berlin.de&gt;
+ @author: Jonathan Hui &lt;jhui@archedrock.com&gt;
+ @author: Vlado Handziski &lt;handzisk@tkn.tu-berlin.de&gt;
+ @author: Joe Polastre
+ @version $Revision: 1.7 $ $Date: 2010-06-04 22:30:21 $
+</long>
+      </documentation>
+      <module/>
+    <specification><interface loc="80:/usr/src/tinyos/tos/chips/msp430/usart/HplMsp430Usart1P.nc" name="UCLK" provided="0" ref="0x7f478824d800">
+      <component-ref nicename="tos.chips.msp430.usart.HplMsp430Usart1P" qname="HplMsp430Usart1P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UCLK" ref="0x7f478824d800" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f478824db80" scoped=""/>
+        <function-ref name="isInput" ref="0x7f478824dd10" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f478824c020" scoped=""/>
+        <function-ref name="toggle" ref="0x7f478824c1b0" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f478824c340" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f478824c4d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f478824c660" scoped=""/>
+        <function-ref name="get" ref="0x7f478824c7f0" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f478824c980" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f478824cb10" scoped=""/>
+        <function-ref name="set" ref="0x7f478824cca0" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f478824ce30" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f478824b020" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f478824b2b0" scoped=""/>
+        <function-ref name="clr" ref="0x7f478824b440" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="76:/usr/src/tinyos/tos/chips/msp430/usart/HplMsp430Usart1P.nc" name="Interrupts" provided="1" ref="0x7f478825ddc0">
+      <component-ref nicename="tos.chips.msp430.usart.HplMsp430Usart1P" qname="HplMsp430Usart1P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Interrupts" ref="0x7f478825ddc0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.usart.HplMsp430UsartInterrupts" qname="HplMsp430UsartInterrupts"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rxDone" ref="0x7f478825b180" scoped=""/>
+        <function-ref name="txDone" ref="0x7f478825b310" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="81:/usr/src/tinyos/tos/chips/msp430/usart/HplMsp430Usart1P.nc" name="URXD" provided="0" ref="0x7f478824b800">
+      <component-ref nicename="tos.chips.msp430.usart.HplMsp430Usart1P" qname="HplMsp430Usart1P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="URXD" ref="0x7f478824b800" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f478824bb80" scoped=""/>
+        <function-ref name="isInput" ref="0x7f478824bd10" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f478824a020" scoped=""/>
+        <function-ref name="toggle" ref="0x7f478824a1b0" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f478824a340" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f478824a4d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f478824a660" scoped=""/>
+        <function-ref name="get" ref="0x7f478824a7f0" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f478824a980" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f478824ab10" scoped=""/>
+        <function-ref name="set" ref="0x7f478824aca0" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f478824ae30" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f4788249020" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f47882492b0" scoped=""/>
+        <function-ref name="clr" ref="0x7f4788249440" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="82:/usr/src/tinyos/tos/chips/msp430/usart/HplMsp430Usart1P.nc" name="UTXD" provided="0" ref="0x7f4788249800">
+      <component-ref nicename="tos.chips.msp430.usart.HplMsp430Usart1P" qname="HplMsp430Usart1P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UTXD" ref="0x7f4788249800" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f4788249b80" scoped=""/>
+        <function-ref name="isInput" ref="0x7f4788249d10" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f4788248020" scoped=""/>
+        <function-ref name="toggle" ref="0x7f47882481b0" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f4788248340" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f47882484d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f4788248660" scoped=""/>
+        <function-ref name="get" ref="0x7f47882487f0" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f4788248980" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f4788248b10" scoped=""/>
+        <function-ref name="set" ref="0x7f4788248ca0" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f4788248e30" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f4788247020" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f47882472b0" scoped=""/>
+        <function-ref name="clr" ref="0x7f4788247440" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="75:/usr/src/tinyos/tos/chips/msp430/usart/HplMsp430Usart1P.nc" name="Usart" provided="1" ref="0x7f4788261020">
+      <component-ref nicename="tos.chips.msp430.usart.HplMsp430Usart1P" qname="HplMsp430Usart1P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Usart" ref="0x7f4788261020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.usart.HplMsp430Usart" qname="HplMsp430Usart"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="isTxEmpty" ref="0x7f47882613a0" scoped=""/>
+        <function-ref name="enableUartRx" ref="0x7f4788261530" scoped=""/>
+        <function-ref name="setUctl" ref="0x7f47882616c0" scoped=""/>
+        <function-ref name="enableUart" ref="0x7f4788261850" scoped=""/>
+        <function-ref name="setUrctl" ref="0x7f47882619e0" scoped=""/>
+        <function-ref name="enableRxIntr" ref="0x7f4788261b70" scoped=""/>
+        <function-ref name="clrRxIntr" ref="0x7f4788261d00" scoped=""/>
+        <function-ref name="getUtctl" ref="0x7f4788260020" scoped=""/>
+        <function-ref name="getUrctl" ref="0x7f47882601b0" scoped=""/>
+        <function-ref name="resetUsart" ref="0x7f4788260340" scoped=""/>
+        <function-ref name="getUmctl" ref="0x7f47882604d0" scoped=""/>
+        <function-ref name="disableIntr" ref="0x7f4788260660" scoped=""/>
+        <function-ref name="setUtctl" ref="0x7f47882607f0" scoped=""/>
+        <function-ref name="getUbr" ref="0x7f4788260a80" scoped=""/>
+        <function-ref name="enableTxIntr" ref="0x7f4788260c10" scoped=""/>
+        <function-ref name="setUmctl" ref="0x7f4788260da0" scoped=""/>
+        <function-ref name="isUartRx" ref="0x7f478825f020" scoped=""/>
+        <function-ref name="isUart" ref="0x7f478825f1b0" scoped=""/>
+        <function-ref name="disableRxIntr" ref="0x7f478825f340" scoped=""/>
+        <function-ref name="isSpi" ref="0x7f478825f4d0" scoped=""/>
+        <function-ref name="enableUartTx" ref="0x7f478825f660" scoped=""/>
+        <function-ref name="disableTxIntr" ref="0x7f478825f7f0" scoped=""/>
+        <function-ref name="disableUartRx" ref="0x7f478825f980" scoped=""/>
+        <function-ref name="enableIntr" ref="0x7f478825fb10" scoped=""/>
+        <function-ref name="getMode" ref="0x7f478825fca0" scoped=""/>
+        <function-ref name="isTxIntrPending" ref="0x7f478825e220" scoped=""/>
+        <function-ref name="clrIntr" ref="0x7f478825e3b0" scoped=""/>
+        <function-ref name="setUbr" ref="0x7f478825e540" scoped=""/>
+        <function-ref name="tx" ref="0x7f478825e6d0" scoped=""/>
+        <function-ref name="getUctl" ref="0x7f478825e860" scoped=""/>
+        <function-ref name="disableUart" ref="0x7f478825e9f0" scoped=""/>
+        <function-ref name="enableSpi" ref="0x7f478825eb80" scoped=""/>
+        <function-ref name="setModeUart" ref="0x7f478825ed10" scoped=""/>
+        <function-ref name="setModeSpi" ref="0x7f478825d020" scoped=""/>
+        <function-ref name="rx" ref="0x7f478825d1b0" scoped=""/>
+        <function-ref name="isRxIntrPending" ref="0x7f478825d340" scoped=""/>
+        <function-ref name="isUartTx" ref="0x7f478825d4d0" scoped=""/>
+        <function-ref name="clrTxIntr" ref="0x7f478825d660" scoped=""/>
+        <function-ref name="disableSpi" ref="0x7f478825d7f0" scoped=""/>
+        <function-ref name="disableUartTx" ref="0x7f478825d980" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="74:/usr/src/tinyos/tos/chips/msp430/usart/HplMsp430Usart1P.nc" name="AsyncStdControl" provided="1" ref="0x7f4788265710">
+      <component-ref nicename="tos.chips.msp430.usart.HplMsp430Usart1P" qname="HplMsp430Usart1P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AsyncStdControl" ref="0x7f4788265710" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AsyncStdControl" qname="AsyncStdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x7f4788265a90" scoped=""/>
+        <function-ref name="stop" ref="0x7f4788265c20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="79:/usr/src/tinyos/tos/chips/msp430/usart/HplMsp430Usart1P.nc" name="SOMI" provided="0" ref="0x7f4788259800">
+      <component-ref nicename="tos.chips.msp430.usart.HplMsp430Usart1P" qname="HplMsp430Usart1P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SOMI" ref="0x7f4788259800" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f4788259b80" scoped=""/>
+        <function-ref name="isInput" ref="0x7f4788259d10" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f478824e020" scoped=""/>
+        <function-ref name="toggle" ref="0x7f478824e1b0" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f478824e340" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f478824e4d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f478824e660" scoped=""/>
+        <function-ref name="get" ref="0x7f478824e7f0" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f478824e980" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f478824eb10" scoped=""/>
+        <function-ref name="set" ref="0x7f478824eca0" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f478824ee30" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f478824d020" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f478824d2b0" scoped=""/>
+        <function-ref name="clr" ref="0x7f478824d440" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="78:/usr/src/tinyos/tos/chips/msp430/usart/HplMsp430Usart1P.nc" name="SIMO" provided="0" ref="0x7f4788250860">
+      <component-ref nicename="tos.chips.msp430.usart.HplMsp430Usart1P" qname="HplMsp430Usart1P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SIMO" ref="0x7f4788250860" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f4788250be0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f4788250d70" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f478825a020" scoped=""/>
+        <function-ref name="toggle" ref="0x7f478825a1b0" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f478825a340" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f478825a4d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f478825a660" scoped=""/>
+        <function-ref name="get" ref="0x7f478825a7f0" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f478825a980" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f478825ab10" scoped=""/>
+        <function-ref name="set" ref="0x7f478825aca0" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f478825ae30" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f4788259020" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f47882592b0" scoped=""/>
+        <function-ref name="clr" ref="0x7f4788259440" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

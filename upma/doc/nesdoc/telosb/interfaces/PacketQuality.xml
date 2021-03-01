@@ -1,0 +1,36 @@
+<?xml version="1.0" ?><interfacedef loc="1:/home/csilab/upma/interfaces/PacketQuality.nc" nicename="PacketQuality" qname="PacketQuality">
+      <function command="" loc="9:/home/csilab/upma/interfaces/PacketQuality.nc" name="getRssi" provided="0" ref="0x7f4787d1f980">
+        <documentation loc="3:/home/csilab/upma/interfaces/PacketQuality.nc">
+          <short>
+ Get rssi value for a given packet.</short>
+          <long>
+ Get rssi value for a given packet. For received packets, it is
+ the received signal strength when receiving that packet. For sent
+ packets, it is the received signal strength of the ack if an ack
+ was received.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="PacketQuality" qname="PacketQuality"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="signed char" size="I:1">
+            <typename><typedef-ref name="int8_t" ref="0x7f4789392110"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="9:/home/csilab/upma/interfaces/PacketQuality.nc" name="p_msg" ref="0x7f4787d1f700">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+    </interfacedef>

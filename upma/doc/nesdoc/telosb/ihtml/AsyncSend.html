@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: AsyncSend</title>
+  </head>
+  <body>
+    <h2>Interface: AsyncSend</h2>
+    <b>interface AsyncSend</b><p>
+ Provides packet sending commands in an asynchronous fashion.
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Greg Hackmann
+ 
+      </dd>
+      <dt><b>See:</b>
+      <dd>
+        AMSend
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Commands</div><div id=funcsig><span id=funcnameshort>command error_t <a href="#cancel">cancel</a>(message_t *msg)
+      </span><menu>
+ Attempts to cancel a packet transmission.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command void *<a href="#getPayload">getPayload</a>(message_t *msg, uint8_t len)
+      </span><menu>
+ Gets the packet payload.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command uint8_t <a href="#maxPayloadLength">maxPayloadLength</a>()
+      </span><menu>
+ Gets the maximum packet payload length.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command error_t <a href="#send">send</a>(message_t *msg, uint8_t len)
+      </span><menu>
+ Sends a packet over the radio, in split-control fashion.
+      </menu>
+    </div><p><div id=heading>Events</div><div id=funcsig><span id=funcnameshort>event void <a href="#sendDone">sendDone</a>(message_t *msg, error_t error)
+      </span><menu>
+ The packet sending operation has completed.
+      </menu>
+    </div><p><div id=heading>Commands - Details</div>
+    <a name="cancel"></a>
+    <h4>cancel
+    </h4>
+    <span id=funcnameshort>command error_t <b>cancel</b>(message_t *msg)
+    </span>
+    <p>
+    <menu>
+      
+ Attempts to cancel a packet transmission.
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          'message_t * ONE msg' the packet to cancel
+ 
+        </dd>
+        <dt><b>Returns:</b>
+        <dd>
+          whether the cancellation succeeded
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="getPayload"></a>
+    <h4>getPayload
+    </h4>
+    <span id=funcnameshort>command void *<b>getPayload</b>(message_t *msg, uint8_t len)
+    </span>
+    <p>
+    <menu>
+      
+ Gets the packet payload.
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          'message_t * ONE msg' the packet
+ 
+        </dd>
+        <dt><b>Returns:</b>
+        <dd>
+          'void * COUNT_NOK(len)' the packet's payload
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="maxPayloadLength"></a>
+    <h4>maxPayloadLength
+    </h4>
+    <span id=funcnameshort>command uint8_t <b>maxPayloadLength</b>()
+    </span>
+    <p>
+    <menu>
+      
+ Gets the maximum packet payload length.
+
+ 
+      <p>
+      <dl>
+        <dt><b>Returns:</b>
+        <dd>
+          the maximum packet payload length, in bytes
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="send"></a>
+    <h4>send
+    </h4>
+    <span id=funcnameshort>command error_t <b>send</b>(message_t *msg, uint8_t len)
+    </span>
+    <p>
+    <menu>
+      
+ Sends a packet over the radio, in split-control fashion.
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          'message_t * ONE msg' the packet to send
+ 
+        </dd>
+        <dd>
+          <code>len</code> -  the packet's length
+ 
+        </dd>
+        <dt><b>Returns:</b>
+        <dd>
+          <tt>SUCCESS</tt> if the packet was buffered;
+ <tt>EOFF</tt> if the radio is off; or <tt>FAIL</tt> if the request could
+ not otherwise be completed
+
+        </dd>
+      </dl>
+    </menu>
+    <p><div id=heading>Events - Details</div>
+    <a name="sendDone"></a>
+    <h4>sendDone
+    </h4>
+    <span id=funcnameshort>event void <b>sendDone</b>(message_t *msg, error_t error)
+    </span>
+    <p>
+    <menu>
+      
+ The packet sending operation has completed.
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          'message_t * ONE msg' the packet that has been completely processed
+ 
+        </dd>
+        <dd>
+          <code>error</code> -  <tt>SUCCESS</tt> if the packet was successfully
+ sent over the radio, or <tt>FAIL</tt> otherwise
+
+        </dd>
+      </dl>
+    </menu>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<?xml version="1.0" ?><component loc="36:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfP.nc" nicename="tos.lib.printf.SerialPrintfP" qname="SerialPrintfP">
+      <documentation loc="32:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfP.nc">
+        <short>
+ </short>
+        <long>
+ @author David Moss
+ @author Kevin Klues
+</long>
+      </documentation>
+      <module/>
+    <specification><interface loc="44:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfP.nc" name="Putchar" provided="1" ref="0x2b7f5d033db0">
+      <component-ref nicename="tos.lib.printf.SerialPrintfP" qname="SerialPrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Putchar" ref="0x2b7f5d033db0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.printf.Putchar" qname="Putchar"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="putchar" ref="0x2b7f5d032170" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="39:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfP.nc" name="UartByte" provided="0" ref="0x2b7f5d034848">
+      <component-ref nicename="tos.lib.printf.SerialPrintfP" qname="SerialPrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartByte" ref="0x2b7f5d034848" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.UartByte" qname="UartByte"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x2b7f5d034b98" scoped=""/>
+        <function-ref name="receive" ref="0x2b7f5d034d20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfP.nc" name="Init" provided="1" ref="0x2b7f5d0337d0">
+      <component-ref nicename="tos.lib.printf.SerialPrintfP" qname="SerialPrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x2b7f5d0337d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x2b7f5d033b20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="38:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfP.nc" name="UartControl" provided="0" ref="0x2b7f5d0340d0">
+      <component-ref nicename="tos.lib.printf.SerialPrintfP" qname="SerialPrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartControl" ref="0x2b7f5d0340d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x2b7f5d034420" scoped=""/>
+        <function-ref name="stop" ref="0x2b7f5d0345a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfP.nc" name="StdControl" provided="1" ref="0x2b7f5d033080">
+      <component-ref nicename="tos.lib.printf.SerialPrintfP" qname="SerialPrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="StdControl" ref="0x2b7f5d033080" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x2b7f5d0333d0" scoped=""/>
+        <function-ref name="stop" ref="0x2b7f5d033558" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

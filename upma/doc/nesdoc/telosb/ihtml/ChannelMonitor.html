@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: ChannelMonitor</title>
+  </head>
+  <body>
+    <h2>Interface: ChannelMonitor</h2>
+    <b>interface ChannelMonitor</b><p>
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Kevin Klues
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Commands</div><div id=funcsig><span id=funcnameshort>command void <a href="#check">check</a>()
+      </span><menu>
+ Check the channel to see if it is free or busy
+
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command uint16_t <a href="#getCheckLength">getCheckLength</a>()
+      </span><menu>
+ Get the length of CCA checks.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command void <a href="#setCheckLength">setCheckLength</a>(uint16_t length)
+      </span><menu>
+ Set the length of CCA checks.
+      </menu>
+    </div><p><div id=heading>Events</div><div id=funcsig><span id=funcnameshort>event void <a href="#busy">busy</a>()
+      </span><menu>
+ signal that the channel is busy
+
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>event void <a href="#error">error</a>()
+      </span><menu>
+ signal that checking the channel failed
+
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>event void <a href="#free">free</a>()
+      </span><menu>
+ signal that the channel is free
+
+      </menu>
+    </div><p><div id=heading>Commands - Details</div>
+    <a name="check"></a>
+    <h4>check
+    </h4>
+    <span id=funcnameshort>command void <b>check</b>()
+    </span>
+    <p>
+    <menu>
+      
+ Check the channel to see if it is free or busy
+
+    </menu>
+    <hr>
+    <a name="getCheckLength"></a>
+    <h4>getCheckLength
+    </h4>
+    <span id=funcnameshort>command uint16_t <b>getCheckLength</b>()
+    </span>
+    <p>
+    <menu>
+      
+ Get the length of CCA checks.
+
+ 
+      <p>
+      <dl>
+        <dt><b>Returns:</b>
+        <dd>
+          the length of CCA checks, in 32 KHz increments
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="setCheckLength"></a>
+    <h4>setCheckLength
+    </h4>
+    <span id=funcnameshort>command void <b>setCheckLength</b>(uint16_t length)
+    </span>
+    <p>
+    <menu>
+      
+ Set the length of CCA checks.
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          <code>length</code> -  the length of CCA checks, in 32 KHz increments
+
+        </dd>
+      </dl>
+    </menu>
+    <p><div id=heading>Events - Details</div>
+    <a name="busy"></a>
+    <h4>busy
+    </h4>
+    <span id=funcnameshort>event void <b>busy</b>()
+    </span>
+    <p>
+    <menu>
+      
+ signal that the channel is busy
+
+    </menu>
+    <hr>
+    <a name="error"></a>
+    <h4>error
+    </h4>
+    <span id=funcnameshort>event void <b>error</b>()
+    </span>
+    <p>
+    <menu>
+      
+ signal that checking the channel failed
+
+    </menu>
+    <hr>
+    <a name="free"></a>
+    <h4>free
+    </h4>
+    <span id=funcnameshort>event void <b>free</b>()
+    </span>
+    <p>
+    <menu>
+      
+ signal that the channel is free
+
+    </menu>
+  </body>
+</html>

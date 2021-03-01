@@ -1,0 +1,195 @@
+<?xml version="1.0" ?><interfacedef loc="29:/home/csilab/upma/interfaces/AsyncSend.nc" nicename="AsyncSend" qname="AsyncSend">
+      <documentation loc="23:/home/csilab/upma/interfaces/AsyncSend.nc">
+        <short>
+ Provides packet sending commands in an asynchronous fashion.</short>
+        <long>
+ Provides packet sending commands in an asynchronous fashion.
+
+ @author Greg Hackmann
+ @see AMSend
+</long>
+      </documentation>
+      <function command="" loc="40:/home/csilab/upma/interfaces/AsyncSend.nc" name="send" provided="0" ref="0x7f4787cff620">
+        <documentation loc="31:/home/csilab/upma/interfaces/AsyncSend.nc">
+          <short>
+ Sends a packet over the radio, in split-control fashion.</short>
+          <long>
+ Sends a packet over the radio, in split-control fashion.
+
+ @param 'message_t * ONE msg' the packet to send
+ @param len the packet's length
+ @return &lt;tt&gt;SUCCESS&lt;/tt&gt; if the packet was buffered;
+ &lt;tt&gt;EOFF&lt;/tt&gt; if the radio is off; or &lt;tt&gt;FAIL&lt;/tt&gt; if the request could
+ not otherwise be completed
+</long>
+        </documentation>
+        <interfacedef-ref nicename="AsyncSend" qname="AsyncSend"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x7f4789391160"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="40:/home/csilab/upma/interfaces/AsyncSend.nc" name="msg" ref="0x7f4787cff060">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="40:/home/csilab/upma/interfaces/AsyncSend.nc" name="len" ref="0x7f4787cff390">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x7f4789391160"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="71:/home/csilab/upma/interfaces/AsyncSend.nc" name="getPayload" provided="0" ref="0x7f4787cf9810">
+        <documentation loc="65:/home/csilab/upma/interfaces/AsyncSend.nc">
+          <short>
+ Gets the packet payload.</short>
+          <long>
+ Gets the packet payload.
+
+ @param 'message_t * ONE msg' the packet
+ @return 'void * COUNT_NOK(len)' the packet's payload
+</long>
+        </documentation>
+        <interfacedef-ref nicename="AsyncSend" qname="AsyncSend"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-pointer alignment="I:2" size="I:2">
+            <type-void alignment="I:1" size="I:1"/>
+          </type-pointer>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x7f4789391160"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="71:/home/csilab/upma/interfaces/AsyncSend.nc" name="msg" ref="0x7f4787cf9210">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="71:/home/csilab/upma/interfaces/AsyncSend.nc" name="len" ref="0x7f4787cf9540">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x7f4789391160"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="63:/home/csilab/upma/interfaces/AsyncSend.nc" name="maxPayloadLength" provided="0" ref="0x7f4787cfa9a0">
+        <documentation loc="58:/home/csilab/upma/interfaces/AsyncSend.nc">
+          <short>
+ Gets the maximum packet payload length.</short>
+          <long>
+ Gets the maximum packet payload length.
+
+ @return the maximum packet payload length, in bytes
+</long>
+        </documentation>
+        <interfacedef-ref nicename="AsyncSend" qname="AsyncSend"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x7f4789391160"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="56:/home/csilab/upma/interfaces/AsyncSend.nc" name="cancel" provided="0" ref="0x7f4787cfbb90">
+        <documentation loc="50:/home/csilab/upma/interfaces/AsyncSend.nc">
+          <short>
+ Attempts to cancel a packet transmission.</short>
+          <long>
+ Attempts to cancel a packet transmission.
+
+ @param 'message_t * ONE msg' the packet to cancel
+ @return whether the cancellation succeeded
+</long>
+        </documentation>
+        <interfacedef-ref nicename="AsyncSend" qname="AsyncSend"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="56:/home/csilab/upma/interfaces/AsyncSend.nc" name="msg" ref="0x7f4787cfb910">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function event="" loc="48:/home/csilab/upma/interfaces/AsyncSend.nc" name="sendDone" provided="0" ref="0x7f4787cfea80">
+        <documentation loc="41:/home/csilab/upma/interfaces/AsyncSend.nc">
+          <short>
+ The packet sending operation has completed.</short>
+          <long>
+ The packet sending operation has completed.
+
+ @param 'message_t * ONE msg' the packet that has been completely processed
+ @param error &lt;tt&gt;SUCCESS&lt;/tt&gt; if the packet was successfully
+ sent over the radio, or &lt;tt&gt;FAIL&lt;/tt&gt; otherwise
+</long>
+        </documentation>
+        <interfacedef-ref nicename="AsyncSend" qname="AsyncSend"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="48:/home/csilab/upma/interfaces/AsyncSend.nc" name="msg" ref="0x7f4787cfe4a0">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="48:/home/csilab/upma/interfaces/AsyncSend.nc" name="error" ref="0x7f4787cfe7f0">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+    </interfacedef>

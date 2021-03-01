@@ -1,0 +1,211 @@
+<?xml version="1.0" ?><component loc="32:/home/csilab/upma/system/TDMASlotSenderC.nc" nicename="TDMASlotSenderC" qname="TDMASlotSenderC">
+      <documentation loc="23:/home/csilab/upma/system/TDMASlotSenderC.nc">
+        <short>
+ This component transmits packets in pure tdma slot
+ It should solve the clock drift issues
+ 
+ </short>
+        <long>
+ This component transmits packets in pure tdma slot
+ It should solve the clock drift issues
+ 
+ @author Octav Chipara
+ @version $Revision$
+ @date $Date$
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="45:/home/csilab/upma/system/TDMASlotSenderC.nc">
+          <from><interface-ref name="Send" ref="0x7f4786ee7860" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x7f4786e8e3d0" scoped=""/></to>
+        </wire>
+        <wire loc="42:/home/csilab/upma/system/TDMASlotSenderC.nc">
+          <from><interface-ref name="SubSend" ref="0x7f4786e8d0a0" scoped=""/></from>
+          <to><interface-ref name="SubSend" ref="0x7f4786ee46c0" scoped=""/></to>
+        </wire>
+        <wire loc="43:/home/csilab/upma/system/TDMASlotSenderC.nc">
+          <from><interface-ref name="AMPacket" ref="0x7f4786e8dcf0" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x7f4786ee34a0" scoped=""/></to>
+        </wire>
+        <wire loc="44:/home/csilab/upma/system/TDMASlotSenderC.nc">
+          <from><interface-ref name="SubCcaControl" ref="0x7f4786e8a610" scoped=""/></from>
+          <to><interface-ref name="SubCcaControl" ref="0x7f4786ee2d50" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="35:/home/csilab/upma/system/TDMASlotSenderC.nc" name="SubSend" provided="0" ref="0x7f4786ee46c0">
+      <component-ref nicename="TDMASlotSenderC" qname="TDMASlotSenderC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SubSend" ref="0x7f4786ee46c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AsyncSend" qname="AsyncSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4786ee4a40" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786ee4bd0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786ee4d60" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4786ee3020" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4786ee31b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="37:/home/csilab/upma/system/TDMASlotSenderC.nc" name="SubCcaControl" provided="0" ref="0x7f4786ee2d50">
+      <component-ref nicename="TDMASlotSenderC" qname="TDMASlotSenderC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SubCcaControl" ref="0x7f4786ee2d50" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="CcaControl" qname="CcaControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getCongestionBackoff" ref="0x7f4786ee1100" scoped=""/>
+        <function-ref name="getInitialBackoff" ref="0x7f4786ee1290" scoped=""/>
+        <function-ref name="getCca" ref="0x7f4786ee1420" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="33:/home/csilab/upma/system/TDMASlotSenderC.nc" name="Send" provided="1" ref="0x7f4786ee7860">
+      <component-ref nicename="TDMASlotSenderC" qname="TDMASlotSenderC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Send" ref="0x7f4786ee7860" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AsyncSend" qname="AsyncSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4786ee7be0" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786ee7d70" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786ee4020" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4786ee41b0" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4786ee4340" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="36:/home/csilab/upma/system/TDMASlotSenderC.nc" name="AMPacket" provided="0" ref="0x7f4786ee34a0">
+      <component-ref nicename="TDMASlotSenderC" qname="TDMASlotSenderC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x7f4786ee34a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="headerSize" ref="0x7f4786ee3820" scoped=""/>
+        <function-ref name="group" ref="0x7f4786ee39b0" scoped=""/>
+        <function-ref name="source" ref="0x7f4786ee3b40" scoped=""/>
+        <function-ref name="address" ref="0x7f4786ee3cd0" scoped=""/>
+        <function-ref name="destination" ref="0x7f4786ee3e60" scoped=""/>
+        <function-ref name="setSource" ref="0x7f4786ee2020" scoped=""/>
+        <function-ref name="setDestination" ref="0x7f4786ee21b0" scoped=""/>
+        <function-ref name="type" ref="0x7f4786ee2340" scoped=""/>
+        <function-ref name="setType" ref="0x7f4786ee24d0" scoped=""/>
+        <function-ref name="isForMe" ref="0x7f4786ee2660" scoped=""/>
+        <function-ref name="setGroup" ref="0x7f4786ee27f0" scoped=""/>
+        <function-ref name="localGroup" ref="0x7f4786ee2980" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="33:/home/csilab/upma/system/GenericSlotSenderC.nc" name="SubSend" provided="0" ref="0x7f4786e8d0a0">
+      <component-ref nicename="TDMASlotSenderC.TDMASlotSender" qname="TDMASlotSenderC.TDMASlotSender"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SubSend" ref="0x7f4786e8d0a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AsyncSend" qname="AsyncSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4786e8d420" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786e8d5b0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786e8d740" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4786e8d8d0" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4786e8da60" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="35:/home/csilab/upma/system/GenericSlotSenderC.nc" name="SubCcaControl" provided="0" ref="0x7f4786e8a610">
+      <component-ref nicename="TDMASlotSenderC.TDMASlotSender" qname="TDMASlotSenderC.TDMASlotSender"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SubCcaControl" ref="0x7f4786e8a610" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="CcaControl" qname="CcaControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getCongestionBackoff" ref="0x7f4786e8a990" scoped=""/>
+        <function-ref name="getInitialBackoff" ref="0x7f4786e8ab20" scoped=""/>
+        <function-ref name="getCca" ref="0x7f4786e8acb0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="34:/home/csilab/upma/system/GenericSlotSenderC.nc" name="AMPacket" provided="0" ref="0x7f4786e8dcf0">
+      <component-ref nicename="TDMASlotSenderC.TDMASlotSender" qname="TDMASlotSenderC.TDMASlotSender"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x7f4786e8dcf0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="headerSize" ref="0x7f4786e8b0a0" scoped=""/>
+        <function-ref name="group" ref="0x7f4786e8b230" scoped=""/>
+        <function-ref name="source" ref="0x7f4786e8b3c0" scoped=""/>
+        <function-ref name="address" ref="0x7f4786e8b550" scoped=""/>
+        <function-ref name="destination" ref="0x7f4786e8b6e0" scoped=""/>
+        <function-ref name="setSource" ref="0x7f4786e8b870" scoped=""/>
+        <function-ref name="setDestination" ref="0x7f4786e8ba00" scoped=""/>
+        <function-ref name="type" ref="0x7f4786e8bb90" scoped=""/>
+        <function-ref name="setType" ref="0x7f4786e8bd20" scoped=""/>
+        <function-ref name="isForMe" ref="0x7f4786e8a020" scoped=""/>
+        <function-ref name="setGroup" ref="0x7f4786e8a1b0" scoped=""/>
+        <function-ref name="localGroup" ref="0x7f4786e8a340" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="31:/home/csilab/upma/system/GenericSlotSenderC.nc" name="Send" provided="1" ref="0x7f4786e8e3d0">
+      <component-ref nicename="TDMASlotSenderC.TDMASlotSender" qname="TDMASlotSenderC.TDMASlotSender"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Send" ref="0x7f4786e8e3d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AsyncSend" qname="AsyncSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4786e8e750" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786e8e8e0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786e8ea70" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4786e8ec00" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4786e8ed90" scoped=""/>
+      </interface-functions>
+    </interface><component loc="30(TDMASlotSenderC.TDMASlotSender):/home/csilab/upma/system/GenericSlotSenderC.nc" nicename="TDMASlotSenderC.TDMASlotSender" qname="TDMASlotSenderC.TDMASlotSender">
+      <documentation loc="23:/home/csilab/upma/system/GenericSlotSenderC.nc">
+        <short>      
+
+ </short>
+        <long>      
+
+ @author Octav Chipara
+ @version $Revision$
+ @date $Date$
+</long>
+      </documentation>
+      <instance number="0">
+        <component-ref nicename="GenericSlotSenderC" qname="GenericSlotSenderC"/>
+        <arguments>
+          <value cst="I:0">
+            <type-int alignment="I:2" cname="int" size="I:2"/>
+          </value>
+          <value cst="I:0">
+            <type-int alignment="I:2" cname="int" size="I:2"/>
+          </value>
+          <value cst="I:0">
+            <type-int alignment="I:2" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="49:/home/csilab/upma/system/GenericSlotSenderC.nc">
+          <from><interface-ref name="Send" ref="0x7f4786e8e3d0" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x7f47860d8810" scoped=""/></to>
+        </wire>
+        <wire loc="43:/home/csilab/upma/system/GenericSlotSenderC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x7f47887c7db0" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f47860d81c0" scoped=""/></to>
+        </wire>
+        <wire loc="44:/home/csilab/upma/system/GenericSlotSenderC.nc">
+          <from><interface-ref name="Alarm" ref="0x7f47860d5cc0" scoped=""/></from>
+          <to><interface-ref name="Alarm" ref="0x7f47860cb570" scoped=""/></to>
+        </wire>
+        <wire loc="45:/home/csilab/upma/system/GenericSlotSenderC.nc">
+          <from><interface-ref name="SubSend" ref="0x7f47860d7610" scoped=""/></from>
+          <to><interface-ref name="SubSend" ref="0x7f4786e8d0a0" scoped=""/></to>
+        </wire>
+        <wire loc="46:/home/csilab/upma/system/GenericSlotSenderC.nc">
+          <from><interface-ref name="AMPacket" ref="0x7f47860d62b0" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x7f4786e8dcf0" scoped=""/></to>
+        </wire>
+        <wire loc="47:/home/csilab/upma/system/GenericSlotSenderC.nc">
+          <from><interface-ref name="SubCcaControl" ref="0x7f47860d0020" scoped=""/></from>
+          <to><interface-ref name="SubCcaControl" ref="0x7f4786e8a610" scoped=""/></to>
+        </wire>
+        <wire loc="48:/home/csilab/upma/system/GenericSlotSenderC.nc">
+          <from><interface-ref name="Leds" ref="0x7f47860d0950" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x7f4787fc2970" scoped=""/></to>
+        </wire>
+        <wire loc="52:/home/csilab/upma/system/GenericSlotSenderC.nc">
+          <from><interface-ref name="Boot" ref="0x7f47860ce020" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x7f47887c57f0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

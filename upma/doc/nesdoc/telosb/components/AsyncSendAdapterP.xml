@@ -1,0 +1,50 @@
+<?xml version="1.0" ?><component loc="29:/home/csilab/upma/system/AsyncSendAdapterP.nc" nicename="AsyncSendAdapterP" qname="AsyncSendAdapterP" safe="">
+      <documentation loc="23:/home/csilab/upma/system/AsyncSendAdapterP.nc">
+        <short>
+ Converts an &lt;tt&gt;AsyncSend&lt;/tt&gt; interface to a synchronous
+ &lt;tt&gt;Send&lt;/tt&gt; interface.</short>
+        <long>
+ Converts an &lt;tt&gt;AsyncSend&lt;/tt&gt; interface to a synchronous
+ &lt;tt&gt;Send&lt;/tt&gt; interface.
+
+ @author Greg Hackmann
+</long>
+      </documentation>
+      <module/>
+    <specification><interface loc="31:/home/csilab/upma/system/AsyncSendAdapterP.nc" name="Send" provided="1" ref="0x7f4787108de0">
+      <component-ref nicename="AsyncSendAdapterP" qname="AsyncSendAdapterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Send" ref="0x7f4787108de0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f47870f8180" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f47870f8310" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f47870f84a0" scoped=""/>
+        <function-ref name="cancel" ref="0x7f47870f8630" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f47870f87c0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="32:/home/csilab/upma/system/AsyncSendAdapterP.nc" name="AsyncSend" provided="0" ref="0x7f47870f8ab0">
+      <component-ref nicename="AsyncSendAdapterP" qname="AsyncSendAdapterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AsyncSend" ref="0x7f47870f8ab0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AsyncSend" qname="AsyncSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f47870f8e30" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f47870f7020" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f47870f71b0" scoped=""/>
+        <function-ref name="cancel" ref="0x7f47870f7340" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f47870f74d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="39:/home/csilab/upma/system/AsyncSendAdapterP.nc" name="sendDone_task" provided="0" ref="0x7f47870f6d00">
+      <component-ref nicename="AsyncSendAdapterP" qname="AsyncSendAdapterP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="sendDone_task" ref="0x7f47870f6d00" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.TaskBasic" qname="TaskBasic"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="postTask" ref="0x7f47870f50a0" scoped=""/>
+        <function-ref name="runTask" ref="0x7f47870f5230" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

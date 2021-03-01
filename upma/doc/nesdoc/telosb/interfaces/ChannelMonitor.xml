@@ -1,0 +1,117 @@
+<?xml version="1.0" ?><interfacedef loc="38:/home/csilab/upma/interfaces/ChannelMonitor.nc" nicename="ChannelMonitor" qname="ChannelMonitor">
+      <documentation loc="35:/home/csilab/upma/interfaces/ChannelMonitor.nc">
+        <short>
+ </short>
+        <long>
+ @author Kevin Klues
+</long>
+      </documentation>
+      <function command="" loc="65:/home/csilab/upma/interfaces/ChannelMonitor.nc" name="setCheckLength" provided="0" ref="0x7f47870de2a0">
+        <documentation loc="60:/home/csilab/upma/interfaces/ChannelMonitor.nc">
+          <short>
+ Set the length of CCA checks.</short>
+          <long>
+ Set the length of CCA checks.
+
+ @param length the length of CCA checks, in 32 KHz increments
+</long>
+        </documentation>
+        <interfacedef-ref nicename="ChannelMonitor" qname="ChannelMonitor"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7f4789391520"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="65:/home/csilab/upma/interfaces/ChannelMonitor.nc" name="length" ref="0x7f47870de020">
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7f4789391520"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function event="" loc="58:/home/csilab/upma/interfaces/ChannelMonitor.nc" name="error" provided="0" ref="0x7f47870df760">
+        <documentation loc="55:/home/csilab/upma/interfaces/ChannelMonitor.nc">
+          <short>
+ signal that checking the channel failed
+</short>
+        </documentation>
+        <interfacedef-ref nicename="ChannelMonitor" qname="ChannelMonitor"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="43:/home/csilab/upma/interfaces/ChannelMonitor.nc" name="check" provided="0" ref="0x7f47870e0020">
+        <documentation loc="40:/home/csilab/upma/interfaces/ChannelMonitor.nc">
+          <short>
+ Check the channel to see if it is free or busy
+</short>
+        </documentation>
+        <interfacedef-ref nicename="ChannelMonitor" qname="ChannelMonitor"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function event="" loc="53:/home/csilab/upma/interfaces/ChannelMonitor.nc" name="busy" provided="0" ref="0x7f47870df020">
+        <documentation loc="50:/home/csilab/upma/interfaces/ChannelMonitor.nc">
+          <short>
+ signal that the channel is busy
+</short>
+        </documentation>
+        <interfacedef-ref nicename="ChannelMonitor" qname="ChannelMonitor"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function event="" loc="48:/home/csilab/upma/interfaces/ChannelMonitor.nc" name="free" provided="0" ref="0x7f47870e0760">
+        <documentation loc="45:/home/csilab/upma/interfaces/ChannelMonitor.nc">
+          <short>
+ signal that the channel is free
+</short>
+        </documentation>
+        <interfacedef-ref nicename="ChannelMonitor" qname="ChannelMonitor"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="72:/home/csilab/upma/interfaces/ChannelMonitor.nc" name="getCheckLength" provided="0" ref="0x7f47870deae0">
+        <documentation loc="67:/home/csilab/upma/interfaces/ChannelMonitor.nc">
+          <short>
+ Get the length of CCA checks.</short>
+          <long>
+ Get the length of CCA checks.
+
+ @return the length of CCA checks, in 32 KHz increments
+</long>
+        </documentation>
+        <interfacedef-ref nicename="ChannelMonitor" qname="ChannelMonitor"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x7f4789391520"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+    </interfacedef>

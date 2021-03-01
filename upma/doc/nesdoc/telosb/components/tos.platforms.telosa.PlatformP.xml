@@ -1,0 +1,39 @@
+<?xml version="1.0" ?><component loc="3:/usr/src/tinyos/tos/platforms/telosa/PlatformP.nc" nicename="tos.platforms.telosa.PlatformP" qname="PlatformP" safe="">
+      <module/>
+    <specification><interface loc="6:/usr/src/tinyos/tos/platforms/telosa/PlatformP.nc" name="MoteInit" provided="0" ref="0x7f47887bee10">
+      <component-ref nicename="tos.platforms.telosa.PlatformP" qname="PlatformP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MoteInit" ref="0x7f47887bee10" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f47887bd1c0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="4:/usr/src/tinyos/tos/platforms/telosa/PlatformP.nc" name="Init" provided="1" ref="0x7f47887be020">
+      <component-ref nicename="tos.platforms.telosa.PlatformP" qname="PlatformP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x7f47887be020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f47887be3a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="5:/usr/src/tinyos/tos/platforms/telosa/PlatformP.nc" name="MoteClockInit" provided="0" ref="0x7f47887be730">
+      <component-ref nicename="tos.platforms.telosa.PlatformP" qname="PlatformP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MoteClockInit" ref="0x7f47887be730" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f47887beab0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="7:/usr/src/tinyos/tos/platforms/telosa/PlatformP.nc" name="LedsInit" provided="0" ref="0x7f47887bd520">
+      <component-ref nicename="tos.platforms.telosa.PlatformP" qname="PlatformP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LedsInit" ref="0x7f47887bd520" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f47887bd8a0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

@@ -1,0 +1,14 @@
+digraph "TDMASlotSenderC" {
+  n0x2b7f5ce4d190 [shape=ellipse, style=filled, label="Send", fontsize=12];
+  "TDMASlotSenderC.TDMASlotSender" [fontsize=12, shape=box,peripheries=2, style=dashed, label="GenericSlotSenderC\n(TDMASlotSender)", URL="../chtml/GenericSlotSenderC.html"];
+  "TDMASlotSenderC.TDMASlotSender" [fontsize=12, shape=box,peripheries=2, style=dashed, label="GenericSlotSenderC\n(TDMASlotSender)", URL="../chtml/GenericSlotSenderC.html"];
+  n0x2b7f5ce4de70 [shape=ellipse, style=filled, label="SubSend", fontsize=12];
+  "TDMASlotSenderC.TDMASlotSender" [fontsize=12, shape=box,peripheries=2, style=dashed, label="GenericSlotSenderC\n(TDMASlotSender)", URL="../chtml/GenericSlotSenderC.html"];
+  n0x2b7f5ce4cae8 [shape=ellipse, style=filled, label="AMPacket", fontsize=12];
+  "TDMASlotSenderC.TDMASlotSender" [fontsize=12, shape=box,peripheries=2, style=dashed, label="GenericSlotSenderC\n(TDMASlotSender)", URL="../chtml/GenericSlotSenderC.html"];
+  n0x2b7f5ce4a3d8 [shape=ellipse, style=filled, label="SubCcaControl", fontsize=12];
+  "n0x2b7f5ce4d190" -> "TDMASlotSenderC.TDMASlotSender" [label="AsyncSend", URL="../ihtml/AsyncSend.html", fontsize=10];
+  "TDMASlotSenderC.TDMASlotSender" -> "n0x2b7f5ce4de70" [label="AsyncSend", URL="../ihtml/AsyncSend.html", fontsize=10];
+  "TDMASlotSenderC.TDMASlotSender" -> "n0x2b7f5ce4cae8" [label="AMPacket", URL="../ihtml/AMPacket.html", fontsize=10];
+  "TDMASlotSenderC.TDMASlotSender" -> "n0x2b7f5ce4a3d8" [label="CcaControl", URL="../ihtml/CcaControl.html", fontsize=10];
+}

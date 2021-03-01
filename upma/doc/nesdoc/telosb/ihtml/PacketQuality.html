@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: PacketQuality</title>
+  </head>
+  <body>
+    <h2>Interface: PacketQuality</h2>
+    <b>interface PacketQuality</b><p><p><div id=heading>Commands</div><div id=funcsig><span id=funcnameshort>command int8_t <a href="#getRssi">getRssi</a>(message_t *p_msg)
+      </span><menu>
+ Get rssi value for a given packet.
+      </menu>
+    </div><p><div id=heading>Commands - Details</div>
+    <a name="getRssi"></a>
+    <h4>getRssi
+    </h4>
+    <span id=funcnameshort>command int8_t <b>getRssi</b>(message_t *p_msg)
+    </span>
+    <p>
+    <menu>
+      
+ Get rssi value for a given packet. For received packets, it is
+ the received signal strength when receiving that packet. For sent
+ packets, it is the received signal strength of the ack if an ack
+ was received.
+
+    </menu>
+  </body>
+</html>

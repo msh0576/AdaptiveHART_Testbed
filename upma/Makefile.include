@@ -1,0 +1,2 @@
+TOSMAKE_PATH += /home/csilab/upma/support/make
+GOALS += upma

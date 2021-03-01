@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: PacketPower</title>
+  </head>
+  <body>
+    <h2>Interface: PacketPower</h2>
+    <b>interface PacketPower</b><p>
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Jonathan Hui &lt;jhui@archrock.com&gt;
+ 
+      </dd>
+      <dd>
+        David Moss
+ 
+      </dd>
+      <dd>
+        Chad Metcalf
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Commands</div><div id=funcsig><span id=funcnameshort>command uint8_t <a href="#cost">cost</a>(uint8_t powerLevel)
+      </span></div><div id=funcsig><span id=funcnameshort>command uint8_t <a href="#getPower">getPower</a>(message_t *p_msg)
+      </span><menu>
+ Get transmission power setting for current packet.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command uint8_t <a href="#maximum">maximum</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command uint8_t <a href="#minimum">minimum</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command uint8_t <a href="#rxCost">rxCost</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setPower">setPower</a>(message_t *p_msg, uint8_t power)
+      </span><menu>
+ Set transmission power for a given packet.
+      </menu>
+    </div><p><div id=heading>Commands - Details</div>
+    <a name="cost"></a>
+    <h4>cost
+    </h4>
+    <span id=funcnameshort>command uint8_t <b>cost</b>(uint8_t powerLevel)
+    </span><hr>
+    <a name="getPower"></a>
+    <h4>getPower
+    </h4>
+    <span id=funcnameshort>command uint8_t <b>getPower</b>(message_t *p_msg)
+    </span>
+    <p>
+    <menu>
+      
+ Get transmission power setting for current packet.
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          <code>the</code> -  message
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="maximum"></a>
+    <h4>maximum
+    </h4>
+    <span id=funcnameshort>command uint8_t <b>maximum</b>()
+    </span><hr>
+    <a name="minimum"></a>
+    <h4>minimum
+    </h4>
+    <span id=funcnameshort>command uint8_t <b>minimum</b>()
+    </span><hr>
+    <a name="rxCost"></a>
+    <h4>rxCost
+    </h4>
+    <span id=funcnameshort>command uint8_t <b>rxCost</b>()
+    </span><hr>
+    <a name="setPower"></a>
+    <h4>setPower
+    </h4>
+    <span id=funcnameshort>command void <b>setPower</b>(message_t *p_msg, uint8_t power)
+    </span>
+    <p>
+    <menu>
+      
+ Set transmission power for a given packet.
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          <code>p_msg</code> -  the message.
+ 
+        </dd>
+        <dd>
+          <code>power</code> -  transmission power.
+
+        </dd>
+      </dl>
+    </menu>
+  </body>
+</html>

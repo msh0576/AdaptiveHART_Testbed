@@ -1,0 +1,17 @@
+digraph "tos.lib.printf.SerialPrintfC" {
+  n0x2b7f5d037020 [shape=ellipse, style=filled, label="StdControl", fontsize=12];
+  "SerialPrintfP" [fontsize=12, shape=box, URL="../chtml/tos.lib.printf.SerialPrintfP.html"];
+  "MainC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.system.MainC.html"];
+  "SerialPrintfP" [fontsize=12, shape=box, URL="../chtml/tos.lib.printf.SerialPrintfP.html"];
+  "SerialPrintfP" [fontsize=12, shape=box, URL="../chtml/tos.lib.printf.SerialPrintfP.html"];
+  "PlatformSerialC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.platforms.telosa.PlatformSerialC.html"];
+  "SerialPrintfP" [fontsize=12, shape=box, URL="../chtml/tos.lib.printf.SerialPrintfP.html"];
+  "PlatformSerialC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.platforms.telosa.PlatformSerialC.html"];
+  "PutcharC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.lib.printf.PutcharC.html"];
+  "SerialPrintfP" [fontsize=12, shape=box, URL="../chtml/tos.lib.printf.SerialPrintfP.html"];
+  "n0x2b7f5d037020" -> "SerialPrintfP" [label="StdControl", URL="../ihtml/tos.interfaces.StdControl.html", fontsize=10];
+  "MainC" -> "SerialPrintfP" [label="Init", URL="../ihtml/tos.interfaces.Init.html", fontsize=10];
+  "SerialPrintfP" -> "PlatformSerialC" [label="StdControl", URL="../ihtml/tos.interfaces.StdControl.html", fontsize=10];
+  "SerialPrintfP" -> "PlatformSerialC" [label="UartByte", URL="../ihtml/tos.interfaces.UartByte.html", fontsize=10];
+  "PutcharC" -> "SerialPrintfP" [label="Putchar", URL="../ihtml/tos.lib.printf.Putchar.html", fontsize=10];
+}

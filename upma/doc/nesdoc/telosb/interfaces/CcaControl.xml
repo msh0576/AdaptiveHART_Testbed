@@ -1,0 +1,146 @@
+<?xml version="1.0" ?><interfacedef loc="28:/home/csilab/upma/interfaces/CcaControl.nc" nicename="CcaControl" qname="CcaControl">
+      <documentation loc="23:/home/csilab/upma/interfaces/CcaControl.nc">
+        <short>
+ Controls the radio's CCA and backoff policies.</short>
+        <long>
+ Controls the radio's CCA and backoff policies.
+
+ @author Greg Hackmann
+</long>
+      </documentation>
+      <function event="" loc="50:/home/csilab/upma/interfaces/CcaControl.nc" name="getCongestionBackoff" provided="0" ref="0x7f4787d2a660">
+        <documentation loc="41:/home/csilab/upma/interfaces/CcaControl.nc">
+          <short>
+ The congestion backoff time for a message must be selected.</short>
+          <long>
+ The congestion backoff time for a message must be selected.  If the upper
+ layer has no need to change the backoff, then return
+ &lt;tt&gt;defaultBackoff&lt;/tt&gt;.
+
+ @param msg the message
+ @param defaultBackoff the radio-default backoff length
+ @return the congestion backoff length, in 32 Khz increments
+</long>
+        </documentation>
+        <interfacedef-ref nicename="CcaControl" qname="CcaControl"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x7f4789391520"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7f4789391520"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="50:/home/csilab/upma/interfaces/CcaControl.nc" name="msg" ref="0x7f4787d2a020">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="50:/home/csilab/upma/interfaces/CcaControl.nc" name="defaultBackoff" ref="0x7f4787d2a3d0">
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7f4789391520"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function event="" loc="39:/home/csilab/upma/interfaces/CcaControl.nc" name="getInitialBackoff" provided="0" ref="0x7f4787d2b660">
+        <documentation loc="30:/home/csilab/upma/interfaces/CcaControl.nc">
+          <short>
+ The initial backoff time for a message must be selected.</short>
+          <long>
+ The initial backoff time for a message must be selected.  If the upper
+ layer has no need to change the backoff, then return
+ &lt;tt&gt;defaultBackoff&lt;/tt&gt;.
+
+ @param msg the message
+ @param defaultBackoff the radio-default backoff length
+ @return the initial backoff length, in 32 Khz increments
+</long>
+        </documentation>
+        <interfacedef-ref nicename="CcaControl" qname="CcaControl"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x7f4789391520"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7f4789391520"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="39:/home/csilab/upma/interfaces/CcaControl.nc" name="msg" ref="0x7f4787d2b020">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="39:/home/csilab/upma/interfaces/CcaControl.nc" name="defaultbackoff" ref="0x7f4787d2b3d0">
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7f4789391520"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function event="" loc="61:/home/csilab/upma/interfaces/CcaControl.nc" name="getCca" provided="0" ref="0x7f4787d29610">
+        <documentation loc="52:/home/csilab/upma/interfaces/CcaControl.nc">
+          <short>
+ Whether to perform CCA before sending a message must be determined.</short>
+          <long>
+ Whether to perform CCA before sending a message must be determined.  If
+ the upper layer has no need to specify this, then return
+ &lt;tt&gt;defaultCca&lt;/tt&gt;.
+
+ @param msg the message
+ @param defaultCca the radio-default CCA policy
+ @return whether to perform CCA before sending the message
+</long>
+        </documentation>
+        <interfacedef-ref nicename="CcaControl" qname="CcaControl"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x7f4788c69090"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x7f4788c69090"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="61:/home/csilab/upma/interfaces/CcaControl.nc" name="msg" ref="0x7f4787d29020">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="61:/home/csilab/upma/interfaces/CcaControl.nc" name="defaultCca" ref="0x7f4787d29380">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x7f4788c69090"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+    </interfacedef>

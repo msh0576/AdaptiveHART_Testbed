@@ -1,0 +1,10 @@
+<area shape="rect" id="node2" href="../chtml/AsyncSendAdapterP.html" title="AsyncSendAdapterP" alt="" coords="5,117,159,165">
+<area shape="poly" id="edge1" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="85,54,85,104,80,104,80,54">
+<area shape="rect" id="edge1-label" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="83,78,111,93">
+<area shape="poly" id="edge4" href="../ihtml/AsyncSend.html" title="AsyncSend" alt="" coords="85,166,85,216,80,216,80,166">
+<area shape="rect" id="edge4-label" href="../ihtml/AsyncSend.html" title="AsyncSend" alt="" coords="83,190,145,205">
+<area shape="rect" id="node4" href="../chtml/AsyncReceiveAdapterP.html" title="AsyncReceiveAdapterP" alt="" coords="185,117,359,165">
+<area shape="poly" id="edge2" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="275,54,275,104,269,104,269,54">
+<area shape="rect" id="edge2-label" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="272,78,317,93">
+<area shape="poly" id="edge3" href="../ihtml/AsyncReceive.html" title="AsyncReceive" alt="" coords="275,166,275,216,269,216,269,166">
+<area shape="rect" id="edge3-label" href="../ihtml/AsyncReceive.html" title="AsyncReceive" alt="" coords="272,190,352,205">

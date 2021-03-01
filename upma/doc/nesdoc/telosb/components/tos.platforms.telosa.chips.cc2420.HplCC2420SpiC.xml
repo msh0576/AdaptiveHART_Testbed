@@ -1,0 +1,108 @@
+<?xml version="1.0" ?><component abstract="" loc="40:/usr/src/tinyos/tos/platforms/telosa/chips/cc2420/HplCC2420SpiC.nc" nicename="tos.platforms.telosa.chips.cc2420.HplCC2420SpiC" qname="HplCC2420SpiC">
+      <documentation loc="32:/usr/src/tinyos/tos/platforms/telosa/chips/cc2420/HplCC2420SpiC.nc">
+        <short>
+ HPL implementation of the SPI bus for the ChipCon CC2420 radio
+ connected to a TI MSP430 processor.</short>
+        <long>
+ HPL implementation of the SPI bus for the ChipCon CC2420 radio
+ connected to a TI MSP430 processor.
+
+ @author Jonathan Hui &lt;jhui@archrock.com&gt;
+ @version $Revision: 1.4 $ $Date: 2006-12-12 18:23:44 $
+</long>
+      </documentation>
+      <parameters>
+      </parameters>
+      <configuration/>
+      <wiring>
+        <wire loc="54:/usr/src/tinyos/tos/platforms/telosa/chips/cc2420/HplCC2420SpiC.nc">
+          <from><interface-ref name="SpiPacket" ref="0x7f4787899e30" scoped=""/></from>
+          <to><interface-ref name="SpiPacket" ref="0x7f4787658d70" scoped=""/></to>
+        </wire>
+        <wire loc="53:/usr/src/tinyos/tos/platforms/telosa/chips/cc2420/HplCC2420SpiC.nc">
+          <from><interface-ref name="SpiByte" ref="0x7f47878997c0" scoped=""/></from>
+          <to><interface-ref name="SpiByte" ref="0x7f4787659be0" scoped=""/></to>
+        </wire>
+        <wire loc="52:/usr/src/tinyos/tos/platforms/telosa/chips/cc2420/HplCC2420SpiC.nc">
+          <from><interface-ref name="Resource" ref="0x7f478789caf0" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x7f478765a730" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="44:/usr/src/tinyos/tos/platforms/telosa/chips/cc2420/HplCC2420SpiC.nc" name="SpiPacket" provided="1" ref="0x7f4787899e30">
+      <component-ref nicename="tos.platforms.telosa.chips.cc2420.HplCC2420SpiC" qname="HplCC2420SpiC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiPacket" ref="0x7f4787899e30" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SpiPacket" qname="SpiPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f47878981e0" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4787898370" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/usr/src/tinyos/tos/platforms/telosa/chips/cc2420/HplCC2420SpiC.nc" name="SpiByte" provided="1" ref="0x7f47878997c0">
+      <component-ref nicename="tos.platforms.telosa.chips.cc2420.HplCC2420SpiC" qname="HplCC2420SpiC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiByte" ref="0x7f47878997c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SpiByte" qname="SpiByte"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="write" ref="0x7f4787899b40" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:/usr/src/tinyos/tos/platforms/telosa/chips/cc2420/HplCC2420SpiC.nc" name="Resource" provided="1" ref="0x7f478789caf0">
+      <component-ref nicename="tos.platforms.telosa.chips.cc2420.HplCC2420SpiC" qname="HplCC2420SpiC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x7f478789caf0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="release" ref="0x7f478789ce70" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x7f4787899030" scoped=""/>
+        <function-ref name="request" ref="0x7f47878991c0" scoped=""/>
+        <function-ref name="granted" ref="0x7f4787899350" scoped=""/>
+        <function-ref name="isOwner" ref="0x7f47878994e0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="83:/usr/src/tinyos/tos/chips/msp430/usart/Msp430Spi0C.nc" name="SpiByte" provided="1" ref="0x7f4787659be0">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Spi0C" qname="HplCC2420SpiC.SpiC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiByte" ref="0x7f4787659be0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SpiByte" qname="SpiByte"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="write" ref="0x7f4787658020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="87:/usr/src/tinyos/tos/chips/msp430/usart/Msp430Spi0C.nc" name="SpiPacket" provided="1" ref="0x7f4787658d70">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Spi0C" qname="HplCC2420SpiC.SpiC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiPacket" ref="0x7f4787658d70" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SpiPacket" qname="SpiPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4787657180" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4787657310" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="81:/usr/src/tinyos/tos/chips/msp430/usart/Msp430Spi0C.nc" name="Resource" provided="1" ref="0x7f478765a730">
+      <component-ref nicename="tos.chips.msp430.usart.Msp430Spi0C" qname="HplCC2420SpiC.SpiC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x7f478765a730" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="release" ref="0x7f478765aab0" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x7f478765ac40" scoped=""/>
+        <function-ref name="request" ref="0x7f478765add0" scoped=""/>
+        <function-ref name="granted" ref="0x7f4787659020" scoped=""/>
+        <function-ref name="isOwner" ref="0x7f47876591b0" scoped=""/>
+      </interface-functions>
+    </interface><component abstract="" loc="79(HplCC2420SpiC.SpiC):/usr/src/tinyos/tos/chips/msp430/usart/Msp430Spi0C.nc" nicename="tos.chips.msp430.usart.Msp430Spi0C" qname="HplCC2420SpiC.SpiC">
+      <documentation loc="31:/usr/src/tinyos/tos/chips/msp430/usart/msp430usart.h">
+        <short>
+ </short>
+        <long>
+ @author Vlado Handziski &lt;handzisk@tkn.tu-berlin.de&gt;
+ @author Philipp Huppertz &lt;huppertz@tkn.tu-berlin.de&gt;
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.chips.msp430.usart.Msp430Spi0C" qname="Msp430Spi0C"/>
+      </instance>
+      <configuration/>
+    </component></referenced></component>

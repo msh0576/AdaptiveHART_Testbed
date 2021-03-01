@@ -1,0 +1,9 @@
+AdaptiveHART 파일 경로:
+
+1. /Home/upma/apps/
+	- Adaptability 결과
+
+
+2. /Home/tdma/TdmaMacTest/tests/TestPureTdma/
+	- Normal operation 결과
+	- end-to-end delay 결과

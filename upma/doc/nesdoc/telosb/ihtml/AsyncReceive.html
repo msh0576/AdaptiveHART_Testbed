@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: AsyncReceive</title>
+  </head>
+  <body>
+    <h2>Interface: AsyncReceive</h2>
+    <b>interface AsyncReceive</b><p>
+ Provides packet reception events in an asynchronous fashion.
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Greg Hackmann
+ 
+      </dd>
+      <dt><b>See:</b>
+      <dd>
+        Receive
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Commands</div><div id=funcsig><span id=funcnameshort>command void <a href="#updateBuffer">updateBuffer</a>(message_t *msg)
+      </span><menu>
+ Provides a new message buffer to the radio stack.
+      </menu>
+    </div><p><div id=heading>Events</div><div id=funcsig><span id=funcnameshort>event void <a href="#receive">receive</a>(message_t *msg, void *payload, uint8_t len)
+      </span><menu>
+ A packet was received over the radio.
+      </menu>
+    </div><p><div id=heading>Commands - Details</div>
+    <a name="updateBuffer"></a>
+    <h4>updateBuffer
+    </h4>
+    <span id=funcnameshort>command void <b>updateBuffer</b>(message_t *msg)
+    </span>
+    <p>
+    <menu>
+      
+ Provides a new message buffer to the radio stack.
+ This should be called (only) after each packet is handled, since
+ the radio stack may do additional radio-specific event handling
+ here.
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          'message_t * ONE msg' the new message buffer to provide to the radio stack
+ (possibly the same one passed up from the <tt>receive</tt> event)
+
+        </dd>
+      </dl>
+    </menu>
+    <p><div id=heading>Events - Details</div>
+    <a name="receive"></a>
+    <h4>receive
+    </h4>
+    <span id=funcnameshort>event void <b>receive</b>(message_t *msg, void *payload, uint8_t len)
+    </span>
+    <p>
+    <menu>
+      
+ A packet was received over the radio.  After it is processed,
+ <tt>updateBuffer</tt> should be called.
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          'message_t * ONE msg' the packet that was received
+ 
+        </dd>
+        <dd>
+          'void * COUNT(len) payload' the packet's payload
+ 
+        </dd>
+        <dd>
+          <code>len</code> -  the packet's length
+
+        </dd>
+      </dl>
+    </menu>
+  </body>
+</html>

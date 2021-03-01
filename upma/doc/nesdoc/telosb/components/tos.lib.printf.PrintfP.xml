@@ -1,0 +1,107 @@
+<?xml version="1.0" ?><component loc="87:/usr/src/tinyos/tos/lib/printf/PrintfP.nc" nicename="tos.lib.printf.PrintfP" qname="PrintfP" safe="">
+      <documentation loc="33:/usr/src/tinyos/tos/lib/printf/printf.h">
+        <short>
+
+ </short>
+        <long>
+
+ @author Kevin Klues (klueska@cs.wustl.edu)
+ @version $Revision: 1.17 $
+ @date $Date: 2010-06-29 22:07:50 $
+</long>
+      </documentation>
+      <module/>
+    <specification><interface loc="93:/usr/src/tinyos/tos/lib/printf/PrintfP.nc" name="Queue" provided="0" ref="0x7f4787d932f0">
+      <component-ref nicename="tos.lib.printf.PrintfP" qname="PrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Queue" ref="0x7f4787d932f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Queue" qname="Queue"/>
+        <arguments>
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x7f4789391160"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="head" ref="0x7f4787d92da0" scoped=""/>
+        <function-ref name="enqueue" ref="0x7f4787d8fb40" scoped=""/>
+        <function-ref name="element" ref="0x7f4787d8d220" scoped=""/>
+        <function-ref name="maxSize" ref="0x7f4787d92920" scoped=""/>
+        <function-ref name="dequeue" ref="0x7f4787d8f490" scoped=""/>
+        <function-ref name="empty" ref="0x7f4787d92020" scoped=""/>
+        <function-ref name="size" ref="0x7f4787d924a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="94:/usr/src/tinyos/tos/lib/printf/PrintfP.nc" name="AMSend" provided="0" ref="0x7f4787d8d8d0">
+      <component-ref nicename="tos.lib.printf.PrintfP" qname="PrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x7f4787d8d8d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4787d8dc50" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4787d8dde0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4787d8c020" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4787d8c1b0" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4787d8c340" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="95:/usr/src/tinyos/tos/lib/printf/PrintfP.nc" name="Packet" provided="0" ref="0x7f4787d8c5d0">
+      <component-ref nicename="tos.lib.printf.PrintfP" qname="PrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x7f4787d8c5d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f4787d8c950" scoped=""/>
+        <function-ref name="payloadLength" ref="0x7f4787d8cae0" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4787d8cc70" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4787d8ce00" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x7f4787d8b020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="114:/usr/src/tinyos/tos/lib/printf/PrintfP.nc" name="retrySend" provided="0" ref="0x7f4787d87890">
+      <component-ref nicename="tos.lib.printf.PrintfP" qname="PrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="retrySend" ref="0x7f4787d87890" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.TaskBasic" qname="TaskBasic"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="postTask" ref="0x7f4787d87c10" scoped=""/>
+        <function-ref name="runTask" ref="0x7f4787d87da0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="89:/usr/src/tinyos/tos/lib/printf/PrintfP.nc" name="Init" provided="1" ref="0x7f4787d94380">
+      <component-ref nicename="tos.lib.printf.PrintfP" qname="PrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x7f4787d94380" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f4787d94700" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="96:/usr/src/tinyos/tos/lib/printf/PrintfP.nc" name="Leds" provided="0" ref="0x7f4787d8b2a0">
+      <component-ref nicename="tos.lib.printf.PrintfP" qname="PrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x7f4787d8b2a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x7f4787d8b620" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x7f4787d8b7b0" scoped=""/>
+        <function-ref name="led1On" ref="0x7f4787d8b940" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x7f4787d8bad0" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x7f4787d8bc60" scoped=""/>
+        <function-ref name="get" ref="0x7f4787d8bdf0" scoped=""/>
+        <function-ref name="led1Off" ref="0x7f4787d8a020" scoped=""/>
+        <function-ref name="led2Off" ref="0x7f4787d8a660" scoped=""/>
+        <function-ref name="set" ref="0x7f4787d8a1b0" scoped=""/>
+        <function-ref name="led0On" ref="0x7f4787d8a340" scoped=""/>
+        <function-ref name="led2On" ref="0x7f4787d8a4d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="90:/usr/src/tinyos/tos/lib/printf/PrintfP.nc" name="Putchar" provided="1" ref="0x7f4787d91a30">
+      <component-ref nicename="tos.lib.printf.PrintfP" qname="PrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Putchar" ref="0x7f4787d91a30" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.printf.Putchar" qname="Putchar"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="putchar" ref="0x7f4787d91db0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

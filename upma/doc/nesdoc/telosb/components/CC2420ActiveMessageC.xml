@@ -1,0 +1,1216 @@
+<?xml version="1.0" ?><component loc="45:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc" nicename="CC2420ActiveMessageC" qname="CC2420ActiveMessageC">
+      <configuration/>
+      <wiring>
+        <wire loc="75:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="SplitControl" ref="0x7f4787d40c10" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x7f4787d13370" scoped=""/></to>
+        </wire>
+        <wire loc="79:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="SendNotifier" ref="0x7f4787d1d500" scoped=""/></from>
+          <to><interface-ref name="SendNotifier" ref="0x7f4786ca53f0" scoped=""/></to>
+        </wire>
+        <wire loc="77:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="Packet" ref="0x7f4787d3ba80" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x7f4786ca72b0" scoped=""/></to>
+        </wire>
+        <wire loc="78:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="AMSend" ref="0x7f4787d3fca0" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x7f4786cae4d0" scoped=""/></to>
+        </wire>
+        <wire loc="81:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="Snoop" ref="0x7f4787d3dc00" scoped=""/></from>
+          <to><interface-ref name="Snoop" ref="0x7f4786ca9430" scoped=""/></to>
+        </wire>
+        <wire loc="86:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="CC2420Packet" ref="0x7f4787d31c20" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x7f4787d0e7e0" scoped=""/></to>
+        </wire>
+        <wire loc="76:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="CcaControl" ref="0x7f4787d2d020" scoped=""/></from>
+          <to><interface-ref name="CcaControl" ref="0x7f4786ca64d0" scoped=""/></to>
+        </wire>
+        <wire loc="80:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="Receive" ref="0x7f4787d3d020" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f4786cab800" scoped=""/></to>
+        </wire>
+        <wire loc="84:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="PacketQuality" ref="0x7f4787d1fd30" scoped=""/></from>
+          <to><interface-ref name="PacketQuality" ref="0x7f4787d0b490" scoped=""/></to>
+        </wire>
+        <wire loc="87:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="PacketAcknowledgements" ref="0x7f4787d39b20" scoped=""/></from>
+          <to><interface-ref name="PacketAcknowledgements" ref="0x7f4787d0d680" scoped=""/></to>
+        </wire>
+        <wire loc="85:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="PacketPower" ref="0x7f4787d18430" scoped=""/></from>
+          <to><interface-ref name="PacketPower" ref="0x7f4787d0bad0" scoped=""/></to>
+        </wire>
+        <wire loc="83:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="PacketLink" ref="0x7f4787d200d0" scoped=""/></from>
+          <to><interface-ref name="PacketLink" ref="0x7f4787d0c6c0" scoped=""/></to>
+        </wire>
+        <wire loc="82:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="AMPacket" ref="0x7f4787d3c2d0" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x7f4786ca9a60" scoped=""/></to>
+        </wire>
+        <wire loc="88:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="LinkPacketMetadata" ref="0x7f4787d2eda0" scoped=""/></from>
+          <to><interface-ref name="LinkPacketMetadata" ref="0x7f4787d0c080" scoped=""/></to>
+        </wire>
+        <wire loc="91:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="RadioResource" ref="0x7f4786c9e3a0" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x7f4787d11430" scoped=""/>
+          <arguments>
+            <value cst="I:0">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="92:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="SubSend" ref="0x7f4786ca5b00" scoped=""/></from>
+          <to><interface-ref name="ActiveSend" ref="0x7f4787d0f410" scoped=""/></to>
+        </wire>
+        <wire loc="93:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="SubReceive" ref="0x7f4786ca4830" scoped=""/></from>
+          <to><interface-ref name="ActiveReceive" ref="0x7f4787d0e190" scoped=""/></to>
+        </wire>
+        <wire loc="95:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="ActiveMessageAddress" ref="0x7f4786ca05d0" scoped=""/></from>
+          <to><interface-ref name="ActiveMessageAddress" ref="0x7f47875c3b90" scoped=""/></to>
+        </wire>
+        <wire loc="96:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="CC2420Packet" ref="0x7f4786ca4e80" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x7f478739be00" scoped=""/></to>
+        </wire>
+        <wire loc="97:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="CC2420PacketBody" ref="0x7f4786ca3cf0" scoped=""/></from>
+          <to><interface-ref name="CC2420PacketBody" ref="0x7f4787399700" scoped=""/></to>
+        </wire>
+        <wire loc="98:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="CC2420Config" ref="0x7f4786ca2690" scoped=""/></from>
+          <to><interface-ref name="CC2420Config" ref="0x7f4787c7e550" scoped=""/></to>
+        </wire>
+        <wire loc="100:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="SubCcaControl" ref="0x7f4786c9f8f0" scoped=""/></from>
+          <to><interface-ref name="CcaControl" ref="0x7f4787d00ac0" scoped=""/></to>
+        </wire>
+        <wire loc="103:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc">
+          <from><interface-ref name="Leds" ref="0x7f4786c9c020" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x7f4787fc2970" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="47:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc" name="SplitControl" provided="1" ref="0x7f4787d40c10">
+      <component-ref nicename="CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SplitControl" ref="0x7f4787d40c10" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f4787d3f020" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f4787d3f1b0" scoped=""/>
+        <function-ref name="start" ref="0x7f4787d3f340" scoped=""/>
+        <function-ref name="stop" ref="0x7f4787d3f4d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="60:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc" name="SendNotifier" provided="1" ref="0x7f4787d1d500">
+      <component-ref nicename="CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SendNotifier" ref="0x7f4787d1d500" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SendNotifier" qname="SendNotifier"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="aboutToSend" ref="0x7f4787d1d880" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="52:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc" name="Packet" provided="1" ref="0x7f4787d3ba80">
+      <component-ref nicename="CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x7f4787d3ba80" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f4787d3be00" scoped=""/>
+        <function-ref name="payloadLength" ref="0x7f4787d3a020" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4787d3a1b0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4787d3a340" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x7f4787d3a4d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc" name="AMSend" provided="1" ref="0x7f4787d3fca0">
+      <component-ref nicename="CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x7f4787d3fca0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4787d3e0a0" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4787d3e230" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4787d3e3c0" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4787d3e550" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4787d3e6e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc" name="Snoop" provided="1" ref="0x7f4787d3dc00">
+      <component-ref nicename="CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Snoop" ref="0x7f4787d3dc00" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4787d3c020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="53:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc" name="CC2420Packet" provided="1" ref="0x7f4787d31c20">
+      <component-ref nicename="CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Packet" ref="0x7f4787d31c20" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setPower" ref="0x7f4787d39020" scoped=""/>
+        <function-ref name="setNetwork" ref="0x7f4787d391b0" scoped=""/>
+        <function-ref name="getRssi" ref="0x7f4787d39340" scoped=""/>
+        <function-ref name="getNetwork" ref="0x7f4787d394d0" scoped=""/>
+        <function-ref name="getPower" ref="0x7f4787d39660" scoped=""/>
+        <function-ref name="getLqi" ref="0x7f4787d397f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="56:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc" name="CcaControl" provided="1" ref="0x7f4787d2d020">
+      <component-ref nicename="CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CcaControl" ref="0x7f4787d2d020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="CcaControl" qname="CcaControl"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getCongestionBackoff" ref="0x7f4787d2d3a0" scoped=""/>
+        <function-ref name="getInitialBackoff" ref="0x7f4787d2d530" scoped=""/>
+        <function-ref name="getCca" ref="0x7f4787d2d6c0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc" name="Receive" provided="1" ref="0x7f4787d3d020">
+      <component-ref nicename="CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Receive" ref="0x7f4787d3d020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4787d3d3a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="58:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc" name="PacketQuality" provided="1" ref="0x7f4787d1fd30">
+      <component-ref nicename="CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketQuality" ref="0x7f4787d1fd30" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="PacketQuality" qname="PacketQuality"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getRssi" ref="0x7f4787d280e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="54:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc" name="PacketAcknowledgements" provided="1" ref="0x7f4787d39b20">
+      <component-ref nicename="CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketAcknowledgements" ref="0x7f4787d39b20" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requestAck" ref="0x7f4787d38020" scoped=""/>
+        <function-ref name="noAck" ref="0x7f4787d381b0" scoped=""/>
+        <function-ref name="wasAcked" ref="0x7f4787d38340" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="59:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc" name="PacketPower" provided="1" ref="0x7f4787d18430">
+      <component-ref nicename="CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketPower" ref="0x7f4787d18430" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="PacketPower" qname="PacketPower"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rxCost" ref="0x7f4787d188b0" scoped=""/>
+        <function-ref name="setPower" ref="0x7f4787d18a40" scoped=""/>
+        <function-ref name="minimum" ref="0x7f4787d18bd0" scoped=""/>
+        <function-ref name="maximum" ref="0x7f4787d18d60" scoped=""/>
+        <function-ref name="cost" ref="0x7f4787d27020" scoped=""/>
+        <function-ref name="getPower" ref="0x7f4787d271b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="57:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc" name="PacketLink" provided="1" ref="0x7f4787d200d0">
+      <component-ref nicename="CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketLink" ref="0x7f4787d200d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketLink" qname="PacketLink"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getRetryDelay" ref="0x7f4787d20450" scoped=""/>
+        <function-ref name="setRetries" ref="0x7f4787d205e0" scoped=""/>
+        <function-ref name="getRetries" ref="0x7f4787d20770" scoped=""/>
+        <function-ref name="setRetryDelay" ref="0x7f4787d20900" scoped=""/>
+        <function-ref name="wasDelivered" ref="0x7f4787d20a90" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc" name="AMPacket" provided="1" ref="0x7f4787d3c2d0">
+      <component-ref nicename="CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x7f4787d3c2d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="headerSize" ref="0x7f4787d3c650" scoped=""/>
+        <function-ref name="group" ref="0x7f4787d3c7e0" scoped=""/>
+        <function-ref name="source" ref="0x7f4787d3c970" scoped=""/>
+        <function-ref name="address" ref="0x7f4787d3cb00" scoped=""/>
+        <function-ref name="destination" ref="0x7f4787d3cc90" scoped=""/>
+        <function-ref name="setSource" ref="0x7f4787d3ce20" scoped=""/>
+        <function-ref name="setDestination" ref="0x7f4787d3b020" scoped=""/>
+        <function-ref name="type" ref="0x7f4787d3b1b0" scoped=""/>
+        <function-ref name="setType" ref="0x7f4787d3b340" scoped=""/>
+        <function-ref name="isForMe" ref="0x7f4787d3b4d0" scoped=""/>
+        <function-ref name="setGroup" ref="0x7f4787d3b660" scoped=""/>
+        <function-ref name="localGroup" ref="0x7f4787d3b7f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="55:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageC.nc" name="LinkPacketMetadata" provided="1" ref="0x7f4787d2eda0">
+      <component-ref nicename="CC2420ActiveMessageC" qname="CC2420ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LinkPacketMetadata" ref="0x7f4787d2eda0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.LinkPacketMetadata" qname="LinkPacketMetadata"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="highChannelQuality" ref="0x7f4787d30180" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="55:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc" name="CC2420Packet" provided="1" ref="0x7f4787d0e7e0">
+      <component-ref nicename="CC2420RadioC" qname="CC2420RadioC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Packet" ref="0x7f4787d0e7e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setPower" ref="0x7f4787d0eb60" scoped=""/>
+        <function-ref name="setNetwork" ref="0x7f4787d0ecf0" scoped=""/>
+        <function-ref name="getRssi" ref="0x7f4787d0ee80" scoped=""/>
+        <function-ref name="getNetwork" ref="0x7f4787d0d030" scoped=""/>
+        <function-ref name="getPower" ref="0x7f4787d0d1c0" scoped=""/>
+        <function-ref name="getLqi" ref="0x7f4787d0d350" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="79:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="SubCcaControl" provided="0" ref="0x7f4786c9f8f0">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SubCcaControl" ref="0x7f4786c9f8f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="CcaControl" qname="CcaControl"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getCongestionBackoff" ref="0x7f4786c9fc70" scoped=""/>
+        <function-ref name="getInitialBackoff" ref="0x7f4786c9fe00" scoped=""/>
+        <function-ref name="getCca" ref="0x7f4786c9e020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="67:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="AMPacket" provided="1" ref="0x7f4786ca9a60">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x7f4786ca9a60" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="headerSize" ref="0x7f4786ca9de0" scoped=""/>
+        <function-ref name="group" ref="0x7f4786ca8020" scoped=""/>
+        <function-ref name="source" ref="0x7f4786ca81b0" scoped=""/>
+        <function-ref name="address" ref="0x7f4786ca8340" scoped=""/>
+        <function-ref name="destination" ref="0x7f4786ca84d0" scoped=""/>
+        <function-ref name="setSource" ref="0x7f4786ca8660" scoped=""/>
+        <function-ref name="setDestination" ref="0x7f4786ca87f0" scoped=""/>
+        <function-ref name="type" ref="0x7f4786ca8980" scoped=""/>
+        <function-ref name="setType" ref="0x7f4786ca8b10" scoped=""/>
+        <function-ref name="isForMe" ref="0x7f4786ca8ca0" scoped=""/>
+        <function-ref name="setGroup" ref="0x7f4786ca8e30" scoped=""/>
+        <function-ref name="localGroup" ref="0x7f4786ca7020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="65:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="Receive" provided="1" ref="0x7f4786cab800">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Receive" ref="0x7f4786cab800" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4786cabb80" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="81:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="RadioResource" provided="0" ref="0x7f4786c9e3a0">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioResource" ref="0x7f4786c9e3a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="release" ref="0x7f4786c9e720" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x7f4786c9e8b0" scoped=""/>
+        <function-ref name="request" ref="0x7f4786c9ea40" scoped=""/>
+        <function-ref name="granted" ref="0x7f4786c9ebd0" scoped=""/>
+        <function-ref name="isOwner" ref="0x7f4786c9ed60" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="75:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="CC2420Packet" provided="0" ref="0x7f4786ca4e80">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Packet" ref="0x7f4786ca4e80" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setPower" ref="0x7f4786ca3220" scoped=""/>
+        <function-ref name="setNetwork" ref="0x7f4786ca33b0" scoped=""/>
+        <function-ref name="getRssi" ref="0x7f4786ca3540" scoped=""/>
+        <function-ref name="getNetwork" ref="0x7f4786ca36d0" scoped=""/>
+        <function-ref name="getPower" ref="0x7f4786ca3860" scoped=""/>
+        <function-ref name="getLqi" ref="0x7f4786ca39f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="52:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc" name="ActiveSend" provided="1" ref="0x7f4787d0f410">
+      <component-ref nicename="CC2420RadioC" qname="CC2420RadioC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ActiveSend" ref="0x7f4787d0f410" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4787d0f790" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4787d0f920" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4787d0fab0" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4787d0fc40" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4787d0fdd0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="60:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc" name="PacketPower" provided="1" ref="0x7f4787d0bad0">
+      <component-ref nicename="CC2420RadioC" qname="CC2420RadioC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketPower" ref="0x7f4787d0bad0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="PacketPower" qname="PacketPower"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rxCost" ref="0x7f4787d0be50" scoped=""/>
+        <function-ref name="setPower" ref="0x7f4787d0a020" scoped=""/>
+        <function-ref name="minimum" ref="0x7f4787d0a1b0" scoped=""/>
+        <function-ref name="maximum" ref="0x7f4787d0a340" scoped=""/>
+        <function-ref name="cost" ref="0x7f4787d0a4d0" scoped=""/>
+        <function-ref name="getPower" ref="0x7f4787d0a660" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="69:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="CcaControl" provided="1" ref="0x7f4786ca64d0">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CcaControl" ref="0x7f4786ca64d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="CcaControl" qname="CcaControl"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getCongestionBackoff" ref="0x7f4786ca6850" scoped=""/>
+        <function-ref name="getInitialBackoff" ref="0x7f4786ca69e0" scoped=""/>
+        <function-ref name="getCca" ref="0x7f4786ca6b70" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="77:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="CC2420Config" provided="0" ref="0x7f4786ca2690">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Config" ref="0x7f4786ca2690" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Config" qname="CC2420Config"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setAutoAck" ref="0x7f4786ca2a10" scoped=""/>
+        <function-ref name="isAddressRecognitionEnabled" ref="0x7f4786ca2ba0" scoped=""/>
+        <function-ref name="setAddressRecognition" ref="0x7f4786ca2d30" scoped=""/>
+        <function-ref name="syncDone" ref="0x7f4786ca1020" scoped=""/>
+        <function-ref name="isHwAddressRecognitionDefault" ref="0x7f4786ca11b0" scoped=""/>
+        <function-ref name="setShortAddr" ref="0x7f4786ca1340" scoped=""/>
+        <function-ref name="setChannel" ref="0x7f4786ca14d0" scoped=""/>
+        <function-ref name="isAutoAckEnabled" ref="0x7f4786ca1660" scoped=""/>
+        <function-ref name="setPanAddr" ref="0x7f4786ca17f0" scoped=""/>
+        <function-ref name="isHwAutoAckDefault" ref="0x7f4786ca1980" scoped=""/>
+        <function-ref name="getExtAddr" ref="0x7f4786ca1b10" scoped=""/>
+        <function-ref name="getShortAddr" ref="0x7f4786ca1ca0" scoped=""/>
+        <function-ref name="sync" ref="0x7f4786ca1e30" scoped=""/>
+        <function-ref name="getChannel" ref="0x7f4786ca0120" scoped=""/>
+        <function-ref name="getPanAddr" ref="0x7f4786ca02b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="56:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc" name="PacketAcknowledgements" provided="1" ref="0x7f4787d0d680">
+      <component-ref nicename="CC2420RadioC" qname="CC2420RadioC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketAcknowledgements" ref="0x7f4787d0d680" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requestAck" ref="0x7f4787d0da00" scoped=""/>
+        <function-ref name="noAck" ref="0x7f4787d0db90" scoped=""/>
+        <function-ref name="wasAcked" ref="0x7f4787d0dd20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc" name="CC2420Packet" provided="1" ref="0x7f478739be00">
+      <component-ref nicename="CC2420PacketC" qname="CC2420PacketC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Packet" ref="0x7f478739be00" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setPower" ref="0x7f478739a1c0" scoped=""/>
+        <function-ref name="setNetwork" ref="0x7f478739a350" scoped=""/>
+        <function-ref name="getRssi" ref="0x7f478739a4e0" scoped=""/>
+        <function-ref name="getNetwork" ref="0x7f478739a670" scoped=""/>
+        <function-ref name="getPower" ref="0x7f478739a800" scoped=""/>
+        <function-ref name="getLqi" ref="0x7f478739a990" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="70:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="SendNotifier" provided="1" ref="0x7f4786ca53f0">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SendNotifier" ref="0x7f4786ca53f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SendNotifier" qname="SendNotifier"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="aboutToSend" ref="0x7f4786ca5770" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc" name="SplitControl" provided="1" ref="0x7f4787d13370">
+      <component-ref nicename="CC2420RadioC" qname="CC2420RadioC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SplitControl" ref="0x7f4787d13370" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f4787d136f0" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f4787d13880" scoped=""/>
+        <function-ref name="start" ref="0x7f4787d13a10" scoped=""/>
+        <function-ref name="stop" ref="0x7f4787d13ba0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="53:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc" name="ActiveReceive" provided="1" ref="0x7f4787d0e190">
+      <component-ref nicename="CC2420RadioC" qname="CC2420RadioC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ActiveReceive" ref="0x7f4787d0e190" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4787d0e510" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="73:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="SubSend" provided="0" ref="0x7f4786ca5b00">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SubSend" ref="0x7f4786ca5b00" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4786ca5e80" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786ca4030" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786ca41c0" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4786ca4350" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4786ca44e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/usr/src/tinyos/tos/system/LedsC.nc" name="Leds" provided="1" ref="0x7f4787fc2970">
+      <component-ref nicename="tos.system.LedsC" qname="LedsC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x7f4787fc2970" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x7f4787fc2cf0" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x7f4787fc2e80" scoped=""/>
+        <function-ref name="led1On" ref="0x7f4787fa1030" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x7f4787fa11c0" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x7f4787fa1350" scoped=""/>
+        <function-ref name="get" ref="0x7f4787fa14e0" scoped=""/>
+        <function-ref name="led1Off" ref="0x7f4787fa1670" scoped=""/>
+        <function-ref name="led2Off" ref="0x7f4787fa1cb0" scoped=""/>
+        <function-ref name="set" ref="0x7f4787fa1800" scoped=""/>
+        <function-ref name="led0On" ref="0x7f4787fa1990" scoped=""/>
+        <function-ref name="led2On" ref="0x7f4787fa1b20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc" name="CC2420Config" provided="1" ref="0x7f4787c7e550">
+      <component-ref nicename="tos.chips.cc2420.control.CC2420ControlC" qname="CC2420ControlC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Config" ref="0x7f4787c7e550" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Config" qname="CC2420Config"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setAutoAck" ref="0x7f4787c7e8d0" scoped=""/>
+        <function-ref name="isAddressRecognitionEnabled" ref="0x7f4787c7ea60" scoped=""/>
+        <function-ref name="setAddressRecognition" ref="0x7f4787c7ebf0" scoped=""/>
+        <function-ref name="syncDone" ref="0x7f4787c7ed80" scoped=""/>
+        <function-ref name="isHwAddressRecognitionDefault" ref="0x7f4787c8c020" scoped=""/>
+        <function-ref name="setShortAddr" ref="0x7f4787c8c1b0" scoped=""/>
+        <function-ref name="setChannel" ref="0x7f4787c8c340" scoped=""/>
+        <function-ref name="isAutoAckEnabled" ref="0x7f4787c8c4d0" scoped=""/>
+        <function-ref name="setPanAddr" ref="0x7f4787c8c660" scoped=""/>
+        <function-ref name="isHwAutoAckDefault" ref="0x7f4787c8c7f0" scoped=""/>
+        <function-ref name="getExtAddr" ref="0x7f4787c8c980" scoped=""/>
+        <function-ref name="getShortAddr" ref="0x7f4787c8cb10" scoped=""/>
+        <function-ref name="sync" ref="0x7f4787c8cca0" scoped=""/>
+        <function-ref name="getChannel" ref="0x7f4787c8b020" scoped=""/>
+        <function-ref name="getPanAddr" ref="0x7f4787c8b1b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="66:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="Snoop" provided="1" ref="0x7f4786ca9430">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Snoop" ref="0x7f4786ca9430" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4786ca97b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="76:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="CC2420PacketBody" provided="0" ref="0x7f4786ca3cf0">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420PacketBody" ref="0x7f4786ca3cf0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420PacketBody" qname="CC2420PacketBody"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getPayload" ref="0x7f4786ca20a0" scoped=""/>
+        <function-ref name="getHeader" ref="0x7f4786ca2230" scoped=""/>
+        <function-ref name="getMetadata" ref="0x7f4786ca23c0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc" name="Resource" provided="1" ref="0x7f4787d11430">
+      <component-ref nicename="CC2420RadioC" qname="CC2420RadioC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resource" ref="0x7f4787d11430" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x7f4789391160"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="release" ref="0x7f4787d117b0" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x7f4787d11940" scoped=""/>
+        <function-ref name="request" ref="0x7f4787d11ad0" scoped=""/>
+        <function-ref name="granted" ref="0x7f4787d11c60" scoped=""/>
+        <function-ref name="isOwner" ref="0x7f4787d11df0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="74:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="SubReceive" provided="0" ref="0x7f4786ca4830">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SubReceive" ref="0x7f4786ca4830" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4786ca4bb0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc" name="CcaControl" provided="1" ref="0x7f4787d00ac0">
+      <component-ref nicename="CC2420CsmaC" qname="CC2420CsmaC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CcaControl" ref="0x7f4787d00ac0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="CcaControl" qname="CcaControl"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getCongestionBackoff" ref="0x7f4787d00e40" scoped=""/>
+        <function-ref name="getInitialBackoff" ref="0x7f4787cf1020" scoped=""/>
+        <function-ref name="getCca" ref="0x7f4787cf11b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="78:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="ActiveMessageAddress" provided="0" ref="0x7f4786ca05d0">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ActiveMessageAddress" ref="0x7f4786ca05d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.ActiveMessageAddress" qname="ActiveMessageAddress"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="amAddress" ref="0x7f4786ca0a50" scoped=""/>
+        <function-ref name="changed" ref="0x7f4786ca0be0" scoped=""/>
+        <function-ref name="amGroup" ref="0x7f4786ca0d70" scoped=""/>
+        <function-ref name="setAddress" ref="0x7f4786c9f020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="58:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc" name="PacketLink" provided="1" ref="0x7f4787d0c6c0">
+      <component-ref nicename="CC2420RadioC" qname="CC2420RadioC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketLink" ref="0x7f4787d0c6c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketLink" qname="PacketLink"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getRetryDelay" ref="0x7f4787d0ca40" scoped=""/>
+        <function-ref name="setRetries" ref="0x7f4787d0cbd0" scoped=""/>
+        <function-ref name="getRetries" ref="0x7f4787d0cd60" scoped=""/>
+        <function-ref name="setRetryDelay" ref="0x7f4787d0b020" scoped=""/>
+        <function-ref name="wasDelivered" ref="0x7f4787d0b1b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="64:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="AMSend" provided="1" ref="0x7f4786cae4d0">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x7f4786cae4d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4786cae850" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786cae9e0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786caeb70" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4786caed00" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4786cab020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc" name="CC2420PacketBody" provided="1" ref="0x7f4787399700">
+      <component-ref nicename="CC2420PacketC" qname="CC2420PacketC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420PacketBody" ref="0x7f4787399700" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420PacketBody" qname="CC2420PacketBody"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getPayload" ref="0x7f4787399a80" scoped=""/>
+        <function-ref name="getHeader" ref="0x7f4787399c10" scoped=""/>
+        <function-ref name="getMetadata" ref="0x7f4787399da0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="57:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc" name="LinkPacketMetadata" provided="1" ref="0x7f4787d0c080">
+      <component-ref nicename="CC2420RadioC" qname="CC2420RadioC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LinkPacketMetadata" ref="0x7f4787d0c080" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.LinkPacketMetadata" qname="LinkPacketMetadata"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="highChannelQuality" ref="0x7f4787d0c400" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="54:/usr/src/tinyos/tos/system/ActiveMessageAddressC.nc" name="ActiveMessageAddress" provided="1" ref="0x7f47875c3b90">
+      <component-ref nicename="tos.system.ActiveMessageAddressC" qname="ActiveMessageAddressC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ActiveMessageAddress" ref="0x7f47875c3b90" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.ActiveMessageAddress" qname="ActiveMessageAddress"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="amAddress" ref="0x7f47875c0020" scoped=""/>
+        <function-ref name="changed" ref="0x7f47875c01b0" scoped=""/>
+        <function-ref name="amGroup" ref="0x7f47875c0340" scoped=""/>
+        <function-ref name="setAddress" ref="0x7f47875c04d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="82:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="Leds" provided="0" ref="0x7f4786c9c020">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x7f4786c9c020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x7f4786c9c3a0" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x7f4786c9c530" scoped=""/>
+        <function-ref name="led1On" ref="0x7f4786c9c6c0" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x7f4786c9c850" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x7f4786c9c9e0" scoped=""/>
+        <function-ref name="get" ref="0x7f4786c9cb70" scoped=""/>
+        <function-ref name="led1Off" ref="0x7f4786c9cd00" scoped=""/>
+        <function-ref name="led2Off" ref="0x7f4786c9b4d0" scoped=""/>
+        <function-ref name="set" ref="0x7f4786c9b020" scoped=""/>
+        <function-ref name="led0On" ref="0x7f4786c9b1b0" scoped=""/>
+        <function-ref name="led2On" ref="0x7f4786c9b340" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="59:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc" name="PacketQuality" provided="1" ref="0x7f4787d0b490">
+      <component-ref nicename="CC2420RadioC" qname="CC2420RadioC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketQuality" ref="0x7f4787d0b490" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="PacketQuality" qname="PacketQuality"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getRssi" ref="0x7f4787d0b810" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="68:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" name="Packet" provided="1" ref="0x7f4786ca72b0">
+      <component-ref nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x7f4786ca72b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f4786ca7630" scoped=""/>
+        <function-ref name="payloadLength" ref="0x7f4786ca77c0" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786ca7950" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786ca7ae0" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x7f4786ca7c70" scoped=""/>
+      </interface-functions>
+    </interface><component loc="52:/usr/src/tinyos/tos/system/ActiveMessageAddressC.nc" nicename="tos.system.ActiveMessageAddressC" qname="ActiveMessageAddressC" safe="">
+      <documentation loc="45:/usr/src/tinyos/tos/system/ActiveMessageAddressC.nc">
+        <short>
+ Component that stores the node's active message address and group ID.</short>
+        <long>
+ Component that stores the node's active message address and group ID.
+
+ @author Philip Levis
+ @author David Moss
+</long>
+      </documentation>
+      <module/>
+    </component><component loc="42:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc" nicename="tos.chips.cc2420.control.CC2420ControlC" qname="CC2420ControlC">
+      <documentation loc="32:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+        <short>
+ Implementation for configuring a ChipCon CC2420 radio.</short>
+        <long>
+ Implementation for configuring a ChipCon CC2420 radio.
+
+ @author Jonathan Hui &lt;jhui@archrock.com&gt;
+ @version $Revision: 1.3 $ $Date: 2008/05/14 21:33:07 $
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="55:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="CC2420Config" ref="0x7f4787c7e550" scoped=""/></from>
+          <to><interface-ref name="CC2420Config" ref="0x7f4787c741a0" scoped=""/></to>
+        </wire>
+        <wire loc="57:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="ReadRssi" ref="0x7f4787c79890" scoped=""/></from>
+          <to><interface-ref name="ReadRssi" ref="0x7f4787c71500" scoped=""/></to>
+        </wire>
+        <wire loc="56:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="CC2420Power" ref="0x7f4787c8b4b0" scoped=""/></from>
+          <to><interface-ref name="CC2420Power" ref="0x7f4787c72020" scoped=""/></to>
+        </wire>
+        <wire loc="54:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="Resource" ref="0x7f4787c8d020" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x7f4787c75470" scoped=""/></to>
+        </wire>
+        <wire loc="60:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x7f47887c7db0" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f4787c78d60" scoped=""/></to>
+        </wire>
+        <wire loc="63:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="StartupTimer" ref="0x7f4787c66790" scoped=""/></from>
+          <to><interface-ref name="Alarm32khz32" ref="0x7f4787bc2220" scoped=""/></to>
+        </wire>
+        <wire loc="66:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="CSN" ref="0x7f4787c649d0" scoped=""/></from>
+          <to><interface-ref name="CSN" ref="0x7f4787ad9370" scoped=""/></to>
+        </wire>
+        <wire loc="67:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="RSTN" ref="0x7f4787c63ce0" scoped=""/></from>
+          <to><interface-ref name="RSTN" ref="0x7f4787ad6ce0" scoped=""/></to>
+        </wire>
+        <wire loc="68:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="VREN" ref="0x7f4787c60020" scoped=""/></from>
+          <to><interface-ref name="VREN" ref="0x7f4787ad3380" scoped=""/></to>
+        </wire>
+        <wire loc="71:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="InterruptCCA" ref="0x7f4787c5bc00" scoped=""/></from>
+          <to><interface-ref name="InterruptCCA" ref="0x7f4787a9d210" scoped=""/></to>
+        </wire>
+        <wire loc="74:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="SpiResource" ref="0x7f4787c4ab60" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x7f4787633250" scoped=""/></to>
+        </wire>
+        <wire loc="75:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="SRXON" ref="0x7f4787c49b60" scoped=""/></from>
+          <to><interface-ref name="SRXON" ref="0x7f4787630cc0" scoped=""/></to>
+        </wire>
+        <wire loc="76:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="SRFOFF" ref="0x7f4787c4b3b0" scoped=""/></from>
+          <to><interface-ref name="SRFOFF" ref="0x7f478762c060" scoped=""/></to>
+        </wire>
+        <wire loc="77:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="SXOSCON" ref="0x7f4787c4a440" scoped=""/></from>
+          <to><interface-ref name="SXOSCON" ref="0x7f4787630020" scoped=""/></to>
+        </wire>
+        <wire loc="78:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="SXOSCOFF" ref="0x7f4787c4bae0" scoped=""/></from>
+          <to><interface-ref name="SXOSCOFF" ref="0x7f478762c6b0" scoped=""/></to>
+        </wire>
+        <wire loc="79:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="FSCTRL" ref="0x7f4787c4e420" scoped=""/></from>
+          <to><interface-ref name="FSCTRL" ref="0x7f4787624cd0" scoped=""/></to>
+        </wire>
+        <wire loc="80:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="IOCFG0" ref="0x7f4787c4ecd0" scoped=""/></from>
+          <to><interface-ref name="IOCFG0" ref="0x7f4787621ce0" scoped=""/></to>
+        </wire>
+        <wire loc="81:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="IOCFG1" ref="0x7f4787c555d0" scoped=""/></from>
+          <to><interface-ref name="IOCFG1" ref="0x7f4787620500" scoped=""/></to>
+        </wire>
+        <wire loc="82:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="MDMCTRL0" ref="0x7f4787c50020" scoped=""/></from>
+          <to><interface-ref name="MDMCTRL0" ref="0x7f47876272f0" scoped=""/></to>
+        </wire>
+        <wire loc="83:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="MDMCTRL1" ref="0x7f4787c508f0" scoped=""/></from>
+          <to><interface-ref name="MDMCTRL1" ref="0x7f4787627ad0" scoped=""/></to>
+        </wire>
+        <wire loc="84:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="PANID" ref="0x7f4787c51e20" scoped=""/></from>
+          <to><interface-ref name="PANID" ref="0x7f478761bce0" scoped=""/></to>
+        </wire>
+        <wire loc="85:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="IEEEADR" ref="0x7f4787c514a0" scoped=""/></from>
+          <to><interface-ref name="IEEEADR" ref="0x7f478761b500" scoped=""/></to>
+        </wire>
+        <wire loc="86:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="RXCTRL1" ref="0x7f4787c4d1e0" scoped=""/></from>
+          <to><interface-ref name="RXCTRL1" ref="0x7f47876242f0" scoped=""/></to>
+        </wire>
+        <wire loc="87:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="RSSI" ref="0x7f4787c4da80" scoped=""/></from>
+          <to><interface-ref name="RSSI" ref="0x7f47876262f0" scoped=""/></to>
+        </wire>
+        <wire loc="88:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="TXCTRL" ref="0x7f4787c4c3c0" scoped=""/></from>
+          <to><interface-ref name="TXCTRL" ref="0x7f47876252f0" scoped=""/></to>
+        </wire>
+        <wire loc="91:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="SyncResource" ref="0x7f4787c46880" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x7f478760a9e0" scoped=""/></to>
+        </wire>
+        <wire loc="94:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="RssiResource" ref="0x7f4787c47a10" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x7f47875e7aa0" scoped=""/></to>
+        </wire>
+        <wire loc="97:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="ActiveMessageAddress" ref="0x7f4787c56390" scoped=""/></from>
+          <to><interface-ref name="ActiveMessageAddress" ref="0x7f47875c3b90" scoped=""/></to>
+        </wire>
+        <wire loc="100:/usr/src/tinyos/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="LocalIeeeEui64" ref="0x7f4787c6d970" scoped=""/></from>
+          <to><interface-ref name="LocalIeeeEui64" ref="0x7f47875c2e60" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="44:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc" nicename="CC2420RadioC" qname="CC2420RadioC">
+      <documentation loc="24:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+        <short>
+ Radio wiring for the CC2420.</short>
+        <long>
+ Radio wiring for the CC2420.  This layer seperates the common
+ wiring of the lower-layer components of the CC2420 stack and makes
+ them available to clients like the AM stack and the IEEE802.15.4
+ stack.
+
+ This component provides the highest-level internal interface to
+ other components of the CC2420 stack.
+
+ @author Philip Levis
+ @author David Moss
+ @author Stephen Dawson-Haggerty
+ @author Greg Hackmann
+ @author Kevin Klues
+ @author Octav Chipara 
+ @version $Revision$ $Date$
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="96:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="SplitControl" ref="0x7f4787d13370" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x7f4787045ad0" scoped=""/></to>
+        </wire>
+        <wire loc="83:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="CC2420Packet" ref="0x7f4787d0e7e0" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x7f478739be00" scoped=""/></to>
+        </wire>
+        <wire loc="92:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="ActiveSend" ref="0x7f4787d0f410" scoped=""/></from>
+          <to><interface-ref name="ActiveSend" ref="0x7f4787174c90" scoped=""/></to>
+        </wire>
+        <wire loc="90:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="Send" ref="0x7f4787d100c0" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x7f47871758e0" scoped=""/></to>
+        </wire>
+        <wire loc="111:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="CcaControl" ref="0x7f4787d0ae70" scoped=""/></from>
+          <to><interface-ref name="CcaControl" ref="0x7f4787044b90" scoped=""/></to>
+        </wire>
+        <wire loc="91:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="Receive" ref="0x7f4787d10d20" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f47871745e0" scoped=""/></to>
+        </wire>
+        <wire loc="85:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="PacketQuality" ref="0x7f4787d0b490" scoped=""/></from>
+          <to><interface-ref name="PacketQuality" ref="0x7f478739b7b0" scoped=""/></to>
+        </wire>
+        <wire loc="86:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="PacketPower" ref="0x7f4787d0bad0" scoped=""/></from>
+          <to><interface-ref name="PacketPower" ref="0x7f478739e8d0" scoped=""/></to>
+        </wire>
+        <wire loc="84:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="PacketAcknowledgements" ref="0x7f4787d0d680" scoped=""/></from>
+          <to><interface-ref name="Acks" ref="0x7f478739ad30" scoped=""/></to>
+        </wire>
+        <wire loc="89:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="Resource" ref="0x7f4787d11430" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x7f4787176be0" scoped=""/></to>
+        </wire>
+        <wire loc="93:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="ActiveReceive" ref="0x7f4787d0e190" scoped=""/></from>
+          <to><interface-ref name="ActiveReceive" ref="0x7f4787173a50" scoped=""/></to>
+        </wire>
+        <wire loc="82:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="PacketLink" ref="0x7f4787d0c6c0" scoped=""/></from>
+          <to><interface-ref name="PacketLink" ref="0x7f4786ccf7a0" scoped=""/></to>
+        </wire>
+        <wire loc="87:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="LinkPacketMetadata" ref="0x7f4787d0c080" scoped=""/></from>
+          <to><interface-ref name="LinkPacketMetadata" ref="0x7f4787398180" scoped=""/></to>
+        </wire>
+        <wire loc="99:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="SubSend" ref="0x7f47871716b0" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x7f47871c6330" scoped=""/></to>
+        </wire>
+        <wire loc="100:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="SubSend" ref="0x7f47871c50b0" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x7f4786cd2b00" scoped=""/></to>
+        </wire>
+        <wire loc="101:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="SubSend" ref="0x7f4786cce540" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x7f478710c360" scoped=""/></to>
+        </wire>
+        <wire loc="102:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="AsyncSend" ref="0x7f478710b880" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x7f4787048d90" scoped=""/></to>
+        </wire>
+        <wire loc="103:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="SubSend" ref="0x7f4787041c70" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x7f4787cf7720" scoped=""/></to>
+        </wire>
+        <wire loc="106:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="SubReceive" ref="0x7f4787171020" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f47871a8aa0" scoped=""/></to>
+        </wire>
+        <wire loc="107:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="SubReceive" ref="0x7f47871a5950" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f478710fcf0" scoped=""/></to>
+        </wire>
+        <wire loc="108:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="AsyncReceive" ref="0x7f478710b080" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f4787048520" scoped=""/></to>
+        </wire>
+        <wire loc="109:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="SubReceive" ref="0x7f47870413e0" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f4787cf3d30" scoped=""/></to>
+        </wire>
+        <wire loc="112:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="PacketAcknowledgements" ref="0x7f478703f080" scoped=""/></from>
+          <to><interface-ref name="Acks" ref="0x7f478739ad30" scoped=""/></to>
+        </wire>
+        <wire loc="113:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="ChannelMonitor" ref="0x7f4787042340" scoped=""/></from>
+          <to><interface-ref name="ChannelMonitor" ref="0x7f47870dee00" scoped=""/></to>
+        </wire>
+        <wire loc="114:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="RadioPowerControl" ref="0x7f4787043680" scoped=""/></from>
+          <to><interface-ref name="RadioPowerControl" ref="0x7f4787d01aa0" scoped=""/></to>
+        </wire>
+        <wire loc="115:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="Resend" ref="0x7f4787040930" scoped=""/></from>
+          <to><interface-ref name="Resend" ref="0x7f4787cf61b0" scoped=""/></to>
+        </wire>
+        <wire loc="116:/home/csilab/upma/chips/cc2420/CC2420RadioC.nc">
+          <from><interface-ref name="SubCcaControl" ref="0x7f478703d1d0" scoped=""/></from>
+          <to><interface-ref name="CcaControl" ref="0x7f4787d00ac0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="38:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc" nicename="CC2420PacketC" qname="CC2420PacketC">
+      <documentation loc="32:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+        <short>
+ </short>
+        <long>
+ @author Jonathan Hui &lt;jhui@archrock.com&gt;
+ @author David Moss
+ @author Chad Metcalf
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="60:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="LinkPacketMetadata" ref="0x7f4787398180" scoped=""/></from>
+          <to><interface-ref name="LinkPacketMetadata" ref="0x7f4787388cd0" scoped=""/></to>
+        </wire>
+        <wire loc="57:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="CC2420Packet" ref="0x7f478739be00" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x7f478738a950" scoped=""/></to>
+        </wire>
+        <wire loc="61:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="PacketTimeStamp32khz" ref="0x7f4787398be0" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStamp32khz" ref="0x7f4787387780" scoped=""/></to>
+        </wire>
+        <wire loc="59:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="CC2420PacketBody" ref="0x7f4787399700" scoped=""/></from>
+          <to><interface-ref name="CC2420PacketBody" ref="0x7f4787388320" scoped=""/></to>
+        </wire>
+        <wire loc="63:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="PacketTimeSyncOffset" ref="0x7f4787390a00" scoped=""/></from>
+          <to><interface-ref name="PacketTimeSyncOffset" ref="0x7f478737f540" scoped=""/></to>
+        </wire>
+        <wire loc="65:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="PacketQuality" ref="0x7f478739b7b0" scoped=""/></from>
+          <to><interface-ref name="PacketQuality" ref="0x7f478738a300" scoped=""/></to>
+        </wire>
+        <wire loc="64:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="PacketPower" ref="0x7f478739e8d0" scoped=""/></from>
+          <to><interface-ref name="PacketPower" ref="0x7f478738b3c0" scoped=""/></to>
+        </wire>
+        <wire loc="62:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="PacketTimeStampMilli" ref="0x7f4787394ce0" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStampMilli" ref="0x7f4787383840" scoped=""/></to>
+        </wire>
+        <wire loc="58:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="Acks" ref="0x7f478739ad30" scoped=""/></from>
+          <to><interface-ref name="Acks" ref="0x7f4787389870" scoped=""/></to>
+        </wire>
+        <wire loc="68:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="Counter" ref="0x7f478731e300" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x7f4787b48020" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="LocalTime32khz" ref="0x7f478737b7a0" scoped=""/></from>
+          <to><interface-ref name="LocalTime" ref="0x7f4787328020" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="LocalTimeMilli" ref="0x7f478737dab0" scoped=""/></from>
+          <to><interface-ref name="LocalTime" ref="0x7f4787309a90" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="62:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc" nicename="CC2420ActiveMessageP" qname="CC2420ActiveMessageP" safe="">
+      <documentation loc="47:/home/csilab/upma/chips/cc2420/CC2420ActiveMessageP.nc">
+        <short>
+ Active message implementation on top of the CC2420 radio.</short>
+        <long>
+ Active message implementation on top of the CC2420 radio. This
+ implementation uses the 16-bit addressing mode of 802.15.4: the
+ only additional byte it adds is the AM id byte, as the first byte
+ of the data payload.
+
+ @author Philip Levis
+ @author Greg Hackmann
+ @author Kevin Klues
+ @author Octav Chipara
+ @version $Revision$ $Date$
+</long>
+      </documentation>
+      <module/>
+    </component><component loc="45:/usr/src/tinyos/tos/system/LedsC.nc" nicename="tos.system.LedsC" qname="LedsC">
+      <documentation loc="34:/usr/src/tinyos/tos/system/LedsC.nc">
+        <short>
+
+ The basic TinyOS LEDs abstraction.</short>
+        <long>
+
+ The basic TinyOS LEDs abstraction.
+
+ @author Phil Buonadonna
+ @author David Gay
+ @author Philip Levis
+ @author Joe Polastre
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="51:/usr/src/tinyos/tos/system/LedsC.nc">
+          <from><interface-ref name="Leds" ref="0x7f4787fc2970" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x7f4787f9d2a0" scoped=""/></to>
+        </wire>
+        <wire loc="53:/usr/src/tinyos/tos/system/LedsC.nc">
+          <from><interface-ref name="Init" ref="0x7f4787f75c40" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f4787fa0c40" scoped=""/></to>
+        </wire>
+        <wire loc="54:/usr/src/tinyos/tos/system/LedsC.nc">
+          <from><interface-ref name="Led0" ref="0x7f4787f95910" scoped=""/></from>
+          <to><interface-ref name="Led0" ref="0x7f4787f78360" scoped=""/></to>
+        </wire>
+        <wire loc="55:/usr/src/tinyos/tos/system/LedsC.nc">
+          <from><interface-ref name="Led1" ref="0x7f4787f9bb10" scoped=""/></from>
+          <to><interface-ref name="Led1" ref="0x7f4787f776a0" scoped=""/></to>
+        </wire>
+        <wire loc="56:/usr/src/tinyos/tos/system/LedsC.nc">
+          <from><interface-ref name="Led2" ref="0x7f4787f9ae30" scoped=""/></from>
+          <to><interface-ref name="Led2" ref="0x7f4787f769c0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="42:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc" nicename="CC2420CsmaC" qname="CC2420CsmaC">
+      <documentation loc="32:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+        <short>
+ Basic implementation of a CSMA MAC for the ChipCon CC2420 radio.</short>
+        <long>
+ Basic implementation of a CSMA MAC for the ChipCon CC2420 radio.
+
+ @author Jonathan Hui &lt;jhui@archrock.com&gt;
+ @version $Revision$ $Date$
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="64:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+          <from><interface-ref name="CcaControl" ref="0x7f4787d00ac0" scoped=""/></from>
+          <to><interface-ref name="CcaControl" ref="0x7f47875216a0" scoped=""/></to>
+        </wire>
+        <wire loc="55:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+          <from><interface-ref name="RadioPowerControl" ref="0x7f4787d01aa0" scoped=""/></from>
+          <to><interface-ref name="RadioPowerControl" ref="0x7f4787cee220" scoped=""/></to>
+        </wire>
+        <wire loc="56:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+          <from><interface-ref name="Send" ref="0x7f4787cf7720" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x7f4787ceedb0" scoped=""/></to>
+        </wire>
+        <wire loc="63:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+          <from><interface-ref name="Resend" ref="0x7f4787cf61b0" scoped=""/></from>
+          <to><interface-ref name="Resend" ref="0x7f4787522ae0" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+          <from><interface-ref name="Receive" ref="0x7f4787cf3d30" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f478741c3c0" scoped=""/></to>
+        </wire>
+        <wire loc="59:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+          <from><interface-ref name="Resource" ref="0x7f4787cedab0" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x7f4787c8d020" scoped=""/></to>
+        </wire>
+        <wire loc="60:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+          <from><interface-ref name="CC2420Power" ref="0x7f4787ceb080" scoped=""/></from>
+          <to><interface-ref name="CC2420Power" ref="0x7f4787c8b4b0" scoped=""/></to>
+        </wire>
+        <wire loc="70:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+          <from><interface-ref name="SubControl" ref="0x7f4787cea400" scoped=""/></from>
+          <to><interface-ref name="StdControl" ref="0x7f478741d020" scoped=""/></to>
+        </wire>
+        <wire loc="65:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+          <from><interface-ref name="SubControl" ref="0x7f4787cea400" scoped=""/></from>
+          <to><interface-ref name="AsyncStdControl" ref="0x7f4787525730" scoped=""/></to>
+        </wire>
+        <wire loc="66:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+          <from><interface-ref name="CC2420Transmit" ref="0x7f4787cdd260" scoped=""/></from>
+          <to><interface-ref name="CC2420Transmit" ref="0x7f4787522020" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+          <from><interface-ref name="CC2420Packet" ref="0x7f4787ce3330" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x7f478739be00" scoped=""/></to>
+        </wire>
+        <wire loc="74:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+          <from><interface-ref name="CC2420PacketBody" ref="0x7f4787cd4920" scoped=""/></from>
+          <to><interface-ref name="CC2420PacketBody" ref="0x7f4787399700" scoped=""/></to>
+        </wire>
+        <wire loc="77:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+          <from><interface-ref name="Random" ref="0x7f4787cda360" scoped=""/></from>
+          <to><interface-ref name="Random" ref="0x7f47871f3a20" scoped=""/></to>
+        </wire>
+        <wire loc="80:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+          <from><interface-ref name="SplitControlState" ref="0x7f4787cd7110" scoped=""/></from>
+          <to><interface-ref name="State" ref="0x7f47871d04a0" scoped=""/></to>
+        </wire>
+        <wire loc="83:/home/csilab/upma/chips/cc2420/CC2420CsmaC.nc">
+          <from><interface-ref name="Leds" ref="0x7f4787cdab30" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x7f4787fc2970" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

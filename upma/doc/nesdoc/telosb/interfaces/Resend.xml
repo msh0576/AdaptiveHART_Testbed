@@ -1,0 +1,33 @@
+<?xml version="1.0" ?><interfacedef loc="29:/home/csilab/upma/interfaces/Resend.nc" nicename="Resend" qname="Resend">
+      <documentation loc="23:/home/csilab/upma/interfaces/Resend.nc">
+        <short>
+ Resends the last message.</short>
+        <long>
+ Resends the last message.  If possible, this interface should wrap native
+ hardware support.  Otherwise, it must be emulated using a one-packet buffer.
+
+ @author Greg Hackmann
+</long>
+      </documentation>
+      <function command="" loc="36:/home/csilab/upma/interfaces/Resend.nc" name="resend" provided="0" ref="0x7f4787d04e70">
+        <documentation loc="31:/home/csilab/upma/interfaces/Resend.nc">
+          <short>
+ Resends the last message.</short>
+          <long>
+ Resends the last message.
+
+ @return whether the operation succeeded
+</long>
+        </documentation>
+        <interfacedef-ref nicename="Resend" qname="Resend"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+    </interfacedef>

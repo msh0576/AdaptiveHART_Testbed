@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: RadioPowerControl</title>
+  </head>
+  <body>
+    <h2>Interface: RadioPowerControl</h2>
+    <b>interface RadioPowerControl</b><p>
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Kevin Klues (klueska@cs.wustl.edu)
+ 
+      </dd>
+      <dt><b>Version:</b>
+      <dd>
+        $Revision$
+ 
+      </dd>
+      <dt><b>Date:</b>
+      <dd>
+        $Date$ 
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Commands</div><div id=funcsig><span id=funcnameshort>command error_t <a href="#start">start</a>()
+      </span><menu>
+ Turn Power to the Radio On
+
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command error_t <a href="#stop">stop</a>()
+      </span><menu>
+ Turn Power to the Radio Off
+
+      </menu>
+    </div><p><div id=heading>Events</div><div id=funcsig><span id=funcnameshort>event void <a href="#startDone">startDone</a>(error_t error)
+      </span></div><div id=funcsig><span id=funcnameshort>event void <a href="#stopDone">stopDone</a>(error_t error)
+      </span></div><p><div id=heading>Commands - Details</div>
+    <a name="start"></a>
+    <h4>start
+    </h4>
+    <span id=funcnameshort>command error_t <b>start</b>()
+    </span>
+    <p>
+    <menu>
+      
+ Turn Power to the Radio On
+
+    </menu>
+    <hr>
+    <a name="stop"></a>
+    <h4>stop
+    </h4>
+    <span id=funcnameshort>command error_t <b>stop</b>()
+    </span>
+    <p>
+    <menu>
+      
+ Turn Power to the Radio Off
+
+    </menu>
+    <p><div id=heading>Events - Details</div>
+    <a name="startDone"></a>
+    <h4>startDone
+    </h4>
+    <span id=funcnameshort>event void <b>startDone</b>(error_t error)
+    </span><hr>
+    <a name="stopDone"></a>
+    <h4>stopDone
+    </h4>
+    <span id=funcnameshort>event void <b>stopDone</b>(error_t error)
+    </span>
+  </body>
+</html>

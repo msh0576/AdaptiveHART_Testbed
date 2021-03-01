@@ -1,0 +1,169 @@
+<?xml version="1.0" ?><component abstract="" loc="39:/home/csilab/upma/system/GenericSlotSenderP.nc" nicename="GenericSlotSenderP" qname="GenericSlotSenderP">
+      <documentation loc="23:/home/csilab/upma/system/GenericSlotSenderP.nc">
+        <short>      
+ The generic slot sender implements a generic slot as follows:
+ 
+      start
+       |
+       |           offset     initial backoff     send done      
+       |             |              |              |               
+       v             v              V              V               
+       |********************************************************|
+       |---START-----|---OFFSET-----|----SENT------|            | END 
+  
+ </short>
+        <long>      
+ The generic slot sender implements a generic slot as follows:
+ 
+      start
+       |
+       |           offset     initial backoff     send done      
+       |             |              |              |               
+       v             v              V              V               
+       |********************************************************|
+       |---START-----|---OFFSET-----|----SENT------|            | END 
+  
+ @author Octav Chipara
+ @version $Revision$
+ @date $Date$
+</long>
+      </documentation>
+      <parameters>
+        <constant loc="39:/home/csilab/upma/system/GenericSlotSenderP.nc" name="offset" ref="0x7f4786ed53e0">
+          <component-ref nicename="GenericSlotSenderP" qname="GenericSlotSenderP"/>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x7f4789391520"/></typename>
+          </type-int>
+        </constant>
+        <constant loc="39:/home/csilab/upma/system/GenericSlotSenderP.nc" name="backoff" ref="0x7f4786ed5750">
+          <component-ref nicename="GenericSlotSenderP" qname="GenericSlotSenderP"/>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x7f4789391520"/></typename>
+          </type-int>
+        </constant>
+        <constant loc="39:/home/csilab/upma/system/GenericSlotSenderP.nc" name="cca" ref="0x7f4786ed5a60">
+          <component-ref nicename="GenericSlotSenderP" qname="GenericSlotSenderP"/>
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x7f4788c69090"/></typename>
+          </type-int>
+        </constant>
+      </parameters>
+      <module/>
+    <specification><interface loc="43:/home/csilab/upma/system/GenericSlotSenderP.nc" name="SubSend" provided="0" ref="0x7f4786ed3530">
+      <component-ref nicename="GenericSlotSenderP" qname="GenericSlotSenderP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SubSend" ref="0x7f4786ed3530" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AsyncSend" qname="AsyncSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4786ed38b0" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786ed3a40" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786ed3bd0" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4786ed3d60" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4786ed2020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/csilab/upma/system/GenericSlotSenderP.nc" name="SubCcaControl" provided="0" ref="0x7f4786ecc0f0">
+      <component-ref nicename="GenericSlotSenderP" qname="GenericSlotSenderP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SubCcaControl" ref="0x7f4786ecc0f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="CcaControl" qname="CcaControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getCongestionBackoff" ref="0x7f4786ecc470" scoped=""/>
+        <function-ref name="getInitialBackoff" ref="0x7f4786ecc600" scoped=""/>
+        <function-ref name="getCca" ref="0x7f4786ecc790" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/csilab/upma/system/GenericSlotSenderP.nc" name="Boot" provided="0" ref="0x7f4786eca150">
+      <component-ref nicename="GenericSlotSenderP" qname="GenericSlotSenderP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x7f4786eca150" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x7f4786eca4d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:/home/csilab/upma/system/GenericSlotSenderP.nc" name="Send" provided="1" ref="0x7f4786ed4700">
+      <component-ref nicename="GenericSlotSenderP" qname="GenericSlotSenderP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Send" ref="0x7f4786ed4700" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AsyncSend" qname="AsyncSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4786ed4a80" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786ed4c10" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786ed4da0" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4786ed3020" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4786ed31b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/csilab/upma/system/GenericSlotSenderP.nc" name="Alarm" provided="0" ref="0x7f4786ed1da0">
+      <component-ref nicename="GenericSlotSenderP" qname="GenericSlotSenderP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Alarm" ref="0x7f4786ed1da0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Alarm" qname="Alarm"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x7f4789391520"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4786ecd670" scoped=""/>
+        <function-ref name="fired" ref="0x7f4786ecf610" scoped=""/>
+        <function-ref name="startAt" ref="0x7f4786ecd020" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f4786ecfad0" scoped=""/>
+        <function-ref name="getAlarm" ref="0x7f4786ecdb30" scoped=""/>
+        <function-ref name="start" ref="0x7f4786ed0bf0" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786ecf150" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="40:/home/csilab/upma/system/GenericSlotSenderP.nc" name="Init" provided="1" ref="0x7f4786ed4020">
+      <component-ref nicename="GenericSlotSenderP" qname="GenericSlotSenderP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x7f4786ed4020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f4786ed43a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/csilab/upma/system/GenericSlotSenderP.nc" name="Leds" provided="0" ref="0x7f4786ecca50">
+      <component-ref nicename="GenericSlotSenderP" qname="GenericSlotSenderP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x7f4786ecca50" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x7f4786eccdd0" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x7f4786ecb020" scoped=""/>
+        <function-ref name="led1On" ref="0x7f4786ecb1b0" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x7f4786ecb340" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x7f4786ecb4d0" scoped=""/>
+        <function-ref name="get" ref="0x7f4786ecb660" scoped=""/>
+        <function-ref name="led1Off" ref="0x7f4786ecb7f0" scoped=""/>
+        <function-ref name="led2Off" ref="0x7f4786ecbe30" scoped=""/>
+        <function-ref name="set" ref="0x7f4786ecb980" scoped=""/>
+        <function-ref name="led0On" ref="0x7f4786ecbb10" scoped=""/>
+        <function-ref name="led2On" ref="0x7f4786ecbca0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/csilab/upma/system/GenericSlotSenderP.nc" name="AMPacket" provided="0" ref="0x7f4786ed2310">
+      <component-ref nicename="GenericSlotSenderP" qname="GenericSlotSenderP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x7f4786ed2310" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="headerSize" ref="0x7f4786ed2690" scoped=""/>
+        <function-ref name="group" ref="0x7f4786ed2820" scoped=""/>
+        <function-ref name="source" ref="0x7f4786ed29b0" scoped=""/>
+        <function-ref name="address" ref="0x7f4786ed2b40" scoped=""/>
+        <function-ref name="destination" ref="0x7f4786ed2cd0" scoped=""/>
+        <function-ref name="setSource" ref="0x7f4786ed2e60" scoped=""/>
+        <function-ref name="setDestination" ref="0x7f4786ed1020" scoped=""/>
+        <function-ref name="type" ref="0x7f4786ed11b0" scoped=""/>
+        <function-ref name="setType" ref="0x7f4786ed1340" scoped=""/>
+        <function-ref name="isForMe" ref="0x7f4786ed14d0" scoped=""/>
+        <function-ref name="setGroup" ref="0x7f4786ed1660" scoped=""/>
+        <function-ref name="localGroup" ref="0x7f4786ed17f0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

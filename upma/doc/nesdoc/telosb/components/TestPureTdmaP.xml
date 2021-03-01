@@ -1,0 +1,469 @@
+<?xml version="1.0" ?><component loc="9:TestPureTdmaP.nc" nicename="TestPureTdmaP" qname="TestPureTdmaP">
+      <documentation loc="71:/usr/src/tinyos/tos/lib/serial/Serial.h">
+        <short>
+ </short>
+        <long>
+ @author Phil Buonadonna
+ @author Lewis Girod
+ @author Ben Greenstein
+ @author Philip Levis
+ @date   August 7 2005
+</long>
+      </documentation>
+      <module/>
+    <specification><interface loc="20:TestPureTdmaP.nc" name="BenchmarkTimer" provided="0" ref="0x7f4786c06bf0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="BenchmarkTimer" ref="0x7f4786c06bf0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4786c01110" scoped=""/>
+        <function-ref name="fired" ref="0x7f4786c046a0" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x7f4786c034a0" scoped=""/>
+        <function-ref name="isOneShot" ref="0x7f4786c03020" scoped=""/>
+        <function-ref name="getdt" ref="0x7f4786c01a10" scoped=""/>
+        <function-ref name="gett0" ref="0x7f4786c01590" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f4786c04b20" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x7f4786c05860" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x7f4786c03ab0" scoped=""/>
+        <function-ref name="startOneShot" ref="0x7f4786c05d30" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786c04220" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="18:TestPureTdmaP.nc" name="SendTimer" provided="0" ref="0x7f4786c101b0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SendTimer" ref="0x7f4786c101b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4786c0d630" scoped=""/>
+        <function-ref name="fired" ref="0x7f4786c0fbf0" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x7f4786c0e990" scoped=""/>
+        <function-ref name="isOneShot" ref="0x7f4786c0e510" scoped=""/>
+        <function-ref name="getdt" ref="0x7f4786c0b020" scoped=""/>
+        <function-ref name="gett0" ref="0x7f4786c0dab0" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f4786c0e090" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x7f4786c10da0" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x7f4786c0d020" scoped=""/>
+        <function-ref name="startOneShot" ref="0x7f4786c0f2a0" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786c0f770" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="23:TestPureTdmaP.nc" name="SplitControl" provided="0" ref="0x7f4786bf9950">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SplitControl" ref="0x7f4786bf9950" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f4786bf9cd0" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f4786bf9e60" scoped=""/>
+        <function-ref name="start" ref="0x7f4786bf7020" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786bf71b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="11:TestPureTdmaP.nc" name="Boot" provided="0" ref="0x7f4786c150c0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x7f4786c150c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x7f4786c15440" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="34:TestPureTdmaP.nc" name="SerialControl" provided="0" ref="0x7f4786bf3d80">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SerialControl" ref="0x7f4786bf3d80" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f4786bf2180" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f4786bf2310" scoped=""/>
+        <function-ref name="start" ref="0x7f4786bf24a0" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786bf2630" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="37:TestPureTdmaP.nc" name="UartReceive" provided="0" ref="0x7f4786bef020">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartReceive" ref="0x7f4786bef020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4786bef3a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:TestPureTdmaP.nc" name="RadioAMPacket" provided="0" ref="0x7f4786be8850">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioAMPacket" ref="0x7f4786be8850" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="headerSize" ref="0x7f4786be8dd0" scoped=""/>
+        <function-ref name="group" ref="0x7f4786be7020" scoped=""/>
+        <function-ref name="source" ref="0x7f4786be71b0" scoped=""/>
+        <function-ref name="address" ref="0x7f4786be7340" scoped=""/>
+        <function-ref name="destination" ref="0x7f4786be74d0" scoped=""/>
+        <function-ref name="setSource" ref="0x7f4786be7660" scoped=""/>
+        <function-ref name="setDestination" ref="0x7f4786be77f0" scoped=""/>
+        <function-ref name="type" ref="0x7f4786be7980" scoped=""/>
+        <function-ref name="setType" ref="0x7f4786be7b10" scoped=""/>
+        <function-ref name="isForMe" ref="0x7f4786be7ca0" scoped=""/>
+        <function-ref name="setGroup" ref="0x7f4786be7e30" scoped=""/>
+        <function-ref name="localGroup" ref="0x7f4786be6020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="17:TestPureTdmaP.nc" name="Packet" provided="0" ref="0x7f4786c112f0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x7f4786c112f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f4786c11670" scoped=""/>
+        <function-ref name="payloadLength" ref="0x7f4786c11800" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786c11990" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786c11b20" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x7f4786c11cb0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="85:TestPureTdmaP.nc" name="uartSendTask" provided="0" ref="0x7f4786bdb020">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="uartSendTask" ref="0x7f4786bdb020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.TaskBasic" qname="TaskBasic"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="postTask" ref="0x7f4786bdb3a0" scoped=""/>
+        <function-ref name="runTask" ref="0x7f4786bdb530" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="35:TestPureTdmaP.nc" name="RadioControl" provided="0" ref="0x7f4786bf29c0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioControl" ref="0x7f4786bf29c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f4786bf2d40" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f4786bf1020" scoped=""/>
+        <function-ref name="start" ref="0x7f4786bf11b0" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786bf1340" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:TestPureTdmaP.nc" name="RadioPacket" provided="0" ref="0x7f4786be9980">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioPacket" ref="0x7f4786be9980" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f4786be9d00" scoped=""/>
+        <function-ref name="payloadLength" ref="0x7f4786be8020" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786be81b0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786be8340" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x7f4786be84d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="82:TestPureTdmaP.nc" name="sendTask" provided="0" ref="0x7f4786bdc080">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="sendTask" ref="0x7f4786bdc080" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.TaskBasic" qname="TaskBasic"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="postTask" ref="0x7f4786bdc400" scoped=""/>
+        <function-ref name="runTask" ref="0x7f4786bdc590" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="25:TestPureTdmaP.nc" name="Pin" provided="0" ref="0x7f4786bf7520">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Pin" ref="0x7f4786bf7520" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f4786bf78a0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f4786bf7a30" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f4786bf7bc0" scoped=""/>
+        <function-ref name="toggle" ref="0x7f4786bf7d50" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f4786bf6020" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f4786bf61b0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f4786bf6340" scoped=""/>
+        <function-ref name="get" ref="0x7f4786bf64d0" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f4786bf6660" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f4786bf67f0" scoped=""/>
+        <function-ref name="set" ref="0x7f4786bf6980" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f4786bf6b10" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f4786bf6ca0" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f4786bf5020" scoped=""/>
+        <function-ref name="clr" ref="0x7f4786bf51b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:TestPureTdmaP.nc" name="RadioReceive" provided="0" ref="0x7f4786bea680">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioReceive" ref="0x7f4786bea680" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4786beaa00" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="86:TestPureTdmaP.nc" name="radioSendTask" provided="0" ref="0x7f4786bda020">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="radioSendTask" ref="0x7f4786bda020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.TaskBasic" qname="TaskBasic"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="postTask" ref="0x7f4786bda3a0" scoped=""/>
+        <function-ref name="runTask" ref="0x7f4786bda530" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="13:TestPureTdmaP.nc" name="AMSender" provided="0" ref="0x7f4786c14e40">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSender" ref="0x7f4786c14e40" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4786c121e0" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786c12370" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786c12500" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4786c12690" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4786c12820" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="26:TestPureTdmaP.nc" name="RcvPin" provided="0" ref="0x7f4786bf5540">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RcvPin" ref="0x7f4786bf5540" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f4786bf59c0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f4786bf5b50" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f4786bf5ce0" scoped=""/>
+        <function-ref name="toggle" ref="0x7f4786bf5e70" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f4786bf4030" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f4786bf41c0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f4786bf4350" scoped=""/>
+        <function-ref name="get" ref="0x7f4786bf44e0" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f4786bf4670" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f4786bf4800" scoped=""/>
+        <function-ref name="set" ref="0x7f4786bf4990" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f4786bf4b20" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f4786bf4cb0" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f4786bf3020" scoped=""/>
+        <function-ref name="clr" ref="0x7f4786bf31b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="205:TestPureTdmaP.nc" name="flush" provided="0" ref="0x7f4786bbae50">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="flush" ref="0x7f4786bbae50" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.TaskBasic" qname="TaskBasic"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="postTask" ref="0x7f4786bb8210" scoped=""/>
+        <function-ref name="runTask" ref="0x7f4786bb83a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="22:TestPureTdmaP.nc" name="Counter" provided="0" ref="0x7f4786bfb7d0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Counter" ref="0x7f4786bfb7d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f4789391920"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x7f4786bfa620" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x7f4786bf9020" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x7f4786bfaae0" scoped=""/>
+        <function-ref name="overflow" ref="0x7f4786bf94e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="12:TestPureTdmaP.nc" name="Leds" provided="0" ref="0x7f4786c156c0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x7f4786c156c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x7f4786c15a40" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x7f4786c15bd0" scoped=""/>
+        <function-ref name="led1On" ref="0x7f4786c15d60" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x7f4786c14020" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x7f4786c141b0" scoped=""/>
+        <function-ref name="get" ref="0x7f4786c14340" scoped=""/>
+        <function-ref name="led1Off" ref="0x7f4786c144d0" scoped=""/>
+        <function-ref name="led2Off" ref="0x7f4786c14b10" scoped=""/>
+        <function-ref name="set" ref="0x7f4786c14660" scoped=""/>
+        <function-ref name="led0On" ref="0x7f4786c147f0" scoped=""/>
+        <function-ref name="led2On" ref="0x7f4786c14980" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="38:TestPureTdmaP.nc" name="UartPacket" provided="0" ref="0x7f4786bef6e0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartPacket" ref="0x7f4786bef6e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f4786befa60" scoped=""/>
+        <function-ref name="payloadLength" ref="0x7f4786befbf0" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786befd80" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786bee020" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x7f4786bee1b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:TestPureTdmaP.nc" name="RadioSend" provided="0" ref="0x7f4786bec3f0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioSend" ref="0x7f4786bec3f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4786bec770" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786bec900" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786beca90" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4786becc20" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4786becdb0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="21:TestPureTdmaP.nc" name="StartTimer" provided="0" ref="0x7f4786c000d0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="StartTimer" ref="0x7f4786c000d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4786bfc630" scoped=""/>
+        <function-ref name="fired" ref="0x7f4786bffb00" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x7f4786bfe920" scoped=""/>
+        <function-ref name="isOneShot" ref="0x7f4786bfe4a0" scoped=""/>
+        <function-ref name="getdt" ref="0x7f4786bfb020" scoped=""/>
+        <function-ref name="gett0" ref="0x7f4786bfcab0" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f4786bfe020" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x7f4786c00cc0" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x7f4786bfc020" scoped=""/>
+        <function-ref name="startOneShot" ref="0x7f4786bff1b0" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786bff680" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="36:TestPureTdmaP.nc" name="UartSend" provided="0" ref="0x7f4786bf1bb0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartSend" ref="0x7f4786bf1bb0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4786bf0020" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786bf01b0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786bf0340" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4786bf04d0" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4786bf0660" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:TestPureTdmaP.nc" name="RadioSnoop" provided="0" ref="0x7f4786be92c0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioSnoop" ref="0x7f4786be92c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4786be9640" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="39:TestPureTdmaP.nc" name="UartAMPacket" provided="0" ref="0x7f4786bee520">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartAMPacket" ref="0x7f4786bee520" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="headerSize" ref="0x7f4786bee8a0" scoped=""/>
+        <function-ref name="group" ref="0x7f4786beea30" scoped=""/>
+        <function-ref name="source" ref="0x7f4786beebc0" scoped=""/>
+        <function-ref name="address" ref="0x7f4786beed50" scoped=""/>
+        <function-ref name="destination" ref="0x7f4786bed020" scoped=""/>
+        <function-ref name="setSource" ref="0x7f4786bed1b0" scoped=""/>
+        <function-ref name="setDestination" ref="0x7f4786bed340" scoped=""/>
+        <function-ref name="type" ref="0x7f4786bed4d0" scoped=""/>
+        <function-ref name="setType" ref="0x7f4786bed660" scoped=""/>
+        <function-ref name="isForMe" ref="0x7f4786bed7f0" scoped=""/>
+        <function-ref name="setGroup" ref="0x7f4786bed980" scoped=""/>
+        <function-ref name="localGroup" ref="0x7f4786bedb10" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="14:TestPureTdmaP.nc" name="AMReceiver" provided="0" ref="0x7f4786c12b70">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMReceiver" ref="0x7f4786c12b70" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4786c11020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="19:TestPureTdmaP.nc" name="FlushTimer" provided="0" ref="0x7f4786c0b660">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FlushTimer" ref="0x7f4786c0b660" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4786c08c40" scoped=""/>
+        <function-ref name="fired" ref="0x7f4786c091e0" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x7f4786c08020" scoped=""/>
+        <function-ref name="isOneShot" ref="0x7f4786c09ae0" scoped=""/>
+        <function-ref name="getdt" ref="0x7f4786c06590" scoped=""/>
+        <function-ref name="gett0" ref="0x7f4786c06110" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f4786c09660" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x7f4786c0a390" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x7f4786c08630" scoped=""/>
+        <function-ref name="startOneShot" ref="0x7f4786c0a860" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786c0ad30" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="28:TestPureTdmaP.nc" name="Routing" provided="0" ref="0x7f4786bf3450">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Routing" ref="0x7f4786bf3450" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Routing" qname="Routing"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="NeighborTable" ref="0x7f4786bf37d0" scoped=""/>
+        <function-ref name="MakeParent" ref="0x7f4786bf3960" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

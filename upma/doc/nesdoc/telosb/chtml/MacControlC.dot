@@ -1,0 +1,5 @@
+digraph "MacControlC" {
+  n0x2b7f5cf69178 [shape=ellipse, style=filled, label="FrameConfiguration", fontsize=12];
+  n0x2b7f5cf69db8 [shape=ellipse, style=filled, label="SubFrameConfiguration", fontsize=12];
+  "n0x2b7f5cf69178" -> "n0x2b7f5cf69db8" [label="FrameConfiguration", URL="../ihtml/FrameConfiguration.html", fontsize=10];
+}

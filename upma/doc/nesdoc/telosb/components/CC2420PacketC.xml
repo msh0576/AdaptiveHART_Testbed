@@ -1,0 +1,497 @@
+<?xml version="1.0" ?><component loc="38:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc" nicename="CC2420PacketC" qname="CC2420PacketC">
+      <documentation loc="32:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+        <short>
+ </short>
+        <long>
+ @author Jonathan Hui &lt;jhui@archrock.com&gt;
+ @author David Moss
+ @author Chad Metcalf
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="60:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="LinkPacketMetadata" ref="0x7f4787398180" scoped=""/></from>
+          <to><interface-ref name="LinkPacketMetadata" ref="0x7f4787388cd0" scoped=""/></to>
+        </wire>
+        <wire loc="57:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="CC2420Packet" ref="0x7f478739be00" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x7f478738a950" scoped=""/></to>
+        </wire>
+        <wire loc="61:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="PacketTimeStamp32khz" ref="0x7f4787398be0" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStamp32khz" ref="0x7f4787387780" scoped=""/></to>
+        </wire>
+        <wire loc="59:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="CC2420PacketBody" ref="0x7f4787399700" scoped=""/></from>
+          <to><interface-ref name="CC2420PacketBody" ref="0x7f4787388320" scoped=""/></to>
+        </wire>
+        <wire loc="63:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="PacketTimeSyncOffset" ref="0x7f4787390a00" scoped=""/></from>
+          <to><interface-ref name="PacketTimeSyncOffset" ref="0x7f478737f540" scoped=""/></to>
+        </wire>
+        <wire loc="65:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="PacketQuality" ref="0x7f478739b7b0" scoped=""/></from>
+          <to><interface-ref name="PacketQuality" ref="0x7f478738a300" scoped=""/></to>
+        </wire>
+        <wire loc="64:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="PacketPower" ref="0x7f478739e8d0" scoped=""/></from>
+          <to><interface-ref name="PacketPower" ref="0x7f478738b3c0" scoped=""/></to>
+        </wire>
+        <wire loc="62:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="PacketTimeStampMilli" ref="0x7f4787394ce0" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStampMilli" ref="0x7f4787383840" scoped=""/></to>
+        </wire>
+        <wire loc="58:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="Acks" ref="0x7f478739ad30" scoped=""/></from>
+          <to><interface-ref name="Acks" ref="0x7f4787389870" scoped=""/></to>
+        </wire>
+        <wire loc="68:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="Counter" ref="0x7f478731e300" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x7f4787b48020" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="LocalTime32khz" ref="0x7f478737b7a0" scoped=""/></from>
+          <to><interface-ref name="LocalTime" ref="0x7f4787328020" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc">
+          <from><interface-ref name="LocalTimeMilli" ref="0x7f478737dab0" scoped=""/></from>
+          <to><interface-ref name="LocalTime" ref="0x7f4787309a90" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="46:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc" name="LinkPacketMetadata" provided="1" ref="0x7f4787398180">
+      <component-ref nicename="CC2420PacketC" qname="CC2420PacketC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LinkPacketMetadata" ref="0x7f4787398180" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.LinkPacketMetadata" qname="LinkPacketMetadata"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="highChannelQuality" ref="0x7f4787398500" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc" name="CC2420Packet" provided="1" ref="0x7f478739be00">
+      <component-ref nicename="CC2420PacketC" qname="CC2420PacketC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Packet" ref="0x7f478739be00" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setPower" ref="0x7f478739a1c0" scoped=""/>
+        <function-ref name="setNetwork" ref="0x7f478739a350" scoped=""/>
+        <function-ref name="getRssi" ref="0x7f478739a4e0" scoped=""/>
+        <function-ref name="getNetwork" ref="0x7f478739a670" scoped=""/>
+        <function-ref name="getPower" ref="0x7f478739a800" scoped=""/>
+        <function-ref name="getLqi" ref="0x7f478739a990" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc" name="PacketTimeStamp32khz" provided="1" ref="0x7f4787398be0">
+      <component-ref nicename="CC2420PacketC" qname="CC2420PacketC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStamp32khz" ref="0x7f4787398be0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketTimeStamp" qname="PacketTimeStamp"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f4789391920"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="timestamp" ref="0x7f4787395210" scoped=""/>
+        <function-ref name="clear" ref="0x7f4787395940" scoped=""/>
+        <function-ref name="isValid" ref="0x7f4787396a80" scoped=""/>
+        <function-ref name="set" ref="0x7f4787394090" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc" name="CC2420PacketBody" provided="1" ref="0x7f4787399700">
+      <component-ref nicename="CC2420PacketC" qname="CC2420PacketC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420PacketBody" ref="0x7f4787399700" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420PacketBody" qname="CC2420PacketBody"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getPayload" ref="0x7f4787399a80" scoped=""/>
+        <function-ref name="getHeader" ref="0x7f4787399c10" scoped=""/>
+        <function-ref name="getMetadata" ref="0x7f4787399da0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc" name="PacketTimeSyncOffset" provided="1" ref="0x7f4787390a00">
+      <component-ref nicename="CC2420PacketC" qname="CC2420PacketC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeSyncOffset" ref="0x7f4787390a00" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.PacketTimeSyncOffset" qname="PacketTimeSyncOffset"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x7f4787390d80" scoped=""/>
+        <function-ref name="isSet" ref="0x7f478738f020" scoped=""/>
+        <function-ref name="cancel" ref="0x7f478738f1b0" scoped=""/>
+        <function-ref name="set" ref="0x7f478738f340" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc" name="PacketQuality" provided="1" ref="0x7f478739b7b0">
+      <component-ref nicename="CC2420PacketC" qname="CC2420PacketC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketQuality" ref="0x7f478739b7b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="PacketQuality" qname="PacketQuality"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getRssi" ref="0x7f478739bb30" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc" name="PacketPower" provided="1" ref="0x7f478739e8d0">
+      <component-ref nicename="CC2420PacketC" qname="CC2420PacketC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketPower" ref="0x7f478739e8d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="PacketPower" qname="PacketPower"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rxCost" ref="0x7f478739ec50" scoped=""/>
+        <function-ref name="setPower" ref="0x7f478739ede0" scoped=""/>
+        <function-ref name="minimum" ref="0x7f478739b020" scoped=""/>
+        <function-ref name="maximum" ref="0x7f478739b1b0" scoped=""/>
+        <function-ref name="cost" ref="0x7f478739b340" scoped=""/>
+        <function-ref name="getPower" ref="0x7f478739b4d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc" name="PacketTimeStampMilli" provided="1" ref="0x7f4787394ce0">
+      <component-ref nicename="CC2420PacketC" qname="CC2420PacketC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStampMilli" ref="0x7f4787394ce0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketTimeStamp" qname="PacketTimeStamp"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f4789391920"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="timestamp" ref="0x7f47873912e0" scoped=""/>
+        <function-ref name="clear" ref="0x7f4787391a10" scoped=""/>
+        <function-ref name="isValid" ref="0x7f4787392b60" scoped=""/>
+        <function-ref name="set" ref="0x7f4787390170" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/csilab/upma/chips/cc2420/CC2420PacketC.nc" name="Acks" provided="1" ref="0x7f478739ad30">
+      <component-ref nicename="CC2420PacketC" qname="CC2420PacketC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Acks" ref="0x7f478739ad30" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requestAck" ref="0x7f47873990e0" scoped=""/>
+        <function-ref name="noAck" ref="0x7f4787399270" scoped=""/>
+        <function-ref name="wasAcked" ref="0x7f4787399400" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="47:/home/csilab/upma/chips/cc2420/CC2420PacketP.nc" name="PacketQuality" provided="1" ref="0x7f478738a300">
+      <component-ref nicename="CC2420PacketP" qname="CC2420PacketP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketQuality" ref="0x7f478738a300" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="PacketQuality" qname="PacketQuality"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getRssi" ref="0x7f478738a680" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/usr/src/tinyos/tos/lib/timer/CounterToLocalTimeC.nc" name="LocalTime" provided="1" ref="0x7f4787328020">
+      <component-ref nicename="tos.lib.timer.CounterToLocalTimeC" qname="CC2420PacketC.CounterToLocalTimeC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LocalTime" ref="0x7f4787328020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.LocalTime" qname="LocalTime"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x7f4787328c50" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/csilab/upma/chips/cc2420/CC2420PacketP.nc" name="CC2420Packet" provided="1" ref="0x7f478738a950">
+      <component-ref nicename="CC2420PacketP" qname="CC2420PacketP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Packet" ref="0x7f478738a950" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setPower" ref="0x7f478738acd0" scoped=""/>
+        <function-ref name="setNetwork" ref="0x7f478738ae60" scoped=""/>
+        <function-ref name="getRssi" ref="0x7f4787389020" scoped=""/>
+        <function-ref name="getNetwork" ref="0x7f47873891b0" scoped=""/>
+        <function-ref name="getPower" ref="0x7f4787389340" scoped=""/>
+        <function-ref name="getLqi" ref="0x7f47873894d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="59:/home/csilab/upma/chips/cc2420/CC2420PacketP.nc" name="LocalTimeMilli" provided="0" ref="0x7f478737dab0">
+      <component-ref nicename="CC2420PacketP" qname="CC2420PacketP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LocalTimeMilli" ref="0x7f478737dab0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.LocalTime" qname="LocalTime"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x7f478737c710" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/usr/src/tinyos/tos/chips/msp430/timer/HilTimerMilliC.nc" name="LocalTime" provided="1" ref="0x7f4787309a90">
+      <component-ref nicename="tos.chips.msp430.timer.HilTimerMilliC" qname="HilTimerMilliC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LocalTime" ref="0x7f4787309a90" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.LocalTime" qname="LocalTime"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x7f47873076f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/csilab/upma/chips/cc2420/CC2420PacketP.nc" name="LinkPacketMetadata" provided="1" ref="0x7f4787388cd0">
+      <component-ref nicename="CC2420PacketP" qname="CC2420PacketP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LinkPacketMetadata" ref="0x7f4787388cd0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.LinkPacketMetadata" qname="LinkPacketMetadata"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="highChannelQuality" ref="0x7f47873870a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/csilab/upma/chips/cc2420/CC2420PacketP.nc" name="PacketPower" provided="1" ref="0x7f478738b3c0">
+      <component-ref nicename="CC2420PacketP" qname="CC2420PacketP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketPower" ref="0x7f478738b3c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="PacketPower" qname="PacketPower"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rxCost" ref="0x7f478738b740" scoped=""/>
+        <function-ref name="setPower" ref="0x7f478738b8d0" scoped=""/>
+        <function-ref name="minimum" ref="0x7f478738ba60" scoped=""/>
+        <function-ref name="maximum" ref="0x7f478738bbf0" scoped=""/>
+        <function-ref name="cost" ref="0x7f478738bd80" scoped=""/>
+        <function-ref name="getPower" ref="0x7f478738a020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/usr/src/tinyos/tos/chips/msp430/timer/Counter32khz32C.nc" name="Counter" provided="1" ref="0x7f4787b48020">
+      <component-ref nicename="tos.chips.msp430.timer.Counter32khz32C" qname="Counter32khz32C"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Counter" ref="0x7f4787b48020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f4789391920"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x7f4787b48e30" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x7f4787b47800" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x7f4787b47340" scoped=""/>
+        <function-ref name="overflow" ref="0x7f4787b47cc0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/csilab/upma/chips/cc2420/CC2420PacketP.nc" name="CC2420PacketBody" provided="1" ref="0x7f4787388320">
+      <component-ref nicename="CC2420PacketP" qname="CC2420PacketP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420PacketBody" ref="0x7f4787388320" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420PacketBody" qname="CC2420PacketBody"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getPayload" ref="0x7f47873886a0" scoped=""/>
+        <function-ref name="getHeader" ref="0x7f4787388830" scoped=""/>
+        <function-ref name="getMetadata" ref="0x7f47873889c0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/usr/src/tinyos/tos/lib/timer/CounterToLocalTimeC.nc" name="Counter" provided="0" ref="0x7f478731e300">
+      <component-ref nicename="tos.lib.timer.CounterToLocalTimeC" qname="CC2420PacketC.CounterToLocalTimeC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Counter" ref="0x7f478731e300" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f4789391920"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x7f478731d150" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x7f478731dad0" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x7f478731d610" scoped=""/>
+        <function-ref name="overflow" ref="0x7f478731b020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="55:/home/csilab/upma/chips/cc2420/CC2420PacketP.nc" name="PacketTimeSyncOffset" provided="1" ref="0x7f478737f540">
+      <component-ref nicename="CC2420PacketP" qname="CC2420PacketP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeSyncOffset" ref="0x7f478737f540" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.PacketTimeSyncOffset" qname="PacketTimeSyncOffset"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x7f478737f8c0" scoped=""/>
+        <function-ref name="isSet" ref="0x7f478737fa50" scoped=""/>
+        <function-ref name="cancel" ref="0x7f478737fbe0" scoped=""/>
+        <function-ref name="set" ref="0x7f478737fd70" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="54:/home/csilab/upma/chips/cc2420/CC2420PacketP.nc" name="PacketTimeStampMilli" provided="1" ref="0x7f4787383840">
+      <component-ref nicename="CC2420PacketP" qname="CC2420PacketP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStampMilli" ref="0x7f4787383840" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketTimeStamp" qname="PacketTimeStamp"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f4789391920"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="timestamp" ref="0x7f4787382dd0" scoped=""/>
+        <function-ref name="clear" ref="0x7f4787381540" scoped=""/>
+        <function-ref name="isValid" ref="0x7f47873826a0" scoped=""/>
+        <function-ref name="set" ref="0x7f4787381c70" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="53:/home/csilab/upma/chips/cc2420/CC2420PacketP.nc" name="PacketTimeStamp32khz" provided="1" ref="0x7f4787387780">
+      <component-ref nicename="CC2420PacketP" qname="CC2420PacketP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStamp32khz" ref="0x7f4787387780" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketTimeStamp" qname="PacketTimeStamp"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f4789391920"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="timestamp" ref="0x7f4787386d00" scoped=""/>
+        <function-ref name="clear" ref="0x7f4787385460" scoped=""/>
+        <function-ref name="isValid" ref="0x7f47873865d0" scoped=""/>
+        <function-ref name="set" ref="0x7f4787385b90" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="58:/home/csilab/upma/chips/cc2420/CC2420PacketP.nc" name="LocalTime32khz" provided="0" ref="0x7f478737b7a0">
+      <component-ref nicename="CC2420PacketP" qname="CC2420PacketP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LocalTime32khz" ref="0x7f478737b7a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.LocalTime" qname="LocalTime"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x7f478737d3f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/csilab/upma/chips/cc2420/CC2420PacketP.nc" name="Acks" provided="1" ref="0x7f4787389870">
+      <component-ref nicename="CC2420PacketP" qname="CC2420PacketP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Acks" ref="0x7f4787389870" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requestAck" ref="0x7f4787389bf0" scoped=""/>
+        <function-ref name="noAck" ref="0x7f4787389d80" scoped=""/>
+        <function-ref name="wasAcked" ref="0x7f4787388020" scoped=""/>
+      </interface-functions>
+    </interface><component loc="46(CC2420PacketC.CounterToLocalTimeC):/usr/src/tinyos/tos/lib/timer/CounterToLocalTimeC.nc" nicename="tos.lib.timer.CounterToLocalTimeC" qname="CC2420PacketC.CounterToLocalTimeC">
+      <documentation loc="36:/usr/src/tinyos/tos/lib/timer/CounterToLocalTimeC.nc">
+        <short>
+ CounterToLocalTimeC converts a 32-bit LocalTime to a Counter.</short>
+        <long>
+ CounterToLocalTimeC converts a 32-bit LocalTime to a Counter.  
+
+ &lt;p&gt;See TEP102 for more details.
+ @param precision_tag A type indicating the precision of the LocalTime and
+ Counter being converted.
+
+ @author Cory Sharp &lt;cssharp@eecs.berkeley.edu&gt;
+</long>
+      </documentation>
+      <instance number="0">
+        <component-ref nicename="tos.lib.timer.CounterToLocalTimeC" qname="CounterToLocalTimeC"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component loc="41:/usr/src/tinyos/tos/chips/msp430/timer/Counter32khz32C.nc" nicename="tos.chips.msp430.timer.Counter32khz32C" qname="Counter32khz32C">
+      <documentation loc="33:/usr/src/tinyos/tos/chips/msp430/timer/Counter32khz32C.nc">
+        <short>
+ Counter32khz32C provides at 32-bit counter at 32768 ticks per second.</short>
+        <long>
+ Counter32khz32C provides at 32-bit counter at 32768 ticks per second.
+
+ @author Cory Sharp &lt;cssharp@eecs.berkeley.edu&gt;
+ @see  Please refer to TEP 102 for more information about this component and its
+          intended use.
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="50:/usr/src/tinyos/tos/chips/msp430/timer/Counter32khz32C.nc">
+          <from><interface-ref name="Counter" ref="0x7f4787b48020" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x7f4787b435f0" scoped=""/></to>
+        </wire>
+        <wire loc="52:/usr/src/tinyos/tos/chips/msp430/timer/Counter32khz32C.nc">
+          <from><interface-ref name="CounterFrom" ref="0x7f4787b26950" scoped=""/></from>
+          <to><interface-ref name="Msp430Counter32khz" ref="0x7f4787fbe9c0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="43:/usr/src/tinyos/tos/chips/msp430/timer/HilTimerMilliC.nc" nicename="tos.chips.msp430.timer.HilTimerMilliC" qname="HilTimerMilliC">
+      <documentation loc="33:/usr/src/tinyos/tos/chips/msp430/timer/HilTimerMilliC.nc">
+        <short>
+ HilTimerMilliC provides a parameterized interface to a virtualized
+ millisecond timer.</short>
+        <long>
+ HilTimerMilliC provides a parameterized interface to a virtualized
+ millisecond timer.  TimerMilliC in tos/system/ uses this component to
+ allocate new timers.
+
+ @author Cory Sharp &lt;cssharp@eecs.berkeley.edu&gt;
+ @see  Please refer to TEP 102 for more information about this component and its
+          intended use.
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="58:/usr/src/tinyos/tos/chips/msp430/timer/HilTimerMilliC.nc">
+          <from><interface-ref name="TimerMilli" ref="0x7f4787315530" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x7f478725d150" scoped=""/></to>
+        </wire>
+        <wire loc="59:/usr/src/tinyos/tos/chips/msp430/timer/HilTimerMilliC.nc">
+          <from><interface-ref name="LocalTime" ref="0x7f4787309a90" scoped=""/></from>
+          <to><interface-ref name="LocalTime" ref="0x7f478724f2b0" scoped=""/></to>
+        </wire>
+        <wire loc="57:/usr/src/tinyos/tos/chips/msp430/timer/HilTimerMilliC.nc">
+          <from><interface-ref name="Init" ref="0x7f478731ac80" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f47872d92a0" scoped=""/></to>
+        </wire>
+        <wire loc="61:/usr/src/tinyos/tos/chips/msp430/timer/HilTimerMilliC.nc">
+          <from><interface-ref name="TimerFrom" ref="0x7f4787257640" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x7f47872ac830" scoped=""/></to>
+        </wire>
+        <wire loc="62:/usr/src/tinyos/tos/chips/msp430/timer/HilTimerMilliC.nc">
+          <from><interface-ref name="Alarm" ref="0x7f47872a7cd0" scoped=""/></from>
+          <to><interface-ref name="Alarm" ref="0x7f47872d9af0" scoped=""/></to>
+        </wire>
+        <wire loc="63:/usr/src/tinyos/tos/chips/msp430/timer/HilTimerMilliC.nc">
+          <from><interface-ref name="Counter" ref="0x7f478724e690" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x7f47872f5080" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="43:/home/csilab/upma/chips/cc2420/CC2420PacketP.nc" nicename="CC2420PacketP" qname="CC2420PacketP" safe="">
+      <documentation loc="32:/home/csilab/upma/chips/cc2420/CC2420PacketP.nc">
+        <short>
+ </short>
+        <long>
+ @author Jonathan Hui &lt;jhui@archrock.com&gt;
+ @author David Moss
+ @author Chad Metcalf
+</long>
+      </documentation>
+      <module/>
+    </component></referenced></component>

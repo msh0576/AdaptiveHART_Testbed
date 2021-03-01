@@ -1,0 +1,26 @@
+digraph "GenericSlotSenderC" {
+  n0x2b7f5ce46540 [shape=ellipse, style=filled, label="Send", fontsize=12];
+  "GenericSlotSenderC.GenericSlotSenderP" [fontsize=12, shape=box, style=dashed, label="GenericSlotSenderP", URL="../chtml/GenericSlotSenderP.html"];
+  "MainC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.system.MainC.html"];
+  "GenericSlotSenderC.GenericSlotSenderP" [fontsize=12, shape=box, style=dashed, label="GenericSlotSenderP", URL="../chtml/GenericSlotSenderP.html"];
+  "GenericSlotSenderC.GenericSlotSenderP" [fontsize=12, shape=box, style=dashed, label="GenericSlotSenderP", URL="../chtml/GenericSlotSenderP.html"];
+  "GenericSlotSenderC.Alarm32khz16C" [fontsize=12, shape=box,peripheries=2, style=dashed, label="Alarm32khz16C", URL="../chtml/tos.chips.msp430.timer.Alarm32khz16C.html"];
+  "GenericSlotSenderC.GenericSlotSenderP" [fontsize=12, shape=box, style=dashed, label="GenericSlotSenderP", URL="../chtml/GenericSlotSenderP.html"];
+  n0x2b7f5ce45390 [shape=ellipse, style=filled, label="SubSend", fontsize=12];
+  "GenericSlotSenderC.GenericSlotSenderP" [fontsize=12, shape=box, style=dashed, label="GenericSlotSenderP", URL="../chtml/GenericSlotSenderP.html"];
+  n0x2b7f5ce44020 [shape=ellipse, style=filled, label="AMPacket", fontsize=12];
+  "GenericSlotSenderC.GenericSlotSenderP" [fontsize=12, shape=box, style=dashed, label="GenericSlotSenderP", URL="../chtml/GenericSlotSenderP.html"];
+  n0x2b7f5ce43870 [shape=ellipse, style=filled, label="SubCcaControl", fontsize=12];
+  "GenericSlotSenderC.GenericSlotSenderP" [fontsize=12, shape=box, style=dashed, label="GenericSlotSenderP", URL="../chtml/GenericSlotSenderP.html"];
+  "LedsC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.system.LedsC.html"];
+  "GenericSlotSenderC.GenericSlotSenderP" [fontsize=12, shape=box, style=dashed, label="GenericSlotSenderP", URL="../chtml/GenericSlotSenderP.html"];
+  "MainC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.system.MainC.html"];
+  "n0x2b7f5ce46540" -> "GenericSlotSenderC.GenericSlotSenderP" [label="AsyncSend", URL="../ihtml/AsyncSend.html", fontsize=10];
+  "MainC" -> "GenericSlotSenderC.GenericSlotSenderP" [label="Init", URL="../ihtml/tos.interfaces.Init.html", fontsize=10];
+  "GenericSlotSenderC.GenericSlotSenderP" -> "GenericSlotSenderC.Alarm32khz16C" [label="Alarm<T32khz, uint16_t>", URL="../ihtml/tos.lib.timer.Alarm.html", fontsize=10];
+  "GenericSlotSenderC.GenericSlotSenderP" -> "n0x2b7f5ce45390" [label="AsyncSend", URL="../ihtml/AsyncSend.html", fontsize=10];
+  "GenericSlotSenderC.GenericSlotSenderP" -> "n0x2b7f5ce44020" [label="AMPacket", URL="../ihtml/AMPacket.html", fontsize=10];
+  "GenericSlotSenderC.GenericSlotSenderP" -> "n0x2b7f5ce43870" [label="CcaControl", URL="../ihtml/CcaControl.html", fontsize=10];
+  "GenericSlotSenderC.GenericSlotSenderP" -> "LedsC" [label="Leds", URL="../ihtml/tos.interfaces.Leds.html", fontsize=10];
+  "GenericSlotSenderC.GenericSlotSenderP" -> "MainC" [label="Boot", URL="../ihtml/tos.interfaces.Boot.html", fontsize=10];
+}

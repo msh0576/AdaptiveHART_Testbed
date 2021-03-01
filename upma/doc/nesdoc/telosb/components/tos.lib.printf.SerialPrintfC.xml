@@ -1,0 +1,222 @@
+<?xml version="1.0" ?><component loc="36:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfC.nc" nicename="tos.lib.printf.SerialPrintfC" qname="SerialPrintfC">
+      <documentation loc="32:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfC.nc">
+        <short>
+ </short>
+        <long>
+ @author David Moss
+ @author Kevin Klues
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="42:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfC.nc">
+          <from><interface-ref name="StdControl" ref="0x2b7f5d037020" scoped=""/></from>
+          <to><interface-ref name="StdControl" ref="0x2b7f5d033080" scoped=""/></to>
+        </wire>
+        <wire loc="45:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x2b7f5b7131d0" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x2b7f5d0337d0" scoped=""/></to>
+        </wire>
+        <wire loc="48:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfC.nc">
+          <from><interface-ref name="UartControl" ref="0x2b7f5d0340d0" scoped=""/></from>
+          <to><interface-ref name="StdControl" ref="0x2b7f5bb47220" scoped=""/></to>
+        </wire>
+        <wire loc="49:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfC.nc">
+          <from><interface-ref name="UartByte" ref="0x2b7f5d034848" scoped=""/></from>
+          <to><interface-ref name="UartByte" ref="0x2b7f5bb71cc8" scoped=""/></to>
+        </wire>
+        <wire loc="52:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfC.nc">
+          <from><interface-ref name="Putchar" ref="0x2b7f5c0dc3e0" scoped=""/></from>
+          <to><interface-ref name="Putchar" ref="0x2b7f5d033db0" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="38:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfC.nc" name="StdControl" provided="1" ref="0x2b7f5d037020">
+      <component-ref nicename="tos.lib.printf.SerialPrintfC" qname="SerialPrintfC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="StdControl" ref="0x2b7f5d037020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x2b7f5d037370" scoped=""/>
+        <function-ref name="stop" ref="0x2b7f5d0374f8" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="38:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfP.nc" name="UartControl" provided="0" ref="0x2b7f5d0340d0">
+      <component-ref nicename="tos.lib.printf.SerialPrintfP" qname="SerialPrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartControl" ref="0x2b7f5d0340d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x2b7f5d034420" scoped=""/>
+        <function-ref name="stop" ref="0x2b7f5d0345a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="58:/opt/tinyos-2.1.2/tos/system/MainC.nc" name="SoftwareInit" provided="0" ref="0x2b7f5b7131d0">
+      <component-ref nicename="tos.system.MainC" qname="MainC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SoftwareInit" ref="0x2b7f5b7131d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x2b7f5b713520" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/lib/printf/PutcharC.nc" name="Putchar" provided="0" ref="0x2b7f5c0dc3e0">
+      <component-ref nicename="tos.lib.printf.PutcharC" qname="PutcharC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Putchar" ref="0x2b7f5c0dc3e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.printf.Putchar" qname="Putchar"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="putchar" ref="0x2b7f5c0dc730" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="6:/opt/tinyos-2.1.2/tos/platforms/telosa/PlatformSerialC.nc" name="UartByte" provided="1" ref="0x2b7f5bb71cc8">
+      <component-ref nicename="tos.platforms.telosa.PlatformSerialC" qname="PlatformSerialC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartByte" ref="0x2b7f5bb71cc8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.UartByte" qname="UartByte"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x2b7f5bb750a0" scoped=""/>
+        <function-ref name="receive" ref="0x2b7f5bb75228" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="39:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfP.nc" name="UartByte" provided="0" ref="0x2b7f5d034848">
+      <component-ref nicename="tos.lib.printf.SerialPrintfP" qname="SerialPrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartByte" ref="0x2b7f5d034848" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.UartByte" qname="UartByte"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x2b7f5d034b98" scoped=""/>
+        <function-ref name="receive" ref="0x2b7f5d034d20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfP.nc" name="Putchar" provided="1" ref="0x2b7f5d033db0">
+      <component-ref nicename="tos.lib.printf.SerialPrintfP" qname="SerialPrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Putchar" ref="0x2b7f5d033db0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.printf.Putchar" qname="Putchar"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="putchar" ref="0x2b7f5d032170" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfP.nc" name="Init" provided="1" ref="0x2b7f5d0337d0">
+      <component-ref nicename="tos.lib.printf.SerialPrintfP" qname="SerialPrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x2b7f5d0337d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x2b7f5d033b20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="4:/opt/tinyos-2.1.2/tos/platforms/telosa/PlatformSerialC.nc" name="StdControl" provided="1" ref="0x2b7f5bb47220">
+      <component-ref nicename="tos.platforms.telosa.PlatformSerialC" qname="PlatformSerialC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="StdControl" ref="0x2b7f5bb47220" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x2b7f5bb47570" scoped=""/>
+        <function-ref name="stop" ref="0x2b7f5bb476f8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfP.nc" name="StdControl" provided="1" ref="0x2b7f5d033080">
+      <component-ref nicename="tos.lib.printf.SerialPrintfP" qname="SerialPrintfP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="StdControl" ref="0x2b7f5d033080" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x2b7f5d0333d0" scoped=""/>
+        <function-ref name="stop" ref="0x2b7f5d033558" scoped=""/>
+      </interface-functions>
+    </interface><component loc="36:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfP.nc" nicename="tos.lib.printf.SerialPrintfP" qname="SerialPrintfP">
+      <documentation loc="32:/opt/tinyos-2.1.2/tos/lib/printf/SerialPrintfP.nc">
+        <short>
+ </short>
+        <long>
+ @author David Moss
+ @author Kevin Klues
+</long>
+      </documentation>
+      <module/>
+    </component><component loc="56:/opt/tinyos-2.1.2/tos/system/MainC.nc" nicename="tos.system.MainC" qname="MainC">
+      <documentation loc="45:/opt/tinyos-2.1.2/tos/system/MainC.nc">
+        <short>
+ MainC is the system interface the TinyOS boot sequence.</short>
+        <long>
+ MainC is the system interface the TinyOS boot sequence. It wires the
+ boot sequence implementation to the scheduler and hardware resources.
+
+ @author Philip Levis
+ @date   August 6 2005
+ @see    TEP 107: Boot Sequence
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="72:/opt/tinyos-2.1.2/tos/system/MainC.nc">
+          <from><interface-ref name="Boot" ref="0x2b7f5b717c40" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x2b7f5b715c38" scoped=""/></to>
+        </wire>
+        <wire loc="67:/opt/tinyos-2.1.2/tos/system/MainC.nc">
+          <from><interface-ref name="Scheduler" ref="0x2b7f5b8ba308" scoped=""/></from>
+          <to><interface-ref name="Scheduler" ref="0x2b7f5b24c390" scoped=""/></to>
+        </wire>
+        <wire loc="68:/opt/tinyos-2.1.2/tos/system/MainC.nc">
+          <from><interface-ref name="PlatformInit" ref="0x2b7f5b8bace0" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x2b7f5b730020" scoped=""/></to>
+        </wire>
+        <wire loc="71:/opt/tinyos-2.1.2/tos/system/MainC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x2b7f5b8d6418" scoped=""/></from>
+          <to><interface-ref name="SoftwareInit" ref="0x2b7f5b7131d0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="42:/opt/tinyos-2.1.2/tos/lib/printf/PutcharC.nc" nicename="tos.lib.printf.PutcharC" qname="PutcharC">
+      <documentation loc="32:/opt/tinyos-2.1.2/tos/lib/printf/PutcharC.nc">
+        <short>
+ This component provides a TinyOS-compatible bridge to the
+ system-specific mechanism of providing single-character output to
+ the environment's printf(3c) infrastructure.</short>
+        <long>
+ This component provides a TinyOS-compatible bridge to the
+ system-specific mechanism of providing single-character output to
+ the environment's printf(3c) infrastructure.  Components that
+ provide a libc-based printf facility in TinyOS should implement the
+ Putchar interface and connect it to this module.
+
+ @author Peter A. Bigot &lt;pabigot@users.sourceforge.net&gt;
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="49:/opt/tinyos-2.1.2/tos/lib/printf/PutcharC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x2b7f5b7131d0" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x2b7f5c0db628" scoped=""/></to>
+        </wire>
+        <wire loc="50:/opt/tinyos-2.1.2/tos/lib/printf/PutcharC.nc">
+          <from><interface-ref name="Putchar" ref="0x2b7f5c0dbc48" scoped=""/></from>
+          <to><interface-ref name="Putchar" ref="0x2b7f5c0dc3e0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="2:/opt/tinyos-2.1.2/tos/platforms/telosa/PlatformSerialC.nc" nicename="tos.platforms.telosa.PlatformSerialC" qname="PlatformSerialC">
+      <configuration/>
+      <wiring>
+        <wire loc="14:/opt/tinyos-2.1.2/tos/platforms/telosa/PlatformSerialC.nc">
+          <from><interface-ref name="UartByte" ref="0x2b7f5bb71cc8" scoped=""/></from>
+          <to><interface-ref name="UartByte" ref="0x2b7f5c0492a8" scoped=""/></to>
+        </wire>
+        <wire loc="13:/opt/tinyos-2.1.2/tos/platforms/telosa/PlatformSerialC.nc">
+          <from><interface-ref name="UartStream" ref="0x2b7f5bb479e8" scoped=""/></from>
+          <to><interface-ref name="UartStream" ref="0x2b7f5c04a2a8" scoped=""/></to>
+        </wire>
+        <wire loc="17:/opt/tinyos-2.1.2/tos/platforms/telosa/PlatformSerialC.nc">
+          <from><interface-ref name="StdControl" ref="0x2b7f5bb47220" scoped=""/></from>
+          <to><interface-ref name="StdControl" ref="0x2b7f5c047808" scoped=""/></to>
+        </wire>
+        <wire loc="18:/opt/tinyos-2.1.2/tos/platforms/telosa/PlatformSerialC.nc">
+          <from><interface-ref name="Msp430UartConfigure" ref="0x2b7f5c049a08" scoped=""/></from>
+          <to><interface-ref name="Msp430UartConfigure" ref="0x2b7f5c044080" scoped=""/></to>
+        </wire>
+        <wire loc="19:/opt/tinyos-2.1.2/tos/platforms/telosa/PlatformSerialC.nc">
+          <from><interface-ref name="Resource" ref="0x2b7f5c0446b0" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x2b7f5c04ce40" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

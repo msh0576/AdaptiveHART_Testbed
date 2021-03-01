@@ -1,0 +1,25 @@
+<?xml version="1.0" ?><component loc="2:/home/csilab/upma/lib/macs/pure-tdma/SchedulerP.nc" nicename="SchedulerP" qname="SchedulerP">
+      <module/>
+    <specification><interface loc="8:/home/csilab/upma/lib/macs/pure-tdma/SchedulerP.nc" name="Useful" provided="0" ref="0x7f4786d8ea00">
+      <component-ref nicename="SchedulerP" qname="SchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Useful" ref="0x7f4786d8ea00" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Useful" qname="Useful"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="DeadlineList" ref="0x7f4786d8ed80" scoped=""/>
+        <function-ref name="SetSR" ref="0x7f4786d8d020" scoped=""/>
+        <function-ref name="MakeRoute" ref="0x7f4786d8d1b0" scoped=""/>
+        <function-ref name="TaskSenderReceiver" ref="0x7f4786d8d340" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="4:/home/csilab/upma/lib/macs/pure-tdma/SchedulerP.nc" name="DynamicSchedule" provided="1" ref="0x7f4786d8e1e0">
+      <component-ref nicename="SchedulerP" qname="SchedulerP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="DynamicSchedule" ref="0x7f4786d8e1e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="DynamicSchedule" qname="DynamicSchedule"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="Initial" ref="0x7f4786d8e560" scoped=""/>
+        <function-ref name="Scheduler" ref="0x7f4786d8e6f0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

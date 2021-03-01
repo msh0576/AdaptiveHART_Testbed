@@ -1,0 +1,97 @@
+<?xml version="1.0" ?><interfacedef loc="31:/home/csilab/upma/interfaces/AsyncReceive.nc" nicename="AsyncReceive" qname="AsyncReceive">
+      <documentation loc="25:/home/csilab/upma/interfaces/AsyncReceive.nc">
+        <short>
+ Provides packet reception events in an asynchronous fashion.</short>
+        <long>
+ Provides packet reception events in an asynchronous fashion.
+
+ @author Greg Hackmann
+ @see Receive
+</long>
+      </documentation>
+      <function event="" loc="41:/home/csilab/upma/interfaces/AsyncReceive.nc" name="receive" provided="0" ref="0x7f4787cf5bb0">
+        <documentation loc="33:/home/csilab/upma/interfaces/AsyncReceive.nc">
+          <short>
+ A packet was received over the radio.</short>
+          <long>
+ A packet was received over the radio.  After it is processed,
+ &lt;tt&gt;updateBuffer&lt;/tt&gt; should be called.
+
+ @param 'message_t * ONE msg' the packet that was received
+ @param 'void * COUNT(len) payload' the packet's payload
+ @param len the packet's length
+</long>
+        </documentation>
+        <interfacedef-ref nicename="AsyncReceive" qname="AsyncReceive"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-void alignment="I:1" size="I:1"/>
+            </type-pointer>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x7f4789391160"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="41:/home/csilab/upma/interfaces/AsyncReceive.nc" name="msg" ref="0x7f4787cf5290">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="41:/home/csilab/upma/interfaces/AsyncReceive.nc" name="payload" ref="0x7f4787cf55e0">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-void alignment="I:1" size="I:1"/>
+            </type-pointer>
+          </variable>
+          <variable loc="41:/home/csilab/upma/interfaces/AsyncReceive.nc" name="len" ref="0x7f4787cf5910">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x7f4789391160"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="52:/home/csilab/upma/interfaces/AsyncReceive.nc" name="updateBuffer" provided="0" ref="0x7f4787cf32e0">
+        <documentation loc="43:/home/csilab/upma/interfaces/AsyncReceive.nc">
+          <short>
+ Provides a new message buffer to the radio stack.</short>
+          <long>
+ Provides a new message buffer to the radio stack.
+ This should be called (only) after each packet is handled, since
+ the radio stack may do additional radio-specific event handling
+ here.
+
+ @param 'message_t * ONE msg' the new message buffer to provide to the radio stack
+ (possibly the same one passed up from the &lt;tt&gt;receive&lt;/tt&gt; event)
+</long>
+        </documentation>
+        <interfacedef-ref nicename="AsyncReceive" qname="AsyncReceive"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="52:/home/csilab/upma/interfaces/AsyncReceive.nc" name="msg" ref="0x7f4787cf3060">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+    </interfacedef>

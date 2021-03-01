@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: CcaControl</title>
+  </head>
+  <body>
+    <h2>Interface: CcaControl</h2>
+    <b>interface CcaControl</b><p>
+ Controls the radio's CCA and backoff policies.
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Greg Hackmann
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Events</div><div id=funcsig><span id=funcnameshort>event bool <a href="#getCca">getCca</a>(message_t *msg, bool defaultCca)
+      </span><menu>
+ Whether to perform CCA before sending a message must be determined.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>event uint16_t <a href="#getCongestionBackoff">getCongestionBackoff</a>(message_t *msg, uint16_t defaultBackoff)
+      </span><menu>
+ The congestion backoff time for a message must be selected.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>event uint16_t <a href="#getInitialBackoff">getInitialBackoff</a>(message_t *msg, uint16_t defaultbackoff)
+      </span><menu>
+ The initial backoff time for a message must be selected.
+      </menu>
+    </div><p><div id=heading>Events - Details</div>
+    <a name="getCca"></a>
+    <h4>getCca
+    </h4>
+    <span id=funcnameshort>event bool <b>getCca</b>(message_t *msg, bool defaultCca)
+    </span>
+    <p>
+    <menu>
+      
+ Whether to perform CCA before sending a message must be determined.  If
+ the upper layer has no need to specify this, then return
+ <tt>defaultCca</tt>.
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          <code>msg</code> -  the message
+ 
+        </dd>
+        <dd>
+          <code>defaultCca</code> -  the radio-default CCA policy
+ 
+        </dd>
+        <dt><b>Returns:</b>
+        <dd>
+          whether to perform CCA before sending the message
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="getCongestionBackoff"></a>
+    <h4>getCongestionBackoff
+    </h4>
+    <span id=funcnameshort>event uint16_t <b>getCongestionBackoff</b>(message_t *msg, uint16_t defaultBackoff)
+    </span>
+    <p>
+    <menu>
+      
+ The congestion backoff time for a message must be selected.  If the upper
+ layer has no need to change the backoff, then return
+ <tt>defaultBackoff</tt>.
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          <code>msg</code> -  the message
+ 
+        </dd>
+        <dd>
+          <code>defaultBackoff</code> -  the radio-default backoff length
+ 
+        </dd>
+        <dt><b>Returns:</b>
+        <dd>
+          the congestion backoff length, in 32 Khz increments
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="getInitialBackoff"></a>
+    <h4>getInitialBackoff
+    </h4>
+    <span id=funcnameshort>event uint16_t <b>getInitialBackoff</b>(message_t *msg, uint16_t defaultbackoff)
+    </span>
+    <p>
+    <menu>
+      
+ The initial backoff time for a message must be selected.  If the upper
+ layer has no need to change the backoff, then return
+ <tt>defaultBackoff</tt>.
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          <code>msg</code> -  the message
+ 
+        </dd>
+        <dd>
+          <code>defaultBackoff</code> -  the radio-default backoff length
+ 
+        </dd>
+        <dt><b>Returns:</b>
+        <dd>
+          the initial backoff length, in 32 Khz increments
+
+        </dd>
+      </dl>
+    </menu>
+  </body>
+</html>

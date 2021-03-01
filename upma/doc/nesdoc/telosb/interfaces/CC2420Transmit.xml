@@ -1,0 +1,170 @@
+<?xml version="1.0" ?><interfacedef loc="67:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc" nicename="CC2420Transmit" qname="CC2420Transmit">
+      <documentation loc="54:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc">
+        <short>
+ Low-level abstraction for the transmit path implementaiton of the
+ ChipCon CC2420 radio.</short>
+        <long>
+ Low-level abstraction for the transmit path implementaiton of the
+ ChipCon CC2420 radio.
+
+ @author Jonathan Hui &lt;jhui@archrock.com&gt;
+ @author Greg Hackmann
+ @author Kevin Klues
+ @author Octav Chipara
+ @version $Revision$ $Date$
+</long>
+      </documentation>
+      <function command="" loc="76:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc" name="send" provided="0" ref="0x7f4787ce2d40">
+        <documentation loc="69:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc">
+          <short>
+ Send a message
+
+ </short>
+          <long>
+ Send a message
+
+ @param p_msg message to send.
+ @param useCca TRUE if this Tx should use clear channel assessments
+ @return SUCCESS if the request was accepted, FAIL otherwise.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="CC2420Transmit" qname="CC2420Transmit"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="76:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc" name="p_msg" ref="0x7f4787ce2ac0">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="83:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc" name="cancel" provided="0" ref="0x7f4787ce15b0">
+        <documentation loc="78:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc">
+          <short>
+ Cancel sending of the message.</short>
+          <long>
+ Cancel sending of the message.
+
+ @return SUCCESS if the request was accepted, FAIL otherwise.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="CC2420Transmit" qname="CC2420Transmit"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="102:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc" name="modify" provided="0" ref="0x7f4787cdee30">
+        <documentation loc="93:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc">
+          <short>
+ Modify the contents of a packet.</short>
+          <long>
+ Modify the contents of a packet. This command can only be used
+ when an SFD capture event for the sending packet is signalled.
+
+ @param offset in the message to start modifying.
+ @param buf to data to write
+ @param len of bytes to write
+ @return SUCCESS if the request was accepted, FAIL otherwise.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="CC2420Transmit" qname="CC2420Transmit"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x7f4789391160"/></typename>
+            </type-int>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+                <typename><typedef-ref name="uint8_t" ref="0x7f4789391160"/></typename>
+              </type-int>
+            </type-pointer>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x7f4789391160"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="102:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc" name="offset" ref="0x7f4787cde020">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x7f4789391160"/></typename>
+            </type-int>
+          </variable>
+          <variable loc="102:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc" name="buf" ref="0x7f4787cde860">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+                <typename><typedef-ref name="uint8_t" ref="0x7f4789391160"/></typename>
+              </type-int>
+            </type-pointer>
+          </variable>
+          <variable loc="102:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc" name="len" ref="0x7f4787cdeb90">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x7f4789391160"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function event="" loc="91:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc" name="sendDone" provided="0" ref="0x7f4787cdf770">
+        <documentation loc="85:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc">
+          <short>
+ Signal that a message has been sent
+
+ </short>
+          <long>
+ Signal that a message has been sent
+
+ @param p_msg message to send.
+ @param error notifaction of how the operation went.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="CC2420Transmit" qname="CC2420Transmit"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="91:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc" name="p_msg" ref="0x7f4787cdf190">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7f4788595410"/>
+                <typename><typedef-ref name="message_t" ref="0x7f4788594a40"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="91:/home/csilab/upma/chips/cc2420/CC2420Transmit.nc" name="error" ref="0x7f4787cdf4e0">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+    </interfacedef>

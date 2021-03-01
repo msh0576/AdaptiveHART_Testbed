@@ -1,0 +1,83 @@
+<?xml version="1.0" ?><interfacedef loc="30:/home/csilab/upma/interfaces/RadioPowerControl.nc" nicename="RadioPowerControl" qname="RadioPowerControl">
+      <documentation loc="23:/home/csilab/upma/interfaces/RadioPowerControl.nc">
+        <short>
+
+ </short>
+        <long>
+
+ @author Kevin Klues (klueska@cs.wustl.edu)
+ @version $Revision$
+ @date $Date$ 
+</long>
+      </documentation>
+      <function event="" loc="36:/home/csilab/upma/interfaces/RadioPowerControl.nc" name="startDone" provided="0" ref="0x7f4787d02730">
+        <interfacedef-ref nicename="RadioPowerControl" qname="RadioPowerControl"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="36:/home/csilab/upma/interfaces/RadioPowerControl.nc" name="error" ref="0x7f4787d024b0">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function event="" loc="42:/home/csilab/upma/interfaces/RadioPowerControl.nc" name="stopDone" provided="0" ref="0x7f4787d01800">
+        <interfacedef-ref nicename="RadioPowerControl" qname="RadioPowerControl"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="42:/home/csilab/upma/interfaces/RadioPowerControl.nc" name="error" ref="0x7f4787d01580">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="35:/home/csilab/upma/interfaces/RadioPowerControl.nc" name="start" provided="0" ref="0x7f4787d06d80">
+        <documentation loc="32:/home/csilab/upma/interfaces/RadioPowerControl.nc">
+          <short>
+ Turn Power to the Radio On
+</short>
+        </documentation>
+        <interfacedef-ref nicename="RadioPowerControl" qname="RadioPowerControl"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="41:/home/csilab/upma/interfaces/RadioPowerControl.nc" name="stop" provided="0" ref="0x7f4787d02e80">
+        <documentation loc="38:/home/csilab/upma/interfaces/RadioPowerControl.nc">
+          <short>
+ Turn Power to the Radio Off
+</short>
+        </documentation>
+        <interfacedef-ref nicename="RadioPowerControl" qname="RadioPowerControl"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="error_t" ref="0x7f4788c60980"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+    </interfacedef>

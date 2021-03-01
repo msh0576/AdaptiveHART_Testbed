@@ -1,0 +1,79 @@
+<?xml version="1.0" ?><component abstract="" loc="38:/usr/src/tinyos/tos/chips/msp430/timer/GpioCaptureC.nc" nicename="tos.chips.msp430.timer.GpioCaptureC" qname="GpioCaptureC" safe="">
+      <documentation loc="33:/usr/src/tinyos/tos/chips/msp430/timer/GpioCaptureC.nc">
+        <short>
+ </short>
+        <long>
+ @author Jonathan Hui
+ @author Joe Polastre
+</long>
+      </documentation>
+      <parameters>
+      </parameters>
+      <module/>
+    <specification><interface loc="42:/usr/src/tinyos/tos/chips/msp430/timer/GpioCaptureC.nc" name="Msp430Capture" provided="0" ref="0x7f4787a92020">
+      <component-ref nicename="tos.chips.msp430.timer.GpioCaptureC" qname="GpioCaptureC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430Capture" ref="0x7f4787a92020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430Capture" qname="Msp430Capture"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getEvent" ref="0x7f4787a923a0" scoped=""/>
+        <function-ref name="setSynchronous" ref="0x7f4787a92530" scoped=""/>
+        <function-ref name="captured" ref="0x7f4787a926c0" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x7f4787a92850" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x7f4787a929e0" scoped=""/>
+        <function-ref name="setEdge" ref="0x7f4787a92b70" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="40:/usr/src/tinyos/tos/chips/msp430/timer/GpioCaptureC.nc" name="Capture" provided="1" ref="0x7f4787a94020">
+      <component-ref nicename="tos.chips.msp430.timer.GpioCaptureC" qname="GpioCaptureC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Capture" ref="0x7f4787a94020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GpioCapture" qname="GpioCapture"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="captureFallingEdge" ref="0x7f4787a943a0" scoped=""/>
+        <function-ref name="disable" ref="0x7f4787a94530" scoped=""/>
+        <function-ref name="captured" ref="0x7f4787a946c0" scoped=""/>
+        <function-ref name="captureRisingEdge" ref="0x7f4787a94850" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:/usr/src/tinyos/tos/chips/msp430/timer/GpioCaptureC.nc" name="Msp430TimerControl" provided="0" ref="0x7f4787a94ba0">
+      <component-ref nicename="tos.chips.msp430.timer.GpioCaptureC" qname="GpioCaptureC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Msp430TimerControl" ref="0x7f4787a94ba0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.timer.Msp430TimerControl" qname="Msp430TimerControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setControlAsCapture" ref="0x7f4787a93020" scoped=""/>
+        <function-ref name="getControl" ref="0x7f4787a931b0" scoped=""/>
+        <function-ref name="enableEvents" ref="0x7f4787a93340" scoped=""/>
+        <function-ref name="areEventsEnabled" ref="0x7f4787a934d0" scoped=""/>
+        <function-ref name="setControlAsCompare" ref="0x7f4787a93660" scoped=""/>
+        <function-ref name="disableEvents" ref="0x7f4787a937f0" scoped=""/>
+        <function-ref name="isInterruptPending" ref="0x7f4787a93980" scoped=""/>
+        <function-ref name="clearPendingInterrupt" ref="0x7f4787a93b10" scoped=""/>
+        <function-ref name="setControl" ref="0x7f4787a93ca0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/usr/src/tinyos/tos/chips/msp430/timer/GpioCaptureC.nc" name="GeneralIO" provided="0" ref="0x7f4787a91020">
+      <component-ref nicename="tos.chips.msp430.timer.GpioCaptureC" qname="GpioCaptureC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="GeneralIO" ref="0x7f4787a91020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f4787a913a0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f4787a91530" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f4787a916c0" scoped=""/>
+        <function-ref name="toggle" ref="0x7f4787a91850" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f4787a919e0" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f4787a91b70" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f4787a91d00" scoped=""/>
+        <function-ref name="get" ref="0x7f4787a90020" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f4787a901b0" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f4787a90340" scoped=""/>
+        <function-ref name="set" ref="0x7f4787a904d0" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f4787a90660" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f4787a907f0" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f4787a90a80" scoped=""/>
+        <function-ref name="clr" ref="0x7f4787a90c10" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

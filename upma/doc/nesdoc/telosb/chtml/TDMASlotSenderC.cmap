@@ -1,0 +1,9 @@
+<area shape="rect" id="node2" href="../chtml/GenericSlotSenderC.html" title="GenericSlotSenderC\n(TDMASlotSender)" alt="" coords="100,117,263,176">
+<area shape="poly" id="edge1" href="../ihtml/AsyncSend.html" title="AsyncSend" alt="" coords="184,54,184,104,179,104,179,54">
+<area shape="rect" id="edge1-label" href="../ihtml/AsyncSend.html" title="AsyncSend" alt="" coords="181,78,244,93">
+<area shape="poly" id="edge2" href="../ihtml/AsyncSend.html" title="AsyncSend" alt="" coords="144,178,115,202,83,234,79,230,112,198,141,174">
+<area shape="rect" id="edge2-label" href="../ihtml/AsyncSend.html" title="AsyncSend" alt="" coords="113,201,176,215">
+<area shape="poly" id="edge3" href="../ihtml/AMPacket.html" title="AMPacket" alt="" coords="184,176,184,226,179,226,179,176">
+<area shape="rect" id="edge3-label" href="../ihtml/AMPacket.html" title="AMPacket" alt="" coords="181,201,240,215">
+<area shape="poly" id="edge4" href="../ihtml/CcaControl.html" title="CcaControl" alt="" coords="220,174,297,231,294,236,217,178">
+<area shape="rect" id="edge4-label" href="../ihtml/CcaControl.html" title="CcaControl" alt="" coords="271,201,335,215">

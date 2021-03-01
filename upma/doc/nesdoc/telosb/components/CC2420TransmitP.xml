@@ -1,0 +1,419 @@
+<?xml version="1.0" ?><component loc="69:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" nicename="CC2420TransmitP" qname="CC2420TransmitP" safe="">
+      <module/>
+    <specification><interface loc="82:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="PacketTimeStamp" provided="0" ref="0x7f478750e200">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeStamp" ref="0x7f478750e200" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketTimeStamp" qname="PacketTimeStamp"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f4789391920"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="timestamp" ref="0x7f478750d7c0" scoped=""/>
+        <function-ref name="clear" ref="0x7f478750c020" scoped=""/>
+        <function-ref name="isValid" ref="0x7f478750d090" scoped=""/>
+        <function-ref name="set" ref="0x7f478750c750" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="102:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="SECCTRL1" provided="0" ref="0x7f47874f4930">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SECCTRL1" ref="0x7f47874f4930" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Register" qname="CC2420Register"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x7f47874f4cb0" scoped=""/>
+        <function-ref name="write" ref="0x7f47874f4e40" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="103:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="KEY0" provided="0" ref="0x7f47874f31f0">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="KEY0" ref="0x7f47874f31f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x7f47874f3570" scoped=""/>
+        <function-ref name="write" ref="0x7f47874f3700" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="75:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="EnergyIndicator" provided="1" ref="0x7f4787517020">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="EnergyIndicator" ref="0x7f4787517020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.ReceiveIndicator" qname="ReceiveIndicator"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="isReceiving" ref="0x7f47875173a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="96:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="STXONCCA" provided="0" ref="0x7f47874fbe60">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="STXONCCA" ref="0x7f47874fbe60" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="strobe" ref="0x7f47874fa210" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="84:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="CaptureSFD" provided="0" ref="0x7f47875091e0">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CaptureSFD" ref="0x7f47875091e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GpioCapture" qname="GpioCapture"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="captureFallingEdge" ref="0x7f4787509660" scoped=""/>
+        <function-ref name="disable" ref="0x7f47875097f0" scoped=""/>
+        <function-ref name="captured" ref="0x7f4787509980" scoped=""/>
+        <function-ref name="captureRisingEdge" ref="0x7f4787509b10" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="77:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="CcaControl" provided="1" ref="0x7f4787516400">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CcaControl" ref="0x7f4787516400" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="CcaControl" qname="CcaControl"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getCongestionBackoff" ref="0x7f4787516780" scoped=""/>
+        <function-ref name="getInitialBackoff" ref="0x7f4787516910" scoped=""/>
+        <function-ref name="getCca" ref="0x7f4787516aa0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="79:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="BackoffTimer" provided="0" ref="0x7f4787514140">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="BackoffTimer" ref="0x7f4787514140" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Alarm" qname="Alarm"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f4789391920"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4787512b30" scoped=""/>
+        <function-ref name="fired" ref="0x7f47875139f0" scoped=""/>
+        <function-ref name="startAt" ref="0x7f47875124e0" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f4787512020" scoped=""/>
+        <function-ref name="getAlarm" ref="0x7f4787510020" scoped=""/>
+        <function-ref name="start" ref="0x7f4787513020" scoped=""/>
+        <function-ref name="stop" ref="0x7f4787513530" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="80:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="CC2420Packet" provided="0" ref="0x7f47875104d0">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Packet" ref="0x7f47875104d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setPower" ref="0x7f4787510850" scoped=""/>
+        <function-ref name="setNetwork" ref="0x7f47875109e0" scoped=""/>
+        <function-ref name="getRssi" ref="0x7f4787510b70" scoped=""/>
+        <function-ref name="getNetwork" ref="0x7f4787510d00" scoped=""/>
+        <function-ref name="getPower" ref="0x7f478750f020" scoped=""/>
+        <function-ref name="getLqi" ref="0x7f478750f1b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="92:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="TXFIFO_RAM" provided="0" ref="0x7f47874fdd80">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="TXFIFO_RAM" ref="0x7f47874fdd80" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x7f47874fc180" scoped=""/>
+        <function-ref name="write" ref="0x7f47874fc310" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="93:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="TXCTRL" provided="0" ref="0x7f47874fc6b0">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="TXCTRL" ref="0x7f47874fc6b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Register" qname="CC2420Register"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x7f47874fca30" scoped=""/>
+        <function-ref name="write" ref="0x7f47874fcbc0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="73:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="Send" provided="1" ref="0x7f4787519bf0">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Send" ref="0x7f4787519bf0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="CC2420Transmit" qname="CC2420Transmit"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4787518020" scoped=""/>
+        <function-ref name="cancel" ref="0x7f47875181b0" scoped=""/>
+        <function-ref name="modify" ref="0x7f4787518340" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f47875184d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="90:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="ChipSpiResource" provided="0" ref="0x7f47874fe4e0">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ChipSpiResource" ref="0x7f47874fe4e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.ChipSpiResource" qname="ChipSpiResource"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="releasing" ref="0x7f47874fe860" scoped=""/>
+        <function-ref name="abortRelease" ref="0x7f47874fe9f0" scoped=""/>
+        <function-ref name="attemptRelease" ref="0x7f47874feb80" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="97:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="SFLUSHTX" provided="0" ref="0x7f47874fa5c0">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SFLUSHTX" ref="0x7f47874fa5c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="strobe" ref="0x7f47874fab40" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="107:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="CC2420Receive" provided="0" ref="0x7f47874ec610">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420Receive" ref="0x7f47874ec610" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Receive" qname="CC2420Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f47874ec990" scoped=""/>
+        <function-ref name="sfd_dropped" ref="0x7f47874ecb20" scoped=""/>
+        <function-ref name="sfd" ref="0x7f47874eccb0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="108:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="Random" provided="0" ref="0x7f47874f1020">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Random" ref="0x7f47874f1020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Random" qname="Random"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rand16" ref="0x7f47874f13a0" scoped=""/>
+        <function-ref name="rand32" ref="0x7f47874f1530" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="86:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="CSN" provided="0" ref="0x7f4787507080">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CSN" ref="0x7f4787507080" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f4787507400" scoped=""/>
+        <function-ref name="isInput" ref="0x7f4787507590" scoped=""/>
+        <function-ref name="toggle" ref="0x7f4787507720" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f47875078b0" scoped=""/>
+        <function-ref name="get" ref="0x7f4787507a40" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f4787507bd0" scoped=""/>
+        <function-ref name="set" ref="0x7f4787507d60" scoped=""/>
+        <function-ref name="clr" ref="0x7f4787501020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="74:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="Resend" provided="1" ref="0x7f47875187a0">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Resend" ref="0x7f47875187a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Resend" qname="Resend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="resend" ref="0x7f4787518b20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="71:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="Init" provided="1" ref="0x7f478751ac20">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x7f478751ac20" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f4787519020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="81:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="CC2420PacketBody" provided="0" ref="0x7f478750f4f0">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CC2420PacketBody" ref="0x7f478750f4f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420PacketBody" qname="CC2420PacketBody"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getPayload" ref="0x7f478750f870" scoped=""/>
+        <function-ref name="getHeader" ref="0x7f478750fa00" scoped=""/>
+        <function-ref name="getMetadata" ref="0x7f478750fb90" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="83:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="PacketTimeSyncOffset" provided="0" ref="0x7f4787502570">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="PacketTimeSyncOffset" ref="0x7f4787502570" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.PacketTimeSyncOffset" qname="PacketTimeSyncOffset"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x7f47875028f0" scoped=""/>
+        <function-ref name="isSet" ref="0x7f4787502a80" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4787502c10" scoped=""/>
+        <function-ref name="set" ref="0x7f4787502da0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="98:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="MDMCTRL1" provided="0" ref="0x7f47874f5020">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="MDMCTRL1" ref="0x7f47874f5020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Register" qname="CC2420Register"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x7f47874f53a0" scoped=""/>
+        <function-ref name="write" ref="0x7f47874f5530" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="89:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="SpiResource" provided="0" ref="0x7f47874ff6e0">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SpiResource" ref="0x7f47874ff6e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="release" ref="0x7f47874ffa60" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x7f47874ffbf0" scoped=""/>
+        <function-ref name="request" ref="0x7f47874ffd80" scoped=""/>
+        <function-ref name="granted" ref="0x7f47874fe020" scoped=""/>
+        <function-ref name="isOwner" ref="0x7f47874fe1b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="85:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="CCA" provided="0" ref="0x7f4787509e60">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="CCA" ref="0x7f4787509e60" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f4787508210" scoped=""/>
+        <function-ref name="isInput" ref="0x7f47875083a0" scoped=""/>
+        <function-ref name="toggle" ref="0x7f4787508530" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f47875086c0" scoped=""/>
+        <function-ref name="get" ref="0x7f4787508850" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f47875089e0" scoped=""/>
+        <function-ref name="set" ref="0x7f4787508b70" scoped=""/>
+        <function-ref name="clr" ref="0x7f4787508d00" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="104:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="KEY1" provided="0" ref="0x7f47874f3a60">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="KEY1" ref="0x7f47874f3a60" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x7f47874f3de0" scoped=""/>
+        <function-ref name="write" ref="0x7f47874f2020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="105:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="TXNONCE" provided="0" ref="0x7f47874f23a0">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="TXNONCE" ref="0x7f47874f23a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Ram" qname="CC2420Ram"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x7f47874f2720" scoped=""/>
+        <function-ref name="write" ref="0x7f47874f28b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="94:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="SNOP" provided="0" ref="0x7f47874fb020">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SNOP" ref="0x7f47874fb020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="strobe" ref="0x7f47874fb3a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="87:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="SFD" provided="0" ref="0x7f4787501370">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SFD" ref="0x7f4787501370" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f47875016f0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f4787501880" scoped=""/>
+        <function-ref name="toggle" ref="0x7f4787501a10" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f4787501ba0" scoped=""/>
+        <function-ref name="get" ref="0x7f4787501d30" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f47874ff020" scoped=""/>
+        <function-ref name="set" ref="0x7f47874ff1b0" scoped=""/>
+        <function-ref name="clr" ref="0x7f47874ff340" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="109:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="Leds" provided="0" ref="0x7f47874f17f0">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x7f47874f17f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x7f47874f1b70" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x7f47874f1d00" scoped=""/>
+        <function-ref name="led1On" ref="0x7f47874f0020" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x7f47874f01b0" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x7f47874f0340" scoped=""/>
+        <function-ref name="get" ref="0x7f47874f04d0" scoped=""/>
+        <function-ref name="led1Off" ref="0x7f47874f0660" scoped=""/>
+        <function-ref name="led2Off" ref="0x7f47874f0ca0" scoped=""/>
+        <function-ref name="set" ref="0x7f47874f07f0" scoped=""/>
+        <function-ref name="led0On" ref="0x7f47874f0980" scoped=""/>
+        <function-ref name="led2On" ref="0x7f47874f0b10" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="101:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="SECCTRL0" provided="0" ref="0x7f47874f4060">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SECCTRL0" ref="0x7f47874f4060" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Register" qname="CC2420Register"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="read" ref="0x7f47874f43e0" scoped=""/>
+        <function-ref name="write" ref="0x7f47874f4570" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="72:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="AsyncStdControl" provided="1" ref="0x7f4787519350">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AsyncStdControl" ref="0x7f4787519350" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AsyncStdControl" qname="AsyncStdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x7f47875196d0" scoped=""/>
+        <function-ref name="stop" ref="0x7f4787519860" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="91:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="TXFIFO" provided="0" ref="0x7f47874fd020">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="TXFIFO" ref="0x7f47874fd020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Fifo" qname="CC2420Fifo"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="continueRead" ref="0x7f47874fd3a0" scoped=""/>
+        <function-ref name="writeDone" ref="0x7f47874fd530" scoped=""/>
+        <function-ref name="write" ref="0x7f47874fd6c0" scoped=""/>
+        <function-ref name="beginRead" ref="0x7f47874fd850" scoped=""/>
+        <function-ref name="readDone" ref="0x7f47874fd9e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="95:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="STXON" provided="0" ref="0x7f47874fb730">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="STXON" ref="0x7f47874fb730" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="strobe" ref="0x7f47874fbab0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="100:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="STXENC" provided="0" ref="0x7f47874f58c0">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="STXENC" ref="0x7f47874f58c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Strobe" qname="CC2420Strobe"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="strobe" ref="0x7f47874f5c40" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="76:/home/csilab/upma/chips/cc2420/CC2420TransmitP.nc" name="ByteIndicator" provided="1" ref="0x7f47875177b0">
+      <component-ref nicename="CC2420TransmitP" qname="CC2420TransmitP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="ByteIndicator" ref="0x7f47875177b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.ReceiveIndicator" qname="ReceiveIndicator"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="isReceiving" ref="0x7f4787517b30" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

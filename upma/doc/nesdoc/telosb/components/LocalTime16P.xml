@@ -1,0 +1,68 @@
+<?xml version="1.0" ?><component abstract="" loc="32:/home/csilab/upma/system/LocalTime16P.nc" nicename="LocalTime16P" qname="LocalTime16P" safe="">
+      <documentation loc="23:/home/csilab/upma/types/LocalTimeExtended.h">
+        <short>
+
+ </short>
+        <long>
+
+ @author Kevin Klues (klueska@cs.wustl.edu)
+ @version $Revision$
+ @date $Date$
+</long>
+      </documentation>
+      <parameters>
+        <typedef loc="32:/home/csilab/upma/system/LocalTime16P.nc" name="counter_t" ref="0x7f4787084b90">
+          <component-ref nicename="LocalTime16P" qname="LocalTime16P"/>
+          <type-var alignment="U:" size="U:"><typedef-ref name="counter_t" ref="0x7f4787084b90" scoped=""/></type-var>
+        </typedef>
+      </parameters>
+      <module/>
+    <specification><interface loc="35:/home/csilab/upma/system/LocalTime16P.nc" name="LocalTime" provided="1" ref="0x7f4787080020">
+      <component-ref nicename="LocalTime16P" qname="LocalTime16P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="LocalTime" ref="0x7f4787080020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="LocalTimeExtended" qname="LocalTimeExtended"/>
+        <arguments>
+          <type-var alignment="U:" size="U:"><typedef-ref name="counter_t" ref="0x7f4787084b90" scoped=""/></type-var>
+          <type-tag alignment="I:1" size="I:6"><nx_struct-ref name="local_time16" ref="0x7f47870d11c0"/>
+            <typename><typedef-ref name="local_time16_t" ref="0x7f47870d1a70"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="lessThan" ref="0x7f478707d7e0" scoped=""/>
+        <function-ref name="greaterThan" ref="0x7f478707b020" scoped=""/>
+        <function-ref name="equal" ref="0x7f478707b6f0" scoped=""/>
+        <function-ref name="add" ref="0x7f478707e340" scoped=""/>
+        <function-ref name="sub" ref="0x7f478707ea10" scoped=""/>
+        <function-ref name="compare" ref="0x7f478707d110" scoped=""/>
+        <function-ref name="getNow" ref="0x7f4787080e30" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="34:/home/csilab/upma/system/LocalTime16P.nc" name="Init" provided="1" ref="0x7f4787081470">
+      <component-ref nicename="LocalTime16P" qname="LocalTime16P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Init" ref="0x7f4787081470" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x7f47870817f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="37:/home/csilab/upma/system/LocalTime16P.nc" name="Counter" provided="0" ref="0x7f4787079110">
+      <component-ref nicename="LocalTime16P" qname="LocalTime16P"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Counter" ref="0x7f4787079110" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-var alignment="U:" size="U:"><typedef-ref name="counter_t" ref="0x7f4787084b90" scoped=""/></type-var>
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x7f4789391520"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x7f4787078020" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x7f47870789a0" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x7f47870784e0" scoped=""/>
+        <function-ref name="overflow" ref="0x7f4787078e60" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

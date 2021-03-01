@@ -1,0 +1,1662 @@
+<?xml version="1.0" ?><component loc="30:TestPureTdmaC.nc" nicename="TestPureTdmaC" qname="TestPureTdmaC">
+      <configuration/>
+      <wiring>
+        <wire loc="56:TestPureTdmaC.nc">
+          <from><interface-ref name="BenchmarkTimer" ref="0x7f4786c06bf0" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x7f4786b1eb00" scoped=""/></to>
+        </wire>
+        <wire loc="57:TestPureTdmaC.nc">
+          <from><interface-ref name="StartTimer" ref="0x7f4786c000d0" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x7f4786b174e0" scoped=""/></to>
+        </wire>
+        <wire loc="58:TestPureTdmaC.nc">
+          <from><interface-ref name="Pin" ref="0x7f4786bf7520" scoped=""/></from>
+          <to><interface-ref name="Port27" ref="0x7f47881b7cc0" scoped=""/></to>
+        </wire>
+        <wire loc="59:TestPureTdmaC.nc">
+          <from><interface-ref name="RcvPin" ref="0x7f4786bf5540" scoped=""/></from>
+          <to><interface-ref name="Port26" ref="0x7f47881bacc0" scoped=""/></to>
+        </wire>
+        <wire loc="63:TestPureTdmaC.nc">
+          <from><interface-ref name="Boot" ref="0x7f4786c150c0" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x7f47887c57f0" scoped=""/></to>
+        </wire>
+        <wire loc="60:TestPureTdmaC.nc">
+          <from><interface-ref name="Boot" ref="0x7f4786c150c0" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x7f47887c57f0" scoped=""/></to>
+        </wire>
+        <wire loc="62:TestPureTdmaC.nc">
+          <from><interface-ref name="FlushTimer" ref="0x7f4786c0b660" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x7f4786b24140" scoped=""/></to>
+        </wire>
+        <wire loc="64:TestPureTdmaC.nc">
+          <from><interface-ref name="Leds" ref="0x7f4786c156c0" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x7f4787fc2970" scoped=""/></to>
+        </wire>
+        <wire loc="65:TestPureTdmaC.nc">
+          <from><interface-ref name="AMSender" ref="0x7f4786c14e40" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x7f4786b32b30" scoped=""/></to>
+        </wire>
+        <wire loc="66:TestPureTdmaC.nc">
+          <from><interface-ref name="AMReceiver" ref="0x7f4786c12b70" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f4786b09610" scoped=""/></to>
+        </wire>
+        <wire loc="67:TestPureTdmaC.nc">
+          <from><interface-ref name="Packet" ref="0x7f4786c112f0" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x7f4787d60450" scoped=""/></to>
+        </wire>
+        <wire loc="68:TestPureTdmaC.nc">
+          <from><interface-ref name="SendTimer" ref="0x7f4786c101b0" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x7f4786b2b870" scoped=""/></to>
+        </wire>
+        <wire loc="69:TestPureTdmaC.nc">
+          <from><interface-ref name="SplitControl" ref="0x7f4786bf9950" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x7f4787d64020" scoped=""/></to>
+        </wire>
+        <wire loc="70:TestPureTdmaC.nc">
+          <from><interface-ref name="Counter" ref="0x7f4786bfb7d0" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x7f4787b48020" scoped=""/></to>
+        </wire>
+        <wire loc="77:TestPureTdmaC.nc">
+          <from><interface-ref name="RadioControl" ref="0x7f4786bf29c0" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x7f4787d64020" scoped=""/></to>
+        </wire>
+        <wire loc="78:TestPureTdmaC.nc">
+          <from><interface-ref name="SerialControl" ref="0x7f4786bf3d80" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x7f47885d7660" scoped=""/></to>
+        </wire>
+        <wire loc="80:TestPureTdmaC.nc">
+          <from><interface-ref name="UartSend" ref="0x7f4786bf1bb0" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x7f478858ab00" scoped=""/></to>
+        </wire>
+        <wire loc="81:TestPureTdmaC.nc">
+          <from><interface-ref name="UartReceive" ref="0x7f4786bef020" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f4788583b10" scoped=""/></to>
+        </wire>
+        <wire loc="82:TestPureTdmaC.nc">
+          <from><interface-ref name="UartPacket" ref="0x7f4786bef6e0" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x7f478857a5f0" scoped=""/></to>
+        </wire>
+        <wire loc="83:TestPureTdmaC.nc">
+          <from><interface-ref name="UartAMPacket" ref="0x7f4786bee520" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x7f47885691f0" scoped=""/></to>
+        </wire>
+        <wire loc="85:TestPureTdmaC.nc">
+          <from><interface-ref name="RadioSend" ref="0x7f4786bec3f0" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x7f4787d63050" scoped=""/></to>
+        </wire>
+        <wire loc="86:TestPureTdmaC.nc">
+          <from><interface-ref name="RadioReceive" ref="0x7f4786bea680" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f4787d61210" scoped=""/></to>
+        </wire>
+        <wire loc="87:TestPureTdmaC.nc">
+          <from><interface-ref name="RadioSnoop" ref="0x7f4786be92c0" scoped=""/></from>
+          <to><interface-ref name="Snoop" ref="0x7f4787d61df0" scoped=""/></to>
+        </wire>
+        <wire loc="88:TestPureTdmaC.nc">
+          <from><interface-ref name="RadioPacket" ref="0x7f4786be9980" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x7f4787d60450" scoped=""/></to>
+        </wire>
+        <wire loc="89:TestPureTdmaC.nc">
+          <from><interface-ref name="RadioAMPacket" ref="0x7f4786be8850" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x7f4787d5f120" scoped=""/></to>
+        </wire>
+        <wire loc="93:TestPureTdmaC.nc">
+          <from><interface-ref name="Routing" ref="0x7f4786bf3450" scoped=""/></from>
+          <to><interface-ref name="Routing" ref="0x7f4786daa3f0" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification/><referenced><interface loc="67:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc" name="Packet" provided="1" ref="0x7f4787d60450">
+      <component-ref nicename="tos.platforms.telosa.ActiveMessageC" qname="ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x7f4787d60450" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f4787d607d0" scoped=""/>
+        <function-ref name="payloadLength" ref="0x7f4787d60960" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4787d60af0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4787d60c80" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x7f4787d60e10" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:TestPureTdmaP.nc" name="RadioPacket" provided="0" ref="0x7f4786be9980">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioPacket" ref="0x7f4786be9980" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f4786be9d00" scoped=""/>
+        <function-ref name="payloadLength" ref="0x7f4786be8020" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786be81b0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786be8340" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x7f4786be84d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="35:TestPureTdmaP.nc" name="RadioControl" provided="0" ref="0x7f4786bf29c0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioControl" ref="0x7f4786bf29c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f4786bf2d40" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f4786bf1020" scoped=""/>
+        <function-ref name="start" ref="0x7f4786bf11b0" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786bf1340" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="17:TestPureTdmaP.nc" name="Packet" provided="0" ref="0x7f4786c112f0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x7f4786c112f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f4786c11670" scoped=""/>
+        <function-ref name="payloadLength" ref="0x7f4786c11800" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786c11990" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786c11b20" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x7f4786c11cb0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="25:TestPureTdmaP.nc" name="Pin" provided="0" ref="0x7f4786bf7520">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Pin" ref="0x7f4786bf7520" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f4786bf78a0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f4786bf7a30" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f4786bf7bc0" scoped=""/>
+        <function-ref name="toggle" ref="0x7f4786bf7d50" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f4786bf6020" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f4786bf61b0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f4786bf6340" scoped=""/>
+        <function-ref name="get" ref="0x7f4786bf64d0" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f4786bf6660" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f4786bf67f0" scoped=""/>
+        <function-ref name="set" ref="0x7f4786bf6980" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f4786bf6b10" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f4786bf6ca0" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f4786bf5020" scoped=""/>
+        <function-ref name="clr" ref="0x7f4786bf51b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="22:TestPureTdmaP.nc" name="Counter" provided="0" ref="0x7f4786bfb7d0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Counter" ref="0x7f4786bfb7d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f4789391920"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x7f4786bfa620" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x7f4786bf9020" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x7f4786bfaae0" scoped=""/>
+        <function-ref name="overflow" ref="0x7f4786bf94e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/usr/src/tinyos/tos/system/TimerMilliC.nc" name="Timer" provided="1" ref="0x7f4786b2b870">
+      <component-ref nicename="tos.system.TimerMilliC" qname="TestPureTdmaC.TimerMilliC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Timer" ref="0x7f4786b2b870" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4786b28cf0" scoped=""/>
+        <function-ref name="fired" ref="0x7f4786b29300" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x7f4786b280d0" scoped=""/>
+        <function-ref name="isOneShot" ref="0x7f4786b29c00" scoped=""/>
+        <function-ref name="getdt" ref="0x7f4786b26660" scoped=""/>
+        <function-ref name="gett0" ref="0x7f4786b261e0" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f4786b29780" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x7f4786b2a480" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x7f4786b286e0" scoped=""/>
+        <function-ref name="startOneShot" ref="0x7f4786b2a950" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786b2ae20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/usr/src/tinyos/tos/system/AMSenderC.nc" name="AMSend" provided="1" ref="0x7f4786b32b30">
+      <component-ref nicename="tos.system.AMSenderC" qname="TestPureTdmaC.AMSender"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x7f4786b32b30" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4786b30020" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786b301b0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786b30340" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4786b304d0" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4786b30660" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc" name="AMSend" provided="1" ref="0x7f478858ab00">
+      <component-ref nicename="tos.lib.serial.SerialActiveMessageC" qname="SerialActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x7f478858ab00" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f478858ae80" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f47885d4030" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f47885d41c0" scoped=""/>
+        <function-ref name="cancel" ref="0x7f47885d4350" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f47885d44e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:TestPureTdmaP.nc" name="RadioAMPacket" provided="0" ref="0x7f4786be8850">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioAMPacket" ref="0x7f4786be8850" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="headerSize" ref="0x7f4786be8dd0" scoped=""/>
+        <function-ref name="group" ref="0x7f4786be7020" scoped=""/>
+        <function-ref name="source" ref="0x7f4786be71b0" scoped=""/>
+        <function-ref name="address" ref="0x7f4786be7340" scoped=""/>
+        <function-ref name="destination" ref="0x7f4786be74d0" scoped=""/>
+        <function-ref name="setSource" ref="0x7f4786be7660" scoped=""/>
+        <function-ref name="setDestination" ref="0x7f4786be77f0" scoped=""/>
+        <function-ref name="type" ref="0x7f4786be7980" scoped=""/>
+        <function-ref name="setType" ref="0x7f4786be7b10" scoped=""/>
+        <function-ref name="isForMe" ref="0x7f4786be7ca0" scoped=""/>
+        <function-ref name="setGroup" ref="0x7f4786be7e30" scoped=""/>
+        <function-ref name="localGroup" ref="0x7f4786be6020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:TestPureTdmaP.nc" name="RadioSnoop" provided="0" ref="0x7f4786be92c0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioSnoop" ref="0x7f4786be92c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4786be9640" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="65:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc" name="Snoop" provided="1" ref="0x7f4787d61df0">
+      <component-ref nicename="tos.platforms.telosa.ActiveMessageC" qname="ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Snoop" ref="0x7f4787d61df0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4787d601c0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="63:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc" name="AMSend" provided="1" ref="0x7f4787d63050">
+      <component-ref nicename="tos.platforms.telosa.ActiveMessageC" qname="ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSend" ref="0x7f4787d63050" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4787d633d0" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4787d63560" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4787d636f0" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4787d63880" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4787d63a10" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="11:TestPureTdmaP.nc" name="Boot" provided="0" ref="0x7f4786c150c0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x7f4786c150c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x7f4786c15440" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="13:TestPureTdmaP.nc" name="AMSender" provided="0" ref="0x7f4786c14e40">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMSender" ref="0x7f4786c14e40" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4786c121e0" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786c12370" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786c12500" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4786c12690" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4786c12820" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="39:TestPureTdmaP.nc" name="UartAMPacket" provided="0" ref="0x7f4786bee520">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartAMPacket" ref="0x7f4786bee520" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="headerSize" ref="0x7f4786bee8a0" scoped=""/>
+        <function-ref name="group" ref="0x7f4786beea30" scoped=""/>
+        <function-ref name="source" ref="0x7f4786beebc0" scoped=""/>
+        <function-ref name="address" ref="0x7f4786beed50" scoped=""/>
+        <function-ref name="destination" ref="0x7f4786bed020" scoped=""/>
+        <function-ref name="setSource" ref="0x7f4786bed1b0" scoped=""/>
+        <function-ref name="setDestination" ref="0x7f4786bed340" scoped=""/>
+        <function-ref name="type" ref="0x7f4786bed4d0" scoped=""/>
+        <function-ref name="setType" ref="0x7f4786bed660" scoped=""/>
+        <function-ref name="isForMe" ref="0x7f4786bed7f0" scoped=""/>
+        <function-ref name="setGroup" ref="0x7f4786bed980" scoped=""/>
+        <function-ref name="localGroup" ref="0x7f4786bedb10" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/usr/src/tinyos/tos/chips/msp430/timer/Counter32khz32C.nc" name="Counter" provided="1" ref="0x7f4787b48020">
+      <component-ref nicename="tos.chips.msp430.timer.Counter32khz32C" qname="Counter32khz32C"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Counter" ref="0x7f4787b48020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306ed0"/>
+            <typename><typedef-ref name="T32khz" ref="0x7f4788305270"/></typename>
+          </type-tag>
+          <type-int alignment="I:2" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x7f4789391920"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x7f4787b48e30" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x7f4787b47800" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x7f4787b47340" scoped=""/>
+        <function-ref name="overflow" ref="0x7f4787b47cc0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="23:TestPureTdmaP.nc" name="SplitControl" provided="0" ref="0x7f4786bf9950">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SplitControl" ref="0x7f4786bf9950" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f4786bf9cd0" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f4786bf9e60" scoped=""/>
+        <function-ref name="start" ref="0x7f4786bf7020" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786bf71b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:TestPureTdmaP.nc" name="RadioSend" provided="0" ref="0x7f4786bec3f0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioSend" ref="0x7f4786bec3f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4786bec770" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786bec900" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786beca90" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4786becc20" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4786becdb0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="34:TestPureTdmaP.nc" name="SerialControl" provided="0" ref="0x7f4786bf3d80">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SerialControl" ref="0x7f4786bf3d80" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f4786bf2180" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f4786bf2310" scoped=""/>
+        <function-ref name="start" ref="0x7f4786bf24a0" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786bf2630" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="20:TestPureTdmaP.nc" name="BenchmarkTimer" provided="0" ref="0x7f4786c06bf0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="BenchmarkTimer" ref="0x7f4786c06bf0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4786c01110" scoped=""/>
+        <function-ref name="fired" ref="0x7f4786c046a0" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x7f4786c034a0" scoped=""/>
+        <function-ref name="isOneShot" ref="0x7f4786c03020" scoped=""/>
+        <function-ref name="getdt" ref="0x7f4786c01a10" scoped=""/>
+        <function-ref name="gett0" ref="0x7f4786c01590" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f4786c04b20" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x7f4786c05860" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x7f4786c03ab0" scoped=""/>
+        <function-ref name="startOneShot" ref="0x7f4786c05d30" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786c04220" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="67:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc" name="Port27" provided="1" ref="0x7f47881b7cc0">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIOC" qname="HplMsp430GeneralIOC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port27" ref="0x7f47881b7cc0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f47881b60a0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f47881b6230" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f47881b63c0" scoped=""/>
+        <function-ref name="toggle" ref="0x7f47881b6550" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f47881b66e0" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f47881b6870" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f47881b6a00" scoped=""/>
+        <function-ref name="get" ref="0x7f47881b6b90" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f47881b6d20" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f47881b5020" scoped=""/>
+        <function-ref name="set" ref="0x7f47881b51b0" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f47881b5340" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f47881b54d0" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f47881b5760" scoped=""/>
+        <function-ref name="clr" ref="0x7f47881b58f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="61:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc" name="SplitControl" provided="1" ref="0x7f4787d64020">
+      <component-ref nicename="tos.platforms.telosa.ActiveMessageC" qname="ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SplitControl" ref="0x7f4787d64020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f4787d643a0" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f4787d64530" scoped=""/>
+        <function-ref name="start" ref="0x7f4787d646c0" scoped=""/>
+        <function-ref name="stop" ref="0x7f4787d64850" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/usr/src/tinyos/tos/system/LedsC.nc" name="Leds" provided="1" ref="0x7f4787fc2970">
+      <component-ref nicename="tos.system.LedsC" qname="LedsC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x7f4787fc2970" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x7f4787fc2cf0" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x7f4787fc2e80" scoped=""/>
+        <function-ref name="led1On" ref="0x7f4787fa1030" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x7f4787fa11c0" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x7f4787fa1350" scoped=""/>
+        <function-ref name="get" ref="0x7f4787fa14e0" scoped=""/>
+        <function-ref name="led1Off" ref="0x7f4787fa1670" scoped=""/>
+        <function-ref name="led2Off" ref="0x7f4787fa1cb0" scoped=""/>
+        <function-ref name="set" ref="0x7f4787fa1800" scoped=""/>
+        <function-ref name="led0On" ref="0x7f4787fa1990" scoped=""/>
+        <function-ref name="led2On" ref="0x7f4787fa1b20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc" name="Receive" provided="1" ref="0x7f4788583b10">
+      <component-ref nicename="tos.lib.serial.SerialActiveMessageC" qname="SerialActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Receive" ref="0x7f4788583b10" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f478858b020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="37:TestPureTdmaP.nc" name="UartReceive" provided="0" ref="0x7f4786bef020">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartReceive" ref="0x7f4786bef020" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4786bef3a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="14:TestPureTdmaP.nc" name="AMReceiver" provided="0" ref="0x7f4786c12b70">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMReceiver" ref="0x7f4786c12b70" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4786c11020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="19:TestPureTdmaP.nc" name="FlushTimer" provided="0" ref="0x7f4786c0b660">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="FlushTimer" ref="0x7f4786c0b660" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4786c08c40" scoped=""/>
+        <function-ref name="fired" ref="0x7f4786c091e0" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x7f4786c08020" scoped=""/>
+        <function-ref name="isOneShot" ref="0x7f4786c09ae0" scoped=""/>
+        <function-ref name="getdt" ref="0x7f4786c06590" scoped=""/>
+        <function-ref name="gett0" ref="0x7f4786c06110" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f4786c09660" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x7f4786c0a390" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x7f4786c08630" scoped=""/>
+        <function-ref name="startOneShot" ref="0x7f4786c0a860" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786c0ad30" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/usr/src/tinyos/tos/system/TimerMilliC.nc" name="Timer" provided="1" ref="0x7f4786b1eb00">
+      <component-ref nicename="tos.system.TimerMilliC" qname="TestPureTdmaC.BenchmarkTimerC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Timer" ref="0x7f4786b1eb00" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4786b19110" scoped=""/>
+        <function-ref name="fired" ref="0x7f4786b1c5b0" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x7f4786b1a4a0" scoped=""/>
+        <function-ref name="isOneShot" ref="0x7f4786b1a020" scoped=""/>
+        <function-ref name="getdt" ref="0x7f4786b19a10" scoped=""/>
+        <function-ref name="gett0" ref="0x7f4786b19590" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f4786b1ca30" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x7f4786b1d750" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x7f4786b1aab0" scoped=""/>
+        <function-ref name="startOneShot" ref="0x7f4786b1dc20" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786b1c130" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/usr/src/tinyos/tos/system/TimerMilliC.nc" name="Timer" provided="1" ref="0x7f4786b24140">
+      <component-ref nicename="tos.system.TimerMilliC" qname="TestPureTdmaC.FlushTimerC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Timer" ref="0x7f4786b24140" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4786b20630" scoped=""/>
+        <function-ref name="fired" ref="0x7f4786b23b70" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x7f4786b22920" scoped=""/>
+        <function-ref name="isOneShot" ref="0x7f4786b224a0" scoped=""/>
+        <function-ref name="getdt" ref="0x7f4786b1f020" scoped=""/>
+        <function-ref name="gett0" ref="0x7f4786b20ab0" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f4786b22020" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x7f4786b24d30" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x7f4786b20020" scoped=""/>
+        <function-ref name="startOneShot" ref="0x7f4786b23220" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786b236f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="21:TestPureTdmaP.nc" name="StartTimer" provided="0" ref="0x7f4786c000d0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="StartTimer" ref="0x7f4786c000d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4786bfc630" scoped=""/>
+        <function-ref name="fired" ref="0x7f4786bffb00" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x7f4786bfe920" scoped=""/>
+        <function-ref name="isOneShot" ref="0x7f4786bfe4a0" scoped=""/>
+        <function-ref name="getdt" ref="0x7f4786bfb020" scoped=""/>
+        <function-ref name="gett0" ref="0x7f4786bfcab0" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f4786bfe020" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x7f4786c00cc0" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x7f4786bfc020" scoped=""/>
+        <function-ref name="startOneShot" ref="0x7f4786bff1b0" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786bff680" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/usr/src/tinyos/tos/system/AMReceiverC.nc" name="Receive" provided="1" ref="0x7f4786b09610">
+      <component-ref nicename="tos.system.AMReceiverC" qname="TestPureTdmaC.AMReceiver"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Receive" ref="0x7f4786b09610" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4786b09990" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="64:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc" name="Receive" provided="1" ref="0x7f4787d61210">
+      <component-ref nicename="tos.platforms.telosa.ActiveMessageC" qname="ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Receive" ref="0x7f4787d61210" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4787d61590" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc" name="SplitControl" provided="1" ref="0x7f47885d7660">
+      <component-ref nicename="tos.lib.serial.SerialActiveMessageC" qname="SerialActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SplitControl" ref="0x7f47885d7660" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x7f47885d79e0" scoped=""/>
+        <function-ref name="stopDone" ref="0x7f47885d7b70" scoped=""/>
+        <function-ref name="start" ref="0x7f47885d7d00" scoped=""/>
+        <function-ref name="stop" ref="0x7f47885d6020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/usr/src/tinyos/tos/system/TimerMilliC.nc" name="Timer" provided="1" ref="0x7f4786b174e0">
+      <component-ref nicename="tos.system.TimerMilliC" qname="TestPureTdmaC.StartTimerC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Timer" ref="0x7f4786b174e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4786b13a20" scoped=""/>
+        <function-ref name="fired" ref="0x7f4786b15020" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x7f4786b15da0" scoped=""/>
+        <function-ref name="isOneShot" ref="0x7f4786b15920" scoped=""/>
+        <function-ref name="getdt" ref="0x7f4786b124a0" scoped=""/>
+        <function-ref name="gett0" ref="0x7f4786b12020" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f4786b154a0" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x7f4786b16110" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x7f4786b13410" scoped=""/>
+        <function-ref name="startOneShot" ref="0x7f4786b165e0" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786b16ab0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:TestPureTdmaP.nc" name="RadioReceive" provided="0" ref="0x7f4786bea680">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RadioReceive" ref="0x7f4786bea680" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x7f4786beaa00" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc" name="AMPacket" provided="1" ref="0x7f47885691f0">
+      <component-ref nicename="tos.lib.serial.SerialActiveMessageC" qname="SerialActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x7f47885691f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="headerSize" ref="0x7f4788569570" scoped=""/>
+        <function-ref name="group" ref="0x7f4788569700" scoped=""/>
+        <function-ref name="source" ref="0x7f4788569890" scoped=""/>
+        <function-ref name="address" ref="0x7f4788569a20" scoped=""/>
+        <function-ref name="destination" ref="0x7f4788569bb0" scoped=""/>
+        <function-ref name="setSource" ref="0x7f4788569d40" scoped=""/>
+        <function-ref name="setDestination" ref="0x7f4788585020" scoped=""/>
+        <function-ref name="type" ref="0x7f47885851b0" scoped=""/>
+        <function-ref name="setType" ref="0x7f4788585340" scoped=""/>
+        <function-ref name="isForMe" ref="0x7f47885854d0" scoped=""/>
+        <function-ref name="setGroup" ref="0x7f4788585660" scoped=""/>
+        <function-ref name="localGroup" ref="0x7f47885857f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="18:TestPureTdmaP.nc" name="SendTimer" provided="0" ref="0x7f4786c101b0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="SendTimer" ref="0x7f4786c101b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:2" size="I:2"><struct-ref ref="0x7f4788306720"/>
+            <typename><typedef-ref name="TMilli" ref="0x7f4788306a90"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x7f4786c0d630" scoped=""/>
+        <function-ref name="fired" ref="0x7f4786c0fbf0" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x7f4786c0e990" scoped=""/>
+        <function-ref name="isOneShot" ref="0x7f4786c0e510" scoped=""/>
+        <function-ref name="getdt" ref="0x7f4786c0b020" scoped=""/>
+        <function-ref name="gett0" ref="0x7f4786c0dab0" scoped=""/>
+        <function-ref name="isRunning" ref="0x7f4786c0e090" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x7f4786c10da0" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x7f4786c0d020" scoped=""/>
+        <function-ref name="startOneShot" ref="0x7f4786c0f2a0" scoped=""/>
+        <function-ref name="stop" ref="0x7f4786c0f770" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="26:TestPureTdmaP.nc" name="RcvPin" provided="0" ref="0x7f4786bf5540">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="RcvPin" ref="0x7f4786bf5540" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f4786bf59c0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f4786bf5b50" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f4786bf5ce0" scoped=""/>
+        <function-ref name="toggle" ref="0x7f4786bf5e70" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f4786bf4030" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f4786bf41c0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f4786bf4350" scoped=""/>
+        <function-ref name="get" ref="0x7f4786bf44e0" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f4786bf4670" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f4786bf4800" scoped=""/>
+        <function-ref name="set" ref="0x7f4786bf4990" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f4786bf4b20" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f4786bf4cb0" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f4786bf3020" scoped=""/>
+        <function-ref name="clr" ref="0x7f4786bf31b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="4:/home/csilab/upma/lib/macs/pure-tdma/RoutingTableC.nc" name="Routing" provided="1" ref="0x7f4786daa3f0">
+      <component-ref nicename="RoutingTableC" qname="RoutingTableC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Routing" ref="0x7f4786daa3f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Routing" qname="Routing"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="NeighborTable" ref="0x7f4786daa770" scoped=""/>
+        <function-ref name="MakeParent" ref="0x7f4786daa900" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="12:TestPureTdmaP.nc" name="Leds" provided="0" ref="0x7f4786c156c0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Leds" ref="0x7f4786c156c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x7f4786c15a40" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x7f4786c15bd0" scoped=""/>
+        <function-ref name="led1On" ref="0x7f4786c15d60" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x7f4786c14020" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x7f4786c141b0" scoped=""/>
+        <function-ref name="get" ref="0x7f4786c14340" scoped=""/>
+        <function-ref name="led1Off" ref="0x7f4786c144d0" scoped=""/>
+        <function-ref name="led2Off" ref="0x7f4786c14b10" scoped=""/>
+        <function-ref name="set" ref="0x7f4786c14660" scoped=""/>
+        <function-ref name="led0On" ref="0x7f4786c147f0" scoped=""/>
+        <function-ref name="led2On" ref="0x7f4786c14980" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="57:/usr/src/tinyos/tos/system/MainC.nc" name="Boot" provided="1" ref="0x7f47887c57f0">
+      <component-ref nicename="tos.system.MainC" qname="MainC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Boot" ref="0x7f47887c57f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x7f47887c5b70" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="68:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc" name="AMPacket" provided="1" ref="0x7f4787d5f120">
+      <component-ref nicename="tos.platforms.telosa.ActiveMessageC" qname="ActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="AMPacket" ref="0x7f4787d5f120" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="headerSize" ref="0x7f4787d5f4a0" scoped=""/>
+        <function-ref name="group" ref="0x7f4787d5f630" scoped=""/>
+        <function-ref name="source" ref="0x7f4787d5f7c0" scoped=""/>
+        <function-ref name="address" ref="0x7f4787d5f950" scoped=""/>
+        <function-ref name="destination" ref="0x7f4787d5fae0" scoped=""/>
+        <function-ref name="setSource" ref="0x7f4787d5fc70" scoped=""/>
+        <function-ref name="setDestination" ref="0x7f4787d5fe00" scoped=""/>
+        <function-ref name="type" ref="0x7f4787d5e020" scoped=""/>
+        <function-ref name="setType" ref="0x7f4787d5e1b0" scoped=""/>
+        <function-ref name="isForMe" ref="0x7f4787d5e340" scoped=""/>
+        <function-ref name="setGroup" ref="0x7f4787d5e4d0" scoped=""/>
+        <function-ref name="localGroup" ref="0x7f4787d5e660" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc" name="Packet" provided="1" ref="0x7f478857a5f0">
+      <component-ref nicename="tos.lib.serial.SerialActiveMessageC" qname="SerialActiveMessageC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Packet" ref="0x7f478857a5f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f478857a970" scoped=""/>
+        <function-ref name="payloadLength" ref="0x7f478857ab00" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f478857ac90" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f478857ae20" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x7f4788589020" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="28:TestPureTdmaP.nc" name="Routing" provided="0" ref="0x7f4786bf3450">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Routing" ref="0x7f4786bf3450" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="Routing" qname="Routing"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="NeighborTable" ref="0x7f4786bf37d0" scoped=""/>
+        <function-ref name="MakeParent" ref="0x7f4786bf3960" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="66:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc" name="Port26" provided="1" ref="0x7f47881bacc0">
+      <component-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIOC" qname="HplMsp430GeneralIOC"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="Port26" ref="0x7f47881bacc0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.msp430.pins.HplMsp430GeneralIO" qname="HplMsp430GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x7f47881b80a0" scoped=""/>
+        <function-ref name="isInput" ref="0x7f47881b8230" scoped=""/>
+        <function-ref name="setResistor" ref="0x7f47881b83c0" scoped=""/>
+        <function-ref name="toggle" ref="0x7f47881b8550" scoped=""/>
+        <function-ref name="isOutput" ref="0x7f47881b86e0" scoped=""/>
+        <function-ref name="getResistor" ref="0x7f47881b8870" scoped=""/>
+        <function-ref name="makeOutput" ref="0x7f47881b8a00" scoped=""/>
+        <function-ref name="get" ref="0x7f47881b8b90" scoped=""/>
+        <function-ref name="selectIOFunc" ref="0x7f47881b8d20" scoped=""/>
+        <function-ref name="getRaw" ref="0x7f47881b7020" scoped=""/>
+        <function-ref name="set" ref="0x7f47881b71b0" scoped=""/>
+        <function-ref name="selectModuleFunc" ref="0x7f47881b7340" scoped=""/>
+        <function-ref name="isIOFunc" ref="0x7f47881b74d0" scoped=""/>
+        <function-ref name="isModuleFunc" ref="0x7f47881b7760" scoped=""/>
+        <function-ref name="clr" ref="0x7f47881b78f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="36:TestPureTdmaP.nc" name="UartSend" provided="0" ref="0x7f4786bf1bb0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartSend" ref="0x7f4786bf1bb0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="send" ref="0x7f4786bf0020" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786bf01b0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786bf0340" scoped=""/>
+        <function-ref name="cancel" ref="0x7f4786bf04d0" scoped=""/>
+        <function-ref name="sendDone" ref="0x7f4786bf0660" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="38:TestPureTdmaP.nc" name="UartPacket" provided="0" ref="0x7f4786bef6e0">
+      <component-ref nicename="TestPureTdmaP" qname="TestPureTdmaP"/>
+      <type-interface alignment="I:2" size="I:2"><interface-ref name="UartPacket" ref="0x7f4786bef6e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x7f4786befa60" scoped=""/>
+        <function-ref name="payloadLength" ref="0x7f4786befbf0" scoped=""/>
+        <function-ref name="getPayload" ref="0x7f4786befd80" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x7f4786bee020" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x7f4786bee1b0" scoped=""/>
+      </interface-functions>
+    </interface><component loc="47(TestPureTdmaC.AMSender):/usr/src/tinyos/tos/system/AMSenderC.nc" nicename="tos.system.AMSenderC" qname="TestPureTdmaC.AMSender">
+      <documentation loc="33:/usr/src/tinyos/tos/system/AMSenderC.nc">
+        <short>
+ The virtualized active message send abstraction.</short>
+        <long>
+ The virtualized active message send abstraction. Each instantiation
+ of AMSenderC has its own queue of depth one. Therefore, it does not
+ have to contend with other AMSenderC instantiations for queue space.
+ The underlying implementation schedules the packets in these queues
+ using some form of fair-share queueing.
+
+ @author Philip Levis
+ @date   Jan 16 2006
+ @see    TEP 116: Packet Protocols
+</long>
+      </documentation>
+      <instance number="0">
+        <component-ref nicename="tos.system.AMSenderC" qname="AMSenderC"/>
+        <arguments>
+          <value cst="I:240">
+            <type-int alignment="I:2" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="64:/usr/src/tinyos/tos/system/AMSenderC.nc">
+          <from><interface-ref name="AMSend" ref="0x7f4786b32b30" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x7f4785fc3730" scoped=""/></to>
+        </wire>
+        <wire loc="65:/usr/src/tinyos/tos/system/AMSenderC.nc">
+          <from><interface-ref name="Packet" ref="0x7f4786b308b0" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x7f4785fc2400" scoped=""/></to>
+        </wire>
+        <wire loc="66:/usr/src/tinyos/tos/system/AMSenderC.nc">
+          <from><interface-ref name="AMPacket" ref="0x7f4786b2f590" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x7f4785fc1060" scoped=""/></to>
+        </wire>
+        <wire loc="67:/usr/src/tinyos/tos/system/AMSenderC.nc">
+          <from><interface-ref name="Acks" ref="0x7f4786b2eda0" scoped=""/></from>
+          <to><interface-ref name="Acks" ref="0x7f4785fc08f0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="44(TestPureTdmaC.TimerMilliC):/usr/src/tinyos/tos/system/TimerMilliC.nc" nicename="tos.system.TimerMilliC" qname="TestPureTdmaC.TimerMilliC">
+      <documentation loc="33:/usr/src/tinyos/tos/system/TimerMilliC.nc">
+        <short>
+ The virtualized millisecond timer abstraction.</short>
+        <long>
+ The virtualized millisecond timer abstraction. Instantiating this 
+ component gives an independent millisecond granularity timer.
+
+ @author Philip Levis
+ @date   January 16 2006
+ @see    TEP 102: Timers
+</long>
+      </documentation>
+      <instance number="1">
+        <component-ref nicename="tos.system.TimerMilliC" qname="TimerMilliC"/>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="52:/usr/src/tinyos/tos/system/TimerMilliC.nc">
+          <from><interface-ref name="Timer" ref="0x7f4786b2b870" scoped=""/></from>
+          <to><interface-ref name="TimerMilli" ref="0x7f478723c2c0" scoped=""/>
+          <arguments>
+            <value cst="I:1">
+              <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+      </wiring>
+    </component><component loc="45:/usr/src/tinyos/tos/system/LedsC.nc" nicename="tos.system.LedsC" qname="LedsC">
+      <documentation loc="34:/usr/src/tinyos/tos/system/LedsC.nc">
+        <short>
+
+ The basic TinyOS LEDs abstraction.</short>
+        <long>
+
+ The basic TinyOS LEDs abstraction.
+
+ @author Phil Buonadonna
+ @author David Gay
+ @author Philip Levis
+ @author Joe Polastre
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="51:/usr/src/tinyos/tos/system/LedsC.nc">
+          <from><interface-ref name="Leds" ref="0x7f4787fc2970" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x7f4787f9d2a0" scoped=""/></to>
+        </wire>
+        <wire loc="53:/usr/src/tinyos/tos/system/LedsC.nc">
+          <from><interface-ref name="Init" ref="0x7f4787f75c40" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f4787fa0c40" scoped=""/></to>
+        </wire>
+        <wire loc="54:/usr/src/tinyos/tos/system/LedsC.nc">
+          <from><interface-ref name="Led0" ref="0x7f4787f95910" scoped=""/></from>
+          <to><interface-ref name="Led0" ref="0x7f4787f78360" scoped=""/></to>
+        </wire>
+        <wire loc="55:/usr/src/tinyos/tos/system/LedsC.nc">
+          <from><interface-ref name="Led1" ref="0x7f4787f9bb10" scoped=""/></from>
+          <to><interface-ref name="Led1" ref="0x7f4787f776a0" scoped=""/></to>
+        </wire>
+        <wire loc="56:/usr/src/tinyos/tos/system/LedsC.nc">
+          <from><interface-ref name="Led2" ref="0x7f4787f9ae30" scoped=""/></from>
+          <to><interface-ref name="Led2" ref="0x7f4787f769c0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="2:/home/csilab/upma/lib/macs/pure-tdma/RoutingTableC.nc" nicename="RoutingTableC" qname="RoutingTableC">
+      <configuration/>
+      <wiring>
+        <wire loc="11:/home/csilab/upma/lib/macs/pure-tdma/RoutingTableC.nc">
+          <from><interface-ref name="Routing" ref="0x7f4786daa3f0" scoped=""/></from>
+          <to><interface-ref name="Routing" ref="0x7f4786da2430" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="59:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc" nicename="tos.platforms.telosa.ActiveMessageC" qname="ActiveMessageC">
+      <documentation loc="49:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc">
+        <short>
+
+ The Active Message layer on the Telos platform.</short>
+        <long>
+
+ The Active Message layer on the Telos platform. This is a naming wrapper
+ around the CC2420 Active Message layer.
+
+ @author Philip Levis
+ @version $Revision: 1.9 $ $Date: 2010-06-29 22:07:55 $
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="78:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc">
+          <from><interface-ref name="SplitControl" ref="0x7f4787d64020" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x7f4787d40c10" scoped=""/></to>
+        </wire>
+        <wire loc="80:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc">
+          <from><interface-ref name="AMSend" ref="0x7f4787d63050" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x7f4787d3fca0" scoped=""/></to>
+        </wire>
+        <wire loc="82:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc">
+          <from><interface-ref name="Snoop" ref="0x7f4787d61df0" scoped=""/></from>
+          <to><interface-ref name="Snoop" ref="0x7f4787d3dc00" scoped=""/></to>
+        </wire>
+        <wire loc="83:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc">
+          <from><interface-ref name="Packet" ref="0x7f4787d60450" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x7f4787d3ba80" scoped=""/></to>
+        </wire>
+        <wire loc="89:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc">
+          <from><interface-ref name="PacketTimeStamp32khz" ref="0x7f4787d54cd0" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStamp32khz" ref="0x7f4787398be0" scoped=""/></to>
+        </wire>
+        <wire loc="81:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc">
+          <from><interface-ref name="Receive" ref="0x7f4787d61210" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f4787d3d020" scoped=""/></to>
+        </wire>
+        <wire loc="85:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc">
+          <from><interface-ref name="PacketAcknowledgements" ref="0x7f4787d5e990" scoped=""/></from>
+          <to><interface-ref name="PacketAcknowledgements" ref="0x7f4787d39b20" scoped=""/></to>
+        </wire>
+        <wire loc="84:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc">
+          <from><interface-ref name="AMPacket" ref="0x7f4787d5f120" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x7f4787d3c2d0" scoped=""/></to>
+        </wire>
+        <wire loc="90:/usr/src/tinyos/tos/platforms/telosa/ActiveMessageC.nc">
+          <from><interface-ref name="PacketTimeStampMilli" ref="0x7f4787d52dc0" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStampMilli" ref="0x7f4787394ce0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="44(TestPureTdmaC.BenchmarkTimerC):/usr/src/tinyos/tos/system/TimerMilliC.nc" nicename="tos.system.TimerMilliC" qname="TestPureTdmaC.BenchmarkTimerC">
+      <documentation loc="33:/usr/src/tinyos/tos/system/TimerMilliC.nc">
+        <short>
+ The virtualized millisecond timer abstraction.</short>
+        <long>
+ The virtualized millisecond timer abstraction. Instantiating this 
+ component gives an independent millisecond granularity timer.
+
+ @author Philip Levis
+ @date   January 16 2006
+ @see    TEP 102: Timers
+</long>
+      </documentation>
+      <instance number="3">
+        <component-ref nicename="tos.system.TimerMilliC" qname="TimerMilliC"/>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="52:/usr/src/tinyos/tos/system/TimerMilliC.nc">
+          <from><interface-ref name="Timer" ref="0x7f4786b1eb00" scoped=""/></from>
+          <to><interface-ref name="TimerMilli" ref="0x7f478723c2c0" scoped=""/>
+          <arguments>
+            <value cst="I:3">
+              <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+      </wiring>
+    </component><component loc="9:TestPureTdmaP.nc" nicename="TestPureTdmaP" qname="TestPureTdmaP">
+      <documentation loc="71:/usr/src/tinyos/tos/lib/serial/Serial.h">
+        <short>
+ </short>
+        <long>
+ @author Phil Buonadonna
+ @author Lewis Girod
+ @author Ben Greenstein
+ @author Philip Levis
+ @date   August 7 2005
+</long>
+      </documentation>
+      <module/>
+    </component><component loc="44:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc" nicename="tos.lib.serial.SerialActiveMessageC" qname="SerialActiveMessageC">
+      <configuration/>
+      <wiring>
+        <wire loc="61:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="SplitControl" ref="0x7f47885d7660" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x7f47884ee2f0" scoped=""/></to>
+        </wire>
+        <wire loc="63:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="AMSend" ref="0x7f478858ab00" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x7f4788556790" scoped=""/></to>
+        </wire>
+        <wire loc="65:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="Packet" ref="0x7f478857a5f0" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x7f47884f6400" scoped=""/></to>
+        </wire>
+        <wire loc="64:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="Receive" ref="0x7f4788583b10" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f47884f8530" scoped=""/></to>
+        </wire>
+        <wire loc="67:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="PacketAcknowledgements" ref="0x7f4788564810" scoped=""/></from>
+          <to><interface-ref name="PacketAcknowledgements" ref="0x7f47884f5060" scoped=""/></to>
+        </wire>
+        <wire loc="66:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="AMPacket" ref="0x7f47885691f0" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x7f47884f8b20" scoped=""/></to>
+        </wire>
+        <wire loc="59:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x7f47887c7db0" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f47884f1c30" scoped=""/></to>
+        </wire>
+        <wire loc="60:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="Leds" ref="0x7f47884eb940" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x7f47885570d0" scoped=""/></to>
+        </wire>
+        <wire loc="69:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="SubSend" ref="0x7f47884f59f0" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x7f47884ede10" scoped=""/>
+          <arguments>
+            <value cst="I:0">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="70:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="SubReceive" ref="0x7f47884f3760" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f47884ed320" scoped=""/>
+          <arguments>
+            <value cst="I:0">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="72:/usr/src/tinyos/tos/lib/serial/SerialActiveMessageC.nc">
+          <from><interface-ref name="SerialPacketInfo" ref="0x7f47884eb020" scoped=""/>
+          <arguments>
+            <value cst="I:0">
+              <type-int alignment="I:2" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </from>
+          <to><interface-ref name="Info" ref="0x7f4787e4d1e0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="44(TestPureTdmaC.FlushTimerC):/usr/src/tinyos/tos/system/TimerMilliC.nc" nicename="tos.system.TimerMilliC" qname="TestPureTdmaC.FlushTimerC">
+      <documentation loc="33:/usr/src/tinyos/tos/system/TimerMilliC.nc">
+        <short>
+ The virtualized millisecond timer abstraction.</short>
+        <long>
+ The virtualized millisecond timer abstraction. Instantiating this 
+ component gives an independent millisecond granularity timer.
+
+ @author Philip Levis
+ @date   January 16 2006
+ @see    TEP 102: Timers
+</long>
+      </documentation>
+      <instance number="2">
+        <component-ref nicename="tos.system.TimerMilliC" qname="TimerMilliC"/>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="52:/usr/src/tinyos/tos/system/TimerMilliC.nc">
+          <from><interface-ref name="Timer" ref="0x7f4786b24140" scoped=""/></from>
+          <to><interface-ref name="TimerMilli" ref="0x7f478723c2c0" scoped=""/>
+          <arguments>
+            <value cst="I:2">
+              <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+      </wiring>
+    </component><component loc="41:/usr/src/tinyos/tos/chips/msp430/timer/Counter32khz32C.nc" nicename="tos.chips.msp430.timer.Counter32khz32C" qname="Counter32khz32C">
+      <documentation loc="33:/usr/src/tinyos/tos/chips/msp430/timer/Counter32khz32C.nc">
+        <short>
+ Counter32khz32C provides at 32-bit counter at 32768 ticks per second.</short>
+        <long>
+ Counter32khz32C provides at 32-bit counter at 32768 ticks per second.
+
+ @author Cory Sharp &lt;cssharp@eecs.berkeley.edu&gt;
+ @see  Please refer to TEP 102 for more information about this component and its
+          intended use.
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="50:/usr/src/tinyos/tos/chips/msp430/timer/Counter32khz32C.nc">
+          <from><interface-ref name="Counter" ref="0x7f4787b48020" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x7f4787b435f0" scoped=""/></to>
+        </wire>
+        <wire loc="52:/usr/src/tinyos/tos/chips/msp430/timer/Counter32khz32C.nc">
+          <from><interface-ref name="CounterFrom" ref="0x7f4787b26950" scoped=""/></from>
+          <to><interface-ref name="Msp430Counter32khz" ref="0x7f4787fbe9c0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="45:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc" nicename="tos.chips.msp430.pins.HplMsp430GeneralIOC" qname="HplMsp430GeneralIOC">
+      <documentation loc="35:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+        <short>
+ HPL for the TI MSP430 family of microprocessors.</short>
+        <long>
+ HPL for the TI MSP430 family of microprocessors. This provides an
+ abstraction for general-purpose I/O.
+
+ @author Joe Polastre
+ @author Xavier Orduna &lt;xorduna@dexmatech.com&gt;
+ @author Peter A. Bigot &lt;pab@peoplepowerco.com&gt;
+ @author Eric B. Decker &lt;cire831@gmail.com&gt;
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="442:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port14" ref="0x7f47881cecc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788102d10" scoped=""/></to>
+        </wire>
+        <wire loc="455:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port26" ref="0x7f47881bacc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880d2740" scoped=""/></to>
+        </wire>
+        <wire loc="531:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SDA" ref="0x7f478816f3d0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880c4740" scoped=""/></to>
+        </wire>
+        <wire loc="551:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC6" ref="0x7f478814a3e0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788039d10" scoped=""/></to>
+        </wire>
+        <wire loc="532:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SOMI0" ref="0x7f478816d3f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880be100" scoped=""/></to>
+        </wire>
+        <wire loc="460:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port30" ref="0x7f47881b5cc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880c9d10" scoped=""/></to>
+        </wire>
+        <wire loc="473:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port42" ref="0x7f47881a0020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788098740" scoped=""/></to>
+        </wire>
+        <wire loc="486:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port54" ref="0x7f478818c020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788068100" scoped=""/></to>
+        </wire>
+        <wire loc="497:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port64" ref="0x7f478817b020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788042740" scoped=""/></to>
+        </wire>
+        <wire loc="535:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="UTXD0" ref="0x7f47881673f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880b5740" scoped=""/></to>
+        </wire>
+        <wire loc="545:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC0" ref="0x7f47881563e0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788056d10" scoped=""/></to>
+        </wire>
+        <wire loc="557:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SVSIN" ref="0x7f47881423f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788034740" scoped=""/></to>
+        </wire>
+        <wire loc="445:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port17" ref="0x7f47881c8cc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880f4d10" scoped=""/></to>
+        </wire>
+        <wire loc="536:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="URXD0" ref="0x7f47881653f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880b0100" scoped=""/></to>
+        </wire>
+        <wire loc="450:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port21" ref="0x7f47881c4cc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880ea100" scoped=""/></to>
+        </wire>
+        <wire loc="463:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port33" ref="0x7f47881afcc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880bad10" scoped=""/></to>
+        </wire>
+        <wire loc="476:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port45" ref="0x7f478819a020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f478808a740" scoped=""/></to>
+        </wire>
+        <wire loc="489:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port57" ref="0x7f4788185020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f478805a100" scoped=""/></to>
+        </wire>
+        <wire loc="500:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port67" ref="0x7f4788175020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788034740" scoped=""/></to>
+        </wire>
+        <wire loc="440:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port12" ref="0x7f47881d2cc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f478810c740" scoped=""/></to>
+        </wire>
+        <wire loc="453:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port24" ref="0x7f47881becc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880db260" scoped=""/></to>
+        </wire>
+        <wire loc="466:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port36" ref="0x7f47881a9cc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880acd10" scoped=""/></to>
+        </wire>
+        <wire loc="530:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SIMO0" ref="0x7f47881713f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880c4740" scoped=""/></to>
+        </wire>
+        <wire loc="548:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC3" ref="0x7f47881503e0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788047d10" scoped=""/></to>
+        </wire>
+        <wire loc="555:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="DAC1" ref="0x7f47881443e0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788034740" scoped=""/></to>
+        </wire>
+        <wire loc="541:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="UCLK1" ref="0x7f478815d3f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f478806d740" scoped=""/></to>
+        </wire>
+        <wire loc="471:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port40" ref="0x7f47881a5cc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880a23f0" scoped=""/></to>
+        </wire>
+        <wire loc="484:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port52" ref="0x7f4788190020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788072d10" scoped=""/></to>
+        </wire>
+        <wire loc="495:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port62" ref="0x7f478817f020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f478804b100" scoped=""/></to>
+        </wire>
+        <wire loc="549:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC4" ref="0x7f478814e3e0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788042740" scoped=""/></to>
+        </wire>
+        <wire loc="538:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="STE1" ref="0x7f47881633e0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f478807c740" scoped=""/></to>
+        </wire>
+        <wire loc="443:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port15" ref="0x7f47881cccc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880fd740" scoped=""/></to>
+        </wire>
+        <wire loc="456:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port27" ref="0x7f47881b7cc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880cd100" scoped=""/></to>
+        </wire>
+        <wire loc="493:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port60" ref="0x7f4788183020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788056d10" scoped=""/></to>
+        </wire>
+        <wire loc="461:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port31" ref="0x7f47881b3cc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880c4740" scoped=""/></to>
+        </wire>
+        <wire loc="474:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port43" ref="0x7f478819e020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788093100" scoped=""/></to>
+        </wire>
+        <wire loc="487:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port55" ref="0x7f4788189020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788064d10" scoped=""/></to>
+        </wire>
+        <wire loc="498:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port65" ref="0x7f4788179020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f478803d100" scoped=""/></to>
+        </wire>
+        <wire loc="540:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SOMI1" ref="0x7f478815f3f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788072d10" scoped=""/></to>
+        </wire>
+        <wire loc="438:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port10" ref="0x7f47881d8e00" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47881153f0" scoped=""/></to>
+        </wire>
+        <wire loc="451:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port22" ref="0x7f47881c2cc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880e5d10" scoped=""/></to>
+        </wire>
+        <wire loc="464:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port34" ref="0x7f47881adcc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880b5740" scoped=""/></to>
+        </wire>
+        <wire loc="477:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port46" ref="0x7f4788198020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788085100" scoped=""/></to>
+        </wire>
+        <wire loc="542:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="UTXD1" ref="0x7f478815b3f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880acd10" scoped=""/></to>
+        </wire>
+        <wire loc="546:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC1" ref="0x7f47881543e0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788050740" scoped=""/></to>
+        </wire>
+        <wire loc="552:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC7" ref="0x7f47881483e0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788034740" scoped=""/></to>
+        </wire>
+        <wire loc="482:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port50" ref="0x7f4788194020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f478807c740" scoped=""/></to>
+        </wire>
+        <wire loc="543:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="URXD1" ref="0x7f47881583f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880a7740" scoped=""/></to>
+        </wire>
+        <wire loc="441:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port13" ref="0x7f47881d0cc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788106100" scoped=""/></to>
+        </wire>
+        <wire loc="454:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port25" ref="0x7f47881bccc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880d7d10" scoped=""/></to>
+        </wire>
+        <wire loc="467:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port37" ref="0x7f47881a7cc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880a7740" scoped=""/></to>
+        </wire>
+        <wire loc="539:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SIMO1" ref="0x7f47881613f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788076100" scoped=""/></to>
+        </wire>
+        <wire loc="550:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC5" ref="0x7f478814c3e0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f478803d100" scoped=""/></to>
+        </wire>
+        <wire loc="472:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port41" ref="0x7f47881a2020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f478809ee00" scoped=""/></to>
+        </wire>
+        <wire loc="485:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port53" ref="0x7f478818e020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f478806d740" scoped=""/></to>
+        </wire>
+        <wire loc="496:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port63" ref="0x7f478817d020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788047d10" scoped=""/></to>
+        </wire>
+        <wire loc="444:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port16" ref="0x7f47881cacc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880f8100" scoped=""/></to>
+        </wire>
+        <wire loc="494:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port61" ref="0x7f4788181020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788050740" scoped=""/></to>
+        </wire>
+        <wire loc="449:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port20" ref="0x7f47881c6cc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880ef740" scoped=""/></to>
+        </wire>
+        <wire loc="462:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port32" ref="0x7f47881b1cc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880be100" scoped=""/></to>
+        </wire>
+        <wire loc="475:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port44" ref="0x7f478819c020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f478808fd10" scoped=""/></to>
+        </wire>
+        <wire loc="488:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port56" ref="0x7f4788187020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f478805f740" scoped=""/></to>
+        </wire>
+        <wire loc="499:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port66" ref="0x7f4788177020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788039d10" scoped=""/></to>
+        </wire>
+        <wire loc="439:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port11" ref="0x7f47881d4cc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788111e00" scoped=""/></to>
+        </wire>
+        <wire loc="452:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port23" ref="0x7f47881c0cc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880e0740" scoped=""/></to>
+        </wire>
+        <wire loc="465:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port35" ref="0x7f47881abcc0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880b0100" scoped=""/></to>
+        </wire>
+        <wire loc="478:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port47" ref="0x7f4788196020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788081d10" scoped=""/></to>
+        </wire>
+        <wire loc="534:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SCL" ref="0x7f47881693d0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880bad10" scoped=""/></to>
+        </wire>
+        <wire loc="547:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="ADC2" ref="0x7f47881523e0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f478804b100" scoped=""/></to>
+        </wire>
+        <wire loc="533:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="UCLK0" ref="0x7f478816b3f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880bad10" scoped=""/></to>
+        </wire>
+        <wire loc="483:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="Port51" ref="0x7f4788192020" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788076100" scoped=""/></to>
+        </wire>
+        <wire loc="554:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="DAC0" ref="0x7f47881463e0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f4788039d10" scoped=""/></to>
+        </wire>
+        <wire loc="558:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="SVSOUT" ref="0x7f47881403f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f478805a100" scoped=""/></to>
+        </wire>
+        <wire loc="529:/usr/src/tinyos/tos/chips/msp430/pins/HplMsp430GeneralIOC.nc">
+          <from><interface-ref name="STE0" ref="0x7f4788173060" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x7f47880c9d10" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="44(TestPureTdmaC.StartTimerC):/usr/src/tinyos/tos/system/TimerMilliC.nc" nicename="tos.system.TimerMilliC" qname="TestPureTdmaC.StartTimerC">
+      <documentation loc="33:/usr/src/tinyos/tos/system/TimerMilliC.nc">
+        <short>
+ The virtualized millisecond timer abstraction.</short>
+        <long>
+ The virtualized millisecond timer abstraction. Instantiating this 
+ component gives an independent millisecond granularity timer.
+
+ @author Philip Levis
+ @date   January 16 2006
+ @see    TEP 102: Timers
+</long>
+      </documentation>
+      <instance number="4">
+        <component-ref nicename="tos.system.TimerMilliC" qname="TimerMilliC"/>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="52:/usr/src/tinyos/tos/system/TimerMilliC.nc">
+          <from><interface-ref name="Timer" ref="0x7f4786b174e0" scoped=""/></from>
+          <to><interface-ref name="TimerMilli" ref="0x7f478723c2c0" scoped=""/>
+          <arguments>
+            <value cst="I:4">
+              <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned=""/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+      </wiring>
+    </component><component loc="56:/usr/src/tinyos/tos/system/MainC.nc" nicename="tos.system.MainC" qname="MainC">
+      <documentation loc="45:/usr/src/tinyos/tos/system/MainC.nc">
+        <short>
+ MainC is the system interface the TinyOS boot sequence.</short>
+        <long>
+ MainC is the system interface the TinyOS boot sequence. It wires the
+ boot sequence implementation to the scheduler and hardware resources.
+
+ @author Philip Levis
+ @date   August 6 2005
+ @see    TEP 107: Boot Sequence
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="72:/usr/src/tinyos/tos/system/MainC.nc">
+          <from><interface-ref name="Boot" ref="0x7f47887c57f0" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x7f4788607590" scoped=""/></to>
+        </wire>
+        <wire loc="67:/usr/src/tinyos/tos/system/MainC.nc">
+          <from><interface-ref name="Scheduler" ref="0x7f4788607c00" scoped=""/></from>
+          <to><interface-ref name="Scheduler" ref="0x7f4788c643a0" scoped=""/></to>
+        </wire>
+        <wire loc="68:/usr/src/tinyos/tos/system/MainC.nc">
+          <from><interface-ref name="PlatformInit" ref="0x7f47885fa6c0" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x7f47887c6ca0" scoped=""/></to>
+        </wire>
+        <wire loc="71:/usr/src/tinyos/tos/system/MainC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x7f47885fadc0" scoped=""/></from>
+          <to><interface-ref name="SoftwareInit" ref="0x7f47887c7db0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="43(TestPureTdmaC.AMReceiver):/usr/src/tinyos/tos/system/AMReceiverC.nc" nicename="tos.system.AMReceiverC" qname="TestPureTdmaC.AMReceiver">
+      <documentation loc="33:/usr/src/tinyos/tos/system/AMReceiverC.nc">
+        <short>
+ The virtualized AM reception abstraction.</short>
+        <long>
+ The virtualized AM reception abstraction.
+
+ @author Philip Levis
+ @date   Jan 16 2006
+ @see    TEP 116: Packet Protocols
+</long>
+      </documentation>
+      <instance number="0">
+        <component-ref nicename="tos.system.AMReceiverC" qname="AMReceiverC"/>
+        <arguments>
+          <value cst="I:240">
+            <type-int alignment="I:2" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="55:/usr/src/tinyos/tos/system/AMReceiverC.nc">
+          <from><interface-ref name="Packet" ref="0x7f4786b09be0" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x7f4787d60450" scoped=""/></to>
+        </wire>
+        <wire loc="54:/usr/src/tinyos/tos/system/AMReceiverC.nc">
+          <from><interface-ref name="Receive" ref="0x7f4786b09610" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x7f4787d61210" scoped=""/>
+          <arguments>
+            <value cst="I:240">
+              <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+                <typename><typedef-ref name="am_id_t" ref="0x7f47885e3600"/></typename>
+              </type-int>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="56:/usr/src/tinyos/tos/system/AMReceiverC.nc">
+          <from><interface-ref name="AMPacket" ref="0x7f4786b088b0" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x7f4787d5f120" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

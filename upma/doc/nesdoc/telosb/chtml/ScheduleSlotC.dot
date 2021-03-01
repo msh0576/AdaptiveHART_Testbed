@@ -1,0 +1,5 @@
+digraph "ScheduleSlotC" {
+  n0x2b7f5cf113d8 [shape=ellipse, style=filled, label="MySlot", fontsize=12];
+  "ScheduleSlotP" [fontsize=12, shape=box, URL="../chtml/ScheduleSlotP.html"];
+  "n0x2b7f5cf113d8" -> "ScheduleSlotP" [label="MySlot", URL="../ihtml/MySlot.html", fontsize=10];
+}

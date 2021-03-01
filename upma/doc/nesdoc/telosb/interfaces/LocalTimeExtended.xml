@@ -1,0 +1,186 @@
+<?xml version="1.0" ?><interfacedef loc="32:/home/csilab/upma/interfaces/LocalTimeExtended.nc" nicename="LocalTimeExtended" qname="LocalTimeExtended">
+      <parameters>
+        <typedef loc="32:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="precision_tag" ref="0x7f47870d0ad0">
+          <interfacedef-ref nicename="LocalTimeExtended" qname="LocalTimeExtended"/>
+          <type-var alignment="U:" size="U:"><typedef-ref name="precision_tag" ref="0x7f47870d0ad0" scoped=""/></type-var>
+        </typedef>
+        <typedef loc="32:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="local_time_t" ref="0x7f47870d0d30">
+          <interfacedef-ref nicename="LocalTimeExtended" qname="LocalTimeExtended"/>
+          <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+        </typedef>
+      </parameters>
+      <function command="" loc="37:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="lessThan" provided="0" ref="0x7f47870cbe70">
+        <interfacedef-ref nicename="LocalTimeExtended" qname="LocalTimeExtended"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x7f4788c69090"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="37:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="t1" ref="0x7f47870cb840">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </variable>
+          <variable loc="37:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="t2" ref="0x7f47870cbbe0">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="38:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="greaterThan" provided="0" ref="0x7f47870c9c60">
+        <interfacedef-ref nicename="LocalTimeExtended" qname="LocalTimeExtended"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x7f4788c69090"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="38:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="t1" ref="0x7f47870c9630">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </variable>
+          <variable loc="38:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="t2" ref="0x7f47870c99d0">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="39:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="equal" provided="0" ref="0x7f47870c8a20">
+        <interfacedef-ref nicename="LocalTimeExtended" qname="LocalTimeExtended"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x7f4788c69090"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="39:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="t1" ref="0x7f47870c83f0">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </variable>
+          <variable loc="39:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="t2" ref="0x7f47870c8790">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="34:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="add" provided="0" ref="0x7f47870cd4c0">
+        <interfacedef-ref nicename="LocalTimeExtended" qname="LocalTimeExtended"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="34:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="t1" ref="0x7f47870cee10">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </variable>
+          <variable loc="34:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="t2" ref="0x7f47870cd230">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="35:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="sub" provided="0" ref="0x7f47870cc2b0">
+        <interfacedef-ref nicename="LocalTimeExtended" qname="LocalTimeExtended"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="35:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="t1" ref="0x7f47870cdc50">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </variable>
+          <variable loc="35:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="t2" ref="0x7f47870cc020">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="36:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="compare" provided="0" ref="0x7f47870cb0c0">
+        <interfacedef-ref nicename="LocalTimeExtended" qname="LocalTimeExtended"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="signed char" size="I:1">
+            <typename><typedef-ref name="int8_t" ref="0x7f4789392110"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="36:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="t1" ref="0x7f47870cca30">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </variable>
+          <variable loc="36:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="t2" ref="0x7f47870ccdd0">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="33:/home/csilab/upma/interfaces/LocalTimeExtended.nc" name="getNow" provided="0" ref="0x7f47870ce680">
+        <interfacedef-ref nicename="LocalTimeExtended" qname="LocalTimeExtended"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-var alignment="U:" size="U:"><typedef-ref name="local_time_t" ref="0x7f47870d0d30" scoped=""/></type-var>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+    </interfacedef>
