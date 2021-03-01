@@ -33,7 +33,10 @@
 #define MAX_NODES 5
 #define RSSI_OFFSET 45
 #define MAX_FLOWS 2
-#define NETWORK_FLOW 3
+#define NETWORK_FLOW 3		// If there are 2 flows in the network, it should be 2+1
+#define MAX_NODEID 8			// Same as the above
+#define HI_TASK 1
+#define LO_TASK 2
 
 typedef nx_struct notify
 {
@@ -51,6 +54,8 @@ typedef nx_struct adaptivehart_msg
 	nx_uint8_t priority;
 	nx_uint8_t maxtx;
 	nx_uint16_t deadline;
+	nx_uint16_t seq;
+	nx_uint8_t is_changed;
 } adaptivehart_msg_t;
 
 

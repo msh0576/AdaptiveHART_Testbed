@@ -27,10 +27,10 @@
  *
  * This interface will be implemented by the different TDMA protocols
  */
- 
+
 interface FrameConfiguration {
  	command void setSlotLength(uint32_t slotTimeBms);
- 	command void setFrameLength(uint8_t numSlots);
+ 	command void setFrameLength(uint16_t numSlots); //modified by sihoon
  	command uint32_t getSlotLength();
- 	command uint8_t getFrameLength();
+ 	command uint16_t getFrameLength();  //modified by sihoon
 }

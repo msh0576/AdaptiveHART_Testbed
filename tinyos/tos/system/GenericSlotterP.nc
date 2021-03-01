@@ -45,7 +45,7 @@ module GenericSlotterP {
 implementation {
 	norace uint16_t slot;
 	norace uint32_t slotLength;
-	norace uint8_t frameLength;
+	norace uint16_t frameLength;
 	bool sync;
 	uint32_t nextFire;
 
@@ -84,7 +84,7 @@ implementation {
  		atomic slotLength = slotTimeBms;
  	}
 
- 	command void FrameConfiguration.setFrameLength(uint8_t numSlots) {
+ 	command void FrameConfiguration.setFrameLength(uint16_t numSlots) {	//modified by sihoon
  		atomic frameLength = numSlots;
  	}
 
@@ -92,7 +92,7 @@ implementation {
  		return slotLength;
  	}
 
- 	command uint8_t FrameConfiguration.getFrameLength() {
+ 	command uint16_t FrameConfiguration.getFrameLength() {	//modified by sihoon
  		return frameLength;
  	}
 
@@ -116,7 +116,7 @@ implementation {
  		call Alarm.start(slotLength);
  	}
 
- 	async command uint8_t SlotterControl.getSlot() {
+ 	async command uint16_t SlotterControl.getSlot() {	//modified by sihoon
  		return slot;
  	}
  	async command uint32_t SlotterControl.getRemaining() {

@@ -28,8 +28,8 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
  * OF THE POSSIBILITY OF SUCH DAMAGE
  */
- 
-/** 
+
+/**
  * @author David Moss
  * @author Kevin Klues
  */
@@ -46,7 +46,7 @@ module SerialPrintfP {
 }
 
 implementation {
-  
+
   command error_t Init.init () {
     return call StdControl.start();
   }
@@ -61,9 +61,9 @@ implementation {
     return call UartControl.stop();
   }
 
-  int printfflush() @C() @spontaneous() {
+  /* int printfflush() @C() @spontaneous() {
     return SUCCESS;
-  }
+  } */
 
 #undef putchar
   command int Putchar.putchar (int c)

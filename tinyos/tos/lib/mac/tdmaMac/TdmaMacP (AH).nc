@@ -132,7 +132,6 @@ implementation {
 	uint8_t my_flow_id = 0;
 
 	uint8_t broadcastMatrix[20] = {0, 4, 4, 4, 0, 4, 4, 4, 6, 8, 8, 10, 10, 12, 12, 14, 14, 16, 16, 18};
-	//uint8_t broadcastMatrix[20] = {0, 0, 0, 0, 0, 0, 0, 0, 6, 8, 8, 10, 10, 12, 12, 14, 14, 16, 16, 18};
 
 	/* For message */
 	message_t AH_pkt;
@@ -187,19 +186,19 @@ implementation {
 
 uint8_t sync_schedule[50][11]={//Source Routing, 16 sensor topology, 2 prime trans, retrans twice, baseline. //***   12 == # of total hopcount
 	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-	{1, 4, 100, 22, 0, 1, 1, 1, 0, 0, 1}
-	/*{2, 6, 100, 22, 0, 1, 1, 1, 0, 0, 1},
+	{1, 4, 100, 22, 0, 1, 1, 1, 0, 0, 1},
+	{2, 6, 100, 22, 0, 1, 1, 1, 0, 0, 1},
 	{3, 8, 100, 22, 0, 1, 1, 1, 0, 0, 1},
 	{4, 10, 100, 22, 0, 1, 1, 1, 0, 0, 1},
 	{5, 12, 100, 22, 0, 1, 1, 1, 0, 0, 1},
 	{6, 14, 100, 22, 0, 1, 1, 1, 0, 0, 1},
 	{7, 16, 100, 22, 0, 1, 1, 1, 0, 0, 1},
-	{8, 18, 100, 22, 0, 1, 1, 1, 0, 0, 1} */
+	{8, 18, 100, 22, 0, 1, 1, 1, 0, 0, 1}
 	};
 
 	/* schedule variables */
 	uint8_t (*schedule)[11] = sync_schedule;
-  uint32_t gigaframe_length = 100; //5Hz at most     //***  10 == NodeNumber(schedule_len + 1) + controlschedule_len
+  uint32_t gigaframe_length = 50; //5Hz at most     //***  10 == NodeNumber(schedule_len + 1) + controlschedule_len
 	uint8_t max_schedule_len = 20;
 
 	/* release schedule */
@@ -224,10 +223,10 @@ uint8_t sync_schedule[50][11]={//Source Routing, 16 sensor topology, 2 prime tra
 	uint8_t random_slot_idx = 0;
 	uint8_t random_slot_seq = 0;
 	uint16_t random_slot = 0;
-	uint8_t original_period[NETWORK_FLOW] = {0, 15, 15};
-	uint8_t original_deadline[NETWORK_FLOW] = {0, 15, 15};
-	uint8_t changed_period[NETWORK_FLOW] = {0, 20, 10};
-	uint8_t changed_deadline[NETWORK_FLOW] = {0, 20, 10};
+	uint8_t original_period[NETWORK_FLOW] = {0, 250, 250};
+	uint8_t original_deadline[NETWORK_FLOW] = {0, 250, 250};
+	uint8_t changed_period[NETWORK_FLOW] = {0, 20, 25};
+	uint8_t changed_deadline[NETWORK_FLOW] = {0, 20, 25};
 	/* Routing path */
 
 	/* Functions */
@@ -405,7 +404,7 @@ uint8_t sync_schedule[50][11]={//Source Routing, 16 sensor topology, 2 prime tra
 				Task_character[i][TASK_DEAD] = original_deadline[i];
 			}
 			/* adaptability parameter */
-			random_slot_seq += 1;
+			/* random_slot_seq += 1;
 			if(random_slot_seq == 5){
 				random_slot_seq = 0;
 				random_slot_idx += 1;
@@ -413,7 +412,8 @@ uint8_t sync_schedule[50][11]={//Source Routing, 16 sensor topology, 2 prime tra
 					random_slot_idx = 0;
 				}
 				random_slot = random_slots[random_slot_idx];
-			}
+			} */
+
 
 
 			atomic phyLock = FALSE;
@@ -421,10 +421,10 @@ uint8_t sync_schedule[50][11]={//Source Routing, 16 sensor topology, 2 prime tra
 		}
 
 		/* adaptability check : Task period changes */
-		if(TOS_NODE_ID == 2 && currentSlot == random_slot){
+		/* if(TOS_NODE_ID == 2 && currentSlot == random_slot){
 			Task_character[my_flow_id][TASK_PERIOD] = changed_period[my_flow_id];
 			Task_character[my_flow_id][TASK_DEAD] = changed_deadline[my_flow_id];
-		}
+		} */
 
 		if(TOS_NODE_ID == 0 && slot == 0){
 			notificationPacket = (notification_t*)call Packet.getPayload(&selfNotificationPkt, sizeof(notification_t));

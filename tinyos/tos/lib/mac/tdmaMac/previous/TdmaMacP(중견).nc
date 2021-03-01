@@ -709,10 +709,8 @@ uint8_t schedule_flow1[50][11]={//Source Routing, 16 sensor topology, 2 prime tr
 				 notificationPacket->nextSlot = slot + 1;
 				 notificationPacket->nextAlarm = myGlobalTime + (remaining / 32);
 
-				 if(!phyLock)
-				 {
-					 if(call phyNotificationSend.send
-					 (AM_BROADCAST_ADDR, &selfNotificationPkt, sizeof(notification_t)) == SUCCESS)  //broadcast_route[TOS_NODE_ID % 10][notificationPacket->curId]
+				 if(!phyLock){
+					 if(call phyNotificationSend.send(AM_BROADCAST_ADDR, &selfNotificationPkt, sizeof(notification_t)) == SUCCESS)  //broadcast_route[TOS_NODE_ID % 10][notificationPacket->curId]
 					 {
 						 atomic phyLock = TRUE;
 					 }

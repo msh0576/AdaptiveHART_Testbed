@@ -35,5 +35,5 @@ interface SlotterControl {
 	async command uint32_t getNow();
 	async command uint32_t getRemaining();
 	async command void stop();
-	async command uint8_t getSlot();
+	async command uint16_t getSlot();	//modified by sihoon
 }

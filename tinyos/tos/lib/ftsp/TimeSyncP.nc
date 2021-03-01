@@ -324,7 +324,7 @@ implementation
 
     event message_t* SubReceive.receive(message_t* msg, void* payload, uint8_t len)
     {
-      uint16_t rootID = (uint8_t)((TimeSyncMsg*)payload)->nodeID;
+      //uint16_t rootID = (uint8_t)((TimeSyncMsg*)payload)->nodeID;
       uint32_t globalTime = call GlobalTime.getLocalTime();
       call GlobalTime.local2Global(&globalTime);
 #ifdef TIMESYNC_DEBUG   // this code can be used to simulate multiple hopsf
@@ -405,7 +405,7 @@ implementation
             signal TimeSyncNotify.msg_sent();
         }
         else
-          printf(" Global = %d  sync = %d\r\n",globalTime,is_synced());
+          printf(" Global = %ld  sync = %d\r\n",globalTime,is_synced());
     }
 
     event void Send.sendDone(message_t* ptr, error_t error)
