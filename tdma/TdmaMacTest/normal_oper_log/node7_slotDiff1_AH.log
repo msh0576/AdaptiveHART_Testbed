@@ -1,0 +1,299 @@
+Type [C-a] [C-h] to see available commands
+
+Terminal ready
+ Global = 72015  sync = 1
+ Global = 72967  sync = 0
+ Global = 73919  sync = 0
+ Global = 74871  sync = 0
+ Global = 75823  sync = 0
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 17, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 17, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 0, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 17, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+
+Thanks for using picocom
+picocom v2.2
+
+port is        : /dev/ttyUSB6
+flowcontrol    : none
+baudrate is    : 115200
+parity is      : none
+databits are   : 8
+stopbits are   : 1
+escape is      : C-a
+local echo is  : no
+noinit is      : no
+noreset is     : no
+nolock is      : yes
+send_cmd is    : sz -vv
+receive_cmd is : rz -vv -E
+imap is        : 
+omap is        : 
+emap is        : crcrlf,delbs,
+

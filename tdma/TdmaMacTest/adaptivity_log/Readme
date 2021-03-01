@@ -1,0 +1,13 @@
+<Adaptivity data>
+
+AdaptiveHART App - /tdma/TdmaMacTest/
+WirelessHART App - /upma/apps/tests/TestPureTdma/
+
+
+log node needed: Lo-task source node
+change parameter: frame length, changed period (from 15 to x)
+
+retx 2 고정
+
+
+

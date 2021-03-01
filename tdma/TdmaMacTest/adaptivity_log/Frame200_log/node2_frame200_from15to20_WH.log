@@ -1,0 +1,1549 @@
+Type [C-a] [C-h] to see available commands
+
+Terminal ready
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:54>
+schedule_reset: 1
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:55>
+schedule_changed: 0
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:56>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:57>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:58>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:59>
+schedule_reset: 1
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:60>
+schedule_changed: 0
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:61>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:62>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:63>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:64>
+schedule_reset: 1
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:65>
+schedule_changed: 0
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:66>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:67>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:68>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:69>
+schedule_reset: 1
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:70>
+schedule_changed: 0
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:71>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:72>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:73>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:74>
+schedule_reset: 1
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:75>
+schedule_changed: 0
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:76>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:77>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:78>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:79>
+schedule_reset: 1
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:80>
+schedule_changed: 0
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:81>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:82>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:83>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:84>
+schedule_reset: 1
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:85>
+schedule_changed: 0
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:86>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:87>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:88>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:89>
+schedule_reset: 1
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:90>
+schedule_changed: 0
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:91>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:92>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:93>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:94>
+schedule_reset: 1
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:95>
+schedule_changed: 0
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:96>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:97>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:98>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:99>
+schedule_reset: 1
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:100>
+schedule_changed: 0
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:101>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:102>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:103>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:104>
+schedule_reset: 1
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:105>
+schedule_changed: 0
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:106>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:107>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:108>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:109>
+schedule_reset: 1
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:110>
+schedule_changed: 0
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:111>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:112>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:113>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:114>
+schedule_reset: 1
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:115>
+schedule_changed: 0
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:116>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:117>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:118>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:119>
+schedule_reset: 1
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:120>
+schedule_changed: 0
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:121>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:122>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:123>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:124>
+schedule_reset: 1
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:125>
+schedule_changed: 0
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:126>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:127>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:128>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:129>
+schedule_reset: 1
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:130>
+schedule_changed: 0
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:131>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:132>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:133>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:134>
+schedule_reset: 1
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:135>
+schedule_changed: 0
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:136>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:137>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:138>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:139>
+schedule_reset: 1
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:140>
+schedule_changed: 0
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:141>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:142>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:143>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:144>
+schedule_reset: 1
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:145>
+schedule_changed: 0
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:146>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:147>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:148>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:149>
+schedule_reset: 1
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:150>
+schedule_changed: 0
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:151>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:152>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:153>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:154>
+schedule_reset: 1
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:155>
+schedule_changed: 0
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:156>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:157>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:158>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:159>
+schedule_reset: 1
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:160>
+schedule_changed: 0
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:161>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:162>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:163>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:164>
+schedule_reset: 1
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:165>
+schedule_changed: 0
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:166>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:167>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:168>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:169>
+schedule_reset: 1
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:170>
+schedule_changed: 0
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:171>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:172>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:173>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:174>
+schedule_reset: 1
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:175>
+schedule_changed: 0
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:176>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:177>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:178>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:179>
+schedule_reset: 1
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:180>
+schedule_changed: 0
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:181>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:182>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:183>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:184>
+schedule_reset: 1
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:185>
+schedule_changed: 0
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:186>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:187>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:188>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:189>
+schedule_reset: 1
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:190>
+schedule_changed: 0
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:191>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:192>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:193>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:194>
+schedule_reset: 1
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:195>
+schedule_changed: 0
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:196>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:197>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:198>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:199>
+schedule_reset: 1
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:200>
+schedule_changed: 0
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:201>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:202>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:203>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:204>
+schedule_reset: 1
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:205>
+schedule_changed: 0
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:206>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:207>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:208>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:209>
+schedule_reset: 1
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:210>
+schedule_changed: 0
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:211>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:212>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:213>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:214>
+schedule_reset: 1
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:215>
+schedule_changed: 0
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:216>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:217>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:218>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:219>
+schedule_reset: 1
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:220>
+schedule_changed: 0
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:221>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:222>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:223>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:224>
+schedule_reset: 1
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:225>
+schedule_changed: 0
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:226>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:227>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:228>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:229>
+schedule_reset: 1
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:230>
+schedule_changed: 0
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:231>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:232>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:233>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:234>
+schedule_reset: 1
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:235>
+schedule_changed: 0
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:236>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:237>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:238>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:239>
+schedule_reset: 1
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:240>
+schedule_changed: 0
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:241>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:242>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:243>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:244>
+schedule_reset: 1
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:245>
+schedule_changed: 0
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:246>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:247>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:248>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:249>
+schedule_reset: 1
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:250>
+schedule_changed: 0
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:251>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:252>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:253>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:254>
+schedule_reset: 1
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:255>
+schedule_changed: 0
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:256>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:257>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:258>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:259>
+schedule_reset: 1
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:260>
+schedule_changed: 0
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:261>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:262>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:263>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:264>
+schedule_reset: 1
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:265>
+schedule_changed: 0
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:266>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:267>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:268>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:269>
+schedule_reset: 1
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:270>
+schedule_changed: 0
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:271>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:272>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:273>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:274>
+schedule_reset: 1
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:275>
+schedule_changed: 0
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:276>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:277>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:278>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:279>
+schedule_reset: 1
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:280>
+schedule_changed: 0
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:281>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:282>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:283>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:284>
+schedule_reset: 1
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:285>
+schedule_changed: 0
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:286>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:287>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:288>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:289>
+schedule_reset: 1
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:290>
+schedule_changed: 0
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:291>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:292>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:293>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:294>
+schedule_reset: 1
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:295>
+schedule_changed: 0
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:296>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:297>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:298>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:299>
+schedule_reset: 1
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:300>
+schedule_changed: 0
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:301>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:302>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:303>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:304>
+schedule_reset: 1
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:305>
+schedule_changed: 0
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:306>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:307>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:308>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:309>
+schedule_reset: 1
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:310>
+schedule_changed: 0
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:311>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:312>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:313>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:314>
+schedule_reset: 1
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:315>
+schedule_changed: 0
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:316>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:317>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:318>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:319>
+schedule_reset: 1
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:320>
+schedule_changed: 0
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:321>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:322>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:323>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:324>
+schedule_reset: 1
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:325>
+schedule_changed: 0
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:326>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:327>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:328>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:329>
+schedule_reset: 1
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:330>
+schedule_changed: 0
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:331>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:332>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:333>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:334>
+schedule_reset: 1
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:335>
+schedule_changed: 0
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:336>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:337>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:338>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:339>
+schedule_reset: 1
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:340>
+schedule_changed: 0
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:341>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:342>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:343>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:344>
+schedule_reset: 1
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:345>
+schedule_changed: 0
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:346>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:347>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:348>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:349>
+schedule_reset: 1
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:350>
+schedule_changed: 0
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:351>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:352>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:353>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:354>
+schedule_reset: 1
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:355>
+schedule_changed: 0
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:356>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:357>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:358>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:359>
+schedule_reset: 1
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:360>
+schedule_changed: 0
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:361>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:362>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:363>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:364>
+schedule_reset: 1
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:365>
+schedule_changed: 0
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:366>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:367>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:368>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:369>
+schedule_reset: 1
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:370>
+schedule_changed: 0
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:371>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:372>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:373>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:374>
+schedule_reset: 1
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:375>
+schedule_changed: 0
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:376>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:377>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:378>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:379>
+schedule_reset: 1
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:380>
+schedule_changed: 0
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:381>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:382>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:383>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:384>
+schedule_reset: 1
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:385>
+schedule_changed: 0
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:386>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:387>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:388>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:389>
+schedule_reset: 1
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:390>
+schedule_changed: 0
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:391>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:392>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:393>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:394>
+schedule_reset: 1
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:395>
+schedule_changed: 0
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:396>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:397>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:398>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:399>
+schedule_reset: 1
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:400>
+schedule_changed: 0
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:401>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:402>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:403>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:404>
+schedule_reset: 1
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:405>
+schedule_changed: 0
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:406>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:407>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:408>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:409>
+schedule_reset: 1
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:410>
+schedule_changed: 0
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:411>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:412>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:413>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:414>
+schedule_reset: 1
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:415>
+schedule_changed: 0
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:416>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:417>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:418>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:419>
+schedule_reset: 1
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:420>
+schedule_changed: 0
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:421>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:422>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:423>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:424>
+schedule_reset: 1
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:425>
+schedule_changed: 0
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:426>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:427>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:428>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:429>
+schedule_reset: 1
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:430>
+schedule_changed: 0
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:431>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:432>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:433>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:434>
+schedule_reset: 1
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:435>
+schedule_changed: 0
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:436>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:437>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:438>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:439>
+schedule_reset: 1
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:440>
+schedule_changed: 0
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:441>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:442>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:443>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:444>
+schedule_reset: 1
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:445>
+schedule_changed: 0
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:446>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:447>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:448>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:449>
+schedule_reset: 1
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:450>
+schedule_changed: 0
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:451>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:452>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:453>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:454>
+schedule_reset: 1
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:455>
+schedule_changed: 0
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:456>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:457>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:458>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:459>
+schedule_reset: 1
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:460>
+schedule_changed: 0
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:461>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:462>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:463>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:464>
+schedule_reset: 1
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:465>
+schedule_changed: 0
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:466>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:467>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:468>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:469>
+schedule_reset: 1
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:470>
+schedule_changed: 0
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:471>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:472>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:473>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:474>
+schedule_reset: 1
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:475>
+schedule_changed: 0
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:476>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:477>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:478>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:479>
+schedule_reset: 1
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:480>
+schedule_changed: 0
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:481>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:482>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:483>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:484>
+schedule_reset: 1
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:485>
+schedule_changed: 0
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:486>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:487>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:488>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:489>
+schedule_reset: 1
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:490>
+schedule_changed: 0
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:491>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:492>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:493>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:494>
+schedule_reset: 1
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:495>
+schedule_changed: 0
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:496>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:497>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:498>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:499>
+schedule_reset: 1
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:500>
+schedule_changed: 0
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:501>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:502>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:503>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:504>
+schedule_reset: 1
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:505>
+schedule_changed: 0
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:506>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:507>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:508>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:509>
+schedule_reset: 1
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:510>
+schedule_changed: 0
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:511>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:512>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:513>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:514>
+schedule_reset: 1
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:515>
+schedule_changed: 0
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:516>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:517>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:518>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:519>
+schedule_reset: 1
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:520>
+schedule_changed: 0
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:521>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:522>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:523>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:524>
+schedule_reset: 1
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:525>
+schedule_changed: 0
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:526>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:527>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:528>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:529>
+schedule_reset: 1
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:530>
+schedule_changed: 0
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:531>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:532>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:533>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:534>
+schedule_reset: 1
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:535>
+schedule_changed: 0
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:536>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:537>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:538>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:539>
+schedule_reset: 1
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:540>
+schedule_changed: 0
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:541>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:542>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:543>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:544>
+schedule_reset: 1
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:545>
+schedule_changed: 0
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:546>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:547>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:548>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:549>
+schedule_reset: 1
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:550>
+schedule_changed: 0
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:551>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:552>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:553>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:554>
+schedule_reset: 1
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:555>
+schedule_changed: 0
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:556>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:557>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:558>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:559>
+schedule_reset: 1
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:560>
+schedule_changed: 0
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:561>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:562>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:563>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:564>
+schedule_reset: 1
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:565>
+schedule_changed: 0
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:566>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:567>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:568>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:569>
+schedule_reset: 1
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:570>
+schedule_changed: 0
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:571>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:572>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:573>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:574>
+schedule_reset: 1
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:575>
+schedule_changed: 0
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:576>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:577>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:578>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:579>
+schedule_reset: 1
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:580>
+schedule_changed: 0
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:581>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:582>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:583>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:584>
+schedule_reset: 1
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:585>
+schedule_changed: 0
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:586>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:587>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:588>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:589>
+schedule_reset: 1
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:590>
+schedule_changed: 0
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:591>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:592>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:593>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:594>
+schedule_reset: 1
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:595>
+schedule_changed: 0
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:596>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:597>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:598>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:599>
+schedule_reset: 1
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:600>
+schedule_changed: 0
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:601>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:602>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:603>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:604>
+schedule_reset: 1
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:605>
+schedule_changed: 0
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:606>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:607>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:608>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:609>
+schedule_reset: 1
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:610>
+schedule_changed: 0
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:611>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:612>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:613>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:614>
+schedule_reset: 1
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:615>
+schedule_changed: 0
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:616>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:617>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:618>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:619>
+schedule_reset: 1
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:620>
+schedule_changed: 0
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:621>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:622>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:623>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:624>
+schedule_reset: 1
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:625>
+schedule_changed: 0
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:626>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:627>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:628>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:629>
+schedule_reset: 1
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:630>
+schedule_changed: 0
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:631>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:632>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:633>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:634>
+schedule_reset: 1
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:635>
+schedule_changed: 0
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:636>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:637>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:638>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:639>
+schedule_reset: 1
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:640>
+schedule_changed: 0
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:641>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:642>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:643>
+random_slot: 46, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:644>
+schedule_reset: 1
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:645>
+schedule_changed: 0
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:646>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:647>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:648>
+random_slot: 52, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:649>
+schedule_reset: 1
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:650>
+schedule_changed: 0
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:651>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:652>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:653>
+random_slot: 19, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:654>
+schedule_reset: 1
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:655>
+schedule_changed: 0
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:656>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:657>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:658>
+random_slot: 21, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:659>
+schedule_reset: 1
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:660>
+schedule_changed: 0
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:661>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:662>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:663>
+random_slot: 22, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:664>
+schedule_reset: 1
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:665>
+schedule_changed: 0
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:666>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:667>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:668>
+random_slot: 25, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:669>
+schedule_reset: 1
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:670>
+schedule_changed: 0
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:671>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:672>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:673>
+random_slot: 28, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:674>
+schedule_reset: 1
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:675>
+schedule_changed: 0
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:676>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:677>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:678>
+random_slot: 35, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:679>
+schedule_reset: 1
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:680>
+schedule_changed: 0
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:681>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:682>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:683>
+random_slot: 39, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:684>
+schedule_reset: 1
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:685>
+schedule_changed: 0
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:686>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:687>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+<New Frame:688>
+random_slot: 43, Tx: [ 8, 9, 0, 0, 0, 0, 0, 0, 0, 0 ]
+
+Thanks for using picocom
+picocom v2.2
+
+port is        : /dev/ttyUSB1
+flowcontrol    : none
+baudrate is    : 115200
+parity is      : none
+databits are   : 8
+stopbits are   : 1
+escape is      : C-a
+local echo is  : no
+noinit is      : no
+noreset is     : no
+nolock is      : yes
+send_cmd is    : sz -vv
+receive_cmd is : rz -vv -E
+imap is        : 
+omap is        : 
+emap is        : crcrlf,delbs,
+

@@ -35,6 +35,7 @@ implementation {
   components TdmaMacTestP;
   components LedsC;
   components TdmaMacC as MAC;
+//  components MacC as MAC;
   components new TimerMilliC();
 
   TdmaMacTestP.Boot -> MainC;

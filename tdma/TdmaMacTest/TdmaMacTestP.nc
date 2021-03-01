@@ -66,7 +66,7 @@ implementation {
 
   /** @brief New variables */
   uint32_t slotSize;
-  uint8_t curFrameSize;  	//Superframe length
+  uint16_t curFrameSize;  	//Superframe length
   uint8_t PC_flow_root;
 
 
@@ -93,7 +93,7 @@ implementation {
  	 event void MacControl.startDone(error_t error) {
 
 	  	/** @brief New initialization part @aaks */
-		slotSize = 30 * 32; 	//500 ms  -- 10ms standard
+		slotSize = 25 * 32; 	//500 ms  -- 10ms standard
 		curFrameSize = 100; 	// Superframe length is set to 100 slots
 
 	  	/** @brief Configuring frame @aaks */

@@ -1,0 +1,296 @@
+Type [C-a] [C-h] to see available commands
+
+Terminal ready
+ Global = 72539  sync = 0
+ Global = 73669  sync = 0
+HI_TASK: Rx: [ 14, 14, 0, 0, 0 ]
+LO_TASK: Rx: [ 15, 16, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 14, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 16, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 13, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 15, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 13, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 15, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 13, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 15, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 13, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 15, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 13, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 15, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+HI_TASK: Rx: [ 14, 0, 0, 0, 0 ]
+LO_TASK: Rx: [ 16, 0, 0, 0, 0 ]
+ ------- new Frame ------ 
+
+Thanks for using picocom
+picocom v2.2
+
+port is        : /dev/ttyUSB4
+flowcontrol    : none
+baudrate is    : 115200
+parity is      : none
+databits are   : 8
+stopbits are   : 1
+escape is      : C-a
+local echo is  : no
+noinit is      : no
+noreset is     : no
+nolock is      : yes
+send_cmd is    : sz -vv
+receive_cmd is : rz -vv -E
+imap is        : 
+omap is        : 
+emap is        : crcrlf,delbs,
+
